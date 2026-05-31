@@ -1,0 +1,50 @@
+[
+  {
+    "id": "strohhaus_1981",
+    "title": "Erstes Strohhausschiessen",
+    "category": "geschichte",
+    "date": "1981",
+    "description": "Das erste Strohhausschiessen im Jahr 1981 war ein Meilenstein für unseren Verein. Unter der Leitung unseres Nachwuchsförderers Gerhard Künzli und des Vorstands nahmen stolze 585 Schützinnen und Schützen teil. Dieser Anlass brachte nicht nur grosse sportliche Erfolge, sondern legte auch das finanzielle Fundament für spätere Grossprojekte wie den Neubau der Schiessanlage Rüteli. Die Stimmung war hervorragend und die Kameradschaft stand an oberster Stelle.",
+    "imageUrl": "assets/galerie/strohhausschiessen_1981.jpg"
+  },
+  {
+    "id": "rueteli_1996",
+    "title": "Neubau Schützenhaus Rüteli",
+    "category": "geschichte",
+    "date": "1996-1997",
+    "description": "Nach jahrelanger Planung und mit unglaublichem Engagement der Vereinsmitglieder wurde in den Jahren 1996 und 1997 das neue Schützenhaus Rüteli gebaut. In über 3000 Stunden ehrenamtlicher Fronarbeit schufen die Sportschützen Muhen eine der modernsten Kleinkaliber-Schiessanlagen der Region. Auf dem Foto sieht man die fleissigen Helfer beim Aufrichten des Dachstuhls und den Rohbauarbeiten bei bestem Wetter.",
+    "imageUrl": "assets/galerie/rueteli_neubau.jpg"
+  },
+  {
+    "id": "nachwuchs_2002",
+    "title": "Nachwuchstraining Gewehr 10m",
+    "category": "nachwuchs",
+    "date": "Winter 2002",
+    "description": "Erfolgreiche Nachwuchsförderung im Schiesskeller. Unsere Junioren üben sich in Konzentration und Präzision mit dem Luftgewehr auf der 10-Meter-Distanz. Dank der optimalen Betreuung durch ausgebildete J+S-Leiter lernen die Jugendlichen von Grund auf die richtige Körperbeherrschung, Atemtechnik und den mentalen Fokus. Der Verein stellt die gesamte Ausrüstung wie Schiessjacken, Handschuhe und Gewehre zur Verfügung.",
+    "imageUrl": "assets/galerie/nachwuchs_2002.jpg"
+  },
+  {
+    "id": "sius_2016",
+    "title": "Einbau elektronische Trefferanzeige",
+    "category": "geschichte",
+    "date": "Frühling 2016",
+    "description": "Ein grosser Schritt in die digitale Zukunft: Im Jahr 2016 installierte der Verein die hochmoderne elektronische Trefferanzeige der Firma SIUS auf allen 50-Meter-Scheiben. Statt manueller Kurbeln und Scheibenzuganlagen werden die Schüsse nun vollautomatisch mittels Schallmessung auf Monitoren am Schützenplatz angezeigt. Dies optimiert den Trainingsbetrieb und ermöglichte die Durchführung von kantonalen Schützenfesten.",
+    "imageUrl": "assets/galerie/sius_2016.jpg"
+  },
+  {
+    "id": "tessin_2016",
+    "title": "Vereinsausflug ins Tessin",
+    "category": "events",
+    "date": "Herbst 2016",
+    "description": "Kameradschaft wird bei den Sportschützen Muhen grossgeschrieben. Unser zweitägiger Vereinsausflug im Herbst 2016 führte eine gut gelaunte Delegation ins sonnige Tessin. Neben einer gemütlichen Wanderung durch die Weinberge und einer Besichtigung der Burgen von Bellinzona stand natürlich das gesellige Beisammensein bei traditioneller Polenta und Tessiner Merlot im Vordergrund. Ein unvergessliches Wochenende für Jung und Alt.",
+    "imageUrl": "assets/galerie/tessin_2016.jpg"
+  },
+  {
+    "id": "flims_2018",
+    "title": "Bündner Kantonalschützenfest in Flims",
+    "category": "events",
+    "date": "Juli 2018",
+    "description": "Mit einer starken Truppe reisten die Sportschützen Muhen im Sommer 2018 ans Bündner Kantonalschützenfest nach Flims. Auf der wunderschönen Anlage im Bergkanton konnten unsere Schützinnen und Schützen hervorragende Resultate erzielen und zahlreiche Kranzauszeichnungen mit nach Hause nehmen. Das Foto zeigt das Team stolz nach dem erfolgreichen Wettkampftag vor dem Panorama der Bündner Alpen.",
+    "imageUrl": "assets/galerie/flims_2018.jpg"
+  }
+]

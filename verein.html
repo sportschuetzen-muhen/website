@@ -17,7 +17,7 @@
     <header class="glass-nav">
         <div class="container nav-content">
             <a href="index.html" class="logo">
-                <span class="red-dot"></span>
+                <img src="assets/logo.png" alt="Sportschützen Muhen Logo" class="logo-img">
                 Sportschützen <span class="text-bold">Muhen</span>
             </a>
             
@@ -33,8 +33,8 @@
                 <a href="index.html#termine">Termine</a>
                 <a href="schuetzenhaus_vermietung.html">Vermietung</a>
                 <a href="index.html#reports">Berichte</a>
+                <a href="resultate.html">Resultate</a>
             </nav>
-            <a href="admin.html" class="btn btn-outline admin-btn">Vorstand Login</a>
         </div>
     </header>
 
@@ -115,36 +115,24 @@
         </div>
     </section>
 
-    <!-- Historische Galerie Placeholder -->
-    <section id="galerie" style="background: rgba(15, 23, 42, 0.4);">
+    <!-- Historische Galerie -->
+    <section id="galerie" style="background: rgba(15, 60, 92, 0.02); padding: 5rem 0;">
         <div class="container">
             <div class="section-header">
                 <h2>Historische <span class="text-red">Fotogalerie</span></h2>
-                <p>Einblicke in die Höhepunkte unserer Vereinsgeschichte.</p>
+                <p>Einblicke in die Höhepunkte unserer Vereinsgeschichte. Tippe auf ein Bild für Details und reichhaltige Beschreibungen.</p>
             </div>
             
-            <div class="masonry-grid">
-                <!-- Platzhalter für Bilder, die via Admin hochgeladen/eingepflegt werden können -->
-                <div class="masonry-item">
-                    <div class="masonry-img">📸</div>
-                    <div class="masonry-caption">Erstellung Rüteli (1996-1997)</div>
-                </div>
-                <div class="masonry-item">
-                    <div class="masonry-img" style="height: 300px;">📸</div>
-                    <div class="masonry-caption">Tessin Ausflug (2016)</div>
-                </div>
-                <div class="masonry-item">
-                    <div class="masonry-img">📸</div>
-                    <div class="masonry-caption">Nachwuchs (2002)</div>
-                </div>
-                <div class="masonry-item">
-                    <div class="masonry-img" style="height: 250px;">📸</div>
-                    <div class="masonry-caption">Einbau elektronische Scheiben (2016)</div>
-                </div>
-                <div class="masonry-item">
-                    <div class="masonry-img">📸</div>
-                    <div class="masonry-caption">Kantonales Flims (2018)</div>
-                </div>
+            <!-- Category Filter Bar -->
+            <div class="gallery-filters">
+                <button class="gallery-filter-btn active" data-category="all">Alle</button>
+                <button class="gallery-filter-btn" data-category="geschichte">Geschichte</button>
+                <button class="gallery-filter-btn" data-category="events">Events</button>
+                <button class="gallery-filter-btn" data-category="nachwuchs">Nachwuchs</button>
+            </div>
+            
+            <div class="masonry-grid" id="galerie-grid">
+                <!-- Dynamically populated by galerie.js -->
             </div>
         </div>
     </section>
@@ -178,7 +166,7 @@
     </section>
 
     <!-- Präsidenten -->
-    <section id="vorstand" style="background: rgba(15, 23, 42, 0.4);">
+    <section id="vorstand" style="background: rgba(15, 60, 92, 0.02);">
         <div class="container">
             <div class="section-header">
                 <h2>Unsere <span class="text-red">Präsidenten</span></h2>
@@ -198,19 +186,85 @@
                     <tr><td>1924</td><td>Emil Vogel</td><td></td></tr>
                     <tr><td>1928</td><td>Otto Lüscher-Hochuli</td><td></td></tr>
                     <tr><td>1936</td><td>Max Eichenberger</td><td></td></tr>
-                    <tr><td>1938</td><td>O. Lüscher-Hochuli</td><td>Ehrenpräsident</td></tr>
+                    <tr><td>1938</td><td>Otto Lüscher-Hochuli</td><td>Ehrenpräsident</td></tr>
                     <tr><td>1948</td><td>Ernst Arber</td><td></td></tr>
                     <tr><td>1953</td><td>Max Müller</td><td></td></tr>
                     <tr><td>1974</td><td>Max Müller</td><td>Ehrenpräsident</td></tr>
-                    <tr><td>1978</td><td>Hans Bäni</td><td>Ehrenpräsident</td></tr>
+                    <tr><td>1978</td><td>Hans Bäni</td><td></td></tr>
                     <tr><td>1990</td><td>Bernhard Hauri</td><td></td></tr>
-                    <tr><td>1997</td><td>Hans Bäni</td><td>Ehrenpräsident</td></tr>
+                    <tr><td>1997</td><td>Hans Bäni</td><td></td></tr>
                     <tr><td>2001</td><td>Roger Haller</td><td></td></tr>
                     <tr><td>2008</td><td>Hans Bäni</td><td>Ehrenpräsident</td></tr>
                     <tr><td>2012</td><td>Daniel Berchtold</td><td></td></tr>
                     <tr><td>2026</td><td>Simon Hediger</td><td>Aktuell</td></tr>
                 </tbody>
             </table>
+        </div>
+    </section>
+
+    <!-- Vorstand & Funktionäre -->
+    <section id="vorstand-mitglieder" style="padding: 5rem 0; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vorstand & <span class="text-red">Funktionäre</span></h2>
+                <p>Die Köpfe hinter dem sportlichen und administrativen Erfolg unseres Vereins.</p>
+            </div>
+            
+            <div class="board-grid">
+                <!-- Simon Hediger -->
+                <div class="board-card glass-card">
+                    <div class="board-avatar grad-simon">SH</div>
+                    <div class="board-info">
+                        <h3>Simon Hediger</h3>
+                        <span class="board-role">Präsident & Schützenmeister</span>
+                    </div>
+                </div>
+
+                <!-- Daniel Hunziker -->
+                <div class="board-card glass-card">
+                    <div class="board-avatar grad-daniel">DH</div>
+                    <div class="board-info">
+                        <h3>Daniel Hunziker</h3>
+                        <span class="board-role">Vizepräsident & Kassier</span>
+                    </div>
+                </div>
+
+                <!-- Andrea Rossi -->
+                <div class="board-card glass-card">
+                    <div class="board-avatar grad-andrea">AR</div>
+                    <div class="board-info">
+                        <h3>Andrea Rossi</h3>
+                        <span class="board-role">Juniorenleiter Gewehr 50m</span>
+                    </div>
+                </div>
+
+                <!-- Marco Fischer -->
+                <div class="board-card glass-card">
+                    <div class="board-avatar grad-marco">MF</div>
+                    <div class="board-info">
+                        <h3>Marco Fischer</h3>
+                        <span class="board-role">Schützenmeister Gewehr 50m</span>
+                    </div>
+                </div>
+
+                <!-- Olivia Rossi -->
+                <div class="board-card glass-card">
+                    <div class="board-avatar grad-olivia">OR</div>
+                    <div class="board-info">
+                        <h3>Olivia Rossi</h3>
+                        <span class="board-role">Schützenmeisterin Gewehr 50m</span>
+                    </div>
+                </div>
+
+                <!-- Beat Augsburger -->
+                <div class="board-card glass-card">
+                    <div class="board-avatar grad-beat">BA</div>
+                    <div class="board-info">
+                        <h3>Beat Augsburger</h3>
+                        <span class="board-role">Mitgliederverwalter</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -227,11 +281,12 @@
                 <h4>Links</h4>
                 <a href="index.html#home">Willkommen</a>
                 <a href="verein.html">Verein</a>
-                <a href="admin.html">Vorstand Intern</a>
+                <a href="resultate.html">Resultate</a>
+                <a href="datenschutz.html">Datenschutz</a>
             </div>
             <div class="footer-contact">
                 <h4>Kontakt</h4>
-                <p>Sportschützen Muhen<br>Rütelistrasse<br>5037 Muhen</p>
+                <p><a href="https://maps.google.com/?q=Sportschützen+Muhen+Rütelistrasse+Muhen" target="_blank" style="color: var(--accent-color); font-weight: 600;">📍 Schützenhaus Muhen<br>Rütelistrasse, 5037 Muhen</a></p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -239,6 +294,64 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Dynamische Ehrenpräsidenten-Deduplizierung
+            const rows = Array.from(document.querySelectorAll('.data-table tbody tr'));
+            const presidents = {};
+
+            rows.forEach(row => {
+                const year = parseInt(row.cells[0].textContent.trim());
+                const name = row.cells[1].textContent.trim();
+                const remarkCell = row.cells[2];
+                const remark = remarkCell.textContent.trim();
+
+                if (!presidents[name]) {
+                    presidents[name] = [];
+                }
+                presidents[name].push({ row, year, remarkCell, remark });
+            });
+
+            Object.keys(presidents).forEach(name => {
+                const terms = presidents[name];
+                if (terms.length > 1) {
+                    const hasEhren = terms.some(t => t.remark.includes('Ehrenpräsident'));
+                    if (hasEhren) {
+                        // Sortieren nach Jahr absteigend
+                        terms.sort((a, b) => b.year - a.year);
+                        // Beim neuesten "Ehrenpräsident" einblenden
+                        terms[0].remarkCell.textContent = 'Ehrenpräsident';
+                        // Bei allen älteren Amtszeiten entfernen, falls dort vorhanden
+                        for (let i = 1; i < terms.length; i++) {
+                            if (terms[i].remark.includes('Ehrenpräsident')) {
+                                terms[i].remarkCell.textContent = '';
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
     <script src="js/main.js"></script>
+    <script src="js/galerie.js"></script>
+
+    <!-- Fullscreen Lightbox Modal (Flickr details) -->
+    <div id="galerie-lightbox" class="lightbox-modal" style="display: none;">
+        <button class="lightbox-close" onclick="window.closeLightbox()">&times;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-image-wrapper">
+                <img id="lightbox-img" src="" alt="">
+                <div id="lightbox-fallback" class="lightbox-img-fallback" style="display: none;">📸</div>
+            </div>
+            <div class="lightbox-info">
+                <div class="lightbox-meta">
+                    <span id="lightbox-category" class="category-badge"></span>
+                    <span id="lightbox-date" class="date-badge"></span>
+                </div>
+                <h2 id="lightbox-title"></h2>
+                <div id="lightbox-desc" class="lightbox-description"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

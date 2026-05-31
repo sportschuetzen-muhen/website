@@ -16,15 +16,17 @@
 
   <style>
     :root {
-      --primary-color: #ef4444;
-      --primary-light: #dc2626;
-      --accent-color: #ef4444;
-      --text-dark: #f8fafc;
-      --text-light: #94a3b8;
-      --bg-light: rgba(30, 41, 59, 0.7);
+      --primary-color: #0f3c5c;
+      --primary-light: #0a293f;
+      --accent-color: #dc2626;
+      --text-dark: #1e293b;
+      --text-light: #64748b;
+      --bg-light: #ffffff;
       --success-color: #28a745;
       --error-color: #dc3545;
       --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --glass-border: rgba(15, 58, 93, 0.08);
+      --glass-bg: rgba(255, 255, 255, 0.85);
     }
 
     body {
@@ -33,12 +35,12 @@
 
     /* Feedback Card Container */
     .feedback-card {
-      background: rgba(30, 41, 59, 0.7);
+      background: #ffffff;
       backdrop-filter: blur(10px);
       border-radius: 16px;
       padding: 35px;
       box-shadow: 0 10px 30px rgba(15, 58, 93, 0.05);
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--glass-border);
       max-width: 750px;
       margin: 0 auto;
       animation: fadeIn 0.4s ease;
@@ -146,7 +148,7 @@
     .reason-card-icon {
       font-size: 1.15rem;
       color: var(--text-light);
-      background-color: var(--bg-light);
+      background-color: rgba(15, 60, 92, 0.04);
       width: 34px;
       height: 34px;
       border-radius: 6px;
@@ -337,7 +339,7 @@
     <header class="glass-nav">
         <div class="container nav-content">
             <div class="logo">
-                <span class="red-dot"></span>
+                <img src="assets/logo.png" alt="Sportschützen Muhen Logo" class="logo-img">
                 Sportschützen <span class="text-bold">Muhen</span>
             </div>
             
@@ -354,7 +356,6 @@
                 <a href="schuetzenhaus_vermietung.html">Vermietung</a>
                 <a href="index.html#reports">Berichte</a>
             </nav>
-            <a href="admin.html" class="btn btn-outline admin-btn">Vorstand Login</a>
         </div>
     </header>
 
@@ -556,11 +557,10 @@
                 <h4>Links</h4>
                 <a href="index.html#home">Home</a>
                 <a href="index.html#about">Verein</a>
-                <a href="admin.html">Intern</a>
             </div>
             <div class="footer-contact">
                 <h4>Kontakt</h4>
-                <p>Schützenhaus Muhen<br>Aargau, Schweiz</p>
+                <p><a href="https://maps.google.com/?q=Sportschützen+Muhen+Rütelistrasse+Muhen" target="_blank" style="color: var(--accent-color); font-weight: 600;">📍 Schützenhaus Muhen<br>Rütelistrasse, 5037 Muhen</a></p>
             </div>
         </div>
         <div class="footer-bottom">

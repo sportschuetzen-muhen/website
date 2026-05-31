@@ -267,4 +267,61 @@ async function loadReports() {
 document.addEventListener('DOMContentLoaded', () => {
     loadTermine();
     loadReports();
+    initContactForm();
 });
+
+// AJAX Contact Form Handler (Web3Forms)
+function initContactForm() {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('contact-status');
+    const submitBtn = document.getElementById('contact-submit');
+    if (!form || !status || !submitBtn) return;
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Block consecutive submits
+        submitBtn.disabled = true;
+        const originalBtnText = submitBtn.innerText;
+        submitBtn.innerText = "Wird gesendet...";
+
+        status.style.display = "none";
+        status.className = ""; // clear classes
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            const json = await response.json();
+
+            if (response.status === 200 || json.success) {
+                status.style.display = "block";
+                status.style.backgroundColor = "rgba(16, 185, 129, 0.1)";
+                status.style.color = "#10b981";
+                status.style.border = "1px solid rgba(16, 185, 129, 0.2)";
+                status.innerText = "Vielen Dank! Ihre Nachricht wurde erfolgreich an uns übermittelt. Wir setzen uns bald mit Ihnen in Verbindung.";
+                form.reset();
+            } else {
+                throw new Error(json.message || "Es gab ein Problem beim Übermitteln der Nachricht.");
+            }
+        } catch (error) {
+            console.error("Kontaktformular Fehler:", error);
+            status.style.display = "block";
+            status.style.backgroundColor = "rgba(239, 68, 68, 0.1)";
+            status.style.color = "#ef4444";
+            status.style.border = "1px solid rgba(239, 68, 68, 0.2)";
+            status.innerText = "Fehler: " + (error.message || "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.");
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerText = originalBtnText;
+        }
+    });
+}
+
