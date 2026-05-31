@@ -194,9 +194,21 @@ async function loadReports() {
                 
                 document.getElementById('news-modal-date').innerText = dateStr + ' | ' + r.author;
                 document.getElementById('news-modal-title').innerText = r.title;
-                document.getElementById('news-modal-content').innerHTML = r.content;
                 
-                const imgUrl = r.image || r.imageUrl;
+                // Content + Additional Images Gallery
+                let contentHtml = r.content;
+                if (r.imageUrls && r.imageUrls.length > 1) {
+                    let galleryHtml = '<div style="margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;"><h4 style="color: white; margin-bottom: 15px;">Weitere Fotos</h4><div style="display:flex; gap:15px; overflow-x:auto; padding-bottom:15px;">';
+                    for (let i = 1; i < r.imageUrls.length; i++) {
+                        galleryHtml += `<img src="${r.imageUrls[i]}" style="height:200px; border-radius:12px; object-fit:cover; border: 1px solid rgba(255,255,255,0.1); cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.3);" onclick="window.open(this.src, '_blank')">`;
+                    }
+                    galleryHtml += '</div></div>';
+                    contentHtml += galleryHtml;
+                }
+                
+                document.getElementById('news-modal-content').innerHTML = contentHtml;
+                
+                const imgUrl = (r.imageUrls && r.imageUrls.length > 0) ? r.imageUrls[0] : (r.image || r.imageUrl);
                 const imgEl = document.getElementById('news-modal-image');
                 if (imgUrl) {
                     imgEl.style.backgroundImage = `url('${imgUrl}')`;
@@ -227,8 +239,9 @@ async function loadReports() {
                 excerpt = excerpt.substring(0, 120) + '...';
             }
 
-            const imgHtml = r.image || r.imageUrl 
-                ? `<div class="report-image" style="background-image: url('${r.image || r.imageUrl}'); background-size: cover; background-position: center;"></div>`
+            const coverImgUrl = (r.imageUrls && r.imageUrls.length > 0) ? r.imageUrls[0] : (r.image || r.imageUrl);
+            const imgHtml = coverImgUrl 
+                ? `<div class="report-image" style="background-image: url('${coverImgUrl}'); background-size: cover; background-position: center;"></div>`
                 : `<div class="report-image" style="background: linear-gradient(45deg, #1e293b, #334155); display: flex; align-items: center; justify-content: center; font-size: 2rem;">📰</div>`;
 
             container.innerHTML += `
