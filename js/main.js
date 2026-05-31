@@ -156,7 +156,8 @@ async function loadReports() {
     if (!container) return;
 
     try {
-        const response = await fetch('data/berichte.json');
+        // Cache-Busting durch Timestamp hinzugefügt
+        const response = await fetch('data/berichte.json?v=' + new Date().getTime());
         if (!response.ok) throw new Error('Berichte nicht gefunden');
         
         const reports = await response.json();
@@ -183,12 +184,10 @@ async function loadReports() {
                 excerpt = excerpt.substring(0, 120) + '...';
             }
 
-            const imgHtml = r.imageUrl 
-                ? `<div class="report-image" style="background-image: url('${r.imageUrl}'); background-size: cover; background-position: center;"></div>`
+            const imgHtml = r.image || r.imageUrl 
+                ? `<div class="report-image" style="background-image: url('${r.image || r.imageUrl}'); background-size: cover; background-position: center;"></div>`
                 : `<div class="report-image" style="background: linear-gradient(45deg, #1e293b, #334155); display: flex; align-items: center; justify-content: center; font-size: 2rem;">📰</div>`;
 
-            // Note: For a real app, clicking read-more would open a modal or a separate page with the full content.
-            // For now, we will render it as a card.
             container.innerHTML += `
                 <div class="glass-card report-card">
                     ${imgHtml}
