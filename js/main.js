@@ -165,12 +165,57 @@ async function loadReports() {
             return;
         }
 
+        // Ensure Modal exists in DOM
+        if (!document.getElementById('news-reader-modal')) {
+            const modalHtml = `
+                <div id="news-reader-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(15, 23, 42, 0.95); z-index:9999; overflow-y:auto; padding:20px; backdrop-filter:blur(10px);">
+                    <div style="background:var(--bg-card, #1e293b); max-width:800px; margin:40px auto; border-radius:16px; position:relative; box-shadow:0 25px 50px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
+                        <button onclick="document.getElementById('news-reader-modal').style.display='none'" style="position:absolute; right:20px; top:20px; background:rgba(0,0,0,0.5); border:none; color:white; width:40px; height:40px; border-radius:50%; font-size:1.5rem; cursor:pointer; z-index:10; display:flex; align-items:center; justify-content:center; transition: background 0.3s;" onmouseover="this.style.background='var(--primary-color)'" onmouseout="this.style.background='rgba(0,0,0,0.5)'">&times;</button>
+                        <div id="news-modal-image" style="width:100%; height:350px; background-size:cover; background-position:center; border-radius:16px 16px 0 0; position:relative;">
+                            <div style="position:absolute; bottom:0; left:0; width:100%; height:150px; background:linear-gradient(to top, var(--bg-card, #1e293b), transparent);"></div>
+                        </div>
+                        <div style="padding:40px;">
+                            <span id="news-modal-date" style="color:var(--primary-color, #ef4444); font-weight:600; font-size: 0.9rem; text-transform:uppercase; letter-spacing:1px;"></span>
+                            <h2 id="news-modal-title" style="margin:10px 0 30px 0; font-size:2.5rem; line-height:1.2; color:white;"></h2>
+                            <div id="news-modal-content" style="line-height:1.8; color:rgba(255,255,255,0.85); font-size:1.1rem;"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.insertAdjacentHTML('beforeend', modalHtml);
+            
+            // Global function to open the modal
+            window.openNewsModal = function(index) {
+                const r = window.loadedReports[index];
+                if (!r) return;
+                
+                const dateObj = new Date(r.date);
+                const dateStr = dateObj.toLocaleDateString('de-CH', { day: '2-digit', month: 'long', year: 'numeric' });
+                
+                document.getElementById('news-modal-date').innerText = dateStr + ' | ' + r.author;
+                document.getElementById('news-modal-title').innerText = r.title;
+                document.getElementById('news-modal-content').innerHTML = r.content;
+                
+                const imgUrl = r.image || r.imageUrl;
+                const imgEl = document.getElementById('news-modal-image');
+                if (imgUrl) {
+                    imgEl.style.backgroundImage = `url('${imgUrl}')`;
+                    imgEl.style.display = 'block';
+                } else {
+                    imgEl.style.display = 'none';
+                }
+                
+                document.getElementById('news-reader-modal').style.display = 'block';
+            };
+        }
+
         container.innerHTML = '';
+        window.loadedReports = reports;
 
         // Display up to 6 reports
         const recentReports = reports.slice(0, 6);
 
-        recentReports.forEach(r => {
+        recentReports.forEach((r, index) => {
             const dateObj = new Date(r.date);
             const dateStr = dateObj.toLocaleDateString('de-CH', { day: '2-digit', month: 'long', year: 'numeric' });
             
@@ -193,7 +238,7 @@ async function loadReports() {
                         <span class="report-date" style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem;">${dateStr} | ${r.author}</span>
                         <h3 style="margin: 10px 0;">${r.title}</h3>
                         <p style="color: var(--text-muted); font-size: 0.95rem;">${excerpt}</p>
-                        <button class="read-more btn btn-outline" style="margin-top: 15px; width: 100%; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05);" onclick="alert('In einer vollständigen Implementierung würde sich hier der ganze Bericht öffnen:\\n\\n${r.content.replace(/"/g, '&quot;').replace(/\n/g, ' ')}')">Ganzen Bericht lesen</button>
+                        <button class="read-more btn btn-outline" style="margin-top: 15px; width: 100%; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white;" onclick="window.openNewsModal(${index})">Ganzen Bericht lesen</button>
                     </div>
                 </div>
             `;
