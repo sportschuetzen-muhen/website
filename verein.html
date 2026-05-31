@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verein - Sportschützen Muhen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero {
+            min-height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="glass-nav">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <span class="red-dot"></span>
+                Sportschützen <span class="text-bold">Muhen</span>
+            </a>
+            
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="desktop-nav" id="nav-links">
+                <a href="index.html#home">Willkommen</a>
+                <a href="verein.html" class="active">Verein</a>
+                <a href="index.html#termine">Termine</a>
+                <a href="schuetzenhaus_vermietung.html">Vermietung</a>
+                <a href="index.html#reports">Berichte</a>
+            </nav>
+            <a href="admin.html" class="btn btn-outline admin-btn">Vorstand Login</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in-up">
+            <h1>Unser <span class="text-red">Verein</span></h1>
+            <p>Tradition, Kameradschaft und sportliche Höchstleistungen seit 1919. Erfahren Sie mehr über unsere Geschichte, den Vorstand und unsere erfolgreiche Juniorenförderung.</p>
+        </div>
+    </section>
+
+    <!-- Geschichte (Timeline) -->
+    <section id="geschichte">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unsere <span class="text-red">Geschichte</span></h2>
+                <p>Eine kleine Zeitreise durch die Geschichte der Sportschützen Muhen.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">4. Dezember 1919</span>
+                    <div class="timeline-content">
+                        <h3>Gründung des Vereins</h3>
+                        <p>Acht Männer aus Muhen traten in der Waldeck zusammen und gründeten einen neuen Schiessverein. Ihre Waffe war anfänglich das Flobert (ein Kleinkalibergewehr mit einem Kaliber von 5,6 mm), welches fast in jedem Haus zum Schutz des Federviehs vorhanden war. Der erste Präsident war Gottlieb Lüscher.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">12. März 1929</span>
+                    <div class="timeline-content">
+                        <h3>Namensänderung</h3>
+                        <p>Nachdem man auf 50 Meter umgestellt hatte und das präzisere Langgewehr die oberen Ränge abräumte, änderte man den Vereinsnamen in "Sportschützen Muhen". Kurz darauf folgte 1931 der Kleinkaliberkarabiner als neue, handlichere Waffe.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">1960er Jahre</span>
+                    <div class="timeline-content">
+                        <h3>Die Krise & der Stutzerschreck</h3>
+                        <p>Das Aufkommen des Stutzers löste eine Krise aus, da sich nicht jeder diese teure Waffe leisten konnte. Bisher hatten Stutzerschützen nur kniend geschossen, nun durften sie auch liegend schiessen und dominierten die Ränge. Der Verein reagierte und schaffte eigene Stutzer an, die verliehen wurden.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">1980er Jahre</span>
+                    <div class="timeline-content">
+                        <h3>Nachwuchs-Boom</h3>
+                        <p>Gerhard Künzli baute mit grossem Einsatz das Jungschützenwesen auf. 1980 nahmen stolze 72 Jungschützen teil! Auch die Mädchen mischten hervorragend mit und standen 1981 an der Spitze von interkantonalen Wettkämpfen. Zudem fand 1981 das erste, äusserst erfolgreiche Strohhausschiessen statt (585 Teilnehmer).</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">1982</span>
+                    <div class="timeline-content">
+                        <h3>10-Meter Luftgewehranlage</h3>
+                        <p>Gemeinsam mit den 300-Meter-Schützen wurde eine Luftgewehranlage eingerichtet. Dies ermöglichte ein Wintertraining und bot den Jungen einen idealen Einstieg in den Schiesssport ohne Angst vor Knall und Rückstoss.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">1996 - 1997</span>
+                    <div class="timeline-content">
+                        <h3>Neubau Schützenhaus Rüteli</h3>
+                        <p>Dank dem grossen finanziellen Erfolg des Strohhausschiessens konnte der lang ersehnte Neubau realisiert werden. Mit sehr vielen Fronstunden entstand die moderne Anlage mit 16 Zugscheiben und einer gemütlichen Schützenstube.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2016</span>
+                    <div class="timeline-content">
+                        <h3>Elektronische Trefferanzeige</h3>
+                        <p>Für das kantonale Schützenfest wurde die Infrastruktur weiter aufgerüstet. Die moderne elektronische Trefferanlage von Sius für die 50-m-Distanz wurde installiert.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historische Galerie Placeholder -->
+    <section id="galerie" style="background: rgba(15, 23, 42, 0.4);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Historische <span class="text-red">Fotogalerie</span></h2>
+                <p>Einblicke in die Höhepunkte unserer Vereinsgeschichte.</p>
+            </div>
+            
+            <div class="masonry-grid">
+                <!-- Platzhalter für Bilder, die via Admin hochgeladen/eingepflegt werden können -->
+                <div class="masonry-item">
+                    <div class="masonry-img">📸</div>
+                    <div class="masonry-caption">Erstellung Rüteli (1996-1997)</div>
+                </div>
+                <div class="masonry-item">
+                    <div class="masonry-img" style="height: 300px;">📸</div>
+                    <div class="masonry-caption">Tessin Ausflug (2016)</div>
+                </div>
+                <div class="masonry-item">
+                    <div class="masonry-img">📸</div>
+                    <div class="masonry-caption">Nachwuchs (2002)</div>
+                </div>
+                <div class="masonry-item">
+                    <div class="masonry-img" style="height: 250px;">📸</div>
+                    <div class="masonry-caption">Einbau elektronische Scheiben (2016)</div>
+                </div>
+                <div class="masonry-item">
+                    <div class="masonry-img">📸</div>
+                    <div class="masonry-caption">Kantonales Flims (2018)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nachwuchs -->
+    <section id="nachwuchs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unsere Junioren sind <span class="text-red">unsere Zukunft</span></h2>
+                <p>Nachwuchsförderung (J+S und Schulsport) auf höchstem Niveau.</p>
+            </div>
+            
+            <div class="glass-card mb-4">
+                <p>Jährlich fördern wir unseren Nachwuchs mit einem detaillierten wöchentlichen J+S Trainingsprogramm. Unsere Juniorenausbildner (Andrea Rossi, Marco Fischer und Christiane Keller) bringen den "Kleinen" bei, worauf es ankommt beim Sportschiessen. Unser Sport ist nicht günstig, damit alle die Möglichkeit haben im Juniorenalter einzusteigen, bietet unser Verein entsprechende Unterstützung an. Die sehr speziellen Jacken, Hosen und Schuhe werden zur Verfügung gestellt. Ebenso das Sportgerät und das nötige Zubehör.</p>
+                <p class="mt-4">Unsere Nachwuchsförderung geniesst auf kantonaler und nationaler Ebene ein gutes Ansehen. Unsere Junioren lassen immer wieder durch Podestplätze von sich reden und verstärken das Kantonalkader. Wir sind stolz auf unseren Nachwuchs.</p>
+            </div>
+
+            <div class="grid-4 mt-4">
+                <div class="glass-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Luftgewehr 10m</h3>
+                    <p>Der ideale Einstieg in das Sportschiessen. Geschossen wird in Hallen oder Schiesskellern während der Wintersaison mit Diabolo. Anfangs "stehend aufgelegt", später (ab 13 Jahren) "stehend frei".</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">🏅</div>
+                    <h3>Kleinkaliber 50m</h3>
+                    <p>Die nächste Ausbildungsstufe mit dem Kaliber .22 lr (scharf). Nach "liegend aufgelegt" folgt "liegend frei" und schliesslich das Olympische 3-Stellungsschiessen (Liegend, Kniend, Stehend).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Präsidenten -->
+    <section id="vorstand" style="background: rgba(15, 23, 42, 0.4);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unsere <span class="text-red">Präsidenten</span></h2>
+                <p>Die Köpfe, die den Verein durch die Zeit geführt haben.</p>
+            </div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Jahr</th>
+                        <th>Name</th>
+                        <th>Bemerkung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1919</td><td>Gottlieb Lüscher</td><td>Tonnacker</td></tr>
+                    <tr><td>1924</td><td>Emil Vogel</td><td></td></tr>
+                    <tr><td>1928</td><td>Otto Lüscher-Hochuli</td><td></td></tr>
+                    <tr><td>1936</td><td>Max Eichenberger</td><td></td></tr>
+                    <tr><td>1938</td><td>O. Lüscher-Hochuli</td><td>Ehrenpräsident</td></tr>
+                    <tr><td>1948</td><td>Ernst Arber</td><td></td></tr>
+                    <tr><td>1953</td><td>Max Müller</td><td></td></tr>
+                    <tr><td>1974</td><td>Max Müller</td><td>Ehrenpräsident</td></tr>
+                    <tr><td>1978</td><td>Hans Bäni</td><td>Ehrenpräsident</td></tr>
+                    <tr><td>1990</td><td>Bernhard Hauri</td><td></td></tr>
+                    <tr><td>1997</td><td>Hans Bäni</td><td>Ehrenpräsident</td></tr>
+                    <tr><td>2001</td><td>Roger Haller</td><td></td></tr>
+                    <tr><td>2008</td><td>Hans Bäni</td><td>Ehrenpräsident</td></tr>
+                    <tr><td>2012</td><td>Daniel Berchtold</td><td></td></tr>
+                    <tr><td>2026</td><td>Simon Hediger</td><td>Aktuell</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="red-dot"></span> Sportschützen Muhen
+                </div>
+                <p>Präzision, die verbindet.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <a href="index.html#home">Willkommen</a>
+                <a href="verein.html">Verein</a>
+                <a href="admin.html">Vorstand Intern</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p>Sportschützen Muhen<br>Rütelistrasse<br>5037 Muhen</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sportschützen Muhen. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

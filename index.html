@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportschützen Muhen</title>
+    <meta name="description" content="Offizielle Website der Sportschützen Muhen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="glass-nav">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="red-dot"></span>
+                Sportschützen <span class="text-bold">Muhen</span>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="desktop-nav" id="nav-links">
+                <a href="#home" class="active">Willkommen</a>
+                <a href="verein.html">Verein</a>
+                <a href="#termine">Termine</a>
+                <a href="schuetzenhaus_vermietung.html">Vermietung</a>
+                <a href="#reports">Berichte</a>
+            </nav>
+            <a href="admin.html" class="btn btn-outline admin-btn">Vorstand Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="fade-in-up">Präzision & Tradition <br>in Muhen.</h1>
+                <p class="fade-in-up delay-1">Willkommen bei den Sportschützen Muhen. Entdecken Sie unsere Leidenschaft für den Schiesssport, Kameradschaft und Tradition seit vielen Generationen.</p>
+                <div class="hero-actions fade-in-up delay-2">
+                    <a href="#about" class="btn btn-primary">Unser Verein</a>
+                    <a href="#reports" class="btn btn-secondary">Aktuelle Berichte</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Über <span class="text-red">Uns</span></h2>
+                    <p>Die Sportschützen Muhen vereinen Jung und Alt in einem traditionsreichen und gleichzeitig modernen Verein.</p>
+                </div>
+                <div class="grid-4">
+                    <a href="verein.html#geschichte" class="glass-card">
+                        <div class="card-icon">📜</div>
+                        <h3>Geschichte</h3>
+                        <p>Unsere Tradition und Historie.</p>
+                    </a>
+                    <a href="verein.html#vorstand" class="glass-card">
+                        <div class="card-icon">🤝</div>
+                        <h3>Vorstand</h3>
+                        <p>Die Köpfe hinter dem Verein.</p>
+                    </a>
+                    <a href="verein.html#nachwuchs" class="glass-card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Nachwuchs</h3>
+                        <p>Unsere Juniorenförderung.</p>
+                    </a>
+                    <a href="verein.html#gedenken" class="glass-card">
+                        <div class="card-icon">🕯️</div>
+                        <h3>Wir Gedenken</h3>
+                        <p>In ehrendem Andenken.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="vermietung" class="vermietung-section">
+            <div class="container">
+                <div class="vermietung-banner">
+                    <div class="vermietung-content">
+                        <h2>Schützenhaus <span class="text-red">mieten</span> in Muhen (Aargau)</h2>
+                        <p>Suchen Sie eine gemütliche und gut ausgestattete Location für Ihre Feier, Tagung oder Vereinsanlass? Unser Schützenhaus bietet Platz für ca. 40 Personen, eine voll ausgestattete Küche und vieles mehr!</p>
+                        <a href="schuetzenhaus_vermietung.html" class="btn btn-primary mt-4">Details & Kalender ansehen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="termine" class="termine-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nächste <span class="text-red">Termine</span></h2>
+                    <p>Was steht als nächstes an? Hier finden Sie unsere kommenden Vereinsanlässe und Schiessdaten.</p>
+                </div>
+                <div class="termine-list" id="termine-container">
+                    <div class="loading-spinner">Termine werden geladen...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reports" class="reports-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Neuste <span class="text-red">Berichte</span></h2>
+                    <p>Hier publizieren wir automatisiert unsere neusten Aktivitäten und Wettkampfresultate.</p>
+                </div>
+                <div class="reports-grid" id="reports-container">
+                    <!-- Platzhalter für Berichte -->
+                    <div class="glass-card report-card">
+                        <div class="report-image" style="background: linear-gradient(45deg, #1e293b, #334155);"></div>
+                        <div class="report-content">
+                            <span class="report-date">31. Mai 2026</span>
+                            <h3>Neue Website online</h3>
+                            <p>Die Sportschützen Muhen präsentieren ihre brandneue Website mit integriertem KI-Berichtsgenerator.</p>
+                            <a href="#" class="read-more">Weiterlesen →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="red-dot"></span> Sportschützen Muhen
+                </div>
+                <p>Präzision, die verbindet.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <a href="#home">Willkommen</a>
+                <a href="verein.html">Verein</a>
+                <a href="admin.html">Vorstand Intern</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p>Schützenhaus Muhen<br>Aargau, Schweiz</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sportschützen Muhen. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
