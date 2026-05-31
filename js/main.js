@@ -148,8 +148,6 @@ async function loadTermine() {
     }
 }
 
-}
-
 // Fetch Reports
 async function loadReports() {
     const container = document.getElementById('reports-container');
