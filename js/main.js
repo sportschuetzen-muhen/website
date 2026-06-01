@@ -19,6 +19,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             
             // Close mobile menu if open
             document.getElementById('nav-links').classList.remove('open');
+            const toggle = document.getElementById('mobile-toggle');
+            if (toggle) toggle.classList.remove('active');
         }
     });
 });
@@ -30,6 +32,7 @@ const navLinks = document.getElementById('nav-links');
 if (mobileToggle && navLinks) {
     mobileToggle.addEventListener('click', () => {
         navLinks.classList.toggle('open');
+        mobileToggle.classList.toggle('active');
     });
 }
 
@@ -168,16 +171,14 @@ async function loadReports() {
         // Ensure Modal exists in DOM
         if (!document.getElementById('news-reader-modal')) {
             const modalHtml = `
-                <div id="news-reader-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(15, 23, 42, 0.95); z-index:9999; overflow-y:auto; padding:20px; backdrop-filter:blur(10px);">
-                    <div style="background:var(--bg-card, #1e293b); max-width:800px; margin:40px auto; border-radius:16px; position:relative; box-shadow:0 25px 50px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
-                        <button onclick="document.getElementById('news-reader-modal').style.display='none'" style="position:absolute; right:20px; top:20px; background:rgba(0,0,0,0.5); border:none; color:white; width:40px; height:40px; border-radius:50%; font-size:1.5rem; cursor:pointer; z-index:10; display:flex; align-items:center; justify-content:center; transition: background 0.3s;" onmouseover="this.style.background='var(--primary-color)'" onmouseout="this.style.background='rgba(0,0,0,0.5)'">&times;</button>
-                        <div id="news-modal-image" style="width:100%; height:350px; background-size:cover; background-position:center; border-radius:16px 16px 0 0; position:relative;">
-                            <div style="position:absolute; bottom:0; left:0; width:100%; height:150px; background:linear-gradient(to top, var(--bg-card, #1e293b), transparent);"></div>
-                        </div>
-                        <div style="padding:40px;">
-                            <span id="news-modal-date" style="color:var(--primary-color, #ef4444); font-weight:600; font-size: 0.9rem; text-transform:uppercase; letter-spacing:1px;"></span>
-                            <h2 id="news-modal-title" style="margin:10px 0 30px 0; font-size:2.5rem; line-height:1.2; color:white;"></h2>
-                            <div id="news-modal-content" style="line-height:1.8; color:rgba(255,255,255,0.85); font-size:1.1rem;"></div>
+                <div id="news-reader-modal" class="news-modal-overlay">
+                    <div class="news-modal-content">
+                        <button class="news-modal-close" onclick="document.getElementById('news-reader-modal').style.display='none'">&times;</button>
+                        <div id="news-modal-image" class="news-modal-img"></div>
+                        <div class="news-modal-body">
+                            <span id="news-modal-date" style="color:var(--accent-color); font-weight:600; font-size: 0.9rem; text-transform:uppercase; letter-spacing:1px;"></span>
+                            <h2 id="news-modal-title" style="margin:10px 0 20px 0; font-size:2.2rem; line-height:1.2; color:var(--primary-color);"></h2>
+                            <div id="news-modal-content" style="line-height:1.8; color:var(--text-light); font-size:1.05rem;"></div>
                         </div>
                     </div>
                 </div>
@@ -198,9 +199,9 @@ async function loadReports() {
                 // Content + Additional Images Gallery
                 let contentHtml = r.content;
                 if (r.imageUrls && r.imageUrls.length > 1) {
-                    let galleryHtml = '<div style="margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;"><h4 style="color: white; margin-bottom: 15px;">Weitere Fotos</h4><div style="display:flex; gap:15px; overflow-x:auto; padding-bottom:15px;">';
+                    let galleryHtml = '<div style="margin-top: 30px; border-top: 1px solid var(--glass-border); padding-top: 20px;"><h4 style="color: var(--primary-color); margin-bottom: 15px; font-weight: 800;">Weitere Fotos</h4><div style="display:flex; gap:15px; overflow-x:auto; padding-bottom:15px;">';
                     for (let i = 1; i < r.imageUrls.length; i++) {
-                        galleryHtml += `<img src="${r.imageUrls[i]}" style="height:200px; border-radius:12px; object-fit:cover; border: 1px solid rgba(255,255,255,0.1); cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.3);" onclick="window.open(this.src, '_blank')">`;
+                        galleryHtml += `<img src="${r.imageUrls[i]}" style="height:150px; border-radius:8px; object-fit:cover; border: 1px solid var(--glass-border); cursor:pointer; box-shadow: 0 4px 6px rgba(15,58,93,0.06);" onclick="window.open(this.src, '_blank')">`;
                     }
                     galleryHtml += '</div></div>';
                     contentHtml += galleryHtml;
@@ -217,7 +218,7 @@ async function loadReports() {
                     imgEl.style.display = 'none';
                 }
                 
-                document.getElementById('news-reader-modal').style.display = 'block';
+                document.getElementById('news-reader-modal').style.display = 'flex';
             };
         }
 

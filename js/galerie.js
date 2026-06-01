@@ -153,6 +153,37 @@ function openLightbox(item) {
     category.className = `category-badge badge-${item.category}`;
     date.textContent = item.date;
 
+    // Render detected persons (internal archive)
+    const personsContainer = document.getElementById("lightbox-persons");
+    if (personsContainer) {
+        if (item.detectedPersons && item.detectedPersons.length > 0) {
+            personsContainer.innerHTML = `
+                <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.85rem;">
+                    <strong style="color: var(--primary-color); display: block; margin-bottom: 0.35rem;">Personen (Internes Archiv):</strong>
+                    <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                        ${item.detectedPersons.map(person => `<span class="person-tag" style="background: rgba(15, 60, 92, 0.08); color: var(--primary-color); border: 1px solid rgba(15, 60, 92, 0.15); padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">👤 ${person}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            personsContainer.style.display = "block";
+        } else {
+            personsContainer.innerHTML = "";
+            personsContainer.style.display = "none";
+        }
+    }
+
+    // Render tags
+    const tagsContainer = document.getElementById("lightbox-tags");
+    if (tagsContainer) {
+        if (item.tags && item.tags.length > 0) {
+            tagsContainer.innerHTML = item.tags.map(tag => `<span style="background: rgba(239, 68, 68, 0.06); color: var(--accent-color); border: 1px solid rgba(239, 68, 68, 0.12); font-size: 0.7rem; padding: 2px 7px; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">#${tag}</span>`).join(' ');
+            tagsContainer.style.display = "flex";
+        } else {
+            tagsContainer.innerHTML = "";
+            tagsContainer.style.display = "none";
+        }
+    }
+
     lightbox.style.display = "flex";
     document.body.style.overflow = "hidden"; // disable background scrolling
 }

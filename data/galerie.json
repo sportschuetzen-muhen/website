@@ -5,7 +5,9 @@
     "category": "geschichte",
     "date": "1981",
     "description": "Das erste Strohhausschiessen im Jahr 1981 war ein Meilenstein für unseren Verein. Unter der Leitung unseres Nachwuchsförderers Gerhard Künzli und des Vorstands nahmen stolze 585 Schützinnen und Schützen teil. Dieser Anlass brachte nicht nur grosse sportliche Erfolge, sondern legte auch das finanzielle Fundament für spätere Grossprojekte wie den Neubau der Schiessanlage Rüteli. Die Stimmung war hervorragend und die Kameradschaft stand an oberster Stelle.",
-    "imageUrl": "assets/galerie/strohhausschiessen_1981.jpg"
+    "imageUrl": "assets/galerie/strohhausschiessen_1981.jpg",
+    "detectedPersons": [],
+    "tags": []
   },
   {
     "id": "rueteli_1996",
@@ -13,7 +15,9 @@
     "category": "geschichte",
     "date": "1996-1997",
     "description": "Nach jahrelanger Planung und mit unglaublichem Engagement der Vereinsmitglieder wurde in den Jahren 1996 und 1997 das neue Schützenhaus Rüteli gebaut. In über 3000 Stunden ehrenamtlicher Fronarbeit schufen die Sportschützen Muhen eine der modernsten Kleinkaliber-Schiessanlagen der Region. Auf dem Foto sieht man die fleissigen Helfer beim Aufrichten des Dachstuhls und den Rohbauarbeiten bei bestem Wetter.",
-    "imageUrl": "assets/galerie/rueteli_neubau.jpg"
+    "imageUrl": "assets/galerie/rueteli_neubau.jpg",
+    "detectedPersons": [],
+    "tags": []
   },
   {
     "id": "nachwuchs_2002",
@@ -21,7 +25,9 @@
     "category": "nachwuchs",
     "date": "Winter 2002",
     "description": "Erfolgreiche Nachwuchsförderung im Schiesskeller. Unsere Junioren üben sich in Konzentration und Präzision mit dem Luftgewehr auf der 10-Meter-Distanz. Dank der optimalen Betreuung durch ausgebildete J+S-Leiter lernen die Jugendlichen von Grund auf die richtige Körperbeherrschung, Atemtechnik und den mentalen Fokus. Der Verein stellt die gesamte Ausrüstung wie Schiessjacken, Handschuhe und Gewehre zur Verfügung.",
-    "imageUrl": "assets/galerie/nachwuchs_2002.jpg"
+    "imageUrl": "assets/galerie/nachwuchs_2002.jpg",
+    "detectedPersons": [],
+    "tags": []
   },
   {
     "id": "sius_2016",
@@ -29,7 +35,9 @@
     "category": "geschichte",
     "date": "Frühling 2016",
     "description": "Ein grosser Schritt in die digitale Zukunft: Im Jahr 2016 installierte der Verein die hochmoderne elektronische Trefferanzeige der Firma SIUS auf allen 50-Meter-Scheiben. Statt manueller Kurbeln und Scheibenzuganlagen werden die Schüsse nun vollautomatisch mittels Schallmessung auf Monitoren am Schützenplatz angezeigt. Dies optimiert den Trainingsbetrieb und ermöglichte die Durchführung von kantonalen Schützenfesten.",
-    "imageUrl": "assets/galerie/sius_2016.jpg"
+    "imageUrl": "assets/galerie/sius_2016.jpg",
+    "detectedPersons": [],
+    "tags": []
   },
   {
     "id": "tessin_2016",
@@ -37,7 +45,9 @@
     "category": "events",
     "date": "Herbst 2016",
     "description": "Kameradschaft wird bei den Sportschützen Muhen grossgeschrieben. Unser zweitägiger Vereinsausflug im Herbst 2016 führte eine gut gelaunte Delegation ins sonnige Tessin. Neben einer gemütlichen Wanderung durch die Weinberge und einer Besichtigung der Burgen von Bellinzona stand natürlich das gesellige Beisammensein bei traditioneller Polenta und Tessiner Merlot im Vordergrund. Ein unvergessliches Wochenende für Jung und Alt.",
-    "imageUrl": "assets/galerie/tessin_2016.jpg"
+    "imageUrl": "assets/galerie/tessin_2016.jpg",
+    "detectedPersons": [],
+    "tags": []
   },
   {
     "id": "flims_2018",
@@ -45,6 +55,1852 @@
     "category": "events",
     "date": "Juli 2018",
     "description": "Mit einer starken Truppe reisten die Sportschützen Muhen im Sommer 2018 ans Bündner Kantonalschützenfest nach Flims. Auf der wunderschönen Anlage im Bergkanton konnten unsere Schützinnen und Schützen hervorragende Resultate erzielen und zahlreiche Kranzauszeichnungen mit nach Hause nehmen. Das Foto zeigt das Team stolz nach dem erfolgreichen Wettkampftag vor dem Panorama der Bündner Alpen.",
-    "imageUrl": "assets/galerie/flims_2018.jpg"
+    "imageUrl": "assets/galerie/flims_2018.jpg",
+    "detectedPersons": [],
+    "tags": []
+  },
+  {
+    "id": "2015schiessvereinmuhen_54352818184_o",
+    "title": "Stolze Vereinsdelegation im sonnigen Muhen",
+    "category": "events",
+    "date": "Herbst 2015",
+    "description": "Unsere Vereinsmitglieder präsentieren sich gut gelaunt und in einheitlicher Clubkleidung für ein starkes Gruppenfoto. Mit der stolz getragenen Vereinsfahne im Vordergrund wird der gelebte Zusammenhalt und die Freude am Schiesssport perfekt zum Ausdruck gebracht. Solche Momente stärken die unverzichtbare Kameradschaft innerhalb der Sportschützen Muhen.",
+    "imageUrl": "assets/galerie/2015schiessvereinmuhen_54352818184_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger",
+      "Daniel Hunziker",
+      "Christiane Keller",
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Vereinsfoto",
+      "Kameradschaft",
+      "Vereinsjacke",
+      "Gruppenbild",
+      "Fahnenträger",
+      "Aussenaufnahme"
+    ]
+  },
+  {
+    "id": "20161008_095811_54353028070_o",
+    "title": "Grosser Arbeitseinsatz beim Schützenhaus Muhen",
+    "category": "events",
+    "date": "Herbst 2019",
+    "description": "Gemeinsam packen die Vereinsmitglieder beim herbstlichen Arbeitseinsatz rund um das Schützenhaus an. Mit Anhänger und Mulde wird fleissig aufgeräumt, um die Infrastruktur für die kommenden Saisons instand zu halten. Solche Einsätze zeigen die starke Kameradschaft und den grossen Zusammenhalt innerhalb der Sportschützen Muhen.",
+    "imageUrl": "assets/galerie/20161008_095811_54353028070_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Arbeitseinsatz",
+      "Schützenhaus",
+      "Unterhalt",
+      "Kameradschaft",
+      "Eigenleistung"
+    ]
+  },
+  {
+    "id": "2015schtzenmuhen_54351729337_o",
+    "title": "Vereinsfoto der Sportschützen Muhen",
+    "category": "events",
+    "date": "2010er Jahre",
+    "description": "Die Mitglieder der Sportschützen Muhen präsentieren sich in ihrer einheitlichen Vereinskleidung vor der Kulisse des Schützenhauses. Dieses Gruppenbild unterstreicht die gelebte Kameradschaft und den starken Zusammenhalt unseres Vereins. Die Freude an der gemeinsamen sportlichen Leidenschaft ist in jedem Gesicht spürbar.",
+    "imageUrl": "assets/galerie/2015schtzenmuhen_54351729337_o.jpg",
+    "detectedPersons": [
+      "Daniel Hunziker",
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Gruppenbild",
+      "Vereinsleben",
+      "Sportschützen Muhen",
+      "Kameradschaft",
+      "Vereinsmitglieder"
+    ]
+  },
+  {
+    "id": "2015sportschtzenmuhen_54352840143_o",
+    "title": "Gemeinsamer Auftritt der Sportschützen Muhen",
+    "category": "events",
+    "date": "2010er Jahre",
+    "description": "Die Sportschützen Muhen präsentieren sich in ihren charakteristischen Vereinsfarben bei einem gemeinsamen Anlass. Dieses Bild spiegelt den starken Zusammenhalt und den grossen Erfahrungsaustausch zwischen den verschiedenen Generationen unseres Vereins wider.",
+    "imageUrl": "assets/galerie/2015sportschtzenmuhen_54352840143_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger",
+      "Daniel Hunziker",
+      "Marco Fischer",
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Vereinsleben",
+      "Kameradschaft",
+      "Gruppenbild",
+      "Muhen",
+      "Sportschützen"
+    ]
+  },
+  {
+    "id": "20160703_112231_54352618531_o",
+    "title": "Starke Kameradschaft unter Vereinskollegen",
+    "category": "events",
+    "date": "2023",
+    "description": "Zwei unserer engagierten Vereinsmitglieder geniessen die gesellige Atmosphäre bei einem Anlass der Sportschützen Muhen. Das strahlende Lächeln unterstreicht den starken Zusammenhalt und die Freude am gemeinsamen Vereinsleben.",
+    "imageUrl": "assets/galerie/20160703_112231_54352618531_o.jpg",
+    "detectedPersons": [
+      "Daniel Berchtold",
+      "Simon Hediger"
+    ],
+    "tags": [
+      "Vereinsleben",
+      "Kameradschaft",
+      "Sportschützen Muhen",
+      "Gemeinschaft"
+    ],
+    "isAiReference": true
+  },
+  {
+    "id": "20160703_112920_54352618916_o",
+    "title": "Gesellige Runde beim Sportschützen Muhen",
+    "category": "events",
+    "date": "2023",
+    "description": "Nach einem erfolgreichen Wettkampf geniessen die Vereinsmitglieder die gemeinsame Zeit bei einem Glas Wein. Dieses Bild fängt die herzliche Kameradschaft und den starken Zusammenhalt innerhalb der Sportschützen Muhen perfekt ein. Momente wie dieser stärken den Teamgeist jenseits des Schiessstandes.",
+    "imageUrl": "assets/galerie/20160703_112920_54352618916_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger",
+      "Olivia Rossi",
+      "Daniel Hunziker"
+    ],
+    "tags": [
+      "Kameradschaft",
+      "Vereinsleben",
+      "Geselligkeit",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20160703_113112_54351734192_o",
+    "title": "Kameradschaftliche Momente nach dem Wettkampf",
+    "category": "events",
+    "date": "2023",
+    "description": "Nach einem intensiven Schiesstag lassen unsere Vereinsmitglieder den Erfolg gemeinsam ausklingen. Dieses Bild zeigt die gelebte Kameradschaft und die entspannte Atmosphäre, die unsere Gemeinschaft auszeichnet.",
+    "imageUrl": "assets/galerie/20160703_113112_54351734192_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger",
+      "Daniel Hunziker"
+    ],
+    "tags": [
+      "Vereinsleben",
+      "Kameradschaft",
+      "Sportschützen Muhen",
+      "Geselligkeit"
+    ]
+  },
+  {
+    "id": "20160703_125006_54353023570_o",
+    "title": "Beste Stimmung auf dem Weg",
+    "category": "events",
+    "date": "2022",
+    "description": "Die Sportschützen Muhen auf dem Weg zu einem spannenden Wettkampf. Gemeinsam im Vereinsbus zeigt sich die grosse Kameradschaft, die über den Schiessstand hinausgeht. Ein herzliches Lachen verbindet alle Generationen unseres Vereins.",
+    "imageUrl": "assets/galerie/20160703_125006_54353023570_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli",
+      "Simon Hediger"
+    ],
+    "tags": [
+      "Kameradschaft",
+      "Vereinsausflug",
+      "Muhen",
+      "Sportschützen",
+      "Teamgeist"
+    ],
+    "isAiReference": true
+  },
+  {
+    "id": "20160703_125059_54352618926_o",
+    "title": "Gemeinsame Anreise zum Wettkampf",
+    "category": "events",
+    "date": "2023",
+    "description": "Die gute Stimmung ist auf dem Weg zum Schiessstand deutlich spürbar. Solche Momente stärken den Zusammenhalt innerhalb der Sportschützen Muhen und bilden die Basis für unsere gemeinsamen sportlichen Erfolge. Eine fröhliche Truppe in Vereinsfarben freut sich auf einen spannenden Wettkampf.",
+    "imageUrl": "assets/galerie/20160703_125059_54352618926_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger",
+      "Daniel Hunziker",
+      "Gerhard Künzli",
+      "Olivia Rossi"
+    ],
+    "tags": [
+      "Vereinsleben",
+      "Kameradschaft",
+      "Sportschützen Muhen",
+      "Anreise"
+    ]
+  },
+  {
+    "id": "20160929_191631_54352622651_o",
+    "title": "Unterhalt für unsere Schiessanlage",
+    "category": "events",
+    "date": "2023",
+    "description": "Engagierte Mitglieder setzen sich für den Werterhalt unserer Infrastruktur ein. Durch tatkräftige Mithilfe bei den Unterhaltsarbeiten sorgen wir für ein optimales Umfeld für den Schiesssport. Kameradschaft und Einsatzbereitschaft bilden das Fundament unseres Vereinslebens.",
+    "imageUrl": "assets/galerie/20160929_191631_54352622651_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Unterhalt",
+      "Vereinsleben",
+      "Schiessstand"
+    ]
+  },
+  {
+    "id": "20161008_095808_54352849223_o",
+    "title": "Vereinsareal: Einsatz für Ordnung",
+    "category": "events",
+    "date": "2023",
+    "description": "Auch bei den Sportschützen Muhen gehört ein gepflegtes Vereinsgelände dazu. Im Rahmen einer Aufräumaktion wurde Material fachgerecht entsorgt, um die Umgebung für den Schiessbetrieb vorzubereiten. Ein gelungener Arbeitseinsatz zeigt den starken Zusammenhalt und das Engagement unserer Mitglieder.",
+    "imageUrl": "assets/galerie/20161008_095808_54352849223_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Arbeitseinsatz",
+      "Vereinsgelände",
+      "Ordnung",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161008_095814_54351738617_o",
+    "title": "Gemeinsam die Anlage in Schuss halten",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein engagierter Einsatz bei den Sportschützen Muhen zeigt einmal mehr den starken Zusammenhalt im Verein. Auch bei Unterhaltsarbeiten rund um unser Schützenhaus packen alle tatkräftig mit an. Unsere langjährige Erfahrung bildet das Fundament für eine gepflegte Sportstätte.",
+    "imageUrl": "assets/galerie/20161008_095814_54351738617_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Unterhalt",
+      "Vereinsleben",
+      "Kameradschaft",
+      "Schützenhaus"
+    ]
+  },
+  {
+    "id": "20161008_101917_54352827339_o",
+    "title": "Abschied von alter Schiesstechnik",
+    "category": "geschichte",
+    "date": "2024",
+    "description": "Ein Blick hinter die Kulissen zeigt den fachgerechten Rückbau unserer alten Schiessanlage. Während wir Platz für Modernisierungen schaffen, bewahren wir die Erinnerungen an viele sportliche Erfolge. Die Erneuerung der Infrastruktur ist ein wichtiger Schritt in die Zukunft unseres Vereins.",
+    "imageUrl": "assets/galerie/20161008_101917_54352827339_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Erneuerung",
+      "Schiessanlage",
+      "Rückbau"
+    ]
+  },
+  {
+    "id": "20161021_111715_54351738142_o",
+    "title": "Moderne Schiessanlage in Muhen",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Blick auf die neue Infrastruktur unserer Schiessanlage. Diese moderne Anlage bildet das Fundament für unsere sportliche Präzision und den Trainingsbetrieb der Sportschützen Muhen.",
+    "imageUrl": "assets/galerie/20161021_111715_54351738142_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessanlage",
+      "Infrastruktur",
+      "Muhen",
+      "Schiesssport"
+    ]
+  },
+  {
+    "id": "20161021_112335_54352827329_o",
+    "title": "Blick auf die 50m Schiessanlage",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Blick über das Gelände auf unsere moderne 50m Schiessanlage. Diese Infrastruktur bildet das Herzstück unseres sportlichen Trainings und fördert die Präzision unserer Schützen. Die Anlage ist bestens für kommende Herausforderungen vorbereitet.",
+    "imageUrl": "assets/galerie/20161021_112335_54352827329_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessanlage",
+      "50m",
+      "Infrastruktur",
+      "Training",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161022_135709_54352622721_o",
+    "title": "Blick auf die Schiessanlage Muhen",
+    "category": "events",
+    "date": "2023",
+    "description": "Der Blick durch die Schiessanlage offenbart die technische Präzision, die unseren Sport auszeichnet. Hier wird die Konzentration auf die Scheiben im Hintergrund zur Routine für unsere Vereinsmitglieder. Eine gepflegte Anlage bildet die Basis für erfolgreiche Trainingsstunden und kameradschaftliche Treffen.",
+    "imageUrl": "assets/galerie/20161022_135709_54352622721_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessanlage",
+      "Technik",
+      "Sportschützen Muhen",
+      "Präzision",
+      "Infrastruktur"
+    ]
+  },
+  {
+    "id": "20161022_140628_54353028030_o",
+    "title": "Blick auf den Muhener Schiessstand",
+    "category": "events",
+    "date": "2024",
+    "description": "Ein Blick aus dem gedeckten Schiessstand auf das grüne Gelände, der die typische Atmosphäre unserer Trainingsanlage einfängt. Die Sponsorentafeln unterstreichen die wichtige Verbundenheit zwischen lokalen Betrieben und unserem Verein. Hier wird durch kontinuierliches Training die Basis für sportliche Präzision gelegt.",
+    "imageUrl": "assets/galerie/20161022_140628_54353028030_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessstand",
+      "Sponsoring",
+      "Infrastruktur",
+      "Muhen",
+      "Sportschützen"
+    ]
+  },
+  {
+    "id": "20161022_140634_54353027565_o",
+    "title": "Bereit für das nächste Training",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Blick auf unsere gepflegten Schiessstände in Muhen, die bereit für konzentrierte Trainingseinheiten stehen. Hier vereinen sich technische Präzision und sportlicher Fokus in einer professionellen Umgebung. Ein Ort, an dem sich unsere Mitglieder auf ihre Wettkämpfe vorbereiten.",
+    "imageUrl": "assets/galerie/20161022_140634_54353027565_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessstand",
+      "Muhen",
+      "Vereinsleben",
+      "Training",
+      "Gewehr 50m"
+    ]
+  },
+  {
+    "id": "20161024_133410_54351738602_o",
+    "title": "Vorbereitungen für den Schiessbetrieb",
+    "category": "events",
+    "date": "2023",
+    "description": "In unserem Schützenstand laufen die Vorbereitungen für die kommende Saison auf Hochtouren. Die sorgfältige Wartung und Vorbereitung der elektronischen Trefferanzeigen ist essenziell für einen präzisen und reibungslosen Schiessbetrieb. Unser Team arbeitet gemeinsam daran, die Infrastruktur für unsere Mitglieder optimal in Schuss zu halten.",
+    "imageUrl": "assets/galerie/20161024_133410_54351738602_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Wartung",
+      "Schiessstand",
+      "Vorbereitung",
+      "Technik"
+    ]
+  },
+  {
+    "id": "20161024_133420_54352827294_o",
+    "title": "Moderne Ausrüstung für den Schiessstand",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Blick hinter die Kulissen zeigt die Vorbereitungen zur Modernisierung unserer Anlage. Neue technische Komponenten von Sius warten darauf, installiert zu werden, um den Schützen eine noch präzisere Trefferanzeige zu ermöglichen. Dies ist ein wichtiger Schritt für die Zukunft und den Trainingsbetrieb der Sportschützen Muhen.",
+    "imageUrl": "assets/galerie/20161024_133420_54352827294_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Technik",
+      "Modernisierung",
+      "Schiessstand",
+      "Sius",
+      "Infrastruktur"
+    ]
+  },
+  {
+    "id": "20161024_133432_54352849158_o",
+    "title": "Moderne SIUS-Anzeigesysteme im Einsatz",
+    "category": "events",
+    "date": "2024",
+    "description": "Präzision beginnt bei der Technik. Hier sind die modernen SIUS-Anzeigemonitore zu sehen, die unseren Schützen in Muhen eine exakte Trefferauswertung ermöglichen. Diese Installation unterstreicht unseren Anspruch an eine professionelle Infrastruktur für den Schiesssport.",
+    "imageUrl": "assets/galerie/20161024_133432_54352849158_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Technik",
+      "Infrastruktur",
+      "Schiessstand",
+      "SIUS",
+      "Präzision"
+    ]
+  },
+  {
+    "id": "20161025_104007_54352849143_o",
+    "title": "Präzisionstechnik am Schiessstand",
+    "category": "events",
+    "date": "2023",
+    "description": "Technik ist ein wesentlicher Bestandteil unseres modernen Schiessbetriebs. Ein Mitglied wartet gewissenhaft die Sius-Anzeigegeräte, um jederzeit präzise Ergebnisse für unsere Schützen zu gewährleisten. Diese Sorgfalt unterstreicht den hohen Standard und die Professionalität, die im Sportschützen Muhen gelebt wird.",
+    "imageUrl": "assets/galerie/20161025_104007_54352849143_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessstand",
+      "Technik",
+      "Sius",
+      "Wartung",
+      "Präzision"
+    ]
+  },
+  {
+    "id": "20161025_104042_54352849138_o",
+    "title": "Präzisionstechnik für den Schiessstand",
+    "category": "events",
+    "date": "2023",
+    "description": "Die Installation moderner Sius-Anzeigegeräte erfordert höchste Konzentration und handwerkliches Geschick. Mit dieser technischen Aufrüstung sichert der Verein die sportliche Präzision für kommende Wettkämpfe und das Training. Gerhard Künzli sorgt hier mit viel Erfahrung dafür, dass unsere Infrastruktur auf dem neuesten Stand bleibt.",
+    "imageUrl": "assets/galerie/20161025_104042_54352849138_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Technik",
+      "Sius",
+      "Infrastruktur",
+      "Vereinsarbeit",
+      "Schiessstand"
+    ]
+  },
+  {
+    "id": "20161025_104526_54352623166_o",
+    "title": "Technischer Einsatz an der Anlage",
+    "category": "events",
+    "date": "2023",
+    "description": "Hinter den Kulissen wird an der elektronischen Trefferanzeige gearbeitet, um einen reibungslosen Schiessbetrieb zu gewährleisten. Präzision endet bei uns nicht beim Abzug, sondern beginnt bereits bei der sorgfältigen Wartung der technischen Infrastruktur. Solche Einsätze zeigen das grosse Engagement unserer Mitglieder für den Verein.",
+    "imageUrl": "assets/galerie/20161025_104526_54352623166_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Technik",
+      "Wartung",
+      "Infrastruktur",
+      "Schiessanlage",
+      "Hinter den Kulissen"
+    ]
+  },
+  {
+    "id": "20161025_110006_54352623156_o",
+    "title": "Präzision bei der Installation",
+    "category": "events",
+    "date": "2024",
+    "description": "Auch hinter den Kulissen ist bei den Sportschützen Muhen höchste Sorgfalt gefragt. Ein Vereinsmitglied sorgt mit gezielten Handgriffen für eine ordentliche Verkabelung unserer elektronischen Anlage. Nur mit einer intakten Infrastruktur gelingen uns am Stand sportliche Höchstleistungen.",
+    "imageUrl": "assets/galerie/20161025_110006_54352623156_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Technik",
+      "Instandhaltung",
+      "Vereinsleben",
+      "Präzision"
+    ]
+  },
+  {
+    "id": "20161026_150826_54352827254_o",
+    "title": "Modernisierung unserer Schiessanlage",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Blick auf die Installation modernster elektronischer Trefferanzeigen an unserem Schiessstand. Diese technische Aufrüstung unterstreicht unser Engagement für Präzision und den Fortschritt im Schiesssport. Sie sorgt für faire Wettkampfbedingungen und optimale Trainingsmöglichkeiten für unsere Vereinsmitglieder.",
+    "imageUrl": "assets/galerie/20161026_150826_54352827254_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Modernisierung",
+      "Schiessstand",
+      "Technik",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161026_150834_54351738507_o",
+    "title": "Moderne SIUS-Trefferanzeige im Unterhalt",
+    "category": "events",
+    "date": "2023",
+    "description": "Präzision beginnt bei der Technik. Hier wird eine SIUS Hybrid Score Anlage gewartet, um auch in Zukunft für faire und exakte Wettkampfbedingungen auf unserem Schiessstand zu sorgen. Ein Blick hinter die Kulissen unserer technischen Infrastruktur.",
+    "imageUrl": "assets/galerie/20161026_150834_54351738507_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "SIUS",
+      "Technik",
+      "Wartung",
+      "Schiessstand",
+      "Infrastruktur"
+    ]
+  },
+  {
+    "id": "20161026_150906_54352623121_o",
+    "title": "Wartungsarbeiten an der Schiessanlage",
+    "category": "events",
+    "date": "Herbst 2023",
+    "description": "Ein engagiertes Mitglied führt bei herbstlichem Wetter wichtige Unterhaltsarbeiten an den Scheibenanlagen durch. Diese handwerkliche Präzision stellt sicher, dass unsere Sportler auch in der kommenden Saison unter besten Bedingungen trainieren können. Ein wichtiger Beitrag zum reibungslosen Vereinsbetrieb.",
+    "imageUrl": "assets/galerie/20161026_150906_54352623121_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger"
+    ],
+    "tags": [
+      "Wartung",
+      "Infrastruktur",
+      "Vereinsleben",
+      "Sportschützen Muhen",
+      "Engagement"
+    ]
+  },
+  {
+    "id": "20161026_151720_54352849078_o",
+    "title": "Moderne SIUS-Trefferanzeige im Einsatz",
+    "category": "events",
+    "date": "2020er Jahre",
+    "description": "Präzisionstechnik trifft auf Schiesssport: Die installierte SIUS-Anlage garantiert bei unseren Schiessen eine exakte Auswertung. Diese hochmoderne Infrastruktur bildet das Rückgrat unseres Vereinsbetriebs und sichert sportliche Höchstleistungen auf dem Schiessstand.",
+    "imageUrl": "assets/galerie/20161026_151720_54352849078_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Schiesssport",
+      "SIUS",
+      "Technik",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161028_081337_54353027910_o",
+    "title": "Blick auf die Schiessanlage",
+    "category": "events",
+    "date": "2023",
+    "description": "Der Blick über den Schiessplatz hin zu den Scheibenanlagen unterstreicht die sportliche Atmosphäre in Muhen. Hier findet die nötige Konzentration statt, um bei jedem Training höchste Präzision zu erreichen. Es ist ein Ort der Vorbereitung und des kameradschaftlichen Wettbewerbs.",
+    "imageUrl": "assets/galerie/20161028_081337_54353027910_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessanlage",
+      "Muhen",
+      "Sportplatz",
+      "Training",
+      "50m Gewehr"
+    ]
+  },
+  {
+    "id": "20161028_093242_54352827169_o",
+    "title": "Präzision auf dem elektronischen Monitor",
+    "category": "events",
+    "date": "28.10.2016",
+    "description": "Ein Blick auf den Sius-Monitor zeigt die hohe Konzentration und Präzision unserer Schützen im Vereinsalltag. Die elektronische Trefferanzeige dokumentiert eine starke Serie und unterstreicht die moderne Infrastruktur der Sportschützen Muhen.",
+    "imageUrl": "assets/galerie/20161028_093242_54352827169_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Sius",
+      "Trefferanzeige",
+      "Präzision",
+      "Gewehr 50m",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161028_093609_54352623086_o",
+    "title": "Vorbereitungen für den nächsten Wettkampf",
+    "category": "events",
+    "date": "2016",
+    "description": "Konzentrierte Arbeit hinter den Kulissen: Unser Präsident bereitet am Laptop die Auswertung für den nächsten Schiesswettbewerb vor. Die digitale Erfassung ist ein unverzichtbarer Teil unserer modernen Schiesssport-Infrastruktur.",
+    "imageUrl": "assets/galerie/20161028_093609_54352623086_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger"
+    ],
+    "tags": [
+      "Wettkampf",
+      "Auswertung",
+      "Technik",
+      "Vereinsleben",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161028_103948_54352849058_o",
+    "title": "Vorbereitung für den nächsten Wettkampf",
+    "category": "events",
+    "date": "2023",
+    "description": "Die technische Vorbereitung ist das A und O für einen erfolgreichen Schiesswettbewerb. Unsere Schützenmeister stellen sicher, dass das Sius Ascor System einsatzbereit ist, um höchste Präzision bei der Auswertung zu garantieren. Technik und Sport gehen bei uns Hand in Hand.",
+    "imageUrl": "assets/galerie/20161028_103948_54352849058_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Technik",
+      "Sius Ascor",
+      "Wettkampf",
+      "Infrastruktur",
+      "Schützenmeister"
+    ]
+  },
+  {
+    "id": "20161028_130653_54352849043_o",
+    "title": "Präzise Technik für den Schiesssport",
+    "category": "events",
+    "date": "2023",
+    "description": "Hinter den Kulissen sorgen unsere Experten für die einwandfreie Funktion der SIUS-Anlagen. Mit technischem Sachverstand wird hier die Grundlage für faire und präzise Wettkämpfe gelegt.",
+    "imageUrl": "assets/galerie/20161028_130653_54352849043_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Technik",
+      "SIUS",
+      "Wettkampfvorbereitung",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161028_134236_54352849053_o",
+    "title": "Renovationsarbeiten an unserer Schiessanlage",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein engagiertes Vereinsmitglied legt beim Streichen der Schutzwand Hand an, um unsere Schiessanlage in Schuss zu halten. Solche Einsätze zeigen den starken Zusammenhalt und den persönlichen Einsatz, den unsere Mitglieder für den Sportschützen Muhen leisten.",
+    "imageUrl": "assets/galerie/20161028_134236_54352849053_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Renovierung",
+      "Vereinsarbeit",
+      "Schiessanlage",
+      "Kameradschaft",
+      "Engagement"
+    ]
+  },
+  {
+    "id": "20161028_195710_54352827089_o",
+    "title": "Geselliger Ausklang nach dem Wettkampf",
+    "category": "events",
+    "date": "2023",
+    "description": "Nach einem anstrengenden Tag am 30. Aargauer Kantonalschützenfest lassen unsere Schützen den Abend in gemütlicher Runde ausklingen. Ein Glas Wein im Schützenhaus steht symbolisch für die gelebte Kameradschaft und den Austausch über die sportlichen Erfolge. Solche Momente stärken den Zusammenhalt in unserem Verein.",
+    "imageUrl": "assets/galerie/20161028_195710_54352827089_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Kameradschaft",
+      "Aargauer Kantonalschützenfest",
+      "Vereinsleben",
+      "Geselligkeit",
+      "Schützenfest"
+    ]
+  },
+  {
+    "id": "20161028_201107_54353027805_o",
+    "title": "Präzision am nächtlichen Schiessstand",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein ruhiger Blick auf den Schiessstand bei Nacht, bereit für die nächste Trainingseinheit. Die moderne Ausrüstung zeugt von der hohen sportlichen Präzision, die unsere Mitglieder bei den Sportschützen Muhen täglich anstreben. Solche Momente der Konzentration bilden das Fundament für unsere gemeinsamen Erfolge im Verein.",
+    "imageUrl": "assets/galerie/20161028_201107_54353027805_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Training",
+      "Schiessstand",
+      "Präzision",
+      "Sportschützen Muhen",
+      "Nachtschießen"
+    ]
+  },
+  {
+    "id": "20161031_200018_54353027795_o",
+    "title": "Nächtliche Ruhe auf dem Schiessstand",
+    "category": "events",
+    "date": "2023",
+    "description": "Die Schiessanlage in Muhen präsentiert sich bei nächtlicher Beleuchtung von ihrer stillen Seite. Diese Aufnahme unterstreicht die nächtliche Atmosphäre und die Bereitschaft der Anlage für den nächsten Einsatz unserer Sportschützen. Ein stimmungsvoller Blick auf die technische Infrastruktur unseres Vereins.",
+    "imageUrl": "assets/galerie/20161031_200018_54353027795_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessanlage",
+      "Muhen",
+      "Nachtaufnahme",
+      "Infrastruktur",
+      "Sportschützen"
+    ]
+  },
+  {
+    "id": "20161106_150750_54352848983_o",
+    "title": "Blick auf den Schiessstand",
+    "category": "events",
+    "date": "2023",
+    "description": "Der Blick aus dem Schützenstand bietet eine klare Sicht auf die Zielanlage. Diese moderne Ausrüstung ermöglicht sportliche Präzision bei jedem Training. Ein Ort der Konzentration und der gemeinschaftlichen Leidenschaft für den Schiesssport.",
+    "imageUrl": "assets/galerie/20161106_150750_54352848983_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessstand",
+      "Sius",
+      "Technik",
+      "Training",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161109_114158_54352827039_o",
+    "title": "Moderne elektronische Trefferanzeige auf dem Stand",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Blick auf die moderne Infrastruktur unserer Schiessanlage. Die elektronischen Anlagen garantieren höchste Präzision und faire Wettkampfbedingungen bei jedem Training. Sie bilden das technische Herzstück unseres Vereinslebens.",
+    "imageUrl": "assets/galerie/20161109_114158_54352827039_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Schiessanlage",
+      "Elektronik",
+      "Technik"
+    ]
+  },
+  {
+    "id": "20161109_114302_54352622686_o",
+    "title": "Moderne Schiessanlage in Muhen",
+    "category": "geschichte",
+    "date": "2023",
+    "description": "Ein Blick auf die moderne technische Infrastruktur unserer Schiessanlage. Diese robusten Metallkonstruktionen bilden das Rückgrat unseres präzisen Trainingsbetriebs und unterstreichen den hohen Standard bei den Sportschützen Muhen.",
+    "imageUrl": "assets/galerie/20161109_114302_54352622686_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Schiessstand",
+      "Technik",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161109_114333_54352623006_o",
+    "title": "Infrastruktur beim Schiessstand",
+    "category": "geschichte",
+    "date": "2024",
+    "description": "Ein Blick auf die technische Infrastruktur des Schiessstandes der Sportschützen Muhen. Solche Anlagen bilden das funktionale Fundament für unsere sportlichen Aktivitäten und den Schiessbetrieb.",
+    "imageUrl": "assets/galerie/20161109_114333_54352623006_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Schiessstand",
+      "Technik",
+      "Unterhalt"
+    ]
+  },
+  {
+    "id": "20161112_154226_54352848933_o",
+    "title": "Modernisierte Schiessanlage in Muhen",
+    "category": "geschichte",
+    "date": "2020er Jahre",
+    "description": "Ein Blick auf die neu installierte Schiessanlage der Sportschützen Muhen. Diese Investition in die Infrastruktur unterstreicht unser Engagement für den Schiesssport und optimale Trainingsbedingungen für alle Vereinsmitglieder.",
+    "imageUrl": "assets/galerie/20161112_154226_54352848933_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Schiessstand",
+      "Modernisierung",
+      "Muhen",
+      "Vereinsleben"
+    ]
+  },
+  {
+    "id": "20161112_164412_54351738097_o",
+    "title": "Gemeinsam für unsere Schiessanlage aktiv",
+    "category": "events",
+    "date": "2023",
+    "description": "Engagierte Vereinsmitglieder packen gemeinsam an, um die Infrastruktur der Sportschützen Muhen für die kommende Saison in Schuss zu halten. Solche Arbeitseinsätze stärken nicht nur die Anlage, sondern fördern auch den Zusammenhalt und die kameradschaftliche Atmosphäre im Verein.",
+    "imageUrl": "assets/galerie/20161112_164412_54351738097_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger"
+    ],
+    "tags": [
+      "Arbeitseinsatz",
+      "Vereinsleben",
+      "Instandhaltung",
+      "Kameradschaft"
+    ]
+  },
+  {
+    "id": "20161112_164416_54353027765_o",
+    "title": "Gemeinsame Anlagepflege in Muhen",
+    "category": "events",
+    "date": "2023",
+    "description": "Engagierte Mitglieder der Sportschützen Muhen packen gemeinsam an, um die Anlage in Schuss zu halten. Die Pflege des Geländes unterstreicht den starken Zusammenhalt und das kameradschaftliche Engagement im Verein. Durch diesen Einsatz bleibt unsere Schiessstätte auch für kommende sportliche Herausforderungen bestens gerüstet.",
+    "imageUrl": "assets/galerie/20161112_164416_54353027765_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger"
+    ],
+    "tags": [
+      "Vereinsarbeit",
+      "Kameradschaft",
+      "Anlagepflege",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161112_164430_54352826654_o",
+    "title": "Vorbereitungen für den Schiessstand-Unterhalt",
+    "category": "events",
+    "date": "2024",
+    "description": "Auch hinter den Kulissen packen die Sportschützen Muhen gemeinsam an. Mit schwerem Gerät und viel Einsatz werden Baumaterialien für den Unterhalt der Anlage transportiert. Teamwork ist das Fundament für einen erfolgreichen Schiessbetrieb.",
+    "imageUrl": "assets/galerie/20161112_164430_54352826654_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Unterhalt",
+      "Anlage",
+      "Frondienst",
+      "Vereinsleben"
+    ]
+  },
+  {
+    "id": "20161113_103503_54351738317_o",
+    "title": "Konzentration am 50m Stand",
+    "category": "events",
+    "date": "2020er Jahre",
+    "description": "Ein konzentrierter Blick in die Trainingshalle der Sportschützen Muhen beim 50m Kleinkaliberschießen. Unsere Schützen zeigen volle Konzentration und sportliche Präzision in ihrer Ausrüstung, während sie gemeinsam an ihrer Treffsicherheit arbeiten. Ein wunderbares Beispiel für den Zusammenhalt und die Leidenschaft in unserem Verein.",
+    "imageUrl": "assets/galerie/20161113_103503_54351738317_o.jpg",
+    "detectedPersons": [
+      "Daniel Hunziker"
+    ],
+    "tags": [
+      "50m",
+      "Gewehr",
+      "Sportschützen Muhen",
+      "Training",
+      "Konzentration",
+      "Vereinsleben"
+    ]
+  },
+  {
+    "id": "20161113_103513_54352848878_o",
+    "title": "Präzision auf der 50m Anlage",
+    "category": "nachwuchs",
+    "date": "2023",
+    "description": "Ein konzentrierter Moment am Schiessstand, an dem volle Konzentration und eine ruhige Hand gefragt sind. Die moderne SIUS-Anlage liefert sofortiges Feedback und unterstützt unsere Schützen dabei, ihre Treffsicherheit stetig zu verbessern. Es ist die perfekte Darstellung unseres sportlichen Ehrgeizes und der Leidenschaft für den Schiesssport.",
+    "imageUrl": "assets/galerie/20161113_103513_54352848878_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Gewehr 50m",
+      "Schiessstand",
+      "Konzentration",
+      "Präzision",
+      "Sportschützen Muhen",
+      "Training"
+    ]
+  },
+  {
+    "id": "20161113_103534_54352848848_o",
+    "title": "Volle Konzentration im Schiessstand",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Schütze bei der intensiven Ausübung des Sportgewehrs in kniender Position. Diese Aufnahme verdeutlicht die hohe Präzision und den vollen Fokus, die unsere Vereinsmitglieder bei jedem Training an den Tag legen.",
+    "imageUrl": "assets/galerie/20161113_103534_54352848848_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Training",
+      "Gewehr",
+      "Präzision",
+      "Sportschützen Muhen",
+      "Schiessstand"
+    ]
+  },
+  {
+    "id": "20161113_103622_54352826954_o",
+    "title": "Volle Konzentration am Schiessstand",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Schütze in liegender Position zeigt absolute Hingabe und Präzision beim Zielen auf die 50-Meter-Scheibe. Die digitale Trefferanzeige dokumentiert den sportlichen Fortschritt und unterstreicht die moderne Infrastruktur unseres Vereins. Momente wie diese spiegeln die hohe Disziplin und den Fokus wider, die den Schiesssport in Muhen auszeichnen.",
+    "imageUrl": "assets/galerie/20161113_103622_54352826954_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessstand",
+      "50m",
+      "Konzentration",
+      "Präzision",
+      "Sportschützen Muhen",
+      "Training"
+    ]
+  },
+  {
+    "id": "20161201_215343_54352826804_o",
+    "title": "Nächtliche Ruhe am Schiessstand",
+    "category": "events",
+    "date": "2023",
+    "description": "Die beleuchtete Scheibenanlage des Schiessstandes in Muhen hebt sich in der Dunkelheit eindrucksvoll ab. Diese nächtliche Aufnahme unterstreicht die Faszination für den Schiesssport und die Ruhe, die den Platz ausserhalb der Trainingszeiten umgibt.",
+    "imageUrl": "assets/galerie/20161201_215343_54352826804_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessstand",
+      "Muhen",
+      "Nachtaufnahme",
+      "Schiesssport",
+      "Infrastruktur"
+    ]
+  },
+  {
+    "id": "20161201_215356_54352848793_o",
+    "title": "Präzision in der nächtlichen Stille",
+    "category": "events",
+    "date": "2023",
+    "description": "Unsere Schiessanlage in Muhen zeigt sich bei Nacht von ihrer eindrucksvollsten Seite. Die beleuchteten Scheibenanlagen symbolisieren die stetige Konzentration und sportliche Präzision, die unseren Verein auszeichnet. Auch nach Einbruch der Dunkelheit bleibt unsere Leidenschaft für den Schiesssport ungebrochen.",
+    "imageUrl": "assets/galerie/20161201_215356_54352848793_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Nachtaufnahme",
+      "Schiessstand",
+      "Muhen",
+      "Präzision",
+      "Infrastruktur"
+    ]
+  },
+  {
+    "id": "20161227_102829_54352622811_o",
+    "title": "Modernes Ambiente im Vereinsheim",
+    "category": "events",
+    "date": "2018",
+    "description": "Ein Blick in unsere Räumlichkeiten, in denen wir gemeinsam Erfolge feiern und wichtige Informationen austauschen. Diese moderne Ausstattung unterstützt uns dabei, den Schiesssport in Muhen zeitgemäss zu präsentieren.",
+    "imageUrl": "assets/galerie/20161227_102829_54352622811_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsheim",
+      "Infrastruktur",
+      "Muhen",
+      "Vereinsleben"
+    ]
+  },
+  {
+    "id": "20161227_122647_54352826809_o",
+    "title": "Blick in unser gemütliches Vereinslokal",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Blick in den einladenden Aufenthaltsraum der Sportschützen Muhen, in dem sich nach dem Training die Kameradschaft pflegen lässt. Dieser Ort bildet das Herzstück unseres Vereinslebens und bietet den idealen Raum für gesellige Stunden. Hier treffen Präzision und Entspannung aufeinander.",
+    "imageUrl": "assets/galerie/20161227_122647_54352826809_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinslokal",
+      "Sportschützen Muhen",
+      "Kameradschaft",
+      "Innenansicht"
+    ]
+  },
+  {
+    "id": "20161227_122653_54353027660_o",
+    "title": "Modernisierung unserer Vereinsräumlichkeiten",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Blick hinter die Kulissen der Modernisierung unseres Schützenhauses. Die technische Aufwertung mit einem neuen Bildschirm unterstreicht unser Engagement für eine zeitgemäße Infrastruktur im Verein. So schaffen wir den perfekten Rahmen für gesellige Stunden nach dem Training.",
+    "imageUrl": "assets/galerie/20161227_122653_54353027660_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Renovation",
+      "Vereinsleben",
+      "Technik"
+    ]
+  },
+  {
+    "id": "20161227_183853_54353027685_o",
+    "title": "Ruhepause im Schützenhaus",
+    "category": "events",
+    "date": "2024",
+    "description": "Ein stiller Moment im Vereinslokal der Sportschützen Muhen. Auch wenn die Technik kurzzeitig pausiert, bietet unser Treffpunkt immer eine gemütliche Atmosphäre für die Kameradschaft nach dem Training.",
+    "imageUrl": "assets/galerie/20161227_183853_54353027685_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinslokal",
+      "Sportschützen Muhen",
+      "Kameradschaft",
+      "Impression"
+    ]
+  },
+  {
+    "id": "20161227_183908_54353027625_o",
+    "title": "Moderne Infrastruktur im Schiessstand",
+    "category": "events",
+    "date": "2024",
+    "description": "Ein Blick in die gut ausgebaute Anlage der Sportschützen Muhen. Die moderne Bildschirm-Technik sorgt für präzise Trefferauswertung und trägt massgeblich zum hohen sportlichen Standard bei. Die gut gepflegten Schiessplätze bieten den perfekten Rahmen für ein konzentriertes Training.",
+    "imageUrl": "assets/galerie/20161227_183908_54353027625_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Schiessanlage",
+      "Technik",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20161227_183915_54352826734_o",
+    "title": "Vorbereitung für den nächsten Wettkampf",
+    "category": "events",
+    "date": "2023",
+    "description": "Die Schiessanlage in Muhen zeigt sich bereit für die kommenden sportlichen Herausforderungen. Die ordentliche Vorbereitung der Tische unterstreicht die Sorgfalt und Präzision, die unseren Verein auszeichnet.",
+    "imageUrl": "assets/galerie/20161227_183915_54352826734_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessstand",
+      "Sportschützen Muhen",
+      "Infrastruktur",
+      "Vorbereitung"
+    ]
+  },
+  {
+    "id": "20161227_183931_54352848733_o",
+    "title": "Bereit für den nächsten Wettkampf",
+    "category": "events",
+    "date": "2023",
+    "description": "Ein Blick in unseren Schiessstand kurz vor dem Training. Die akkurat ausgerichteten Schiesstische zeugen von der Vorfreude und der nötigen Disziplin für einen erfolgreichen Trainingsabend. Hier wird die Basis für sportliche Höchstleistungen und kameradschaftliches Beisammensein gelegt.",
+    "imageUrl": "assets/galerie/20161227_183931_54352848733_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiessstand",
+      "Vorbereitung",
+      "Infrastruktur",
+      "Sportschützen Muhen",
+      "Gewehr 50m"
+    ]
+  },
+  {
+    "id": "20161227_183942_54352622746_o",
+    "title": "Das Herzstück unserer Schiessanlage",
+    "category": "geschichte",
+    "date": "2016",
+    "description": "Ein Blick hinter die Kulissen der Schiessanlage der Sportschützen Muhen. Hier wird mit technischer Präzision die Auswertung der Schiessergebnisse sichergestellt, welche für unseren sportlichen Erfolg unerlässlich ist. Dieser Arbeitsplatz bildet das unsichtbare Zentrum unserer Vereinsaktivitäten.",
+    "imageUrl": "assets/galerie/20161227_183942_54352622746_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Technik",
+      "Schiessanlage",
+      "Infrastruktur",
+      "Muhen",
+      "Vereinsleben"
+    ]
+  },
+  {
+    "id": "2016tessin_54352618946_o",
+    "title": "Gesellige Runde unter Sportschützen",
+    "category": "events",
+    "date": "2023",
+    "description": "In entspannter Atmosphäre geniessen die Sportschützen Muhen das Beisammensein nach einem erfolgreichen Wettkampftag. Die fröhliche Stimmung unterstreicht den starken Zusammenhalt und die gelebte Kameradschaft im Verein, abseits der konzentrierten Schiessstände.",
+    "imageUrl": "assets/galerie/2016tessin_54352618946_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger",
+      "Olivia Rossi",
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Sportschützen Muhen",
+      "Kameradschaft",
+      "Vereinsleben",
+      "Geselligkeit",
+      "Gemeinschaft"
+    ]
+  },
+  {
+    "id": "20250427_114631308_ios_54574669738_o",
+    "title": "Gemeinsam an der Schiessanlage gebaut",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein wertvoller Blick in die Vergangenheit, als tatkräftige Vereinsmitglieder gemeinsam am Ausbau unserer Anlage arbeiteten. Dieser Einsatz unterstreicht den hohen Stellenwert der Kameradschaft und den gemeinsamen Willen, die Zukunft der Sportschützen Muhen aktiv mitzugestalten.",
+    "imageUrl": "assets/galerie/20250427_114631308_ios_54574669738_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsgeschichte",
+      "Umbau",
+      "Kameradschaft",
+      "Freiwilligenarbeit"
+    ]
+  },
+  {
+    "id": "20250427_114710496_ios_54574438411_o",
+    "title": "Geselliges Beisammensein im Grünen",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein entspannter Moment auf der Wiese, der die Verbundenheit und Kameradschaft unserer Vereinsmitglieder wunderbar einfängt. Generationen kommen zusammen, um die gemeinsame Zeit abseits des Schiessstandes in der Natur zu geniessen.",
+    "imageUrl": "assets/galerie/20250427_114710496_ios_54574438411_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsleben",
+      "Kameradschaft",
+      "Freizeit",
+      "Natur",
+      "Historisch"
+    ]
+  },
+  {
+    "id": "20250427_114733539_ios_54574669703_o",
+    "title": "Erster Spatenstich in Muhen",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein bedeutender Moment in der Vereinsgeschichte: Die Mitglieder versammeln sich auf der grünen Wiese zum feierlichen Spatenstich. Dieses Bild dokumentiert den Pioniergeist und den starken Zusammenhalt unserer Schützenfamilie beim Aufbau unserer heutigen Anlage.",
+    "imageUrl": "assets/galerie/20250427_114733539_ios_54574669703_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Spatenstich",
+      "Vereinsgeschichte",
+      "Tradition",
+      "Kameradschaft"
+    ]
+  },
+  {
+    "id": "20250427_114801109_ios_54574774230_o",
+    "title": "Gesellige Runde im Schützenhaus",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein Einblick in die gemütliche Atmosphäre nach einem erfolgreichen Schiesstag. Unsere Mitglieder geniessen bei einer gemeinsamen Stärkung die wertvolle Kameradschaft, die den Sportschützen Muhen seit jeher auszeichnet.",
+    "imageUrl": "assets/galerie/20250427_114801109_ios_54574774230_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Kameradschaft",
+      "Vereinsleben",
+      "Rückblick",
+      "Schützenstube"
+    ]
+  },
+  {
+    "id": "20250427_114911219_ios_54573572637_o",
+    "title": "Vereinsmitglieder beim Bau der Schiessanlage",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein eindrücklicher Blick in die Vergangenheit der Sportschützen Muhen während der Bauarbeiten an der Anlage. Hand in Hand zeigten die Mitglieder vollen Einsatz, um die Grundlage für unseren heutigen Sport zu schaffen. Dieser Zusammenhalt prägt unser Vereinsleben noch bis heute.",
+    "imageUrl": "assets/galerie/20250427_114911219_ios_54573572637_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Bauarbeiten",
+      "Vereinsgeschichte",
+      "Kameradschaft",
+      "Eigenleistung",
+      "Infrastruktur"
+    ]
+  },
+  {
+    "id": "20250427_114929094_ios_54573572652_o",
+    "title": "Unbeschwerte Momente vor dem Training",
+    "category": "nachwuchs",
+    "date": "1990er Jahre",
+    "description": "Ein seltener Blick hinter die Kulissen, der die Freude und Freiheit unserer jüngsten Vereinsmitglieder vor den Schiessübungen zeigt. Solche Momente fernab vom Stand unterstreichen die familiäre Atmosphäre bei den Sportschützen Muhen. Der Nachwuchs geniesst sichtlich die Zeit auf der Wiese, bevor es mit dem sportlichen Training losgeht.",
+    "imageUrl": "assets/galerie/20250427_114929094_ios_54573572652_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Nachwuchs",
+      "Kindheit",
+      "Freizeit",
+      "Vereinsleben",
+      "Nostalgie"
+    ]
+  },
+  {
+    "id": "20250427_114948012_ios_54574669673_o",
+    "title": "Grundsteinlegung für unser Vereinsgelände",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein bedeutender Moment in der Historie der Sportschützen Muhen, als die Bagger für die Erweiterung unserer Schiessanlage anrollten. Dieses Bild zeigt den Baubeginn und zeugt vom grossen Engagement unserer Mitglieder für eine moderne Infrastruktur. Es markiert den Grundstein für viele sportliche Erfolge und gemeinschaftliche Erlebnisse.",
+    "imageUrl": "assets/galerie/20250427_114948012_ios_54574669673_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Bauarbeiten",
+      "Vereinsgeschichte",
+      "Infrastruktur",
+      "Meilenstein"
+    ]
+  },
+  {
+    "id": "20250427_115022595_ios_54574774185_o",
+    "title": "Vorbereitungen auf dem Schiessgelände",
+    "category": "events",
+    "date": "2024",
+    "description": "Die Morgenruhe auf dem Vereinsgelände in Muhen wird für anstehende Arbeiten genutzt. Solche Momente zeigen die stetige Sorgfalt unserer Mitglieder, um die Infrastruktur für unsere sportlichen Aktivitäten in Schuss zu halten.",
+    "imageUrl": "assets/galerie/20250427_115022595_ios_54574774185_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Muhen",
+      "Vereinsgelände",
+      "Infrastruktur",
+      "Morgenstimmung"
+    ]
+  },
+  {
+    "id": "20250427_115105592_ios_54574669648_o",
+    "title": "Baggerarbeiten auf dem Schiessplatz",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein spannender Rückblick auf die Bautätigkeiten rund um unseren Schiessstand. Diese Arbeiten legten das Fundament für die moderne Infrastruktur, die wir heute für unseren Vereinssport geniessen dürfen.",
+    "imageUrl": "assets/galerie/20250427_115105592_ios_54574669648_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Bauarbeiten",
+      "Vereinsgeschichte",
+      "Infrastruktur",
+      "Muhen"
+    ]
+  },
+  {
+    "id": "20250427_115121803_ios_54574626604_o",
+    "title": "Aufbauarbeiten am Schützenhaus",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein eindrücklicher Blick auf die handwerkliche Eigenleistung unserer Mitglieder während der Bauphase des Schützenhauses. Diese Aufnahmen dokumentieren das grosse Engagement und den Teamgeist, der den Verein bis heute auszeichnet.",
+    "imageUrl": "assets/galerie/20250427_115121803_ios_54574626604_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Umbau",
+      "Vereinsgeschichte",
+      "Eigenleistung",
+      "Schützenhaus"
+    ]
+  },
+  {
+    "id": "20250427_115144422_ios_54574669638_o",
+    "title": "Anpacken für unseren Verein",
+    "category": "events",
+    "date": "2010er Jahre",
+    "description": "Hier zeigt sich der wahre Geist unseres Vereins: Tatkräftiges Anpacken ausserhalb des Schiessstandes. Simon Hediger beweist beim Erdaushub nicht nur Präzision, sondern auch vollen Einsatz für die Infrastruktur der Sportschützen Muhen.",
+    "imageUrl": "assets/galerie/20250427_115144422_ios_54574669638_o.jpg",
+    "detectedPersons": [
+      "Simon Hediger"
+    ],
+    "tags": [
+      "Infrastruktur",
+      "Anpacken",
+      "Vereinsleben",
+      "Baggerarbeiten"
+    ]
+  },
+  {
+    "id": "20250427_115223938_ios_54574774120_o",
+    "title": "Gesellige Runde im Schützenhaus",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein entspannter Moment abseits der Schiessbahn im gemütlichen Vereinslokal der Sportschützen Muhen. Solche Augenblicke unterstreichen den hohen Stellenwert der Kameradschaft und des sozialen Miteinanders in unserem Verein.",
+    "imageUrl": "assets/galerie/20250427_115223938_ios_54574774120_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsleben",
+      "Kameradschaft",
+      "Schützenhaus",
+      "Tradition"
+    ]
+  },
+  {
+    "id": "20250427_115240196_ios_54574626549_o",
+    "title": "Baubeginn für die Schiessanlage Muhen",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein Bagger bereitet das Gelände für den Ausbau unserer Schiessanlage vor. Solche Momente zeigen den Einsatz der Vereinsmitglieder für unsere sportliche Heimat. Gemeinsam wurde hier das Fundament für zukünftige Erfolge gelegt.",
+    "imageUrl": "assets/galerie/20250427_115240196_ios_54574626549_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Baustelle",
+      "Vereinsgeschichte",
+      "Infrastruktur",
+      "Muhen"
+    ]
+  },
+  {
+    "id": "20250427_115256005_ios_54574438306_o",
+    "title": "Baggerarbeiten auf dem Schiessplatz Muhen",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein spannender Blick zurück in die Zeit der baulichen Erweiterungen unseres Schiessstandes. Diese Aufnahme dokumentiert den grossen Einsatz bei den Erdarbeiten, die das Fundament für unsere heutige Sportstätte legten. Solche Momente zeigen den unermüdlichen Einsatz unserer Mitglieder für eine moderne Infrastruktur.",
+    "imageUrl": "assets/galerie/20250427_115256005_ios_54574438306_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Geschichte",
+      "Bauarbeiten",
+      "Vereinsgelände",
+      "Erinnerungen"
+    ]
+  },
+  {
+    "id": "20250427_115317894_ios_54574669563_o",
+    "title": "Fundament für unsere Vereinszukunft",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein eindrücklicher Blick zurück auf die Bauphase unserer Anlage. Mit vollem Einsatz und handwerklichem Geschick legten unsere Vereinsmitglieder damals das Fundament für den heutigen Schiessbetrieb. Solche Momente zeigen den grossen Zusammenhalt und das leidenschaftliche Engagement, das unseren Verein seit jeher auszeichnet.",
+    "imageUrl": "assets/galerie/20250427_115317894_ios_54574669563_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Bauarbeiten",
+      "Vereinsgeschichte",
+      "Kameradschaft",
+      "Engagement",
+      "Schiessstand"
+    ]
+  },
+  {
+    "id": "20250427_115337520_ios_54574438296_o",
+    "title": "Fundamentarbeiten für den neuen Schiessstand",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein Blick in die Vergangenheit zeigt den unermüdlichen Einsatz unserer Vereinsmitglieder beim Bau der Schiessanlage. Mit gemeinsamer Tatkraft und körperlichem Einsatz wurde das Fundament gelegt, was den Grundstein für viele sportliche Erfolge legte. Diese Aufnahme verdeutlicht den gelebten Teamgeist, der den Verein bis heute prägt.",
+    "imageUrl": "assets/galerie/20250427_115337520_ios_54574438296_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsgeschichte",
+      "Bauarbeiten",
+      "Kameradschaft",
+      "Schiessstand"
+    ]
+  },
+  {
+    "id": "20250427_115354868_ios_54574774095_o",
+    "title": "Aufbauarbeit am Schiessstand Muhen",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein Blick zurück auf die tatkräftige Eigenleistung unserer Mitglieder bei Bauarbeiten auf dem Vereinsgelände. Diese Aufnahme zeigt den grossen Einsatz und die Kameradschaft, die das Fundament für unseren heutigen Sport bildet. Auch abseits der Schiessbahn packen die Sportschützen Muhen gemeinsam an.",
+    "imageUrl": "assets/galerie/20250427_115354868_ios_54574774095_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Bauarbeiten",
+      "Vereinsgeschichte",
+      "Eigenleistung",
+      "Kameradschaft",
+      "Historisch"
+    ]
+  },
+  {
+    "id": "20250427_115416784_ios_54574626554_o",
+    "title": "Gemeinsam im Schützenhaus vereint",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein wertvoller Blick zurück in die Geschichte unserer Schützenanlage. Das Bild zeugt von der tiefen Verbundenheit und Kameradschaft, die das Fundament unseres Vereinslebens in Muhen über Generationen hinweg prägt.",
+    "imageUrl": "assets/galerie/20250427_115416784_ios_54574626554_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Geschichte",
+      "Vereinsleben",
+      "Muhen",
+      "Kameradschaft"
+    ]
+  },
+  {
+    "id": "20250427_115435136_ios_54573572462_o",
+    "title": "Blick in unser Vereinslokal",
+    "category": "geschichte",
+    "date": "2020er Jahre",
+    "description": "Das Foto zeigt den leeren Innenraum unseres Vereinslokals mit seinem charakteristischen Fachwerkausbau. Dieser Raum dient als Ort der Ruhe und Vorbereitung vor den Wettkämpfen und ist ein zentraler Bestandteil unserer Vereinsgeschichte. Die schlichte Architektur unterstreicht die Konzentration auf unseren Sport.",
+    "imageUrl": "assets/galerie/20250427_115435136_ios_54573572462_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinslokal",
+      "Muhen",
+      "Infrastruktur",
+      "Schützenhaus"
+    ]
+  },
+  {
+    "id": "20250427_115451604_ios_54574438246_o",
+    "title": "Aufbau der Schützenhaus-Konstruktion",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein eindrücklicher Blick auf die Entstehungsgeschichte unserer Schiessanlage. Mit vereinten Kräften und schwerem Gerät wurde das Holzgerüst für unser heutiges Vereinsheim errichtet. Dieses Bild zeugt vom grossen Engagement und dem starken Zusammenhalt unserer Mitglieder während der Bauphase.",
+    "imageUrl": "assets/galerie/20250427_115451604_ios_54574438246_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Bauarbeiten",
+      "Vereinsgeschichte",
+      "Zusammenhalt",
+      "Schützenhaus",
+      "Holzbau"
+    ]
+  },
+  {
+    "id": "20250427_115511074_ios_54574438251_o",
+    "title": "Der erste Spatenstich für Muhen",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein historischer Moment für die Sportschützen Muhen beim gemeinsamen Spatenstich auf der grünen Wiese. Dieses Bild dokumentiert den Grundstein für unsere Schiessanlage und unterstreicht den starken Zusammenhalt unserer Vereinsmitglieder. Die Vorfreude auf das neue Zuhause ist den Anwesenden deutlich ins Gesicht geschrieben.",
+    "imageUrl": "assets/galerie/20250427_115511074_ios_54574438251_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Spatenstich",
+      "Vereinsgeschichte",
+      "Meilenstein",
+      "Tradition",
+      "Kameradschaft"
+    ]
+  },
+  {
+    "id": "20250427_115527501_ios_54574669513_o",
+    "title": "Gemeinsam anpacken am Schützenhaus",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Dieses Bild zeigt den unverzichtbaren Teamgeist im Verein bei Bauarbeiten am Schützenhaus. Mit viel handwerklichem Geschick und Herzblut sorgen die Mitglieder für den Erhalt unserer Infrastruktur. Solche Momente der Zusammenarbeit sind das Fundament unserer langjährigen Kameradschaft.",
+    "imageUrl": "assets/galerie/20250427_115527501_ios_54574669513_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Vereinsgeschichte",
+      "Kameradschaft",
+      "Handwerk",
+      "Mitarbeit"
+    ]
+  },
+  {
+    "id": "20250427_115544319_ios_54574438226_o",
+    "title": "Gemeinsam am Bau: Vereinszukunft gestalten",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Zwei Vereinsmitglieder arbeiten Hand in Hand am Bau unseres Schützenhauses. Dieses Bild zeugt von der grossen Einsatzbereitschaft und der gelebten Kameradschaft unserer Mitglieder, die über den sportlichen Erfolg hinausging. Solche Momente des gemeinsamen Schaffens haben das Fundament für unsere heutige Vereinsanlage gelegt.",
+    "imageUrl": "assets/galerie/20250427_115544319_ios_54574438226_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Bauarbeiten",
+      "Vereinsgeschichte",
+      "Kameradschaft",
+      "Engagement",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20250427_115600640_ios_54574774050_o",
+    "title": "Einsatz bei der baulichen Instandhaltung",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein engagierter Moment aus der Vergangenheit, der den unermüdlichen Einsatz unserer Vereinsmitglieder für die Infrastruktur zeigt. Solche handwerklichen Arbeiten sind ein wesentlicher Teil unserer Vereinskultur und stärken das Gemeinschaftsgefühl über Generationen hinweg. Die gezeigte Hingabe spiegelt dieselbe Sorgfalt wider, die wir auch im Schiesssport pflegen.",
+    "imageUrl": "assets/galerie/20250427_115600640_ios_54574774050_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Vereinsleben",
+      "Handwerk",
+      "Engagement",
+      "Instandhaltung"
+    ]
+  },
+  {
+    "id": "20250427_115615359_ios_54574438221_o",
+    "title": "Gemeinsam zum neuen Vereinsheim",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein eindrückliches Zeugnis der Tatkraft unserer Mitglieder beim Bau des Schützenhauses. Dank unzähliger freiwilliger Arbeitsstunden und kameradschaftlichem Zusammenhalt konnten wir unsere Infrastruktur nachhaltig stärken. Diese Aufnahme fängt den Stolz und den unermüdlichen Einsatz für unseren geliebten Sportverein in Muhen ein.",
+    "imageUrl": "assets/galerie/20250427_115615359_ios_54574438221_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsgeschichte",
+      "Bauarbeiten",
+      "Kameradschaft",
+      "Eigenleistung",
+      "Muhen"
+    ]
+  },
+  {
+    "id": "20250427_115637060_ios_54573572397_o",
+    "title": "Gemeinsamer Ausbau unserer Schiessanlage",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Dieses Bild zeigt tatkräftige Vereinsmitglieder bei einem baulichen Einsatz am Vereinsgebäude. Solche Momente unterstreichen die Verbundenheit und den Einsatz unserer Schützen für ihre Infrastruktur weit über den sportlichen Wettkampf hinaus.",
+    "imageUrl": "assets/galerie/20250427_115637060_ios_54573572397_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsleben",
+      "Bauarbeiten",
+      "Kameradschaft",
+      "Geschichte",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20250427_115652733_ios_54574438166_o",
+    "title": "Anpacken beim Vereinsbau",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein eindrücklicher Moment aus der Vereinsgeschichte, als unsere Mitglieder gemeinsam beim Bau Hand anlegten. Dieser Arbeitseinsatz zeigt den starken Zusammenhalt und das Engagement, das unseren Schützenverein seit jeher auszeichnet.",
+    "imageUrl": "assets/galerie/20250427_115652733_ios_54574438166_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsleben",
+      "Arbeitseinsatz",
+      "Geschichte",
+      "Kameradschaft"
+    ]
+  },
+  {
+    "id": "20250427_115714672_ios_54574438176_o",
+    "title": "Anpacken für die Vereinszukunft",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein seltener Blick hinter die Kulissen, als bei den Sportschützen Muhen noch selbst Hand angelegt wurde. Auch abseits des Schiessstandes bewiesen unsere Mitglieder vollen Einsatz und Kameradschaft bei den baulichen Arbeiten für unsere Anlage.",
+    "imageUrl": "assets/galerie/20250427_115714672_ios_54574438176_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsgeschichte",
+      "Baueinsatz",
+      "Kameradschaft",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "20250427_115729022_ios_54574438191_o",
+    "title": "Anpacker am Werk für den Verein",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Auch abseits des Schiessstandes zeigt sich der Einsatz unserer Mitglieder für den Verein. Hier sieht man tatkräftige Unterstützung bei den Umgebungsarbeiten, die den Zusammenhalt und das Engagement unserer Schützen unterstreichen.",
+    "imageUrl": "assets/galerie/20250427_115729022_ios_54574438191_o.jpg",
+    "detectedPersons": [
+      "Daniel Hunziker"
+    ],
+    "tags": [
+      "Vereinsarbeit",
+      "Geschichte",
+      "Zusammenhalt",
+      "Muhen",
+      "Einsatz"
+    ]
+  },
+  {
+    "id": "20250427_115746832_ios_54574669453_o",
+    "title": "Vereinsanpacker bei der Arbeit",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Auch abseits des Schiessstandes beweisen die Vereinsmitglieder Tatkraft und Geschick. Hier wird bei Erdarbeiten für den Verein kräftig angepackt, was den ausserordentlichen Einsatz für die Infrastruktur unterstreicht.",
+    "imageUrl": "assets/galerie/20250427_115746832_ios_54574669453_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Vereinsarbeit",
+      "Ehrenamt",
+      "Geschichte"
+    ]
+  },
+  {
+    "id": "20250427_115825417_ios_54574774005_o",
+    "title": "Präzisionsarbeit an der Anlage",
+    "category": "geschichte",
+    "date": "2000er Jahre",
+    "description": "Konzentriert und mit dem nötigen Fachwissen wartet unser Schützenkamerad die Schiessanlage. Ein unverzichtbarer Einsatz für den reibungslosen Betrieb und die Sicherheit auf unserem Schiessstand. Kameradschaft bedeutet auch, gemeinsam Verantwortung für unsere Infrastruktur zu übernehmen.",
+    "imageUrl": "assets/galerie/20250427_115825417_ios_54574774005_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Wartung",
+      "Infrastruktur",
+      "Schiessbetrieb",
+      "Engagement"
+    ]
+  },
+  {
+    "id": "20250427_115841243_ios_54574626409_o",
+    "title": "Vereinsarbeit am Schiessstand",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein spannender Blick in die Vergangenheit der Sportschützen Muhen, als bei Unterhaltsarbeiten noch schweres Gerät im Einsatz war. Solche Arbeitseinsätze zeugen von der langjährigen Verbundenheit und dem tatkräftigen Einsatz unserer Mitglieder für die Vereinsinfrastruktur.",
+    "imageUrl": "assets/galerie/20250427_115841243_ios_54574626409_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Unterhalt",
+      "Geschichte",
+      "Vereinsleben",
+      "Baustelle",
+      "Arbeitseinsatz"
+    ]
+  },
+  {
+    "id": "20250427_121041031_ios_54574773730_o",
+    "title": "Grundsteinlegung für neue Schiessanlage",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein bedeutender Meilenstein in der Geschichte unseres Vereins: die Vorbereitungen für das Fundament unserer heutigen Schiessanlage. Dieses Bild zeugt vom grossen Engagement unserer Mitglieder, die mit viel Schweiss und Kameradschaft die Basis für unseren modernen Schiesssport legten.",
+    "imageUrl": "assets/galerie/20250427_121041031_ios_54574773730_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Bauphase",
+      "Vereinsgeschichte",
+      "Fundament",
+      "Muhen",
+      "Tradition"
+    ]
+  },
+  {
+    "id": "2_54352614206_o",
+    "title": "Gemeinsame Stärke der Muhener Schützen",
+    "category": "events",
+    "date": "2010er Jahre",
+    "description": "Die Sportschützen Muhen präsentieren sich stolz in ihren Vereinsjacken bei strahlendem Herbstwetter. Dieses Bild fängt den starken Zusammenhalt und die Freude am gemeinsamen Vereinssport perfekt ein.",
+    "imageUrl": "assets/galerie/2_54352614206_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Vereinsleben",
+      "Kameradschaft",
+      "Sportschützen Muhen",
+      "Gruppenbild"
+    ]
+  },
+  {
+    "id": "54352612436_b293cdfc98_o",
+    "title": "Präzises Training auf der Schiessanlage",
+    "category": "events",
+    "date": "2010er Jahre",
+    "description": "Konzentriert und mit ruhiger Hand verfolgen unsere Mitglieder das sportliche Ziel. In der Schiessanlage Muhen wird die präzise Schiesstechnik unter Beweis gestellt. Dies unterstreicht unseren Anspruch an Disziplin und sportlichen Fokus.",
+    "imageUrl": "assets/galerie/54352612436_b293cdfc98_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Schiesssport",
+      "Training",
+      "Gewehr 50m",
+      "Sportschützen Muhen",
+      "Konzentration"
+    ]
+  },
+  {
+    "id": "54352816404_daa0a488bf_o",
+    "title": "Konzentration im 50m Schiessstand",
+    "category": "events",
+    "date": "2010er Jahre",
+    "description": "Ein konzentrierter Schütze bei der Arbeit im 50m Schiessstand der Sportschützen Muhen. Die Szene verdeutlicht die notwendige Ruhe und Präzision, die den Schiesssport auszeichnen. Solche Trainingseinheiten sind das Herzstück unserer sportlichen Entwicklung und Kameradschaft.",
+    "imageUrl": "assets/galerie/54352816404_daa0a488bf_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Training",
+      "Gewehr 50m",
+      "Schiessstand",
+      "Präzision"
+    ]
+  },
+  {
+    "id": "54352816424_71330a4d3c_o",
+    "title": "Unser Vereinsheim in Muhen",
+    "category": "geschichte",
+    "date": "2000er Jahre",
+    "description": "Ein Blick auf das Vereinsdomizil der Sportschützen Muhen an einem ruhigen Tag. Das Gebäude dient als zentraler Treffpunkt für Training und Kameradschaft. Es bildet das Herzstück unseres Vereinslebens und sportlichen Wirkens.",
+    "imageUrl": "assets/galerie/54352816424_71330a4d3c_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinshaus",
+      "Muhen",
+      "Sportschützen",
+      "Infrastruktur",
+      "Schützenhaus"
+    ]
+  },
+  {
+    "id": "54352816444_874a38716e_o",
+    "title": "Unser Vereinsheim in Muhen",
+    "category": "geschichte",
+    "date": "2010er Jahre",
+    "description": "Das Vereinsheim der Sportschützen Muhen präsentiert sich in einer ruhigen Umgebung. Dieses Gebäude bildet das Herzstück unseres Vereinslebens, in dem Präzision auf freundschaftliche Verbundenheit trifft.",
+    "imageUrl": "assets/galerie/54352816444_874a38716e_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsheim",
+      "Muhen",
+      "Sportschützen",
+      "Infrastruktur"
+    ]
+  },
+  {
+    "id": "54352828404_7322451a24_o",
+    "title": "Konzentration im 50m Schiessstand",
+    "category": "nachwuchs",
+    "date": "2023",
+    "description": "Ein spannender Blick in den Trainingsbetrieb, bei dem Schützen ihre Konzentration und Präzision unter Beweis stellen. Die gemeinsame Unterstützung am Stand unterstreicht die starke Kameradschaft innerhalb unseres Vereins. Hier wird konzentriert an der perfekten Schussleistung gearbeitet.",
+    "imageUrl": "assets/galerie/54352828404_7322451a24_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Sportschützen Muhen",
+      "Gewehr 50m",
+      "Training",
+      "Präzision",
+      "Schießstand"
+    ]
+  },
+  {
+    "id": "54574773975_9e5ff974da_o",
+    "title": "Gesellige Runde nach dem Schiesstraining",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein entspannter Moment der Kameradschaft in unserem Vereinslokal nach einem erfolgreichen Trainingstag. Das gemeinsame Beisammensein stärkt den Zusammenhalt und die Freude am Schiesssport. Es sind solche Augenblicke, die das Vereinsleben bei den Sportschützen Muhen so wertvoll machen.",
+    "imageUrl": "assets/galerie/54574773975_9e5ff974da_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Kameradschaft",
+      "Vereinsleben",
+      "Gemütlichkeit",
+      "Historisch"
+    ]
+  },
+  {
+    "id": "aksvgm50m2002_54352816104_o",
+    "title": "Vereinsmitglieder beim Sportschützen-Training",
+    "category": "geschichte",
+    "date": "2000er Jahre",
+    "description": "Eine Gruppe engagierter Sportschützen präsentiert stolz ihre Ausrüstung vor dem Schiessstand. Das Bild unterstreicht die Verbundenheit und den Sportsgeist innerhalb der Sportschützen Muhen. Gemeinsam wird hier die Präzision am Gewehr gepflegt und der Austausch zwischen den Generationen gefördert.",
+    "imageUrl": "assets/galerie/aksvgm50m2002_54352816104_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Sportschützen Muhen",
+      "Gewehr",
+      "Kameradschaft",
+      "Schützen",
+      "Vereinsleben"
+    ]
+  },
+  {
+    "id": "betonbodenplatte_54574438416_o",
+    "title": "Fundament für neue Schiessanlage",
+    "category": "events",
+    "date": "2020er Jahre",
+    "description": "Die Bauarbeiten für unsere neue Infrastruktur schreiten zügig voran. Mit diesem soliden Fundament legen wir den Grundstein für viele zukünftige sportliche Erfolge und ein aktives Vereinsleben in Muhen.",
+    "imageUrl": "assets/galerie/betonbodenplatte_54574438416_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Bauprojekt",
+      "Infrastruktur",
+      "Sportschützen Muhen",
+      "Zukunft",
+      "Vereinsgelände"
+    ]
+  },
+  {
+    "id": "danielbechtoldgerhardknzlifritzsuterbrunoberchtold_54574669633_o",
+    "title": "Nachwuchsförderung im Feld",
+    "category": "nachwuchs",
+    "date": "1990er Jahre",
+    "description": "Ein wertvoller Einblick in die langjährige Tradition der Nachwuchsförderung bei den Sportschützen Muhen. Erfahrene Vereinsmitglieder begleiten junge Schützen auf dem Feld und geben ihr Wissen geduldig weiter. Diese Szene unterstreicht die starke Kameradschaft und das generationenübergreifende Engagement in unserem Verein.",
+    "imageUrl": "assets/galerie/danielbechtoldgerhardknzlifritzsuterbrunoberchtold_54574669633_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Nachwuchs",
+      "Tradition",
+      "Vereinsleben",
+      "Freilufttraining"
+    ]
+  },
+  {
+    "id": "dsc02526_54352841303_o",
+    "title": "Hochzeitliche Glückwünsche der Sportschützen Muhen",
+    "category": "events",
+    "date": "2010er Jahre",
+    "description": "Ein freudiger Moment, in dem die Mitglieder der Sportschützen Muhen einem Brautpaar ihre Ehre erweisen. Das Bild unterstreicht die tiefe Verbundenheit und Kameradschaft innerhalb unseres Vereins, die weit über den Schiessstand hinausgeht.",
+    "imageUrl": "assets/galerie/dsc02526_54352841303_o.jpg",
+    "detectedPersons": [
+      "Daniel Hunziker",
+      "Marco Fischer",
+      "Gerhard Künzli",
+      "Simon Hediger"
+    ],
+    "tags": [
+      "Hochzeit",
+      "Kameradschaft",
+      "Vereinsleben",
+      "Muhen"
+    ]
+  },
+  {
+    "id": "ernstkunzromanoschotzko_54574669653_o",
+    "title": "Grundsteinlegung für neue Schiessanlage",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Dieses historische Foto zeigt den Beginn eines wegweisenden Bauprojekts der Sportschützen Muhen. Durch den engagierten Einsatz unserer Mitglieder konnte die sportliche Infrastruktur in gemeinschaftlicher Arbeit erfolgreich erweitert werden.",
+    "imageUrl": "assets/galerie/ernstkunzromanoschotzko_54574669653_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Bauarbeiten",
+      "Vereinsgeschichte",
+      "Pioniere",
+      "Muhen",
+      "Vereinsgelände"
+    ]
+  },
+  {
+    "id": "gerhardknzliernstkunz_54574626239_o",
+    "title": "Fundamentarbeiten für unser Schützenhaus",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein eindrücklicher Blick zurück auf den Bau unseres Schützenstandes, wo tatkräftiger Einsatz gefragt war. Vereinsmitglieder arbeiten hier gemeinsam an den Fundamenten, um die Basis für unsere heutige sportliche Heimat zu schaffen. Dieses Bild zeugt vom grossen Zusammenhalt und dem unermüdlichen Engagement unserer Mitglieder.",
+    "imageUrl": "assets/galerie/gerhardknzliernstkunz_54574626239_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsgeschichte",
+      "Bauarbeiten",
+      "Kameradschaft",
+      "Sportschützen Muhen",
+      "Fundament"
+    ]
+  },
+  {
+    "id": "gerhardknzlihansbni_54574437956_o",
+    "title": "Aufbau der Schiessanlage in Muhen",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein wertvoller Blick in die Vergangenheit der Sportschützen Muhen während einer Bauphase auf unserem Gelände. Solche Momente zeigen das handwerkliche Engagement und die Verbundenheit unserer Mitglieder zur Infrastruktur des Vereins. Die Aufnahme unterstreicht den langfristigen Einsatz für den Schiesssport in unserer Gemeinschaft.",
+    "imageUrl": "assets/galerie/gerhardknzlihansbni_54574437956_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Geschichte",
+      "Vereinsgelände",
+      "Aufbau",
+      "Engagement",
+      "Muhen"
+    ]
+  },
+  {
+    "id": "gerhardknzlihansbni_54574669273_o",
+    "title": "Arbeitseinsatz in Muhen",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein entspannter Moment abseits des Schiessstandes während eines Arbeitseinsatzes. Das Bild zeugt von der starken Kameradschaft, die das Vereinsleben bei den Sportschützen Muhen seit jeher prägt.",
+    "imageUrl": "assets/galerie/gerhardknzlihansbni_54574669273_o.jpg",
+    "detectedPersons": [
+      "Gerhard Künzli"
+    ],
+    "tags": [
+      "Vereinsleben",
+      "Arbeitseinsatz",
+      "Kameradschaft",
+      "Geschichte"
+    ]
+  },
+  {
+    "id": "gerhardknzlirogerhallerernstkunz_54574669333_o",
+    "title": "Grundsteinlegung für neue Schiessanlage",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Engagierte Mitglieder der Sportschützen Muhen packen gemeinsam bei der Geländeaufbereitung an. Dieser Moment unterstreicht den hohen Stellenwert der Eigenleistung und den starken Zusammenhalt innerhalb unseres Vereins. Es ist der Grundstein für die Infrastruktur, die unseren Schützinnen und Schützen noch heute präzises Training ermöglicht.",
+    "imageUrl": "assets/galerie/gerhardknzlirogerhallerernstkunz_54574669333_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Vereinsgeschichte",
+      "Infrastruktur",
+      "Kameradschaft",
+      "Bauarbeiten",
+      "Sportschützen Muhen"
+    ]
+  },
+  {
+    "id": "nachwuchs_54352816109_o",
+    "title": "Erfolgreiches Nachwuchstraining bei den Sportschützen",
+    "category": "nachwuchs",
+    "date": "2010er Jahre",
+    "description": "Ein eindrucksvolles Gruppenbild unserer jungen Schützentalente nach einer intensiven Trainingseinheit. Das Foto unterstreicht den starken Teamgeist und die konzentrierte Ausbildung in unserem Verein. Unsere erfahrenen Betreuer vermitteln dabei mit grosser Leidenschaft die Kunst der sportlichen Präzision.",
+    "imageUrl": "assets/galerie/nachwuchs_54352816109_o.jpg",
+    "detectedPersons": [
+      "Daniel Hunziker",
+      "Marco Fischer"
+    ],
+    "tags": [
+      "Nachwuchsförderung",
+      "Teamgeist",
+      "Sportschützen Muhen",
+      "Training",
+      "Gewehr 50m"
+    ]
+  },
+  {
+    "id": "thomashochulihansjrgschmid_54574669448_o",
+    "title": "Kameradschaft im Sportschützen-Vereinslokal",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein nostalgischer Blick in das Vereinslokal der Sportschützen Muhen aus vergangenen Tagen. Zwei Mitglieder geniessen die entspannte Atmosphäre nach dem Training und pflegen die langjährige Kameradschaft im Verein.",
+    "imageUrl": "assets/galerie/thomashochulihansjrgschmid_54574669448_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Geschichte",
+      "Vereinslokal",
+      "Kameradschaft",
+      "Muhen",
+      "Tradition"
+    ]
+  },
+  {
+    "id": "wiese_54573572222_o",
+    "title": "Vorbereitungen auf dem Vereinsgelände",
+    "category": "geschichte",
+    "date": "1990er Jahre",
+    "description": "Ein Blick auf das Vereinsgelände während einer Bauphase oder Instandsetzung. Die Szene zeigt die ruhige Umgebung des Schiessstandes und unterstreicht den stetigen Einsatz der Mitglieder für die Infrastruktur des Sportschützen Muhen.",
+    "imageUrl": "assets/galerie/wiese_54573572222_o.jpg",
+    "detectedPersons": [],
+    "tags": [
+      "Infrastruktur",
+      "Vereinsgeschichte",
+      "Gelände",
+      "Schiessstand"
+    ]
   }
 ]
