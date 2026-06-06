@@ -21,6 +21,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             document.getElementById('nav-links').classList.remove('open');
             const toggle = document.getElementById('mobile-toggle');
             if (toggle) toggle.classList.remove('active');
+            document.body.classList.remove('no-scroll');
         }
     });
 });
@@ -33,6 +34,7 @@ if (mobileToggle && navLinks) {
     mobileToggle.addEventListener('click', () => {
         navLinks.classList.toggle('open');
         mobileToggle.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
     });
 }
 

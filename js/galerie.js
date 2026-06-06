@@ -26,6 +26,15 @@ async function initGallery() {
             });
         });
 
+        // 4. Setup search listener
+        const searchInput = document.getElementById("gallery-search");
+        if (searchInput) {
+            searchInput.addEventListener("input", () => {
+                const activeBtn = document.querySelector(".gallery-filter-btn.active");
+                renderGallery(activeBtn ? activeBtn.getAttribute("data-category") : "all");
+            });
+        }
+
     } catch (error) {
         console.error("Fehler beim Laden der Fotogalerie:", error);
         grid.innerHTML = '<p class="text-center text-muted" style="grid-column: 1 / -1; padding: 3rem;">Bilder konnten nicht geladen werden.</p>';
@@ -36,12 +45,24 @@ function renderGallery(filter) {
     const grid = document.getElementById("galerie-grid");
     if (!grid) return;
 
-    const filtered = filter === "all" 
+    let filtered = filter === "all" 
         ? galleryData 
         : galleryData.filter(item => item.category === filter);
 
+    const searchInput = document.getElementById("gallery-search");
+    if (searchInput && searchInput.value) {
+        const searchVal = searchInput.value.toLowerCase();
+        filtered = filtered.filter(item => {
+            const title = (item.title || "").toLowerCase();
+            const desc = (item.description || "").toLowerCase();
+            const tags = (item.tags || []).join(" ").toLowerCase();
+            const persons = (item.detectedPersons || []).join(" ").toLowerCase();
+            return title.includes(searchVal) || desc.includes(searchVal) || tags.includes(searchVal) || persons.includes(searchVal);
+        });
+    }
+
     if (filtered.length === 0) {
-        grid.innerHTML = '<p class="text-center text-muted" style="grid-column: 1 / -1; padding: 3rem;">Keine Fotos in dieser Kategorie vorhanden.</p>';
+        grid.innerHTML = '<p class="text-center text-muted" style="grid-column: 1 / -1; padding: 3rem;">Keine Fotos gefunden, die zu deiner Suche passen.</p>';
         return;
     }
 
@@ -75,8 +96,7 @@ function renderGallery(filter) {
                 </div>
             </div>
             <div class="masonry-caption">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.25rem;">
-                    <span class="badge-${item.category} badge-sm">${getCategoryLabel(item.category)}</span>
+                <div style="display:flex; justify-content:flex-end; align-items:center; margin-bottom: 0.25rem;">
                     <span style="font-size:0.75rem; color:var(--text-muted); font-weight:600;">${item.date}</span>
                 </div>
                 <h4 style="margin: 5px 0 0 0; font-size:1.05rem; font-weight:700; color:var(--primary-color);">${item.title}</h4>
