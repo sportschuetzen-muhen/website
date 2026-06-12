@@ -158,9 +158,9 @@ function displayReports(reports, container) {
     // Ensure Modal exists in DOM
     if (!document.getElementById('news-reader-modal')) {
         const modalHtml = `
-            <div id="news-reader-modal" class="news-modal-overlay" onclick="if(event.target === this) this.style.display='none'">
+            <div id="news-reader-modal" class="news-modal-overlay" onclick="if(event.target === this) window.closeNewsModal()">
                 <div class="news-modal-content">
-                    <button class="news-modal-close" onclick="document.getElementById('news-reader-modal').style.display='none'">&times;</button>
+                    <button class="news-modal-close" onclick="window.closeNewsModal()">&times;</button>
                     <div id="news-modal-image" class="news-modal-img"></div>
                     <div class="news-modal-body">
                         <span id="news-modal-date" style="color:var(--accent-color); font-weight:600; font-size: 0.9rem; text-transform:uppercase; letter-spacing:1px;"></span>
@@ -173,13 +173,25 @@ function displayReports(reports, container) {
         document.body.insertAdjacentHTML('beforeend', modalHtml);
     }
 
+    // Global function to close the modal
+    window.closeNewsModal = function() {
+        const modal = document.getElementById('news-reader-modal');
+        if (modal) modal.style.display = 'none';
+        document.body.classList.remove('no-scroll');
+    };
+
     // Global function to open the modal (defined always)
     window.openNewsModal = function(index) {
         const r = window.loadedReports[index];
         if (!r) return;
         
-        const dateObj = new Date(r.date);
-        const dateStr = dateObj.toLocaleDateString('de-CH', { day: '2-digit', month: 'long', year: 'numeric' });
+        let dateStr = 'Unbekanntes Datum';
+        if (r.date) {
+            const dateObj = new Date(r.date);
+            if (!isNaN(dateObj.getTime())) {
+                dateStr = dateObj.toLocaleDateString('de-CH', { day: '2-digit', month: 'long', year: 'numeric' });
+            }
+        }
         
         document.getElementById('news-modal-date').innerText = dateStr + ' | ' + r.author;
         document.getElementById('news-modal-title').innerText = r.title;
@@ -207,6 +219,7 @@ function displayReports(reports, container) {
         }
         
         document.getElementById('news-reader-modal').style.display = 'flex';
+        document.body.classList.add('no-scroll');
     };
 
     container.innerHTML = '';
@@ -216,8 +229,13 @@ function displayReports(reports, container) {
     const recentReports = reports.slice(0, 6);
 
     recentReports.forEach((r, index) => {
-        const dateObj = new Date(r.date);
-        const dateStr = dateObj.toLocaleDateString('de-CH', { day: '2-digit', month: 'long', year: 'numeric' });
+        let dateStr = 'Unbekanntes Datum';
+        if (r.date) {
+            const dateObj = new Date(r.date);
+            if (!isNaN(dateObj.getTime())) {
+                dateStr = dateObj.toLocaleDateString('de-CH', { day: '2-digit', month: 'long', year: 'numeric' });
+            }
+        }
         
         // Create a short excerpt from the HTML content
         const tempDiv = document.createElement('div');
@@ -229,17 +247,17 @@ function displayReports(reports, container) {
 
         const coverImgUrl = (r.imageUrls && r.imageUrls.length > 0) ? r.imageUrls[0] : (r.image || r.imageUrl);
         const imgHtml = coverImgUrl 
-            ? `<div class="report-image" style="background-image: url('${coverImgUrl}'); background-size: cover; background-position: center;"></div>`
-            : `<div class="report-image" style="background: linear-gradient(45deg, #1e293b, #334155); display: flex; align-items: center; justify-content: center; font-size: 2rem;">📰</div>`;
+            ? `<div class="report-image" style="background-image: url('${coverImgUrl}'); background-size: cover; background-position: center; cursor: pointer;" onclick="window.openNewsModal(${index})"></div>`
+            : `<div class="report-image" style="background: linear-gradient(45deg, #1e293b, #334155); display: flex; align-items: center; justify-content: center; font-size: 2rem; cursor: pointer;" onclick="window.openNewsModal(${index})">📰</div>`;
 
         container.innerHTML += `
             <div class="glass-card report-card">
                 ${imgHtml}
                 <div class="report-content" style="padding: 20px;">
                     <span class="report-date" style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem;">${dateStr} | ${r.author}</span>
-                    <h3 style="margin: 10px 0;">${r.title}</h3>
+                    <h3 style="margin: 10px 0; cursor: pointer;" onclick="window.openNewsModal(${index})">${r.title}</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">${excerpt}</p>
-                    <button class="read-more btn btn-outline" style="margin-top: 15px; width: 100%; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white;" onclick="window.openNewsModal(${index})">Ganzen Bericht lesen</button>
+                    <button class="read-more btn btn-outline" style="margin-top: 15px; width: 100%;" onclick="window.openNewsModal(${index})">Ganzen Bericht lesen</button>
                 </div>
             </div>
         `;

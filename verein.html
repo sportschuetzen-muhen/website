@@ -30,6 +30,7 @@
             <nav class="desktop-nav" id="nav-links">
                 <a href="index.html#home">Willkommen</a>
                 <a href="verein.html" class="active">Verein</a>
+                <a href="#galerie">Galerie</a>
                 <a href="index.html#termine">Termine</a>
                 <a href="schuetzenhaus_vermietung.html">Vermietung</a>
                 <a href="index.html#reports">Berichte</a>
@@ -132,14 +133,22 @@
                     <button class="gallery-filter-btn" data-category="nachwuchs">Nachwuchs</button>
                 </div>
                 
-                <div style="position: relative; width: 100%; max-width: 400px;">
+                <div style="position: relative; width: 100%; max-width: 400px; margin-bottom: 0.5rem;">
                     <span style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); opacity: 0.5;">🔍</span>
                     <input type="text" id="gallery-search" placeholder="Suche nach Personen, Titeln, Tags..." style="width: 100%; padding: 0.75rem 1rem 0.75rem 2.5rem; border-radius: 30px; border: 1px solid rgba(15, 60, 92, 0.15); background: white; color: var(--text-color); font-family: inherit; font-size: 0.95rem; outline: none; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
                 </div>
+
+                <!-- Dynamisch erstellte Tag-Cloud -->
+                <div id="gallery-tag-cloud" style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; max-width: 800px; margin-top: 0.5rem;"></div>
             </div>
             
             <div class="masonry-grid" id="galerie-grid">
                 <!-- Dynamically populated by galerie.js -->
+            </div>
+
+            <!-- Load More Container -->
+            <div id="gallery-load-more-container" style="text-align: center; margin-top: 3rem; display: none;">
+                <button id="gallery-load-more-btn" class="btn btn-primary" style="padding: 0.75rem 2.5rem; border-radius: 30px; font-weight: 700; transition: var(--transition);">Mehr Bilder laden</button>
             </div>
         </div>
     </section>
@@ -275,6 +284,60 @@
         </div>
     </section>
 
+    <!-- Wir Gedenken Section -->
+    <section id="gedenken" style="background: rgba(15, 60, 92, 0.05); border-top: 1px solid var(--glass-border); padding: 5rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Wir <span class="text-red">Gedenken</span></h2>
+                <p>In ehrendem Andenken an unsere verstorbenen Kameradinnen und Kameraden, die unseren Verein über Jahre hinweg geprägt und begleitet haben.</p>
+            </div>
+            
+            <div class="grid-3" style="margin-top: 3rem;">
+                <!-- Gedenkkarte 1 -->
+                <div class="glass-card" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 2.5rem; border-top: 4px solid var(--accent-color);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; filter: grayscale(30%);">🕯️</div>
+                    <h3 style="margin-bottom: 0.25rem;">Geri Künzli</h3>
+                    <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600; margin-bottom: 1rem;">Ehrenmitglied & Vorstandsmitglied</span>
+                    <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.6;">
+                        * 27. April 1934 – † 29. September 2022<br>
+                        Mit unermüdlicher Freude setzte er sich für den Verein und die Jungschützen ein. Ihm verdanken wir den Bau unseres modernen Schützenhauses.
+                    </p>
+                    <a href="assets/gedenken/geri.jpg" target="_blank" class="btn btn-outline" style="font-size: 0.9rem; width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        <span>🖼️</span> Todesanzeige ansehen
+                    </a>
+                </div>
+
+                <!-- Gedenkkarte 2 -->
+                <div class="glass-card" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 2.5rem; border-top: 4px solid var(--accent-color);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; filter: grayscale(30%);">🕯️</div>
+                    <h3 style="margin-bottom: 0.25rem;">Arthur Wegmüller (Turi)</h3>
+                    <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600; margin-bottom: 1rem;">Schützenkamerad</span>
+                    <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.6;">
+                        * 7. Dezember 1957 – † 6. Oktober 2022<br>
+                        Unerwartet aus dem Leben gerissen. Wir vermissen seine gesellige Art und behalten ihn in dankbarer Erinnerung.
+                    </p>
+                    <a href="assets/gedenken/Todesanzeige Turi.JPG" target="_blank" class="btn btn-outline" style="font-size: 0.9rem; width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        <span>🖼️</span> Todesanzeige ansehen
+                    </a>
+                </div>
+
+                <!-- Gedenkkarte 3 -->
+                <div class="glass-card" style="text-align: center; display: flex; flex-direction: column; align-items: center; padding: 2.5rem; border-top: 4px solid var(--accent-color);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; filter: grayscale(30%);">🕯️</div>
+                    <h3 style="margin-bottom: 0.25rem;">Kurt Lüscher</h3>
+                    <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600; margin-bottom: 1rem;">Ehrenmitglied</span>
+                    <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.6;">
+                        * 24. Juli 1939 – † 24. Dezember 2024<br>
+                        In dankbarem Gedenken an ein treues Ehrenmitglied, das unserem Verein über viele Jahre hinweg eng verbunden war.
+                    </p>
+                    <a href="assets/gedenken/Todesanzeige Kurt Luescher.jpg" target="_blank" class="btn btn-outline" style="font-size: 0.9rem; width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        <span>🖼️</span> Todesanzeige ansehen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container footer-content">
@@ -288,6 +351,7 @@
                 <h4>Links</h4>
                 <a href="index.html#home">Willkommen</a>
                 <a href="verein.html">Verein</a>
+                <a href="#galerie">Galerie</a>
                 <a href="resultate.html">Resultate</a>
                 <a href="datenschutz.html">Datenschutz</a>
             </div>
@@ -344,6 +408,7 @@
 
     <!-- Fullscreen Lightbox Modal (Flickr details) -->
     <div id="galerie-lightbox" class="lightbox-modal" style="display: none;">
+        <button class="lightbox-nav-btn prev-btn" id="lightbox-prev" onclick="window.prevLightbox(event)">&lsaquo;</button>
         <button class="lightbox-close" onclick="window.closeLightbox()">&times;</button>
         <div class="lightbox-content">
             <div class="lightbox-image-wrapper">
@@ -362,6 +427,7 @@
                 <div id="lightbox-persons" style="display: none;"></div>
             </div>
         </div>
+        <button class="lightbox-nav-btn next-btn" id="lightbox-next" onclick="window.nextLightbox(event)">&rsaquo;</button>
     </div>
 </body>
 </html>

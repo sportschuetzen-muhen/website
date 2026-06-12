@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let galleryData = [];
+let currentFilteredData = [];
+let currentItemIndex = -1;
+let itemsToShow = 12; // load 12 images initially
+let activeCategory = "all";
 
 async function initGallery() {
     const grid = document.getElementById("galerie-grid");
@@ -14,24 +18,35 @@ async function initGallery() {
         if (!response.ok) throw new Error("Netzwerk-Antwort war nicht ok");
         galleryData = await response.json();
         
-        // 2. Render initial gallery (Show All)
+        // 2. Generate Tag Cloud
+        generateTagCloud();
+        
+        // 3. Render initial gallery (Show All)
         renderGallery("all");
         
-        // 3. Setup category filter listeners
+        // 4. Setup category filter listeners
         document.querySelectorAll(".gallery-filter-btn").forEach(btn => {
             btn.addEventListener("click", () => {
                 document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
                 btn.classList.add("active");
-                renderGallery(btn.getAttribute("data-category"));
+                activeCategory = btn.getAttribute("data-category");
+                // Clear search when clicking main categories for clean navigation
+                const searchInput = document.getElementById("gallery-search");
+                if (searchInput) searchInput.value = "";
+                renderGallery(activeCategory);
             });
         });
 
-        // 4. Setup search listener
+        // 5. Setup search listener
         const searchInput = document.getElementById("gallery-search");
         if (searchInput) {
             searchInput.addEventListener("input", () => {
-                const activeBtn = document.querySelector(".gallery-filter-btn.active");
-                renderGallery(activeBtn ? activeBtn.getAttribute("data-category") : "all");
+                // If search is used, reset category selection to all
+                document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
+                const allBtn = document.querySelector('.gallery-filter-btn[data-category="all"]');
+                if (allBtn) allBtn.classList.add("active");
+                activeCategory = "all";
+                renderGallery("all");
             });
         }
 
@@ -41,9 +56,81 @@ async function initGallery() {
     }
 }
 
-function renderGallery(filter) {
+// Generate the tag cloud from top detected persons & tags
+function generateTagCloud() {
+    const container = document.getElementById("gallery-tag-cloud");
+    if (!container) return;
+
+    const tagCounts = {};
+    const personCounts = {};
+
+    galleryData.forEach(item => {
+        if (item.tags) {
+            item.tags.forEach(tag => {
+                tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+            });
+        }
+        if (item.detectedPersons) {
+            item.detectedPersons.forEach(person => {
+                personCounts[person] = (personCounts[person] || 0) + 1;
+            });
+        }
+    });
+
+    const topTags = Object.keys(tagCounts)
+        .sort((a, b) => tagCounts[b] - tagCounts[a])
+        .slice(0, 8);
+
+    const topPersons = Object.keys(personCounts)
+        .sort((a, b) => personCounts[b] - personCounts[a])
+        .slice(0, 8);
+
+    let html = "";
+    
+    if (topTags.length > 0 || topPersons.length > 0) {
+        html += `<span style="color:var(--text-muted); font-size:0.85rem; font-weight:600; width:100%; text-align:center; margin-bottom:0.25rem; user-select:none;">Häufig gesucht:</span>`;
+    }
+
+    topPersons.forEach(person => {
+        html += `<span class="gallery-tag-pill person-pill" onclick="window.filterByTag('person:${person}')">👤 ${person}</span>`;
+    });
+
+    topTags.forEach(tag => {
+        html += `<span class="gallery-tag-pill tag-pill" onclick="window.filterByTag('tag:${tag}')">#${tag}</span>`;
+    });
+
+    container.innerHTML = html;
+}
+
+window.filterByTag = function(value) {
+    const searchInput = document.getElementById("gallery-search");
+    if (!searchInput) return;
+
+    if (value.startsWith("tag:")) {
+        searchInput.value = value.substring(4);
+    } else if (value.startsWith("person:")) {
+        searchInput.value = value.substring(7);
+    }
+
+    // Reset categories for a global search
+    document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
+    const allBtn = document.querySelector('.gallery-filter-btn[data-category="all"]');
+    if (allBtn) allBtn.classList.add("active");
+    activeCategory = "all";
+
+    renderGallery("all");
+    
+    // Close lightbox if it was open
+    window.closeLightbox();
+};
+
+function renderGallery(filter, append = false) {
     const grid = document.getElementById("galerie-grid");
     if (!grid) return;
+
+    if (!append) {
+        itemsToShow = 12; // Reset pagination counter
+    }
 
     let filtered = filter === "all" 
         ? galleryData 
@@ -61,21 +148,32 @@ function renderGallery(filter) {
         });
     }
 
-    if (filtered.length === 0) {
+    currentFilteredData = filtered; // Save globally for lightbox controls
+    const totalItems = filtered.length;
+    const itemsToDisplay = filtered.slice(0, itemsToShow);
+
+    if (itemsToDisplay.length === 0) {
         grid.innerHTML = '<p class="text-center text-muted" style="grid-column: 1 / -1; padding: 3rem;">Keine Fotos gefunden, die zu deiner Suche passen.</p>';
+        updateLoadMoreButton(0, 0);
         return;
     }
 
-    grid.innerHTML = "";
+    if (!append) {
+        grid.innerHTML = "";
+    }
 
-    filtered.forEach((item, index) => {
+    const startIndex = append ? grid.children.length : 0;
+    const sliceToAppend = itemsToDisplay.slice(startIndex);
+
+    sliceToAppend.forEach((item, index) => {
+        const globalIndex = startIndex + index;
         const card = document.createElement("div");
         card.className = "masonry-item fade-in-up";
-        card.style.animationDelay = `${index * 0.05}s`;
         card.style.cursor = "pointer";
-        card.addEventListener("click", () => openLightbox(item));
+        card.style.animationDelay = `${index * 0.05}s`;
+        card.addEventListener("click", () => openLightbox(globalIndex));
 
-        // Use custom gradient fallbacks in case physical image doesn't exist yet
+        // Gradients for broken physical images
         const fallbacks = [
             "linear-gradient(135deg, #0f3c5c 0%, #1e40af 100%)",
             "linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)",
@@ -84,19 +182,19 @@ function renderGallery(filter) {
             "linear-gradient(135deg, #581c87 0%, #a855f7 100%)",
             "linear-gradient(135deg, #4c1d95 0%, #6366f1 100%)"
         ];
-        const gradient = fallbacks[index % fallbacks.length];
-
+        const gradient = fallbacks[globalIndex % fallbacks.length];
         const imgPlaceholderId = `img-gallery-${item.id}`;
 
         card.innerHTML = `
             <div class="gallery-img-container">
-                <img id="${imgPlaceholderId}" src="${item.imageUrl}" alt="${item.title}" class="masonry-img" onerror="window.handleImageError(this, '${gradient}')">
+                <img id="${imgPlaceholderId}" src="${item.imageUrl}" alt="${item.title}" class="masonry-img" loading="lazy" onerror="window.handleImageError(this, '${gradient}')">
                 <div class="gallery-img-overlay">
                     <span class="gallery-zoom-icon">🔍</span>
                 </div>
             </div>
             <div class="masonry-caption">
-                <div style="display:flex; justify-content:flex-end; align-items:center; margin-bottom: 0.25rem;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.25rem;">
+                    <span class="badge-sm badge-${item.category}">${getCategoryLabel(item.category)}</span>
                     <span style="font-size:0.75rem; color:var(--text-muted); font-weight:600;">${item.date}</span>
                 </div>
                 <h4 style="margin: 5px 0 0 0; font-size:1.05rem; font-weight:700; color:var(--primary-color);">${item.title}</h4>
@@ -104,14 +202,31 @@ function renderGallery(filter) {
         `;
         grid.appendChild(card);
     });
+
+    updateLoadMoreButton(itemsToShow, totalItems);
 }
 
-// Global image error helper to gracefully replace missing image files with an elegant text gradient card
+function updateLoadMoreButton(visibleCount, totalCount) {
+    const container = document.getElementById("gallery-load-more-container");
+    const btn = document.getElementById("gallery-load-more-btn");
+    if (!container || !btn) return;
+
+    if (visibleCount < totalCount) {
+        container.style.display = "block";
+        btn.onclick = () => {
+            itemsToShow += 12;
+            renderGallery(activeCategory, true);
+        };
+    } else {
+        container.style.display = "none";
+    }
+}
+
+// Gracefully replace missing image files with an elegant text gradient card
 window.handleImageError = (imgEl, gradient) => {
     const parent = imgEl.parentElement;
     if (!parent) return;
 
-    // Create a beautiful placeholder div
     const placeholder = document.createElement("div");
     placeholder.className = "gallery-img-fallback-container";
     placeholder.style.background = gradient;
@@ -120,7 +235,6 @@ window.handleImageError = (imgEl, gradient) => {
         <div class="fallback-text">Vorschau</div>
     `;
     
-    // Replace imgEl
     imgEl.style.display = "none";
     parent.appendChild(placeholder);
 };
@@ -135,7 +249,7 @@ function getCategoryLabel(cat) {
 }
 
 // === LIGHTBOX FUNCTIONALITY ===
-function openLightbox(item) {
+function openLightbox(index) {
     const lightbox = document.getElementById("galerie-lightbox");
     const img = document.getElementById("lightbox-img");
     const fallback = document.getElementById("lightbox-fallback");
@@ -145,6 +259,10 @@ function openLightbox(item) {
     const date = document.getElementById("lightbox-date");
 
     if (!lightbox || !img) return;
+
+    currentItemIndex = index;
+    const item = currentFilteredData[index];
+    if (!item) return;
 
     // Reset visibility
     img.style.display = "block";
@@ -167,21 +285,21 @@ function openLightbox(item) {
     };
 
     title.textContent = item.title;
-    desc.innerHTML = item.description;
+    desc.innerHTML = item.description || "";
     
     category.textContent = getCategoryLabel(item.category);
     category.className = `category-badge badge-${item.category}`;
     date.textContent = item.date;
 
-    // Render detected persons (internal archive)
+    // Render detected persons
     const personsContainer = document.getElementById("lightbox-persons");
     if (personsContainer) {
         if (item.detectedPersons && item.detectedPersons.length > 0) {
             personsContainer.innerHTML = `
-                <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.85rem;">
+                <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.85rem;">
                     <strong style="color: var(--primary-color); display: block; margin-bottom: 0.35rem;">Personen (Internes Archiv):</strong>
                     <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-                        ${item.detectedPersons.map(person => `<span class="person-tag" style="background: rgba(15, 60, 92, 0.08); color: var(--primary-color); border: 1px solid rgba(15, 60, 92, 0.15); padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">👤 ${person}</span>`).join('')}
+                        ${item.detectedPersons.map(person => `<span class="person-tag" style="background: rgba(15, 60, 92, 0.08); color: var(--primary-color); border: 1px solid rgba(15, 60, 92, 0.15); padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; cursor: pointer;" onclick="window.filterByTag('person:${person}')">👤 ${person}</span>`).join('')}
                     </div>
                 </div>
             `;
@@ -196,7 +314,7 @@ function openLightbox(item) {
     const tagsContainer = document.getElementById("lightbox-tags");
     if (tagsContainer) {
         if (item.tags && item.tags.length > 0) {
-            tagsContainer.innerHTML = item.tags.map(tag => `<span style="background: rgba(239, 68, 68, 0.06); color: var(--accent-color); border: 1px solid rgba(239, 68, 68, 0.12); font-size: 0.7rem; padding: 2px 7px; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">#${tag}</span>`).join(' ');
+            tagsContainer.innerHTML = item.tags.map(tag => `<span style="background: rgba(239, 68, 68, 0.06); color: var(--accent-color); border: 1px solid rgba(239, 68, 68, 0.12); font-size: 0.7rem; padding: 2px 7px; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer;" onclick="window.filterByTag('tag:${tag}')">#${tag}</span>`).join(' ');
             tagsContainer.style.display = "flex";
         } else {
             tagsContainer.innerHTML = "";
@@ -205,15 +323,51 @@ function openLightbox(item) {
     }
 
     lightbox.style.display = "flex";
-    document.body.style.overflow = "hidden"; // disable background scrolling
+    document.body.classList.add("no-scroll"); // disable background scrolling
 }
 
 window.closeLightbox = () => {
     const lightbox = document.getElementById("galerie-lightbox");
     if (!lightbox) return;
     lightbox.style.display = "none";
-    document.body.style.overflow = ""; // restore scrolling
+    document.body.classList.remove("no-scroll"); // restore scrolling
 };
+
+window.nextLightbox = function(e) {
+    if (e) e.stopPropagation();
+    if (currentFilteredData.length <= 1) return;
+    
+    let nextIndex = currentItemIndex + 1;
+    if (nextIndex >= currentFilteredData.length) {
+        nextIndex = 0; // wrap around
+    }
+    openLightbox(nextIndex);
+};
+
+window.prevLightbox = function(e) {
+    if (e) e.stopPropagation();
+    if (currentFilteredData.length <= 1) return;
+    
+    let prevIndex = currentItemIndex - 1;
+    if (prevIndex < 0) {
+        prevIndex = currentFilteredData.length - 1; // wrap around
+    }
+    openLightbox(prevIndex);
+};
+
+// Keyboard events
+document.addEventListener("keydown", (e) => {
+    const lightbox = document.getElementById("galerie-lightbox");
+    if (!lightbox || lightbox.style.display === "none") return;
+
+    if (e.key === "ArrowRight") {
+        window.nextLightbox();
+    } else if (e.key === "ArrowLeft") {
+        window.prevLightbox();
+    } else if (e.key === "Escape") {
+        window.closeLightbox();
+    }
+});
 
 // Close lightbox on clicking outside content
 document.addEventListener("DOMContentLoaded", () => {

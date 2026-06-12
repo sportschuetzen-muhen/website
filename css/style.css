@@ -1682,3 +1682,108 @@ textarea.form-control {
     }
 }
 
+/* Gallery Load More Button & Tag Cloud */
+.gallery-tag-pill {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid var(--glass-border);
+    user-select: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+.gallery-tag-pill.tag-pill {
+    background: rgba(220, 38, 38, 0.04);
+    color: var(--accent-color);
+}
+.gallery-tag-pill.tag-pill:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(220, 38, 38, 0.15);
+}
+.gallery-tag-pill.person-pill {
+    background: rgba(15, 60, 92, 0.04);
+    color: var(--primary-color);
+}
+.gallery-tag-pill.person-pill:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(15, 60, 92, 0.15);
+}
+
+/* Lightbox Navigation Buttons */
+.lightbox-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 3rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    z-index: 100000;
+    user-select: none;
+}
+.lightbox-nav-btn:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+.lightbox-nav-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+.prev-btn { left: 30px; }
+.next-btn { right: 30px; }
+
+@media (max-width: 992px) {
+    .lightbox-nav-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 2.2rem;
+    }
+    .prev-btn { left: 15px; }
+    .next-btn { right: 15px; }
+}
+
+@media (max-width: 768px) {
+    .lightbox-modal {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .lightbox-content {
+        max-height: 85vh;
+    }
+    /* Place nav buttons at the bottom center on mobile to keep the layout clean */
+    .lightbox-nav-btn {
+        position: fixed;
+        bottom: 20px;
+        top: auto;
+        transform: none;
+    }
+    .lightbox-nav-btn:hover {
+        transform: scale(1.05);
+    }
+    .prev-btn {
+        left: calc(50% - 60px);
+    }
+    .next-btn {
+        right: calc(50% - 60px);
+    }
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+    }
+}
+
