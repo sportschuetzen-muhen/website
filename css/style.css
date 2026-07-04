@@ -1670,6 +1670,21 @@ textarea.form-control {
     padding: 2.5rem;
 }
 
+.news-modal-body p {
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+}
+.news-modal-body p:last-child {
+    margin-bottom: 0;
+}
+.news-modal-body ul, .news-modal-body ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+}
+.news-modal-body li {
+    margin-bottom: 0.5rem;
+}
+
 @media (max-width: 768px) {
     .news-modal-img {
         height: 200px;
@@ -1785,5 +1800,15 @@ textarea.form-control {
         top: 15px;
         right: 15px;
     }
+}
+
+/* ==========================================================================
+   Galerie vorübergehend deaktivieren (ausblenden)
+   ========================================================================== */
+a[href="verein.html#galerie"],
+a[href="#galerie"],
+.glass-card[href="verein.html#galerie"],
+#galerie {
+    display: none !important;
 }
 

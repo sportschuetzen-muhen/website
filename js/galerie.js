@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    initGallery();
+    // initGallery(); // Deaktiviert
 });
 
 let galleryData = [];
