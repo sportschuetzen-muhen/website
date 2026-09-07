@@ -103,6 +103,16 @@ class SiteHeader extends HTMLElement {
                 }
             });
         });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && nav.classList.contains('open')) {
+                nav.classList.remove('open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('no-scroll');
+            }
+        });
     }
 }
 

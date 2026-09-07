@@ -1,5 +1,22 @@
+// === IMMICH BILDER-INTEGRATION (VARIANTE A) & LOKALER FALLBACK ===
+const IMMICH_CONFIG = {
+    // Auf true gesetzt, damit Immich-Alben direkt geladen werden
+    enabled: true,
+
+    // Cloudflare Worker Proxy URL für Edge-Caching, CORS-Handling und Heim-IP-Schutz
+    workerUrl: "https://v1-vorstand-api.dan-hunziker73.workers.dev",
+
+    // Basis-URL deiner Immich-Instanz (z.B. "https://fotos.sportschuetzen-muhen.ch" oder Cloudflare Tunnel)
+    // Kann auch dynamisch per URL-Parameter übergeben werden: ?immichHost=https://...
+    immichHost: "",
+
+    // Der Freigabe-Schlüssel (Shared Link Key) deines Albums in Immich (z.B. aus https://.../share/XYZ -> "XYZ")
+    // Kann auch dynamisch per URL-Parameter übergeben werden: ?album=XYZ
+    sharedLinkKey: ""
+};
+
 document.addEventListener("DOMContentLoaded", () => {
-    // initGallery(); // Deaktiviert
+    initGallery();
 });
 
 let galleryData = [];
@@ -7,52 +24,101 @@ let currentFilteredData = [];
 let currentItemIndex = -1;
 let itemsToShow = 12; // load 12 images initially
 let activeCategory = "all";
+let listenersInitialized = false;
 
 async function initGallery() {
     const grid = document.getElementById("galerie-grid");
     if (!grid) return;
 
-    // 1. Fetch images from galerie.json
-    try {
-        const response = await fetch("data/galerie.json?v=" + new Date().getTime());
-        if (!response.ok) throw new Error("Netzwerk-Antwort war nicht ok");
-        galleryData = await response.json();
-        
-        // 2. Generate Tag Cloud
-        generateTagCloud();
-        
-        // 3. Render initial gallery (Show All)
-        renderGallery("all");
-        
-        // 4. Setup category filter listeners
-        document.querySelectorAll(".gallery-filter-btn").forEach(btn => {
-            btn.addEventListener("click", () => {
-                document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
-                btn.classList.add("active");
-                activeCategory = btn.getAttribute("data-category");
-                // Clear search when clicking main categories for clean navigation
-                const searchInput = document.getElementById("gallery-search");
-                if (searchInput) searchInput.value = "";
-                renderGallery(activeCategory);
-            });
-        });
+    // Loading State
+    grid.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem;">
+            <i class="fa-solid fa-circle-notch fa-spin" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+            <p style="margin-top: 1rem; color: var(--text-muted); font-weight: 600;">Lade Fotogalerie...</p>
+        </div>
+    `;
 
-        // 5. Setup search listener
-        const searchInput = document.getElementById("gallery-search");
-        if (searchInput) {
-            searchInput.addEventListener("input", () => {
-                // If search is used, reset category selection to all
-                document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
-                const allBtn = document.querySelector('.gallery-filter-btn[data-category="all"]');
-                if (allBtn) allBtn.classList.add("active");
-                activeCategory = "all";
-                renderGallery("all");
-            });
+    let loaded = false;
+
+    // Prüfe auf dynamische URL-Parameter (z.B. verein.html?album=XYZ&immichHost=...)
+    const urlParams = new URLSearchParams(window.location.search);
+    const activeHost = urlParams.get("immichHost") || IMMICH_CONFIG.immichHost;
+    const activeKey = urlParams.get("album") || IMMICH_CONFIG.sharedLinkKey;
+
+    // 1. Immich API Abfrage via Cloudflare Worker Proxy
+    if (IMMICH_CONFIG.enabled && activeHost && activeKey) {
+        try {
+            const proxyUrl = `${IMMICH_CONFIG.workerUrl}?module=immich&action=album&host=${encodeURIComponent(activeHost)}&key=${encodeURIComponent(activeKey)}`;
+            console.log("Frage Immich-Album via Worker ab:", proxyUrl);
+            
+            const response = await fetch(proxyUrl);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.success && data.photos && data.photos.length > 0) {
+                    galleryData = data.photos;
+                    loaded = true;
+                    console.log(`✅ ${data.photos.length} Fotos erfolgreich aus Immich geladen ("${data.albumTitle}")`);
+                    
+                    // Album-Titel in Überschrift dynamisch anzeigen
+                    const titleEl = document.querySelector("#galerie .section-header h2");
+                    if (titleEl && data.albumTitle) {
+                        titleEl.innerHTML = `${data.albumTitle} <span class="text-red">Fotogalerie</span>`;
+                    }
+                }
+            } else {
+                console.warn("Worker meldete Status:", response.status);
+            }
+        } catch (immichErr) {
+            console.warn("Immich-Verbindung nicht erfolgreich, lade lokales Archiv:", immichErr);
         }
+    }
 
-    } catch (error) {
-        console.error("Fehler beim Laden der Fotogalerie:", error);
-        grid.innerHTML = '<p class="text-center text-muted" style="grid-column: 1 / -1; padding: 3rem;">Bilder konnten nicht geladen werden.</p>';
+    // 2. Lokales Fallback auf galerie.json
+    if (!loaded) {
+        try {
+            const response = await fetch("data/galerie.json?v=" + new Date().getTime());
+            if (!response.ok) throw new Error("Netzwerk-Antwort war nicht ok");
+            galleryData = await response.json();
+            loaded = true;
+        } catch (error) {
+            console.error("Fehler beim Laden der Fotogalerie:", error);
+            grid.innerHTML = '<p class="text-center text-muted" style="grid-column: 1 / -1; padding: 3rem;">Bilder konnten nicht geladen werden.</p>';
+            return;
+        }
+    }
+
+    // 3. Komponenten rendern
+    generateTagCloud();
+    renderGallery("all");
+    setupGalleryListeners();
+}
+
+function setupGalleryListeners() {
+    if (listenersInitialized) return;
+    listenersInitialized = true;
+
+    // Category filter listeners
+    document.querySelectorAll(".gallery-filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            activeCategory = btn.getAttribute("data-category");
+            const searchInput = document.getElementById("gallery-search");
+            if (searchInput) searchInput.value = "";
+            renderGallery(activeCategory);
+        });
+    });
+
+    // Search listener
+    const searchInput = document.getElementById("gallery-search");
+    if (searchInput) {
+        searchInput.addEventListener("input", () => {
+            document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
+            const allBtn = document.querySelector('.gallery-filter-btn[data-category="all"]');
+            if (allBtn) allBtn.classList.add("active");
+            activeCategory = "all";
+            renderGallery("all");
+        });
     }
 }
 
@@ -187,7 +253,7 @@ function renderGallery(filter, append = false) {
 
         card.innerHTML = `
             <div class="gallery-img-container">
-                <img id="${imgPlaceholderId}" src="${item.imageUrl}" alt="${item.title}" class="masonry-img" loading="lazy" onerror="window.handleImageError(this, '${gradient}')">
+                <img id="${imgPlaceholderId}" src="${item.thumbnailUrl || item.imageUrl}" alt="${item.title}" class="masonry-img" loading="lazy" onerror="window.handleImageError(this, '${gradient}')">
                 <div class="gallery-img-overlay">
                     <span class="gallery-zoom-icon">🔍</span>
                 </div>
@@ -268,7 +334,7 @@ function openLightbox(index) {
     img.style.display = "block";
     if (fallback) fallback.style.display = "none";
 
-    img.src = item.imageUrl;
+    img.src = item.imageUrl || item.thumbnailUrl;
     img.alt = item.title;
 
     // Handle lightbox image error (e.g. file missing)
