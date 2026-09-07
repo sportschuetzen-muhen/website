@@ -5,37 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sportschützen Muhen</title>
     <meta name="description" content="Offizielle Website der Sportschützen Muhen.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="glass-nav">
-        <div class="container nav-content">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Sportschützen Muhen Logo" class="logo-img">
-                Sportschützen <span class="text-bold">Muhen</span>
-            </div>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu öffnen">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="desktop-nav" id="nav-links">
-                <a href="#home" class="active">Willkommen</a>
-                <a href="verein.html">Verein</a>
-                <a href="verein.html#galerie">Galerie</a>
-                <a href="#termine">Termine</a>
-                <a href="schuetzenhaus_vermietung.html">Vermietung</a>
-                <a href="#reports">Berichte</a>
-                <a href="resultate.html">Resultate</a>
-            </nav>
-        </div>
-    </header>
+    <site-header active="home"></site-header>
 
     <main>
         <section id="home" class="hero">
@@ -217,32 +191,9 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <div class="logo">
-                    <span class="red-dot"></span> Sportschützen Muhen
-                </div>
-                <p>Präzision, die verbindet.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Links</h4>
-                <a href="#home">Willkommen</a>
-                <a href="verein.html">Verein</a>
-                <a href="verein.html#galerie">Galerie</a>
-                <a href="resultate.html">Resultate</a>
-                <a href="datenschutz.html">Datenschutz</a>
-            </div>
-            <div class="footer-contact">
-                <h4>Kontakt</h4>
-                <p><a href="https://maps.google.com/?q=Sportschützen+Muhen+Rütelistrasse+Muhen" target="_blank" style="color: var(--accent-color); font-weight: 600;">📍 Schützenhaus Muhen<br>Rütelistrasse, 5037 Muhen</a></p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Sportschützen Muhen. Alle Rechte vorbehalten.</p>
-        </div>
-    </footer>
+    <site-footer></site-footer>
 
+    <script src="js/components.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutzerklärung - Sportschützen Muhen</title>
     <meta name="robots" content="noindex, follow">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .datenschutz-container {
@@ -36,30 +34,7 @@
     </style>
 </head>
 <body>
-    <header class="glass-nav">
-        <div class="container nav-content">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Sportschützen Muhen Logo" class="logo-img">
-                Sportschützen <span class="text-bold">Muhen</span>
-            </a>
-            
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu öffnen">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="desktop-nav" id="nav-links">
-                <a href="index.html#home">Willkommen</a>
-                <a href="verein.html">Verein</a>
-                <a href="verein.html#galerie">Galerie</a>
-                <a href="index.html#termine">Termine</a>
-                <a href="schuetzenhaus_vermietung.html">Vermietung</a>
-                <a href="index.html#reports">Berichte</a>
-                <a href="resultate.html">Resultate</a>
-            </nav>
-        </div>
-    </header>
+    <site-header active=""></site-header>
 
     <main class="datenschutz-container">
         <h1 style="font-size: 2.8rem; margin-bottom: 2rem; color: var(--primary-color);">Datenschutzerklärung</h1>
@@ -93,6 +68,9 @@
         <h3>Google Calendar</h3>
         <p>Auf unserer Unterseite für die Vermietung des Schützenhauses ist ein Kalender der Google LLC (USA) eingebunden (Google Calendar), um Ihnen die freien und belegten Tage anzuzeigen. Bei der Darstellung des Kalenders wird technisch bedingt eine Verbindung zu den Servern von Google hergestellt, wodurch Ihre IP-Adresse und technische Daten an Google übertragen werden können. Sofern Sie bei einem Google-Konto eingeloggt sind, kann Google diese Daten direkt Ihrem persönlichen Profil zuordnen. Weitere Details entnehmen Sie bitte der Datenschutzerklärung von Google.</p>
 
+        <h3>Lokale Schriften (Self-Hosted Webfonts)</h3>
+        <p>Zur einheitlichen und ansprechenden Darstellung unserer Inhalte nutzen wir moderne Webfonts (Inter und Outfit). Diese Schriftarten werden <strong>lokal auf unserem eigenen Webserver gehostet</strong>. Beim Aufruf unserer Website wird keine Verbindung zu externen Servern von Google Fonts aufgebaut, und es werden diesbezüglich keine IP-Adressen oder Besucherdaten an Server in den USA übertragen.</p>
+
         <h2>3. Cookies und Tracking</h2>
         <p>Wir verwenden auf dieser Website **keine** Tracking-Cookies, Werbe-Pixel oder Analyse-Technologien zur Erstellung von Nutzungsprofilen (wie z. B. Google Analytics oder Facebook-Pixel). Wir schalten keine personalisierte Werbung. Es kommen ausschliesslich technisch notwendige Sitzungsdaten zum Einsatz, um Ihnen den Besuch unserer Ligen-Ergebnisse und die Nutzung der interaktiven Filter barrierefrei und komfortabel zu ermöglichen.</p>
 
@@ -102,32 +80,9 @@
         <p><em>Stand dieser Datenschutzerklärung: 31. Mai 2026</em></p>
     </main>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <div class="logo">
-                    <span class="red-dot"></span> Sportschützen Muhen
-                </div>
-                <p>Präzision, die verbindet.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Links</h4>
-                <a href="index.html#home">Willkommen</a>
-                <a href="verein.html">Verein</a>
-                <a href="verein.html#galerie">Galerie</a>
-                <a href="resultate.html">Resultate</a>
-                <a href="datenschutz.html">Datenschutz</a>
-            </div>
-            <div class="footer-contact">
-                <h4>Kontakt</h4>
-                <p><a href="https://maps.google.com/?q=Sportschützen+Muhen+Rütelistrasse+Muhen" target="_blank" style="color: var(--accent-color); font-weight: 600;">📍 Schützenhaus Muhen<br>Rütelistrasse, 5037 Muhen</a></p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Sportschützen Muhen. Alle Rechte vorbehalten.</p>
-        </div>
-    </footer>
+    <site-footer></site-footer>
 
+    <script src="js/components.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

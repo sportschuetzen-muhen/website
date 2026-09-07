@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vorstand - Sportschützen Muhen</title>
     <meta name="robots" content="noindex, nofollow">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .admin-container {
@@ -42,18 +40,7 @@
     </style>
 </head>
 <body>
-    <header class="glass-nav">
-        <div class="container nav-content">
-            <div class="logo">
-                <span class="red-dot"></span>
-                Sportschützen <span class="text-bold">Muhen</span> - Intern
-            </div>
-            <div style="display: flex; gap: 1rem;">
-                <a href="resultate.html" class="btn btn-outline">Resultate</a>
-                <a href="index.html" class="btn btn-outline">Zurück zur Website</a>
-            </div>
-        </div>
-    </header>
+    <site-header type="admin"></site-header>
 
     <main class="admin-container">
         <div class="admin-header">
@@ -143,5 +130,6 @@
             }, 3000);
         });
     </script>
+    <script src="js/components.js"></script>
 </body>
 </html>

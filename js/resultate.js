@@ -7,6 +7,47 @@ let rawGM = [];
 let rawGC = [];
 let rawMannschaft = [];
 
+// === SWR CACHING HELPER ===
+// Zeigt gecachte Daten sofort an (keine Ladezeit!) und aktualisiert im Hintergrund
+async function fetchWithSWRCache(url, cacheKey, onSuccess, onError) {
+    let hasRenderedCache = false;
+    try {
+        const cached = sessionStorage.getItem(cacheKey);
+        if (cached) {
+            const parsed = JSON.parse(cached);
+            if (parsed && parsed.data) {
+                onSuccess(parsed.data, true);
+                hasRenderedCache = true;
+            }
+        }
+    } catch (e) {
+        console.warn('Cache-Lesefehler:', e);
+    }
+
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("HTTP Fehler " + response.status);
+        const data = await response.json();
+        
+        try {
+            sessionStorage.setItem(cacheKey, JSON.stringify({
+                timestamp: Date.now(),
+                data: data
+            }));
+        } catch (e) {
+            // QuotaExceeded oder private browsing
+        }
+        
+        onSuccess(data, false);
+    } catch (err) {
+        if (!hasRenderedCache) {
+            onError(err);
+        } else {
+            console.info('Hintergrund-Update fehlgeschlagen, gecachte Daten bleiben aktiv:', err.message);
+        }
+    }
+}
+
 function initDashboard() {
     const selectElement = document.getElementById('jahr-select');
     if (!selectElement) return;
@@ -27,13 +68,17 @@ function initDashboard() {
         selectElement.appendChild(archiveOption);
     }
 
-    // 2. Tab switching logic
+    // 2. Tab switching logic mit voller ARIA-Barrierefreiheit
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => {
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
+            });
             document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
             
             btn.classList.add('active');
+            btn.setAttribute('aria-selected', 'true');
             const tabId = btn.getAttribute('data-tab');
             const targetContent = document.getElementById(tabId);
             if (targetContent) {
@@ -62,13 +107,18 @@ function initDashboard() {
 }
 
 function loadAllData(selectedYear) {
-    // Show spinner inside all tbody tables
+    // Show spinner inside all tbody tables only if no cache exists
     const spinners = `<tr class="no-hover"><td colspan="8"><div class="results-loading"><div class="spinner"></div>Daten werden geladen...</div></td></tr>`;
     document.getElementById('tbody-liga1').innerHTML = spinners;
     document.getElementById('tbody-liga2').innerHTML = spinners;
     document.getElementById('tbody-gm').innerHTML = spinners;
     document.getElementById('tbody-gc').innerHTML = spinners;
     document.getElementById('tbody-mannschaft').innerHTML = spinners;
+
+    const mobileContainer = document.getElementById('mobile-mannschaft-container');
+    if (mobileContainer) {
+        mobileContainer.innerHTML = '<div class="results-loading p-4 text-center"><div class="spinner"></div>Lade Mannschaftsdaten...</div>';
+    }
 
     // Load JM data (Maps "aktuell" to "current" for this API)
     const jmYear = selectedYear === "aktuell" ? "current" : selectedYear;
@@ -82,24 +132,25 @@ function loadAllData(selectedYear) {
 
 // === TAB 1: JAHRESMEISTERSCHAFT ===
 async function loadJahresmeisterschaft(yearParam) {
-    const API_URL = `https://jahresmeisterschaft-muhen.dan-hunziker73.workers.dev?jahr=${yearParam}&t=${Date.now()}`;
+    const API_URL = `https://jahresmeisterschaft-muhen.dan-hunziker73.workers.dev?jahr=${yearParam}`;
     const fmt = v => isFinite(v) ? Number(v).toFixed(2) : "0.00";
     const arr = v => Array.isArray(v) ? v : [];
+    const cacheKey = `res_cache_jm_${yearParam}`;
 
-    try {
-        const response = await fetch(API_URL);
-        if (!response.ok) throw new Error("HTTP Error " + response.status);
-        const data = await response.json();
-
-        renderLiga(1, data.liga1, 'tbody-liga1', fmt, arr);
-        renderLiga(2, data.liga2, 'tbody-liga2', fmt, arr);
-
-    } catch (e) {
-        console.error("Fehler beim Laden der Jahresmeisterschaft:", e);
-        const errorRow = `<tr><td colspan="3"><div class="results-error-msg">Jahresmeisterschaft konnte nicht geladen werden.</div></td></tr>`;
-        document.getElementById('tbody-liga1').innerHTML = errorRow;
-        document.getElementById('tbody-liga2').innerHTML = errorRow;
-    }
+    fetchWithSWRCache(
+        API_URL,
+        cacheKey,
+        (data) => {
+            renderLiga(1, data.liga1, 'tbody-liga1', fmt, arr);
+            renderLiga(2, data.liga2, 'tbody-liga2', fmt, arr);
+        },
+        (err) => {
+            console.error("Fehler beim Laden der Jahresmeisterschaft:", err);
+            const errorRow = `<tr><td colspan="3"><div class="results-error-msg">Jahresmeisterschaft konnte nicht geladen werden.</div></td></tr>`;
+            document.getElementById('tbody-liga1').innerHTML = errorRow;
+            document.getElementById('tbody-liga2').innerHTML = errorRow;
+        }
+    );
 }
 
 function renderLiga(ligaNr, listData, tbodyId, fmt, arr) {
@@ -127,12 +178,19 @@ function renderLiga(ligaNr, listData, tbodyId, fmt, arr) {
         }
 
         html += `
-            <tr class="${rowClass}" onclick="window.toggleRow('${detailRowId}')">
+            <tr class="${rowClass}" 
+                tabindex="0" 
+                role="button" 
+                aria-expanded="false" 
+                aria-controls="${detailRowId}" 
+                aria-label="Rang ${t.rang || i+1}: ${t.name || '-'}, Total ${fmt(t.total)} Punkte. Klicke für Details."
+                onclick="window.toggleRow('${detailRowId}', this)"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault(); window.toggleRow('${detailRowId}', this);}">
                 <td class="col-rang"><b>${t.rang || "-"}</b>${statusLabel}</td>
                 <td class="col-name">${t.name || "-"}</td>
                 <td class="col-total"><b>${fmt(t.total)}</b></td>
             </tr>
-            <tr id="${detailRowId}" class="detail-row">
+            <tr id="${detailRowId}" class="detail-row" role="region" aria-label="Detailresultate ${t.name}">
                 <td colspan="3">
                     <div class="detail-container">
                         <div class="detail-grid-3">
@@ -212,43 +270,60 @@ function renderLiga(ligaNr, listData, tbodyId, fmt, arr) {
     tbody.innerHTML = html;
 }
 
-window.toggleRow = (detailRowId) => {
+window.toggleRow = (detailRowId, triggerEl) => {
     const el = document.getElementById(detailRowId);
     if (!el) return;
     const isVisible = el.style.display === "table-row";
     
-    // Close other open detail rows to prevent cluttering
+    // Close other open detail rows
     document.querySelectorAll('.detail-row').forEach(row => {
         if (row.id.startsWith('detail-jm-')) {
             row.style.display = 'none';
         }
     });
+    document.querySelectorAll('.table-results tr[aria-expanded="true"]').forEach(tr => {
+        if (tr.getAttribute('aria-controls') && tr.getAttribute('aria-controls').startsWith('detail-jm-')) {
+            tr.setAttribute('aria-expanded', 'false');
+        }
+    });
     
     el.style.display = isVisible ? "none" : "table-row";
+    if (triggerEl) {
+        triggerEl.setAttribute('aria-expanded', isVisible ? "false" : "true");
+    }
 };
 
 // === TAB 2: GRUPPE & GRENZLAND ===
 async function loadGruppeGrenzland(yearParam) {
     const WORKER_URL = "https://gruppe.dan-hunziker73.workers.dev";
-    
-    try {
-        const [resGM, resGC] = await Promise.all([
-            fetch(`${WORKER_URL}?type=gruppe&jahr=${yearParam}&t=${Date.now()}`).then(r => r.json()),
-            fetch(`${WORKER_URL}?type=grenzland&jahr=${yearParam}&t=${Date.now()}`).then(r => r.json())
-        ]);
-        
-        rawGM = resGM;
-        rawGC = resGC;
-        
-        buildGroupTable("gm", rawGM, "tbody-gm");
-        buildGroupTable("gc", rawGC, "tbody-gc");
+    const cacheKeyGM = `res_cache_gm_${yearParam}`;
+    const cacheKeyGC = `res_cache_gc_${yearParam}`;
 
-    } catch (e) {
-        console.error("Fehler beim Laden von Gruppe & Grenzland:", e);
-        const errorRow = `<tr><td colspan="4"><div class="results-error-msg">Gruppe- & Grenzlanddaten konnten nicht geladen werden.</div></td></tr>`;
-        document.getElementById('tbody-gm').innerHTML = errorRow;
-        document.getElementById('tbody-gc').innerHTML = errorRow;
-    }
+    fetchWithSWRCache(
+        `${WORKER_URL}?type=gruppe&jahr=${yearParam}`,
+        cacheKeyGM,
+        (data) => {
+            rawGM = data;
+            buildGroupTable("gm", rawGM, "tbody-gm");
+        },
+        (err) => {
+            console.error("Fehler beim Laden von GM:", err);
+            document.getElementById('tbody-gm').innerHTML = `<tr><td colspan="4"><div class="results-error-msg">Gruppendaten konnten nicht geladen werden.</div></td></tr>`;
+        }
+    );
+
+    fetchWithSWRCache(
+        `${WORKER_URL}?type=grenzland&jahr=${yearParam}`,
+        cacheKeyGC,
+        (data) => {
+            rawGC = data;
+            buildGroupTable("gc", rawGC, "tbody-gc");
+        },
+        (err) => {
+            console.error("Fehler beim Laden von GC:", err);
+            document.getElementById('tbody-gc').innerHTML = `<tr><td colspan="4"><div class="results-error-msg">Grenzlanddaten konnten nicht geladen werden.</div></td></tr>`;
+        }
+    );
 }
 
 function buildGroupTable(type, data, tbodyId) {
@@ -273,11 +348,20 @@ function buildGroupTable(type, data, tbodyId) {
             const avg = teamRows.length > 0 ? sum / teamRows.length : 0;
             const hmClass = getHMClass(avg, type);
 
-            html += `<td class="cell-round ${hmClass}" onclick="window.toggleGroupDetail('${type}', '${team.replace(/'/g,"\\'")}', ${r}, ${tIdx})"><b>${sum || "–"}</b></td>`;
+            html += `
+                <td class="cell-round ${hmClass}" 
+                    tabindex="0" 
+                    role="button"
+                    aria-label="${type === 'gm' ? 'Gruppe' : 'Grenzland'} ${team}, Runde ${r}: ${sum || 'noch nicht geschossen'}. Klicken für Details."
+                    onclick="window.toggleGroupDetail('${type}', '${team.replace(/'/g,"\\'")}', ${r}, ${tIdx})"
+                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault(); window.toggleGroupDetail('${type}', '${team.replace(/'/g,"\\'")}', ${r}, ${tIdx});}">
+                    <b>${sum || "–"}</b>
+                </td>
+            `;
         }
         
         html += `</tr>
-        <tr id="${detailRowId}" class="detail-row">
+        <tr id="${detailRowId}" class="detail-row" role="region" aria-label="Details für ${team}">
             <td colspan="4">
                 <div id="detail-container-${type}-${tIdx}" class="detail-container" style="display:none;"></div>
             </td>
@@ -299,7 +383,7 @@ window.toggleGroupDetail = (type, team, round, tIdx) => {
     
     // Close other group details
     document.querySelectorAll('.detail-row').forEach(row => {
-        if (row.id.startsWith('detail-row-gm-') || row.id.startsWith('detail-row-gc-')) {
+        if (row.id.startsWith(`detail-row-${type}-`)) {
             row.style.display = 'none';
         }
     });
@@ -309,52 +393,46 @@ window.toggleGroupDetail = (type, team, round, tIdx) => {
         return;
     }
 
-    const dataList = type === "gm" ? rawGM : rawGC;
-    const list = dataList.filter(p => p[`r${round}Team`] === team && (type === "gm" ? (p[`r${round}P1`] + p[`r${round}P2`] > 0) : p[`r${round}Pkt`] > 0));
-    
-    let total = 0;
+    const data = type === "gm" ? rawGM : rawGC;
+    const teamRows = data.filter(p => p[`r${round}Team`] === team);
+    if (teamRows.length === 0) return;
+
     let html = `
         <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--glass-border); padding-bottom: 0.5rem; margin-bottom: 1rem;">
-            <h4 style="margin: 0; color: var(--primary-color);">${team} &ndash; Runde ${round}</h4>
-            <span class="btn btn-secondary" style="padding: 4px 8px; font-size: 0.75rem;" onclick="document.getElementById('${detailRowId}').style.display='none'">Schliessen &times;</span>
+            <h4 style="margin: 0; color: var(--primary-color);">${team} &ndash; Runde ${round} Details</h4>
+            <button type="button" class="btn btn-secondary" style="padding: 4px 8px; font-size: 0.75rem; cursor:pointer;" onclick="document.getElementById('${detailRowId}').style.display='none'">Schliessen &times;</button>
         </div>
         <div style="display: flex; flex-direction: column; gap: 0.5rem;">
     `;
 
-    list.forEach(p => {
-        let val = type === "gm" ? (p[`r${round}P1`] + p[`r${round}P2`]) : p[`r${round}Pkt`];
-        let prevVal = 0;
-        if (round > 1) {
-            prevVal = type === "gm" ? (p[`r${round-1}P1`] + p[`r${round-1}P2`]) : p[`r${round-1}Pkt`];
-        }
-        total += val;
-        
-        const trend = getTrend(val, prevVal);
-        const hm = getHMClass(val, type, p.stellung || "");
-        
+    let total = 0;
+    teamRows.forEach(p => {
         if (type === "gm") {
-            const stellCls = p.stellung.toLowerCase().includes("liegend") ? "liegend" : "kniend";
+            const p1 = p[`r${round}P1`];
+            const p2 = p[`r${round}P2`];
+            const sub = p1 + p2;
+            total += sub;
+            const avg = sub / 2;
+            const hm = getHMClass(avg, "gm", p.stellung);
+            
             html += `
                 <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.45rem 0.5rem; border-bottom: 1px dashed rgba(15, 58, 93, 0.05);">
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="font-weight: 600;">${p.name}</span>
-                        <span class="stellung-badge ${stellCls}">${p.stellung}</span>
-                    </div>
-                    <div style="display: flex; gap: 1rem; align-items: center;">
-                        <span style="color: var(--text-muted); font-size: 0.8rem;">(${p[`r${round}P1`]} / ${p[`r${round}P2`]})</span>
-                        <span class="stellung-badge ${hm}" style="font-weight: 800; font-size: 0.9rem;">${val}</span>
-                        ${trend}
+                    <span>${p.name} <small class="text-muted" style="margin-left: 5px;">(${p.stellung})</small></span>
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <span class="text-muted" style="font-size: 0.85rem;">${p1} / ${p2}</span>
+                        <span class="stellung-badge ${hm}" style="font-weight: 800; font-size: 0.9rem;">${sub}</span>
                     </div>
                 </div>
             `;
         } else {
+            const pkt = p[`r${round}Pkt`];
+            total += pkt;
+            const hm = getHMClass(pkt, "gc", p.stellung);
+            
             html += `
                 <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.45rem 0.5rem; border-bottom: 1px dashed rgba(15, 58, 93, 0.05);">
-                    <span style="font-weight: 600;">${p.name}</span>
-                    <div style="display: flex; gap: 1rem; align-items: center;">
-                        <span class="stellung-badge ${hm}" style="font-weight: 800; font-size: 0.9rem;">${val}</span>
-                        ${trend}
-                    </div>
+                    <span>${p.name} <small class="text-muted" style="margin-left: 5px;">(${p.stellung})</small></span>
+                    <span class="stellung-badge ${hm}" style="font-weight: 800; font-size: 0.9rem;">${pkt}</span>
                 </div>
             `;
         }
@@ -380,50 +458,128 @@ async function loadMannschaft(yearParam) {
     const tbody = document.getElementById('tbody-mannschaft');
     if (!tbody) return;
 
-    try {
-        const response = await fetch(`${WORKER_URL}?type=mannschaft&jahr=${yearParam}&t=${Date.now()}`);
-        if (!response.ok) throw new Error("HTTP Error " + response.status);
-        rawMannschaft = await response.json();
+    const cacheKeyMS = `res_cache_ms_${yearParam}`;
 
-        if (!rawMannschaft || rawMannschaft.length === 0) {
-            tbody.innerHTML = `<tr><td colspan="8" class="text-center text-muted" style="padding:2rem;">Keine Mannschafts-Resultate in dieser Saison.</td></tr>`;
-            return;
-        }
+    fetchWithSWRCache(
+        `${WORKER_URL}?type=mannschaft&jahr=${yearParam}`,
+        cacheKeyMS,
+        (data) => {
+            rawMannschaft = data;
 
-        const teams = [...new Set(rawMannschaft.flatMap(r => {
-            let t = [];
-            for (let i = 1; i <= 7; i++) if (r[`r${i}Team`]) t.push(r[`r${i}Team`]);
-            return t;
-        }))].sort();
-
-        let html = "";
-        teams.forEach((team, tIdx) => {
-            const detailRowId = `detail-row-ms-${tIdx}`;
-            html += `<tr><td class="col-name" style="padding-left:15px; width:30%;">${team}</td>`;
-            
-            for (let r = 1; r <= 7; r++) {
-                const teamData = rawMannschaft.filter(p => p[`r${r}Team`] === team && p[`r${r}Pkt`] > 0);
-                const sum = teamData.reduce((a, b) => a + b[`r${r}Pkt`], 0);
-                const avg = teamData.length > 0 ? sum / teamData.length : 0;
-                const hmClass = getHeatmapClass(avg);
-
-                html += `<td class="cell-round ${hmClass}" onclick="window.toggleMannschaftDetail('${team.replace(/'/g,"\\'")}', ${r}, ${tIdx})"><b>${sum || "–"}</b></td>`;
+            if (!rawMannschaft || rawMannschaft.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="8" class="text-center text-muted" style="padding:2rem;">Keine Mannschafts-Resultate in dieser Saison.</td></tr>`;
+                const mobCont = document.getElementById('mobile-mannschaft-container');
+                if (mobCont) mobCont.innerHTML = `<p class="text-center text-muted p-4">Keine Mannschafts-Resultate in dieser Saison.</p>`;
+                return;
             }
 
-            html += `</tr>
-            <tr id="${detailRowId}" class="detail-row">
-                <td colspan="8">
-                    <div id="detail-container-ms-${tIdx}" class="detail-container" style="display:none;"></div>
-                </td>
-            </tr>`;
-        });
+            const teams = [...new Set(rawMannschaft.flatMap(r => {
+                let t = [];
+                for (let i = 1; i <= 7; i++) if (r[`r${i}Team`]) t.push(r[`r${i}Team`]);
+                return t;
+            }))].sort();
 
-        tbody.innerHTML = html;
+            // 1. Desktop Table rendern
+            let html = "";
+            teams.forEach((team, tIdx) => {
+                const detailRowId = `detail-row-ms-${tIdx}`;
+                html += `<tr><td class="col-name" style="padding-left:15px; width:30%;">${team}</td>`;
+                
+                for (let r = 1; r <= 7; r++) {
+                    const teamData = rawMannschaft.filter(p => p[`r${r}Team`] === team && p[`r${r}Pkt`] > 0);
+                    const sum = teamData.reduce((a, b) => a + b[`r${r}Pkt`], 0);
+                    const avg = teamData.length > 0 ? sum / teamData.length : 0;
+                    const hmClass = getHeatmapClass(avg);
 
-    } catch (e) {
-        console.error("Fehler beim Laden der Mannschaftsdaten:", e);
-        tbody.innerHTML = `<tr><td colspan="8"><div class="results-error-msg">Mannschaftsdaten konnten nicht geladen werden.</div></td></tr>`;
+                    html += `
+                        <td class="cell-round ${hmClass}" 
+                            tabindex="0" 
+                            role="button"
+                            aria-label="Mannschaft ${team}, Runde ${r}: ${sum || 'noch nicht geschossen'}. Klicken für Details."
+                            onclick="window.toggleMannschaftDetail('${team.replace(/'/g,"\\'")}', ${r}, '${tIdx}')"
+                            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault(); window.toggleMannschaftDetail('${team.replace(/'/g,"\\'")}', ${r}, '${tIdx}');}">
+                            <b>${sum || "–"}</b>
+                        </td>
+                    `;
+                }
+
+                html += `</tr>
+                <tr id="${detailRowId}" class="detail-row" role="region" aria-label="Details für ${team}">
+                    <td colspan="8">
+                        <div id="detail-container-ms-${tIdx}" class="detail-container" style="display:none;"></div>
+                    </td>
+                </tr>`;
+            });
+
+            tbody.innerHTML = html;
+
+            // 2. Adaptive Mobile Cards rendern (Kein horizontales Scrollen mehr!)
+            buildMobileMannschaftCards(teams, rawMannschaft);
+        },
+        (err) => {
+            console.error("Fehler beim Laden der Mannschaftsdaten:", err);
+            tbody.innerHTML = `<tr><td colspan="8"><div class="results-error-msg">Mannschaftsdaten konnten nicht geladen werden.</div></td></tr>`;
+            const mobCont = document.getElementById('mobile-mannschaft-container');
+            if (mobCont) mobCont.innerHTML = `<div class="results-error-msg p-3">Mannschaftsdaten konnten nicht geladen werden.</div>`;
+        }
+    );
+}
+
+// Adaptive Mobile Card Generator
+function buildMobileMannschaftCards(teams, data) {
+    const mobileContainer = document.getElementById('mobile-mannschaft-container');
+    if (!mobileContainer) return;
+
+    if (!teams || teams.length === 0) {
+        mobileContainer.innerHTML = '<p class="text-center text-muted p-3">Keine Resultate vorhanden.</p>';
+        return;
     }
+
+    let html = "";
+    teams.forEach((team, tIdx) => {
+        let grandTotal = 0;
+        let roundChipsHtml = "";
+
+        for (let r = 1; r <= 7; r++) {
+            const teamData = data.filter(p => p[`r${r}Team`] === team && p[`r${r}Pkt`] > 0);
+            const sum = teamData.reduce((a, b) => a + b[`r${r}Pkt`], 0);
+            grandTotal += sum;
+            const avg = teamData.length > 0 ? sum / teamData.length : 0;
+            const hmClass = getHeatmapClass(avg);
+
+            roundChipsHtml += `
+                <button type="button" 
+                        class="mobile-round-chip ${hmClass}" 
+                        aria-label="Runde ${r}: ${sum || 'noch nicht geschossen'}. Details anzeigen"
+                        onclick="window.toggleMannschaftDetail('${team.replace(/'/g,"\\'")}', ${r}, 'mob-${tIdx}')">
+                    <span class="chip-rnd">R${r}</span>
+                    <span class="chip-val">${sum || '–'}</span>
+                </button>
+            `;
+        }
+
+        const detailRowId = `detail-row-ms-mob-${tIdx}`;
+
+        html += `
+            <div class="glass-card mobile-team-card">
+                <div class="team-card-header">
+                    <div class="team-card-title">
+                        <span style="font-size: 1.2rem;">🎯</span>
+                        <h4>${team}</h4>
+                    </div>
+                    <span class="team-total-badge">Total: <b>${grandTotal > 0 ? grandTotal : '–'}</b> Pkt</span>
+                </div>
+                <div class="team-rounds-grid">
+                    ${roundChipsHtml}
+                </div>
+                <div id="${detailRowId}" class="detail-row mobile-detail-row" style="display:none; margin-top:12px;">
+                    <div id="detail-container-ms-mob-${tIdx}" class="detail-container" style="display:none;"></div>
+                </div>
+            </div>
+        `;
+    });
+
+    mobileContainer.innerHTML = html;
 }
 
 window.toggleMannschaftDetail = (team, round, tIdx) => {
@@ -434,7 +590,8 @@ window.toggleMannschaftDetail = (team, round, tIdx) => {
     const detailContainer = document.getElementById(detailContainerId);
     if (!detailRow || !detailContainer) return;
 
-    const isCurrentlyOpen = detailRow.style.display === 'table-row' && detailContainer.getAttribute('data-active-round') === round.toString();
+    const isCurrentlyOpen = (detailRow.style.display === 'table-row' || detailRow.style.display === 'block') && 
+                            detailContainer.getAttribute('data-active-round') === round.toString();
     
     // Close other team details
     document.querySelectorAll('.detail-row').forEach(row => {
@@ -454,8 +611,8 @@ window.toggleMannschaftDetail = (team, round, tIdx) => {
     let total = 0;
     let html = `
         <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--glass-border); padding-bottom: 0.5rem; margin-bottom: 1rem;">
-            <h4 style="margin: 0; color: var(--primary-color);">${team} &ndash; Runde ${round}</h4>
-            <span class="btn btn-secondary" style="padding: 4px 8px; font-size: 0.75rem;" onclick="document.getElementById('${detailRowId}').style.display='none'">Schliessen &times;</span>
+            <h4 style="margin: 0; color: var(--primary-color); font-size:1.1rem;">${team} &ndash; Runde ${round}</h4>
+            <button type="button" class="btn btn-secondary" style="padding: 4px 8px; font-size: 0.75rem; cursor:pointer;" onclick="document.getElementById('${detailRowId}').style.display='none'">Schliessen &times;</button>
         </div>
         <div style="display: flex; flex-direction: column; gap: 0.5rem;">
     `;
@@ -483,7 +640,10 @@ window.toggleMannschaftDetail = (team, round, tIdx) => {
 
     detailContainer.innerHTML = html;
     detailContainer.setAttribute('data-active-round', round.toString());
-    detailRow.style.display = 'table-row';
+    
+    // Check if mobile or desktop
+    const isMobile = String(tIdx).startsWith('mob-');
+    detailRow.style.display = isMobile ? 'block' : 'table-row';
     detailContainer.style.display = 'block';
 };
 

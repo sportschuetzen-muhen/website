@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultate - Sportschützen Muhen</title>
     <meta name="description" content="Aktuelle und historische Wettkampfresultate, Gruppenmeisterschaft, Mannschaftsmeisterschaft und Jahresmeisterschaft der Sportschützen Muhen.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .hero-mini {
@@ -20,31 +18,7 @@
     </style>
 </head>
 <body>
-    <header class="glass-nav">
-        <div class="container nav-content">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Sportschützen Muhen Logo" class="logo-img">
-                Sportschützen <span class="text-bold">Muhen</span>
-            </a>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu öffnen">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="desktop-nav" id="nav-links">
-                <a href="index.html#home">Willkommen</a>
-                <a href="verein.html">Verein</a>
-                <a href="verein.html#galerie">Galerie</a>
-                <a href="index.html#termine">Termine</a>
-                <a href="schuetzenhaus_vermietung.html">Vermietung</a>
-                <a href="index.html#reports">Berichte</a>
-                <a href="resultate.html" class="active">Resultate</a>
-            </nav>
-        </div>
-    </header>
+    <site-header active="resultate"></site-header>
 
     <main>
         <!-- Mini Hero -->
@@ -71,17 +45,17 @@
                     </select>
                 </div>
 
-                <!-- Tabs Navigation -->
-                <div class="dashboard-tabs fade-in-up delay-2">
-                    <button class="tab-btn active" data-tab="tab-jm">🏆 Jahresmeisterschaft</button>
-                    <button class="tab-btn" data-tab="tab-gruppe">👥 Gruppe & Grenzland</button>
-                    <button class="tab-btn" data-tab="tab-mannschaft">🎯 Mannschaft</button>
+                <!-- Tabs Navigation mit ARIA-Unterstützung -->
+                <div class="dashboard-tabs fade-in-up delay-2" role="tablist" aria-label="Wettkampf-Kategorien">
+                    <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-jm" id="tab-btn-jm" data-tab="tab-jm">🏆 Jahresmeisterschaft</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-gruppe" id="tab-btn-gruppe" data-tab="tab-gruppe">👥 Gruppe & Grenzland</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-mannschaft" id="tab-btn-mannschaft" data-tab="tab-mannschaft">🎯 Mannschaft</button>
                 </div>
 
                 <p class="dashboard-subtitle fade-in-up delay-2" id="info-subtitle">Tippe auf einen Schützen oder ein Feld für detaillierte Einzelresultate.</p>
 
                 <!-- TAB CONTENT A: JAHRESMEISTERSCHAFT -->
-                <div id="tab-jm" class="tab-content active">
+                <div id="tab-jm" class="tab-content active" role="tabpanel" aria-labelledby="tab-btn-jm">
                     <div class="results-grid-2">
                         <!-- Liga 1 -->
                         <div class="results-card">
@@ -90,9 +64,9 @@
                                 <table class="table-results" id="table-liga1">
                                     <thead>
                                         <tr>
-                                            <th class="col-rang">Rang</th>
-                                            <th class="col-name">Name</th>
-                                            <th class="col-total">Total</th>
+                                            <th scope="col" class="col-rang">Rang</th>
+                                            <th scope="col" class="col-name">Name</th>
+                                            <th scope="col" class="col-total">Total</th>
                                         </tr>
                                     </thead>
                                     <tbody id="tbody-liga1">
@@ -109,9 +83,9 @@
                                 <table class="table-results" id="table-liga2">
                                     <thead>
                                         <tr>
-                                            <th class="col-rang">Rang</th>
-                                            <th class="col-name">Name</th>
-                                            <th class="col-total">Total</th>
+                                            <th scope="col" class="col-rang">Rang</th>
+                                            <th scope="col" class="col-name">Name</th>
+                                            <th scope="col" class="col-total">Total</th>
                                         </tr>
                                     </thead>
                                     <tbody id="tbody-liga2">
@@ -124,7 +98,7 @@
                 </div>
 
                 <!-- TAB CONTENT B: GRUPPE & GRENZLAND -->
-                <div id="tab-gruppe" class="tab-content">
+                <div id="tab-gruppe" class="tab-content" role="tabpanel" aria-labelledby="tab-btn-gruppe">
                     <div class="results-grid-2">
                         <!-- Gruppenmeisterschaft -->
                         <div class="results-card">
@@ -133,10 +107,10 @@
                                 <table class="table-results" id="table-gm">
                                     <thead>
                                         <tr>
-                                            <th style="text-align: left; padding-left: 10px;">Team</th>
-                                            <th class="col-round-sm">R1</th>
-                                            <th class="col-round-sm">R2</th>
-                                            <th class="col-round-sm">R3</th>
+                                            <th scope="col" style="text-align: left; padding-left: 10px;">Team</th>
+                                            <th scope="col" class="col-round-sm">R1</th>
+                                            <th scope="col" class="col-round-sm">R2</th>
+                                            <th scope="col" class="col-round-sm">R3</th>
                                         </tr>
                                     </thead>
                                     <tbody id="tbody-gm">
@@ -153,10 +127,10 @@
                                 <table class="table-results" id="table-gc">
                                     <thead>
                                         <tr>
-                                            <th style="text-align: left; padding-left: 10px;">Team</th>
-                                            <th class="col-round-sm">R1</th>
-                                            <th class="col-round-sm">R2</th>
-                                            <th class="col-round-sm">R3</th>
+                                            <th scope="col" style="text-align: left; padding-left: 10px;">Team</th>
+                                            <th scope="col" class="col-round-sm">R1</th>
+                                            <th scope="col" class="col-round-sm">R2</th>
+                                            <th scope="col" class="col-round-sm">R3</th>
                                         </tr>
                                     </thead>
                                     <tbody id="tbody-gc">
@@ -169,27 +143,38 @@
                 </div>
 
                 <!-- TAB CONTENT C: MANNSCHAFT -->
-                <div id="tab-mannschaft" class="tab-content">
+                <div id="tab-mannschaft" class="tab-content" role="tabpanel" aria-labelledby="tab-btn-mannschaft">
                     <div class="results-card">
-                        <h3>Mannschaftsmeisterschaft (SSV)</h3>
-                        <div class="table-responsive">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.5rem;">
+                            <h3 style="margin-bottom: 0; padding-bottom: 0; border-bottom: none;">Mannschaftsmeisterschaft (SSV)</h3>
+                            <!-- Mobile View Switch Indicator -->
+                            <span class="mobile-hint text-muted" style="font-size: 0.85rem;"><i class="fa-solid fa-mobile-screen"></i> Mobile Card-Ansicht aktiv</span>
+                        </div>
+
+                        <!-- Desktop Table View -->
+                        <div class="table-responsive desktop-only-table">
                             <table class="table-results" id="table-mannschaft" style="table-layout: fixed; min-width: 600px;">
                                 <thead>
                                     <tr>
-                                        <th style="width: 30%; text-align: left; padding-left: 15px;">Team</th>
-                                        <th style="width: 10%; text-align: center;">R1</th>
-                                        <th style="width: 10%; text-align: center;">R2</th>
-                                        <th style="width: 10%; text-align: center;">R3</th>
-                                        <th style="width: 10%; text-align: center;">R4</th>
-                                        <th style="width: 10%; text-align: center;">R5</th>
-                                        <th style="width: 10%; text-align: center;">R6</th>
-                                        <th style="width: 10%; text-align: center;">R7</th>
+                                        <th scope="col" style="width: 30%; text-align: left; padding-left: 15px;">Team</th>
+                                        <th scope="col" style="width: 10%; text-align: center;">R1</th>
+                                        <th scope="col" style="width: 10%; text-align: center;">R2</th>
+                                        <th scope="col" style="width: 10%; text-align: center;">R3</th>
+                                        <th scope="col" style="width: 10%; text-align: center;">R4</th>
+                                        <th scope="col" style="width: 10%; text-align: center;">R5</th>
+                                        <th scope="col" style="width: 10%; text-align: center;">R6</th>
+                                        <th scope="col" style="width: 10%; text-align: center;">R7</th>
                                     </tr>
                                 </thead>
                                 <tbody id="tbody-mannschaft">
                                     <!-- Loaded dynamically -->
                                 </tbody>
                             </table>
+                        </div>
+
+                        <!-- Adaptive Mobile Cards View (Kein horizontales Scrollen mehr!) -->
+                        <div id="mobile-mannschaft-container" class="mobile-mannschaft-cards" style="display: none;">
+                            <!-- Dynamisch befüllt für kleine Bildschirme -->
                         </div>
                     </div>
                 </div>
@@ -198,32 +183,9 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <div class="logo">
-                    <span class="red-dot"></span> Sportschützen Muhen
-                </div>
-                <p>Präzision, die verbindet.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Links</h4>
-                <a href="index.html#home">Willkommen</a>
-                <a href="verein.html">Verein</a>
-                <a href="verein.html#galerie">Galerie</a>
-                <a href="resultate.html">Resultate</a>
-                <a href="datenschutz.html">Datenschutz</a>
-            </div>
-            <div class="footer-contact">
-                <h4>Kontakt</h4>
-                <p><a href="https://maps.google.com/?q=Sportschützen+Muhen+Rütelistrasse+Muhen" target="_blank" style="color: var(--accent-color); font-weight: 600;">📍 Schützenhaus Muhen<br>Rütelistrasse, 5037 Muhen</a></p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Sportschützen Muhen. Alle Rechte vorbehalten.</p>
-        </div>
-    </footer>
+    <site-footer></site-footer>
 
+    <script src="js/components.js"></script>
     <script src="js/main.js"></script>
     <script src="js/resultate.js"></script>
 </body>

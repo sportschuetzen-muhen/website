@@ -26,11 +26,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Mobile Menu Toggle
+// Mobile Menu Toggle (Fallback falls components.js nicht verwendet wird)
 const mobileToggle = document.getElementById('mobile-toggle');
 const navLinks = document.getElementById('nav-links');
 
-if (mobileToggle && navLinks) {
+if (mobileToggle && navLinks && !mobileToggle.hasAttribute('data-bound')) {
     mobileToggle.addEventListener('click', () => {
         navLinks.classList.toggle('open');
         mobileToggle.classList.toggle('active');
