@@ -584,10 +584,318 @@
     }
 
     .calendar-container {
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 4px 20px rgba(15, 58, 93, 0.06);
       border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .cal-title-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cal-month-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin: 0;
+    }
+
+    .cal-today-btn {
+      font-family: inherit;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .cal-today-btn:hover {
+      background: #bae6fd;
+    }
+
+    .cal-nav-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      background: #ffffff;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .cal-nav-btn:hover {
+      background: var(--bg-light);
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+      transform: scale(1.05);
+    }
+
+    .cal-weekdays {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 6px;
+      min-height: 280px;
+    }
+
+    .cal-day {
+      aspect-ratio: 1;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      user-select: none;
+      border: 1.5px solid transparent;
+      padding: 2px;
+    }
+
+    .cal-day .day-num {
+      line-height: 1;
+    }
+
+    .cal-day .day-badge {
+      font-size: 0.62rem;
+      font-weight: 700;
+      margin-top: 3px;
+      padding: 1px 4px;
+      border-radius: 4px;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .cal-day.day-other-month {
+      color: #cbd5e1;
+      background: transparent;
+      opacity: 0.35;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .cal-day.day-past {
+      color: #94a3b8;
+      background: #f8fafc;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+
+    .cal-day.day-today .day-num {
+      text-decoration: underline;
+      text-decoration-thickness: 2.5px;
+      text-underline-offset: 3px;
+      color: var(--primary-color);
+    }
+
+    .cal-day.day-free {
+      background: #f0fdf4;
+      color: #166534;
+      border-color: #bbf7d0;
+      cursor: pointer;
+    }
+    .cal-day.day-free:hover {
+      background: #dcfce7;
+      border-color: #22c55e;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(34, 197, 94, 0.2);
+    }
+
+    .cal-day.day-booked {
+      background: #fef2f2;
+      color: #991b1b;
+      border-color: #fecaca;
+      cursor: not-allowed;
+    }
+    .cal-day.day-booked:hover {
+      background: #fee2e2;
+    }
+
+    .cal-day.day-inquiry {
+      background: #fffbeb;
+      color: #92400e;
+      border-color: #fde68a;
+      cursor: pointer;
+    }
+    .cal-day.day-inquiry:hover {
+      background: #fef3c7;
+      border-color: #f59e0b;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(245, 158, 11, 0.2);
+    }
+
+    .cal-day.day-partial {
+      background: #eff6ff;
+      color: #1e40af;
+      border-color: #bfdbfe;
+      cursor: pointer;
+    }
+    .cal-day.day-partial:hover {
+      background: #dbeafe;
+      border-color: #3b82f6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+    }
+
+    .cal-day.day-selected {
+      border-color: var(--primary-color) !important;
+      box-shadow: 0 0 0 3px rgba(15, 60, 92, 0.35) !important;
+      transform: scale(1.05);
+      z-index: 2;
+    }
+
+    /* Selected / Hover Detail Box */
+    .cal-detail-card {
+      margin-top: 16px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      background: var(--bg-light);
+      border: 1px solid #e2e8f0;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.88rem;
+      animation: fadeIn 0.2s ease;
+    }
+
+    .cal-detail-card i {
+      font-size: 1.15rem;
+      margin-top: 2px;
+    }
+    .cal-detail-card.status-free i { color: #16a34a; }
+    .cal-detail-card.status-inquiry i { color: #d97706; }
+    .cal-detail-card.status-booked i { color: #dc2626; }
+    .cal-detail-card.status-partial i { color: #2563eb; }
+
+    .cal-detail-title {
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 2px;
+    }
+    .cal-detail-desc {
+      color: var(--text-light);
+      font-size: 0.82rem;
+      line-height: 1.35;
+    }
+
+    /* Cal Legend */
+    .cal-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #f1f5f9;
+      font-size: 0.78rem;
+      color: #64748b;
+      justify-content: center;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .legend-dot.free { background: #22c55e; }
+    .legend-dot.inquiry { background: #f59e0b; }
+    .legend-dot.partial { background: #3b82f6; }
+    .legend-dot.booked { background: #ef4444; }
+
+    /* Inquiry Alert Banner above Form */
+    .inquiry-banner {
+      background: #fffbeb;
+      border: 1.5px solid #f59e0b;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: #92400e;
+      animation: fadeIn 0.3s ease;
+    }
+    .inquiry-banner i {
+      font-size: 1.25rem;
+      color: #d97706;
+      margin-top: 2px;
+    }
+    .inquiry-banner h4 {
+      margin: 0 0 4px 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #b45309;
+    }
+    .inquiry-banner p {
+      margin: 0;
+      font-size: 0.85rem;
+      line-height: 1.4;
+      color: #92400e;
+    }
+
+    /* Button styles in inquiry mode */
+    .btn-submit.inquiry-mode {
+      background-color: #d97706;
+      box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
+    }
+    .btn-submit.inquiry-mode:hover {
+      background-color: #b45309;
+      box-shadow: 0 6px 20px rgba(180, 83, 9, 0.35);
+    }
+
+    .toast-icon.warning {
+      color: #f59e0b;
+    }
+
+    @keyframes datePulse {
+      0% { box-shadow: 0 0 0 0 rgba(15, 60, 92, 0.5); }
+      70% { box-shadow: 0 0 0 8px rgba(15, 60, 92, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(15, 60, 92, 0); }
+    }
+    .input-pulsing {
+      animation: datePulse 1s ease-out;
+      border-color: var(--primary-color) !important;
     }
 
     /* Modern Styled Booking Form */
@@ -1055,18 +1363,61 @@
       <p style="color: var(--text-light); margin-bottom: 25px;">Wähle freie Termine direkt im Kalender aus und buche dein Event bequem online. Bereits markierte Tage (z.B. "Besetzt" oder "Gesperrt") können nicht gebucht werden.</p>
       
       <div class="booking-container">
-        <!-- Embedded Google Belegungskalender -->
-        <div class="calendar-container">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?src=c3BvcnRzY2h1ZXR6ZW4ubXVoZW5AZ21haWwuY29t&ctz=Europe%2FZurich&mode=MONTH&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&wkst=2&bgcolor=%23ffffff&color=%230f3a5d"
-            style="border:none; width:100%; height:450px;"
-            frameborder="0" scrolling="no" id="calendar-iframe">
-          </iframe>
+        <!-- Interaktiver Web-Kalender -->
+        <div class="calendar-container" id="calendar-module">
+          <div class="cal-header">
+            <button type="button" class="cal-nav-btn" id="cal-prev-btn" title="Vorheriger Monat" aria-label="Vorheriger Monat">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="cal-title-container">
+              <span class="cal-month-title" id="cal-month-title">Monat Jahr</span>
+              <button type="button" class="cal-today-btn" id="cal-today-btn">Heute</button>
+            </div>
+            <button type="button" class="cal-nav-btn" id="cal-next-btn" title="Nächster Monat" aria-label="Nächster Monat">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="cal-weekdays">
+            <span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span>
+          </div>
+
+          <div class="cal-grid" id="cal-days-grid">
+            <div style="grid-column: 1 / -1; display:flex; align-items:center; justify-content:center; padding: 40px; color: var(--text-light); gap: 10px;">
+              <i class="fa-solid fa-circle-notch fa-spin"></i> Lade Belegungsdaten...
+            </div>
+          </div>
+
+          <!-- Ausgewähltes Datum / Hover Info-Box -->
+          <div class="cal-detail-card status-free" id="cal-detail-box" style="display: none;">
+            <i class="fa-solid fa-circle-info" id="cal-detail-icon"></i>
+            <div>
+              <div class="cal-detail-title" id="cal-detail-title">Termin-Information</div>
+              <div class="cal-detail-desc" id="cal-detail-desc">Wähle ein Datum im Kalender aus.</div>
+            </div>
+          </div>
+
+          <div class="cal-legend">
+            <span class="legend-item"><span class="legend-dot free"></span> Frei wählbar</span>
+            <span class="legend-item"><span class="legend-dot inquiry"></span> Vorab-Anfrage</span>
+            <span class="legend-item"><span class="legend-dot partial"></span> Teilbelegung</span>
+            <span class="legend-item"><span class="legend-dot booked"></span> Belegt</span>
+          </div>
         </div>
 
         <!-- Reservation Application Form -->
         <div class="form-container">
-          <h3>Online-Reservation einreichen</h3>
+          <h3 id="form-heading">Online-Reservation einreichen</h3>
+
+          <!-- Dynamischer Banner für Vorab-Anfragen -->
+          <div class="inquiry-banner" id="inquiry-banner" style="display: none;">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <div>
+              <h4 id="inquiry-banner-title">Sonderfall / Vorprüfung erforderlich</h4>
+              <p id="inquiry-banner-text">Hinweistext</p>
+            </div>
+          </div>
+
           <form class="booking-form" id="res-form" onsubmit="submitBooking(event)">
             
             <div class="form-group row">
@@ -1123,6 +1474,7 @@
               <div class="form-group">
                 <label for="mietdatum">Gewünschtes Mietdatum *</label>
                 <input type="text" id="mietdatum" required placeholder="Format: DD.MM.YYYY (z.B. 12.08.2026)">
+                <small style="font-size: 0.78rem; color: #64748b; margin-top: 2px;"><i class="fa-solid fa-arrow-pointer"></i> Klicke links im Kalender auf ein freies Datum.</small>
               </div>
             </div>
 
@@ -1236,8 +1588,9 @@
 
   <!-- JS Logic -->
   <script>
-    // Config: Live-URL eures Cloudflare Worker CORS-Proxys
+    // Config: Live-URLs
     const WEB_APP_URL = "https://v1-vorstand-api.dan-hunziker73.workers.dev/?module=vermietung&action=booking";
+    const CALENDAR_API_URL = "https://script.google.com/macros/s/AKfycbxETNWUOsdyF72caWlJ7gi7mlI_oSX2rWQJfUskim8umRF2ARrSCGfe6UWzTy26B_s5/exec";
 
     // Bilderliste für Galerie
     const galleryImages = [
@@ -1249,7 +1602,6 @@
 
     let currentImgIdx = 0;
 
-    // Open zoomable Lightbox
     function openLightbox(index) {
       currentImgIdx = index;
       const lightbox = document.getElementById('lightbox');
@@ -1260,16 +1612,13 @@
       img.src = item.src;
       img.onerror = () => { img.src = item.fallback; };
       caption.textContent = item.title;
-      
       lightbox.classList.add('active');
     }
 
-    // Close zoomable Lightbox
     function closeLightbox() {
       document.getElementById('lightbox').classList.remove('active');
     }
 
-    // Navigate Lightbox
     function changeImage(dir, event) {
       event.stopPropagation();
       currentImgIdx = (currentImgIdx + dir + galleryImages.length) % galleryImages.length;
@@ -1282,15 +1631,348 @@
       caption.textContent = item.title;
     }
 
-    // Submit Booking to Apps Script doPost
+    /* ==========================================================================
+       Interaktiver Buchungskalender & Status-Logik
+       ========================================================================== */
+    const MONTH_NAMES = [
+      "Januar", "Februar", "März", "April", "Mai", "Juni",
+      "Juli", "August", "September", "Oktober", "November", "Dezember"
+    ];
+
+    let calViewDate = new Date();
+    let calendarEventsMap = {};
+    let selectedDateISO = null;
+    window.currentBookingMode = { is_inquiry: false, inquiry_type: '', inquiry_note: '' };
+
+    function formatDateKey(d) {
+      const year = d.getFullYear();
+      const month = String(d.getMonth() + 1).padStart(2, '0');
+      const day = String(d.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    }
+
+    function formatDateCH(d) {
+      const day = String(d.getDate()).padStart(2, '0');
+      const month = String(d.getMonth() + 1).padStart(2, '0');
+      const year = d.getFullYear();
+      return `${day}.${month}.${year}`;
+    }
+
+    // Lade Termine von der Apps-Script-Schnittstelle
+    async function loadCalendarEvents() {
+      const grid = document.getElementById('cal-days-grid');
+      try {
+        const response = await fetch(CALENDAR_API_URL);
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        const data = await response.json();
+
+        calendarEventsMap = {};
+        if (Array.isArray(data)) {
+          data.forEach(item => {
+            let key = item.datum_iso;
+            if (!key && item.datum && item.datum.includes('.')) {
+              const parts = item.datum.split('.');
+              if (parts.length === 3) {
+                key = `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
+              }
+            }
+            if (key) {
+              if (!calendarEventsMap[key]) {
+                calendarEventsMap[key] = [];
+              }
+              calendarEventsMap[key].push(item);
+            }
+          });
+        }
+      } catch (err) {
+        console.warn("Kalender-Daten konnten nicht geladen werden:", err);
+      } finally {
+        renderCalendar();
+      }
+    }
+
+    // Analysiert den Status eines bestimmten Tags
+    function getDayAnalysis(dateObj) {
+      const today = new Date();
+      today.setHours(0,0,0,0);
+
+      const target = new Date(dateObj.getFullYear(), dateObj.getMonth(), dateObj.getDate());
+      const dateKey = formatDateKey(target);
+
+      // Vergangene Tage
+      if (target < today) {
+        return {
+          status: 'past',
+          type: 'past',
+          isSelectable: false,
+          label: 'Vergangen',
+          desc: 'Dieses Datum liegt in der Vergangenheit.',
+          badge: ''
+        };
+      }
+
+      const events = calendarEventsMap[dateKey] || [];
+
+      // 1. Prüfung: Ist der Tag selbst privat vermietet?
+      const rentalEvent = events.find(e => (e.titel || '').toLowerCase().includes('vermietet'));
+      if (rentalEvent) {
+        return {
+          status: 'booked',
+          type: 'booked',
+          isSelectable: false,
+          label: 'Bereits privat reserviert',
+          desc: 'An diesem Tag ist das Schützenhaus ganztägig belegt.',
+          badge: 'Belegt'
+        };
+      }
+
+      // 2. Prüfung: Ist der Tag als Endreinigung gesperrt?
+      const cleaningEvent = events.find(e => (e.titel || '').toLowerCase().includes('reinigung'));
+      if (cleaningEvent) {
+        return {
+          status: 'inquiry',
+          type: 'cleaning',
+          isSelectable: true,
+          label: 'Gesperrt für Reinigung (Vorabend-Event)',
+          desc: 'Dieser Tag dient als Puffer für die Endreinigung nach einer vorherigen Feier. Direktbuchung gesperrt – unverbindliche Vorab-Anfrage möglich.',
+          badge: 'Reinigung'
+        };
+      }
+
+      // 3. Prüfung: Vereinsanlass oder Teilbelegung
+      if (events.length > 0) {
+        const ev = events[0];
+        const isAllDay = (!ev.start || ev.start === '00:00') && (!ev.ende || ev.ende === '00:00');
+        if (!isAllDay) {
+          return {
+            status: 'partial',
+            type: 'partial',
+            isSelectable: true,
+            label: `${ev.titel} (${ev.start} – ${ev.ende} Uhr)`,
+            desc: `Teilweise belegt von ${ev.start} bis ${ev.ende} Uhr. Bitte gewünschte Startzeit angeben – wir prüfen die Machbarkeit.`,
+            badge: `${ev.start}-${ev.ende}`
+          };
+        } else {
+          return {
+            status: 'booked',
+            type: 'booked',
+            isSelectable: false,
+            label: `${ev.titel} (Ganztägiger Vereinsanlass)`,
+            desc: 'An diesem Tag findet ein interner Vereinsanlass statt. Die Stube steht nicht zur Verfügung.',
+            badge: 'Verein'
+          };
+        }
+      }
+
+      // 4. Back-to-Back-Prüfung: Was findet am Folgetag (D + 1) statt?
+      const nextDay = new Date(target);
+      nextDay.setDate(nextDay.getDate() + 1);
+      const nextKey = formatDateKey(nextDay);
+      const nextEvents = calendarEventsMap[nextKey] || [];
+
+      // Nur wenn am Folgetag eine PRIVATVERMIETUNG stattfindet, ist Rücksprache nötig!
+      const nextRental = nextEvents.find(e => (e.titel || '').toLowerCase().includes('vermietet'));
+      if (nextRental) {
+        return {
+          status: 'inquiry',
+          type: 'back_to_back',
+          isSelectable: true,
+          label: 'Rücksprache nötig (Folgetag bereits vermietet)',
+          desc: `Am Folgetag (${formatDateCH(nextDay)}) findet direkt die nächste Privatvermietung statt. Eine Buchung ist nur möglich, wenn die Reinigung und Schlüsselrückgabe am nächsten Morgen frühzeitig (bis 10:00 Uhr) erfolgt.`,
+          badge: 'Rücksprache'
+        };
+      }
+
+      // 5. Wenn frei (Folgetag ist frei ODER reiner Vereinsanlass)
+      return {
+        status: 'free',
+        type: 'free',
+        isSelectable: true,
+        label: 'Frei verfügbar',
+        desc: 'Dieser Termin ist frei. Klicke, um ihn verbindlich zu reservieren.',
+        badge: 'Frei'
+      };
+    }
+
+    // Rendert den Monats-Kalender
+    function renderCalendar() {
+      const year = calViewDate.getFullYear();
+      const month = calViewDate.getMonth();
+
+      // Titel aktualisieren
+      document.getElementById('cal-month-title').textContent = `${MONTH_NAMES[month]} ${year}`;
+
+      const grid = document.getElementById('cal-days-grid');
+      grid.innerHTML = '';
+
+      // Erster Tag des Monats und Wochentag (Montag = 0)
+      const firstDay = new Date(year, month, 1);
+      let startingDay = firstDay.getDay() - 1;
+      if (startingDay === -1) startingDay = 6;
+
+      const totalDays = new Date(year, month + 1, 0).getDate();
+      const prevMonthTotalDays = new Date(year, month, 0).getDate();
+
+      const today = new Date();
+      const todayISO = formatDateKey(today);
+
+      // Fülltage des vorherigen Monats
+      for (let i = startingDay - 1; i >= 0; i--) {
+        const d = prevMonthTotalDays - i;
+        const cell = document.createElement('div');
+        cell.className = 'cal-day day-other-month';
+        cell.innerHTML = `<span class="day-num">${d}</span>`;
+        grid.appendChild(cell);
+      }
+
+      // Tage des aktuellen Monats
+      for (let day = 1; day <= totalDays; day++) {
+        const currentDate = new Date(year, month, day);
+        const dateKey = formatDateKey(currentDate);
+        const analysis = getDayAnalysis(currentDate);
+
+        const cell = document.createElement('div');
+        cell.className = `cal-day day-${analysis.status}`;
+        if (dateKey === todayISO) cell.classList.add('day-today');
+        if (dateKey === selectedDateISO) cell.classList.add('day-selected');
+
+        let badgeHtml = '';
+        if (analysis.badge && analysis.status !== 'free' && analysis.status !== 'past') {
+          badgeHtml = `<span class="day-badge" style="background: rgba(0,0,0,0.06);">${analysis.badge}</span>`;
+        }
+
+        cell.innerHTML = `
+          <span class="day-num">${day}</span>
+          ${badgeHtml}
+        `;
+
+        // Tooltip / Detail-Box beim Hover
+        cell.addEventListener('mouseenter', () => {
+          showDetailBox(currentDate, analysis);
+        });
+
+        // Klick-Verhalten
+        cell.addEventListener('click', () => {
+          handleDaySelection(currentDate, analysis, cell);
+        });
+
+        grid.appendChild(cell);
+      }
+    }
+
+    // Detailbox unter dem Kalender aktualisieren
+    function showDetailBox(dateObj, analysis) {
+      const box = document.getElementById('cal-detail-box');
+      const icon = document.getElementById('cal-detail-icon');
+      const title = document.getElementById('cal-detail-title');
+      const desc = document.getElementById('cal-detail-desc');
+
+      box.style.display = 'flex';
+      box.className = `cal-detail-card status-${analysis.status}`;
+
+      if (analysis.status === 'free') {
+        icon.className = 'fa-solid fa-circle-check';
+      } else if (analysis.status === 'inquiry') {
+        icon.className = 'fa-solid fa-circle-exclamation';
+      } else if (analysis.status === 'partial') {
+        icon.className = 'fa-solid fa-clock';
+      } else {
+        icon.className = 'fa-solid fa-circle-xmark';
+      }
+
+      title.textContent = `${formatDateCH(dateObj)}: ${analysis.label}`;
+      desc.textContent = analysis.desc;
+    }
+
+    // Klick auf ein Datum im Kalender verarbeiten
+    function handleDaySelection(dateObj, analysis, cellElement) {
+      const formattedDate = formatDateCH(dateObj);
+      const dateISO = formatDateKey(dateObj);
+
+      // 1. Wenn Tag fix belegt oder vergangen ist
+      if (!analysis.isSelectable) {
+        showCustomToast('error', 'Termin nicht verfügbar', `${formattedDate}: ${analysis.label}`);
+        return;
+      }
+
+      // 2. Auswahl visuell setzen
+      selectedDateISO = dateISO;
+      document.querySelectorAll('.cal-day').forEach(c => c.classList.remove('day-selected'));
+      cellElement.classList.add('day-selected');
+
+      // 3. Datum in das Formularfeld übertragen
+      const mietdatumInput = document.getElementById('mietdatum');
+      mietdatumInput.value = formattedDate;
+      mietdatumInput.classList.remove('input-pulsing');
+      void mietdatumInput.offsetWidth; // Trigger Reflow
+      mietdatumInput.classList.add('input-pulsing');
+
+      // 4. Formular-Modus umschalten (Normal vs. Unverbindliche Anfrage)
+      const banner = document.getElementById('inquiry-banner');
+      const bannerTitle = document.getElementById('inquiry-banner-title');
+      const bannerText = document.getElementById('inquiry-banner-text');
+      const btnSubmit = document.getElementById('btn-submit');
+      const formHeading = document.getElementById('form-heading');
+
+      if (analysis.type === 'free') {
+        // Normaler Buchungsmodus
+        window.currentBookingMode = { is_inquiry: false, inquiry_type: '', inquiry_note: '' };
+        banner.style.display = 'none';
+        formHeading.textContent = 'Online-Reservation einreichen';
+        btnSubmit.classList.remove('inquiry-mode');
+        btnSubmit.innerHTML = `<i class="fa-solid fa-paper-plane"></i> Jetzt verbindlich reservieren`;
+        showCustomToast('success', 'Datum ausgewählt', `Mietdatum ${formattedDate} übernommen. Du kannst die Reservation jetzt verbindlich absenden.`);
+      } else {
+        // Anfrage-Modus (Reinigung, Back-to-Back oder Teilbelegung)
+        window.currentBookingMode = {
+          is_inquiry: true,
+          inquiry_type: analysis.type,
+          inquiry_note: analysis.label
+        };
+
+        banner.style.display = 'flex';
+        bannerTitle.textContent = `Vorprüfung notwendig für ${formattedDate}`;
+        bannerText.textContent = analysis.desc;
+        formHeading.textContent = 'Unverbindliche Terminanfrage einreichen';
+        btnSubmit.classList.add('inquiry-mode');
+        btnSubmit.innerHTML = `<i class="fa-solid fa-clock-rotate-left"></i> Unverbindliche Terminanfrage senden`;
+        showCustomToast('warning', 'Vorab-Anfrage erforderlich', `Mietdatum ${formattedDate} übernommen. An diesem Tag ist eine kurze Vorab-Prüfung erforderlich.`);
+      }
+
+      showDetailBox(dateObj, analysis);
+    }
+
+    // Monatsnavigation Buttons
+    document.getElementById('cal-prev-btn').addEventListener('click', () => {
+      calViewDate.setMonth(calViewDate.getMonth() - 1);
+      renderCalendar();
+    });
+
+    document.getElementById('cal-next-btn').addEventListener('click', () => {
+      calViewDate.setMonth(calViewDate.getMonth() + 1);
+      renderCalendar();
+    });
+
+    document.getElementById('cal-today-btn').addEventListener('click', () => {
+      calViewDate = new Date();
+      renderCalendar();
+    });
+
+    // Kalender initialisieren
+    loadCalendarEvents();
+
+    /* ==========================================================================
+       Submit Booking & Inquiry
+       ========================================================================== */
     async function submitBooking(e) {
       e.preventDefault();
       
       const btn = document.getElementById('btn-submit');
       const originalHtml = btn.innerHTML;
+      const isCurrentlyInquiry = window.currentBookingMode && window.currentBookingMode.is_inquiry;
       
       btn.disabled = true;
-      btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Sende Reservierung...`;
+      btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> ${isCurrentlyInquiry ? 'Sende Anfrage...' : 'Sende Reservierung...'}`;
 
       // Payload zusammenbauen
       const payload = {
@@ -1303,7 +1985,11 @@
         plz: document.getElementById('plz').value,
         wohnort: document.getElementById('ort').value,
         festbeginn: document.getElementById('festbeginn').value,
-        mietdatum: document.getElementById('mietdatum').value
+        mietdatum: document.getElementById('mietdatum').value,
+        // Erweiterung für Google Apps Script & Google Sheet Übernahme:
+        is_inquiry: isCurrentlyInquiry,
+        inquiry_type: window.currentBookingMode.inquiry_type || '',
+        inquiry_note: window.currentBookingMode.inquiry_note || ''
       };
 
       // Validierung des Datumsformats
@@ -1332,19 +2018,36 @@
         const result = await response.json();
 
         if (result.success) {
-          showCustomToast("success", "Reservierung übermittelt", "Deine Reservierung (" + (result.vertragsnummer || "") + ") wurde erfolgreich eingereicht! Bitte prüfe in wenigen Minuten dein E-Mail-Postfach auf den Mietvertrag.");
-          document.getElementById('res-form').reset();
+          if (isCurrentlyInquiry) {
+            showCustomToast(
+              "success",
+              "Terminanfrage übermittelt",
+              `Vielen Dank! Deine Terminanfrage für den ${payload.mietdatum} wurde erfolgreich eingereicht. Wir prüfen die zeitliche Machbarkeit und melden uns in Kürze bei dir.`
+            );
+          } else {
+            showCustomToast(
+              "success",
+              "Reservierung übermittelt",
+              `Deine Reservierung (${result.vertragsnummer || ""}) wurde erfolgreich eingereicht! Bitte prüfe in wenigen Minuten dein E-Mail-Postfach auf den Mietvertrag.`
+            );
+          }
           
-          // Iframe neu laden, um die Belegung zu aktualisieren
-          const iframe = document.getElementById('calendar-iframe');
-          iframe.src = iframe.src;
+          document.getElementById('res-form').reset();
+          document.getElementById('inquiry-banner').style.display = 'none';
+          document.getElementById('form-heading').textContent = 'Online-Reservation einreichen';
+          btn.classList.remove('inquiry-mode');
+          btn.innerHTML = `<i class="fa-solid fa-paper-plane"></i> Jetzt verbindlich reservieren`;
+          selectedDateISO = null;
+          
+          // Kalenderdaten neu laden
+          loadCalendarEvents();
         } else {
-          showCustomToast("error", "Reservierung fehlgeschlagen", result.error || "Ein unbekannter Fehler ist aufgetreten.");
+          showCustomToast("error", "Übermittlung fehlgeschlagen", result.error || "Ein unbekannter Fehler ist aufgetreten.");
         }
 
       } catch (error) {
         console.error("Fehler beim Senden der Buchung:", error);
-        showCustomToast("error", "Verbindungsfehler", "Die Reservierung konnte nicht gesendet werden. Bitte wende dich direkt an sportschuetzen.muhen@gmail.com.");
+        showCustomToast("error", "Verbindungsfehler", "Die Buchung/Anfrage konnte nicht gesendet werden. Bitte wende dich direkt an sportschuetzen.muhen@gmail.com.");
       } finally {
         btn.disabled = false;
         btn.innerHTML = originalHtml;
@@ -1363,6 +2066,8 @@
 
       if (type === "success") {
         icon.className = "toast-icon success fa-solid fa-circle-check";
+      } else if (type === "warning") {
+        icon.className = "toast-icon warning fa-solid fa-triangle-exclamation";
       } else {
         icon.className = "toast-icon error fa-solid fa-circle-exclamation";
       }
