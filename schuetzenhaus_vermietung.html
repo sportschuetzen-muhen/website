@@ -692,13 +692,34 @@
     }
 
     .cal-day .day-badge {
-      font-size: 0.62rem;
+      font-size: 0.7rem;
       font-weight: 700;
       margin-top: 3px;
-      padding: 1px 4px;
-      border-radius: 4px;
-      line-height: 1.1;
+      padding: 2px 6px;
+      border-radius: 6px;
+      line-height: 1.15;
       white-space: nowrap;
+      letter-spacing: 0.2px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+      display: inline-block;
+    }
+
+    .cal-day.day-partial .day-badge {
+      background: #ffffff !important;
+      color: #1e40af !important;
+      border: 1.5px solid #3b82f6 !important;
+    }
+
+    .cal-day.day-booked .day-badge {
+      background: #ffffff !important;
+      color: #991b1b !important;
+      border: 1.5px solid #ef4444 !important;
+    }
+
+    .cal-day.day-inquiry .day-badge {
+      background: #ffffff !important;
+      color: #92400e !important;
+      border: 1.5px solid #f59e0b !important;
     }
 
     .cal-day.day-other-month {
@@ -779,38 +800,66 @@
       z-index: 2;
     }
 
-    /* Selected / Hover Detail Box */
+    /* Selected / Hover Detail Box unter Kalender */
     .cal-detail-card {
-      margin-top: 16px;
-      padding: 12px 16px;
-      border-radius: 8px;
-      background: var(--bg-light);
-      border: 1px solid #e2e8f0;
+      margin-top: 18px;
+      padding: 14px 18px;
+      border-radius: 10px;
       display: flex;
       align-items: flex-start;
-      gap: 12px;
-      font-size: 0.88rem;
+      gap: 14px;
+      font-size: 0.92rem;
       animation: fadeIn 0.2s ease;
+      line-height: 1.45;
+      border: 1.5px solid #cbd5e1;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
 
-    .cal-detail-card i {
-      font-size: 1.15rem;
-      margin-top: 2px;
+    .cal-detail-card.status-free {
+      background: #f0fdf4;
+      border-color: #86efac;
     }
-    .cal-detail-card.status-free i { color: #16a34a; }
-    .cal-detail-card.status-inquiry i { color: #d97706; }
-    .cal-detail-card.status-booked i { color: #dc2626; }
-    .cal-detail-card.status-partial i { color: #2563eb; }
+    .cal-detail-card.status-free i { color: #16a34a; font-size: 1.35rem; }
+
+    .cal-detail-card.status-inquiry {
+      background: #fffbeb;
+      border-color: #fcd34d;
+    }
+    .cal-detail-card.status-inquiry i { color: #d97706; font-size: 1.35rem; }
+
+    .cal-detail-card.status-booked {
+      background: #fef2f2;
+      border-color: #fca5a5;
+    }
+    .cal-detail-card.status-booked i { color: #dc2626; font-size: 1.35rem; }
+
+    .cal-detail-card.status-partial {
+      background: #eff6ff;
+      border-color: #93c5fd;
+    }
+    .cal-detail-card.status-partial i { color: #2563eb; font-size: 1.35rem; }
 
     .cal-detail-title {
       font-weight: 700;
-      color: var(--text-dark);
-      margin-bottom: 2px;
+      color: #0f172a;
+      font-size: 0.98rem;
+      margin-bottom: 4px;
     }
+
     .cal-detail-desc {
-      color: var(--text-light);
-      font-size: 0.82rem;
-      line-height: 1.35;
+      color: #334155;
+      font-size: 0.88rem;
+      line-height: 1.45;
+      font-weight: 500;
+    }
+
+    .cal-detail-cta {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #b45309;
     }
 
     /* Cal Legend */
@@ -843,35 +892,101 @@
     .legend-dot.partial { background: #3b82f6; }
     .legend-dot.booked { background: #ef4444; }
 
-    /* Inquiry Alert Banner above Form */
+    /* Inquiry Alert Banner & Step-by-Step Guide above Form */
     .inquiry-banner {
-      background: #fffbeb;
-      border: 1.5px solid #f59e0b;
-      border-radius: 10px;
-      padding: 14px 16px;
-      margin-bottom: 18px;
+      background: #fffdf5;
+      border: 2px solid #f59e0b;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 22px;
+      color: #78350f;
+      animation: fadeIn 0.3s ease;
+      box-shadow: 0 4px 16px rgba(245, 158, 11, 0.12);
+    }
+
+    .inquiry-banner-head {
       display: flex;
       gap: 12px;
       align-items: flex-start;
-      color: #92400e;
-      animation: fadeIn 0.3s ease;
+      margin-bottom: 12px;
     }
-    .inquiry-banner i {
-      font-size: 1.25rem;
+
+    .inquiry-banner-head i {
+      font-size: 1.4rem;
       color: #d97706;
       margin-top: 2px;
+      flex-shrink: 0;
     }
-    .inquiry-banner h4 {
+
+    .inquiry-banner-head h4 {
       margin: 0 0 4px 0;
-      font-size: 0.95rem;
+      font-size: 1.05rem;
       font-weight: 700;
-      color: #b45309;
-    }
-    .inquiry-banner p {
-      margin: 0;
-      font-size: 0.85rem;
-      line-height: 1.4;
       color: #92400e;
+    }
+
+    .inquiry-banner-head p {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.4;
+      color: #78350f;
+    }
+
+    .inquiry-guide-box {
+      background: #ffffff;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 10px;
+    }
+
+    .guide-title {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #92400e;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .inquiry-steps-list {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 0.86rem;
+      color: #334155;
+      line-height: 1.5;
+    }
+
+    .inquiry-steps-list li {
+      margin-bottom: 4px;
+    }
+
+    .inquiry-steps-list li strong {
+      color: #0f172a;
+    }
+
+    .inquiry-footer-note {
+      margin-top: 10px;
+      font-size: 0.82rem;
+      color: #b45309;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    .badge-festbeginn-hint {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: #fef3c7;
+      color: #b45309;
+      border: 1px solid #fcd34d;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      animation: fadeIn 0.3s ease;
     }
 
     /* Button styles in inquiry mode */
@@ -993,11 +1108,11 @@
       position: fixed;
       bottom: 30px;
       right: 30px;
-      background: rgba(30, 41, 59, 0.95);
-      backdrop-filter: blur(10px);
-      border-radius: 10px;
-      padding: 18px 25px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 12px;
+      padding: 16px 22px;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
       z-index: 1000;
       display: flex;
       align-items: center;
@@ -1005,6 +1120,7 @@
       transform: translateY(100px);
       opacity: 0;
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      max-width: 440px;
     }
 
     .custom-toast.active {
@@ -1013,22 +1129,25 @@
     }
 
     .toast-icon {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
+      flex-shrink: 0;
     }
 
-    .toast-icon.success { color: var(--success-color); }
-    .toast-icon.error { color: var(--error-color); }
+    .toast-icon.success { color: #22c55e; }
+    .toast-icon.error { color: #ef4444; }
+    .toast-icon.warning { color: #f59e0b; }
 
     .toast-message h4 {
       font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--text-dark);
+      font-weight: 700;
+      color: #ffffff !important;
       margin-bottom: 2px;
     }
 
     .toast-message p {
       font-size: 0.85rem;
-      color: var(--text-light);
+      color: #cbd5e1 !important;
+      line-height: 1.35;
     }
 
     /* Animations */
@@ -1391,9 +1510,10 @@
           <!-- Ausgewähltes Datum / Hover Info-Box -->
           <div class="cal-detail-card status-free" id="cal-detail-box" style="display: none;">
             <i class="fa-solid fa-circle-info" id="cal-detail-icon"></i>
-            <div>
+            <div style="flex: 1;">
               <div class="cal-detail-title" id="cal-detail-title">Termin-Information</div>
               <div class="cal-detail-desc" id="cal-detail-desc">Wähle ein Datum im Kalender aus.</div>
+              <div class="cal-detail-cta" id="cal-detail-cta"></div>
             </div>
           </div>
 
@@ -1409,12 +1529,26 @@
         <div class="form-container">
           <h3 id="form-heading">Online-Reservation einreichen</h3>
 
-          <!-- Dynamischer Banner für Vorab-Anfragen -->
+          <!-- Dynamischer Banner mit Schritt-für-Schritt-Anleitung für Vorab-Anfragen -->
           <div class="inquiry-banner" id="inquiry-banner" style="display: none;">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <div>
-              <h4 id="inquiry-banner-title">Sonderfall / Vorprüfung erforderlich</h4>
-              <p id="inquiry-banner-text">Hinweistext</p>
+            <div class="inquiry-banner-head">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <div>
+                <h4 id="inquiry-banner-title">Vorab-Prüfung für diesen Termin notwendig</h4>
+                <p id="inquiry-banner-text">Hinweistext zur Belegung oder Endreinigung.</p>
+              </div>
+            </div>
+
+            <div class="inquiry-guide-box">
+              <div class="guide-title"><i class="fa-solid fa-list-check"></i> So reichst du deine Vorab-Anfrage ein:</div>
+              <ol class="inquiry-steps-list">
+                <li>Unten deine gewohnten <strong>Kontaktdaten</strong> eingeben.</li>
+                <li><strong>Ganz wichtig:</strong> Gib bei <strong>«Festbeginn»</strong> deine gewünschte Uhrzeit an (z.B. <em>«ab 17:00 Uhr»</em>).</li>
+                <li>Klicke unten auf <strong>«Unverbindliche Terminanfrage senden»</strong>.</li>
+              </ol>
+              <div class="inquiry-footer-note">
+                <i class="fa-solid fa-shield-halved"></i> 100% kostenlos & unverbindlich: Wir prüfen, ob die Stube rechtzeitig bereitsteht, und melden uns bei dir.
+              </div>
             </div>
           </div>
 
@@ -1468,13 +1602,13 @@
 
             <div class="form-group row">
               <div class="form-group">
-                <label for="festbeginn">Festbeginn (Uhrzeit) *</label>
+                <label for="festbeginn">Festbeginn (Uhrzeit) * <span id="festbeginn-hint-badge" class="badge-festbeginn-hint" style="display:none;">⚠️ Wichtig für Prüfung</span></label>
                 <input type="text" id="festbeginn" required placeholder="z.B. ab 17:00 Uhr">
               </div>
               <div class="form-group">
                 <label for="mietdatum">Gewünschtes Mietdatum *</label>
                 <input type="text" id="mietdatum" required placeholder="Format: DD.MM.YYYY (z.B. 12.08.2026)">
-                <small style="font-size: 0.78rem; color: #64748b; margin-top: 2px;"><i class="fa-solid fa-arrow-pointer"></i> Klicke links im Kalender auf ein freies Datum.</small>
+                <small id="mietdatum-hint" style="font-size: 0.8rem; color: #64748b; margin-top: 2px;"><i class="fa-solid fa-arrow-pointer"></i> Klicke links im Kalender auf ein Datum.</small>
               </div>
             </div>
 
@@ -1788,8 +1922,8 @@
         status: 'free',
         type: 'free',
         isSelectable: true,
-        label: 'Frei verfügbar',
-        desc: 'Dieser Termin ist frei. Klicke, um ihn verbindlich zu reservieren.',
+        label: 'Frei verfügbar (Ganzer Tag)',
+        desc: 'Dieser Termin ist frei verfügbar. Mit einem Klick wird das Datum automatisch ins Feld «Gewünschtes Mietdatum» übernommen. Bitte trage anschliessend deine geplante Startzeit bei «Festbeginn» ein.',
         badge: 'Frei'
       };
     }
@@ -1838,7 +1972,7 @@
 
         let badgeHtml = '';
         if (analysis.badge && analysis.status !== 'free' && analysis.status !== 'past') {
-          badgeHtml = `<span class="day-badge" style="background: rgba(0,0,0,0.06);">${analysis.badge}</span>`;
+          badgeHtml = `<span class="day-badge">${analysis.badge}</span>`;
         }
 
         cell.innerHTML = `
@@ -1866,6 +2000,7 @@
       const icon = document.getElementById('cal-detail-icon');
       const title = document.getElementById('cal-detail-title');
       const desc = document.getElementById('cal-detail-desc');
+      const cta = document.getElementById('cal-detail-cta');
 
       box.style.display = 'flex';
       box.className = `cal-detail-card status-${analysis.status}`;
@@ -1873,7 +2008,7 @@
       if (analysis.status === 'free') {
         icon.className = 'fa-solid fa-circle-check';
       } else if (analysis.status === 'inquiry') {
-        icon.className = 'fa-solid fa-circle-exclamation';
+        icon.className = 'fa-solid fa-triangle-exclamation';
       } else if (analysis.status === 'partial') {
         icon.className = 'fa-solid fa-clock';
       } else {
@@ -1882,6 +2017,18 @@
 
       title.textContent = `${formatDateCH(dateObj)}: ${analysis.label}`;
       desc.textContent = analysis.desc;
+
+      if (cta) {
+        if (analysis.status === 'inquiry' || analysis.status === 'partial') {
+          cta.innerHTML = '<i class="fa-solid fa-arrow-right"></i> Klicke hier und gib rechts bei «Festbeginn» deine geplante Startzeit an.';
+          cta.style.display = 'block';
+        } else if (analysis.status === 'free') {
+          cta.innerHTML = '<i class="fa-solid fa-arrow-right"></i> Klicke hier, um dieses Datum ins Feld «Gewünschtes Mietdatum» zu übernehmen.';
+          cta.style.display = 'block';
+        } else {
+          cta.style.display = 'none';
+        }
+      }
     }
 
     // Klick auf ein Datum im Kalender verarbeiten
@@ -1913,15 +2060,22 @@
       const bannerText = document.getElementById('inquiry-banner-text');
       const btnSubmit = document.getElementById('btn-submit');
       const formHeading = document.getElementById('form-heading');
+      const festbeginnBadge = document.getElementById('festbeginn-hint-badge');
+      const mietdatumHint = document.getElementById('mietdatum-hint');
 
       if (analysis.type === 'free') {
         // Normaler Buchungsmodus
         window.currentBookingMode = { is_inquiry: false, inquiry_type: '', inquiry_note: '' };
         banner.style.display = 'none';
+        if (festbeginnBadge) festbeginnBadge.style.display = 'none';
+        if (mietdatumHint) {
+          mietdatumHint.innerHTML = '<i class="fa-solid fa-circle-check" style="color:#16a34a;"></i> Datum übernommen – jetzt noch Festbeginn eingeben.';
+          mietdatumHint.style.color = '#166534';
+        }
         formHeading.textContent = 'Online-Reservation einreichen';
         btnSubmit.classList.remove('inquiry-mode');
         btnSubmit.innerHTML = `<i class="fa-solid fa-paper-plane"></i> Jetzt verbindlich reservieren`;
-        showCustomToast('success', 'Datum ausgewählt', `Mietdatum ${formattedDate} übernommen. Du kannst die Reservation jetzt verbindlich absenden.`);
+        showCustomToast('success', 'Datum ausgewählt', `Mietdatum ${formattedDate} übernommen. Trage jetzt noch den Festbeginn ein.`);
       } else {
         // Anfrage-Modus (Reinigung, Back-to-Back oder Teilbelegung)
         window.currentBookingMode = {
@@ -1930,13 +2084,36 @@
           inquiry_note: analysis.label
         };
 
-        banner.style.display = 'flex';
-        bannerTitle.textContent = `Vorprüfung notwendig für ${formattedDate}`;
+        banner.style.display = 'block';
+        bannerTitle.textContent = `Vorab-Prüfung für ${formattedDate} (${analysis.badge || 'Sondertermin'})`;
         bannerText.textContent = analysis.desc;
+        if (festbeginnBadge) festbeginnBadge.style.display = 'inline-block';
+        if (mietdatumHint) {
+          mietdatumHint.innerHTML = '<i class="fa-solid fa-clock-rotate-left"></i> Vorab-Prüfung für dieses Datum erforderlich';
+          mietdatumHint.style.color = '#b45309';
+        }
         formHeading.textContent = 'Unverbindliche Terminanfrage einreichen';
         btnSubmit.classList.add('inquiry-mode');
         btnSubmit.innerHTML = `<i class="fa-solid fa-clock-rotate-left"></i> Unverbindliche Terminanfrage senden`;
-        showCustomToast('warning', 'Vorab-Anfrage erforderlich', `Mietdatum ${formattedDate} übernommen. An diesem Tag ist eine kurze Vorab-Prüfung erforderlich.`);
+        showCustomToast('warning', 'Vorab-Anfrage erforderlich', `Mietdatum ${formattedDate} übernommen. Bitte Wunschzeit bei «Festbeginn» angeben.`);
+
+        // Sanfter Fokus auf Festbeginn falls noch leer
+        const festbeginnInput = document.getElementById('festbeginn');
+        if (festbeginnInput && !festbeginnInput.value) {
+          festbeginnInput.focus();
+        }
+      }
+
+      // Sanftes Scrollen zum Formular auf Mobilgeräten
+      if (window.innerWidth <= 1024) {
+        setTimeout(() => {
+          const targetElem = (analysis.type !== 'free') 
+            ? document.getElementById('inquiry-banner') 
+            : document.getElementById('res-form');
+          if (targetElem) {
+            targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 150);
       }
 
       showDetailBox(dateObj, analysis);
