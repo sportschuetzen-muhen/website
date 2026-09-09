@@ -989,6 +989,39 @@
       animation: fadeIn 0.3s ease;
     }
 
+    /* Inline-Bestätigungsbanner für freie Termine direkt über dem Formular */
+    .selection-banner-free {
+      background: #f0fdf4;
+      border: 1.5px solid #86efac;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: #166534;
+      animation: fadeIn 0.3s ease;
+      box-shadow: 0 4px 14px rgba(22, 101, 52, 0.08);
+    }
+    .selection-banner-free i {
+      font-size: 1.35rem;
+      color: #16a34a;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    .selection-banner-free h4 {
+      margin: 0 0 3px 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #14532d;
+    }
+    .selection-banner-free p {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.4;
+      color: #166534;
+    }
+
     /* Button styles in inquiry mode */
     .btn-submit.inquiry-mode {
       background-color: #d97706;
@@ -1529,6 +1562,15 @@
         <div class="form-container">
           <h3 id="form-heading">Online-Reservation einreichen</h3>
 
+          <!-- Inline-Bestätigungsbanner für freie Termine direkt über dem Formular -->
+          <div class="selection-banner-free" id="selection-banner-free" style="display: none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4 id="selection-banner-title">Termin übernommen</h4>
+              <p id="selection-banner-text">Das Datum wurde ins Feld «Gewünschtes Mietdatum» eingefügt. Bitte trage nun noch deinen gewünschten Festbeginn ein.</p>
+            </div>
+          </div>
+
           <!-- Dynamischer Banner mit Schritt-für-Schritt-Anleitung für Vorab-Anfragen -->
           <div class="inquiry-banner" id="inquiry-banner" style="display: none;">
             <div class="inquiry-banner-head">
@@ -2019,11 +2061,19 @@
       desc.textContent = analysis.desc;
 
       if (cta) {
+        const dateISO = formatDateKey(dateObj);
         if (analysis.status === 'inquiry' || analysis.status === 'partial') {
-          cta.innerHTML = '<i class="fa-solid fa-arrow-right"></i> Klicke hier und gib rechts bei «Festbeginn» deine geplante Startzeit an.';
+          cta.innerHTML = '<i class="fa-solid fa-arrow-up"></i> Tag oben im Kalender anklicken – danach rechts Festbeginn eingeben.';
+          cta.style.color = '#b45309';
           cta.style.display = 'block';
         } else if (analysis.status === 'free') {
-          cta.innerHTML = '<i class="fa-solid fa-arrow-right"></i> Klicke hier, um dieses Datum ins Feld «Gewünschtes Mietdatum» zu übernehmen.';
+          if (dateISO === selectedDateISO) {
+            cta.innerHTML = '<i class="fa-solid fa-circle-check" style="color:#16a34a;"></i> <strong>Datum ist ausgewählt</strong> und im Formular eingetragen.';
+            cta.style.color = '#15803d';
+          } else {
+            cta.innerHTML = '<i class="fa-solid fa-arrow-up"></i> Tag oben im Kalender anklicken, um das Datum automatisch ins Formular zu übertragen.';
+            cta.style.color = '#166534';
+          }
           cta.style.display = 'block';
         } else {
           cta.style.display = 'none';
@@ -2058,6 +2108,9 @@
       const banner = document.getElementById('inquiry-banner');
       const bannerTitle = document.getElementById('inquiry-banner-title');
       const bannerText = document.getElementById('inquiry-banner-text');
+      const freeBanner = document.getElementById('selection-banner-free');
+      const freeBannerTitle = document.getElementById('selection-banner-title');
+      const freeBannerText = document.getElementById('selection-banner-text');
       const btnSubmit = document.getElementById('btn-submit');
       const formHeading = document.getElementById('form-heading');
       const festbeginnBadge = document.getElementById('festbeginn-hint-badge');
@@ -2067,17 +2120,26 @@
         // Normaler Buchungsmodus
         window.currentBookingMode = { is_inquiry: false, inquiry_type: '', inquiry_note: '' };
         banner.style.display = 'none';
+        
+        // Inline-Banner für freie Auswahl direkt beim Formular einblenden
+        if (freeBanner) {
+          freeBanner.style.display = 'flex';
+          freeBannerTitle.textContent = `Termin ${formattedDate} übernommen`;
+          freeBannerText.innerHTML = `Das Datum <strong>${formattedDate}</strong> wurde direkt ins Feld <em>«Gewünschtes Mietdatum»</em> eingetragen. Bitte trage nun noch deine gewünschte Startzeit bei <em>«Festbeginn»</em> ein.`;
+        }
+
         if (festbeginnBadge) festbeginnBadge.style.display = 'none';
         if (mietdatumHint) {
-          mietdatumHint.innerHTML = '<i class="fa-solid fa-circle-check" style="color:#16a34a;"></i> Datum übernommen – jetzt noch Festbeginn eingeben.';
+          mietdatumHint.innerHTML = `<i class="fa-solid fa-circle-check" style="color:#16a34a;"></i> ${formattedDate} aktiv im Formular`;
           mietdatumHint.style.color = '#166534';
         }
         formHeading.textContent = 'Online-Reservation einreichen';
         btnSubmit.classList.remove('inquiry-mode');
         btnSubmit.innerHTML = `<i class="fa-solid fa-paper-plane"></i> Jetzt verbindlich reservieren`;
-        showCustomToast('success', 'Datum ausgewählt', `Mietdatum ${formattedDate} übernommen. Trage jetzt noch den Festbeginn ein.`);
       } else {
         // Anfrage-Modus (Reinigung, Back-to-Back oder Teilbelegung)
+        if (freeBanner) freeBanner.style.display = 'none';
+
         window.currentBookingMode = {
           is_inquiry: true,
           inquiry_type: analysis.type,
@@ -2089,13 +2151,12 @@
         bannerText.textContent = analysis.desc;
         if (festbeginnBadge) festbeginnBadge.style.display = 'inline-block';
         if (mietdatumHint) {
-          mietdatumHint.innerHTML = '<i class="fa-solid fa-clock-rotate-left"></i> Vorab-Prüfung für dieses Datum erforderlich';
+          mietdatumHint.innerHTML = `<i class="fa-solid fa-clock-rotate-left"></i> Vorab-Prüfung für dieses Datum erforderlich`;
           mietdatumHint.style.color = '#b45309';
         }
         formHeading.textContent = 'Unverbindliche Terminanfrage einreichen';
         btnSubmit.classList.add('inquiry-mode');
         btnSubmit.innerHTML = `<i class="fa-solid fa-clock-rotate-left"></i> Unverbindliche Terminanfrage senden`;
-        showCustomToast('warning', 'Vorab-Anfrage erforderlich', `Mietdatum ${formattedDate} übernommen. Bitte Wunschzeit bei «Festbeginn» angeben.`);
 
         // Sanfter Fokus auf Festbeginn falls noch leer
         const festbeginnInput = document.getElementById('festbeginn');
@@ -2104,16 +2165,16 @@
         }
       }
 
-      // Sanftes Scrollen zum Formular auf Mobilgeräten
-      if (window.innerWidth <= 1024) {
+      // Sanftes Scrollen zum Formular auf Tablets (iPad) & Smartphones (bis 1100px)
+      if (window.innerWidth <= 1100) {
         setTimeout(() => {
           const targetElem = (analysis.type !== 'free') 
             ? document.getElementById('inquiry-banner') 
-            : document.getElementById('res-form');
+            : (freeBanner || document.getElementById('res-form'));
           if (targetElem) {
             targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
-        }, 150);
+        }, 120);
       }
 
       showDetailBox(dateObj, analysis);
