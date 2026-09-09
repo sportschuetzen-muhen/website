@@ -404,27 +404,38 @@
 
     .lightbox-content {
       position: relative;
-      max-width: 90%;
-      max-height: 80vh;
+      width: -moz-fit-content;
+      width: fit-content;
+      max-width: 88vw;
+      max-height: 88vh;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.96);
     }
 
     .lightbox-content img {
       display: block;
-      max-width: 100%;
-      max-height: 80vh;
+      max-width: 85vw;
+      max-height: 74vh;
+      width: auto;
+      height: auto;
       object-fit: contain;
     }
 
     .lightbox-caption {
-      background-color: rgba(30, 41, 59, 0.95);
-      color: var(--primary-color);
-      padding: 15px 25px;
+      background: rgba(15, 23, 42, 0.96);
+      color: #ffffff;
+      padding: 10px 18px;
       font-weight: 600;
-      font-size: 1.1rem;
+      font-size: 0.95rem;
       text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
     }
 
     .lightbox-close {
@@ -578,15 +589,15 @@
 
     .booking-container {
       display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 40px;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 32px;
       margin-top: 30px;
     }
 
     .calendar-container {
       background: #ffffff;
       border-radius: 14px;
-      padding: 24px;
+      padding: 20px 16px;
       box-shadow: 0 4px 20px rgba(15, 58, 93, 0.06);
       border: 1px solid #e2e8f0;
       display: flex;
@@ -686,10 +697,11 @@
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       user-select: none;
       border: 1.5px solid transparent;
-      padding: 2px;
+      padding: 2px 1px;
       min-width: 0;
       width: 100%;
       box-sizing: border-box;
+      overflow: hidden;
     }
 
     .cal-day .day-num {
@@ -697,16 +709,20 @@
     }
 
     .cal-day .day-badge {
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       font-weight: 700;
-      margin-top: 3px;
-      padding: 2px 6px;
-      border-radius: 6px;
+      margin-top: 2px;
+      padding: 1.5px 4px;
+      border-radius: 5px;
       line-height: 1.15;
       white-space: nowrap;
-      letter-spacing: 0.2px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+      letter-spacing: 0;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
       display: inline-block;
+      max-width: 96%;
+      box-sizing: border-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .cal-day.day-partial .day-badge {
@@ -1591,27 +1607,27 @@
       <h2 class="section-title"><i class="fa-solid fa-camera"></i> Impressionen aus der Schützenstube</h2>
       <div class="gallery-grid">
         <div class="gallery-item" onclick="openLightbox(0)">
-          <img src="bilder_haus/aussen.jpg" alt="Aussenansicht Schützenhaus Muhen" onerror="this.src='https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80'">
+          <img src="bilder_haus/Sicht_auf_Kuche.webp" alt="Innenraum gemütlicher Saal für ca. 40 Personen">
           <div class="gallery-overlay">
-            <span>Aussenansicht</span>
+            <span>Gemütlicher Saal (40 Plätze)</span>
           </div>
         </div>
         <div class="gallery-item" onclick="openLightbox(1)">
-          <img src="bilder_haus/saal.jpg" alt="Innenraum gemütlicher Saal" onerror="this.src='https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=600&q=80'">
+          <img src="bilder_haus/Buffet.webp" alt="Theke und Buffetbereich">
           <div class="gallery-overlay">
-            <span>Gemütlicher Saal</span>
+            <span>Theke & Buffetbereich</span>
           </div>
         </div>
         <div class="gallery-item" onclick="openLightbox(2)">
-          <img src="bilder_haus/kueche.jpg" alt="Voll ausgestattete Küche" onerror="this.src='https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80'">
+          <img src="bilder_haus/Kueche.webp" alt="Voll ausgestattete moderne Küche">
           <div class="gallery-overlay">
             <span>Küche & Ausstattung</span>
           </div>
         </div>
         <div class="gallery-item" onclick="openLightbox(3)">
-          <img src="bilder_haus/umgebung.jpg" alt="Malerische Umgebung im Suhrental" onerror="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80'">
+          <img src="bilder_haus/Kaffeemaschine.webp" alt="Kaffeestation und Ausschank">
           <div class="gallery-overlay">
-            <span>Malerische Umgebung</span>
+            <span>Kaffeestation & Ausschank</span>
           </div>
         </div>
       </div>
@@ -1919,10 +1935,10 @@
 
     // Bilderliste für Galerie
     const galleryImages = [
-      { src: 'bilder_haus/aussen.jpg', title: 'Aussenansicht des Schützenhauses Muhen', fallback: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80' },
-      { src: 'bilder_haus/saal.jpg', title: 'Innenbereich: Gemütlicher Saal für ca. 40 Personen', fallback: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80' },
-      { src: 'bilder_haus/kueche.jpg', title: 'Moderne, voll ausgestattete Küche mit Gastro-Geschirrspüler', fallback: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80' },
-      { src: 'bilder_haus/umgebung.jpg', title: 'Malerische Umgebung am Suhrental', fallback: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80' }
+      { src: 'bilder_haus/Sicht_auf_Kuche.webp', title: 'Innenbereich: Gemütlicher Saal für ca. 40 Personen mit flexibler Bestuhlung' },
+      { src: 'bilder_haus/Buffet.webp', title: 'Theke & Buffetbereich mit Gläsern und Übergang zur Küche' },
+      { src: 'bilder_haus/Kueche.webp', title: 'Moderne, voll ausgestattete Küche mit Herd, Backofen und Gastro-Geschirrspüler' },
+      { src: 'bilder_haus/Kaffeemaschine.webp', title: 'Kaffee-Vollautomat und Barstation für deinen Event' }
     ];
 
     let currentImgIdx = 0;
@@ -2060,7 +2076,7 @@
           isSelectable: true,
           label: 'Gesperrt für Reinigung (Vorabend-Event)',
           desc: 'Dieser Tag dient als Puffer für die Endreinigung nach einer vorherigen Feier. Direktbuchung gesperrt – unverbindliche Vorab-Anfrage möglich.',
-          badge: 'Reinigung'
+          badge: 'Puffer'
         };
       }
 
@@ -2069,13 +2085,19 @@
         const ev = events[0];
         const isAllDay = (!ev.start || ev.start === '00:00') && (!ev.ende || ev.ende === '00:00');
         if (!isAllDay) {
+          // Kompakte Zeitanzeige für die Monats-Zelle (z.B. "ab 19h" oder "ab 16:30")
+          let timeBadge = 'Teil';
+          if (ev.start) {
+            const cleanStart = ev.start.replace(/^0/, '');
+            timeBadge = cleanStart.endsWith(':00') ? `ab ${cleanStart.replace(':00', 'h')}` : `ab ${cleanStart}`;
+          }
           return {
             status: 'partial',
             type: 'partial',
             isSelectable: true,
             label: `${ev.titel} (${ev.start} – ${ev.ende} Uhr)`,
-            desc: `Teilweise belegt von ${ev.start} bis ${ev.ende} Uhr. Bitte gewünschte Startzeit angeben – wir prüfen die Machbarkeit.`,
-            badge: `${ev.start}-${ev.ende}`
+            desc: `Teilweise belegt von ${ev.start} bis ${ev.ende} Uhr (${ev.titel}). Bitte gewünschte Startzeit angeben – wir prüfen die Machbarkeit.`,
+            badge: timeBadge
           };
         } else {
           return {
@@ -2104,7 +2126,7 @@
           isSelectable: true,
           label: 'Rücksprache nötig (Folgetag bereits vermietet)',
           desc: `Am Folgetag (${formatDateCH(nextDay)}) findet direkt die nächste Privatvermietung statt. Eine Buchung ist nur möglich, wenn die Reinigung und Schlüsselrückgabe am nächsten Morgen frühzeitig (bis 10:00 Uhr) erfolgt.`,
-          badge: 'Rücksprache'
+          badge: 'Anfrage'
         };
       }
 
