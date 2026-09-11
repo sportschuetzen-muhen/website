@@ -1894,14 +1894,9 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   Galerie vorübergehend deaktivieren (ausblenden)
+   Galerie aktiviert
    ========================================================================== */
-a[href="verein.html#galerie"],
-a[href="#galerie"],
-.glass-card[href="verein.html#galerie"],
-#galerie {
-    display: none !important;
-}
+/* Galerie wird regulär angezeigt */
 
 /* ==========================================================================
    Adaptive Mobile Cards & Barrierefreiheit (Resultate-Dashboard)
