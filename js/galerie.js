@@ -190,6 +190,15 @@ window.filterByTag = function(value) {
     window.closeLightbox();
 };
 
+function formatPhotoUrl(url) {
+    if (!url) return "";
+    // If running on local dev server, use the local proxy to bypass CORP same-origin restriction
+    if (window.location.hostname === "localhost" && url.includes("immich-muhen.danfamily.uk")) {
+        return "/api/immich-proxy?url=" + encodeURIComponent(url);
+    }
+    return url;
+}
+
 function renderGallery(filter, append = false) {
     const grid = document.getElementById("galerie-grid");
     if (!grid) return;
@@ -250,10 +259,11 @@ function renderGallery(filter, append = false) {
         ];
         const gradient = fallbacks[globalIndex % fallbacks.length];
         const imgPlaceholderId = `img-gallery-${item.id}`;
+        const displayThumbUrl = formatPhotoUrl(item.thumbnailUrl || item.imageUrl);
 
         card.innerHTML = `
             <div class="gallery-img-container">
-                <img id="${imgPlaceholderId}" src="${item.thumbnailUrl || item.imageUrl}" alt="${item.title}" class="masonry-img" loading="lazy" onerror="window.handleImageError(this, '${gradient}')">
+                <img id="${imgPlaceholderId}" src="${displayThumbUrl}" alt="${item.title}" class="masonry-img" loading="lazy" onerror="window.handleImageError(this, '${gradient}')">
                 <div class="gallery-img-overlay">
                     <span class="gallery-zoom-icon">🔍</span>
                 </div>
@@ -334,7 +344,7 @@ function openLightbox(index) {
     img.style.display = "block";
     if (fallback) fallback.style.display = "none";
 
-    img.src = item.imageUrl || item.thumbnailUrl;
+    img.src = formatPhotoUrl(item.imageUrl || item.thumbnailUrl);
     img.alt = item.title;
 
     // Handle lightbox image error (e.g. file missing)
