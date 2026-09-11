@@ -1,2443 +1,1102 @@
 [
   {
-    "id": "strohhaus_1981",
-    "title": "Erstes Strohhausschiessen",
+    "id": "26518719-2695-46ce-aabf-6d480cfa2fb3",
+    "title": "Spatenstich",
     "category": "geschichte",
-    "date": "1981",
-    "description": "Das erste Strohhausschiessen im Jahr 1981 war ein Meilenstein für unseren Verein. Unter der Leitung unseres Nachwuchsförderers Gerhard Künzli und des Vorstands nahmen stolze 585 Schützinnen und Schützen teil. Dieser Anlass brachte nicht nur grosse sportliche Erfolge, sondern legte auch das finanzielle Fundament für spätere Grossprojekte wie den Neubau der Schiessanlage Rüteli. Die Stimmung war hervorragend und die Kameradschaft stand an oberster Stelle.",
-    "imageUrl": "assets/galerie/strohhausschiessen_1981.jpg",
-    "detectedPersons": [],
-    "tags": []
-  },
-  {
-    "id": "rueteli_1996",
-    "title": "Neubau Schützenhaus Rüteli",
-    "category": "geschichte",
-    "date": "1996-1997",
-    "description": "Nach jahrelanger Planung und mit unglaublichem Engagement der Vereinsmitglieder wurde in den Jahren 1996 und 1997 das neue Schützenhaus Rüteli gebaut. In über 3000 Stunden ehrenamtlicher Fronarbeit schufen die Sportschützen Muhen eine der modernsten Kleinkaliber-Schiessanlagen der Region. Auf dem Foto sieht man die fleissigen Helfer beim Aufrichten des Dachstuhls und den Rohbauarbeiten bei bestem Wetter.",
-    "imageUrl": "assets/galerie/rueteli_neubau.jpg",
-    "detectedPersons": [],
-    "tags": []
-  },
-  {
-    "id": "nachwuchs_2002",
-    "title": "Nachwuchstraining Gewehr 10m",
-    "category": "nachwuchs",
-    "date": "Winter 2002",
-    "description": "Erfolgreiche Nachwuchsförderung im Schiesskeller. Unsere Junioren üben sich in Konzentration und Präzision mit dem Luftgewehr auf der 10-Meter-Distanz. Dank der optimalen Betreuung durch ausgebildete J+S-Leiter lernen die Jugendlichen von Grund auf die richtige Körperbeherrschung, Atemtechnik und den mentalen Fokus. Der Verein stellt die gesamte Ausrüstung wie Schiessjacken, Handschuhe und Gewehre zur Verfügung.",
-    "imageUrl": "assets/galerie/nachwuchs_2002.jpg",
-    "detectedPersons": [],
-    "tags": []
-  },
-  {
-    "id": "sius_2016",
-    "title": "Einbau elektronische Trefferanzeige",
-    "category": "geschichte",
-    "date": "Frühling 2016",
-    "description": "Ein grosser Schritt in die digitale Zukunft: Im Jahr 2016 installierte der Verein die hochmoderne elektronische Trefferanzeige der Firma SIUS auf allen 50-Meter-Scheiben. Statt manueller Kurbeln und Scheibenzuganlagen werden die Schüsse nun vollautomatisch mittels Schallmessung auf Monitoren am Schützenplatz angezeigt. Dies optimiert den Trainingsbetrieb und ermöglichte die Durchführung von kantonalen Schützenfesten.",
-    "imageUrl": "assets/galerie/sius_2016.jpg",
-    "detectedPersons": [],
-    "tags": []
-  },
-  {
-    "id": "tessin_2016",
-    "title": "Vereinsausflug ins Tessin",
-    "category": "events",
-    "date": "Herbst 2016",
-    "description": "Kameradschaft wird bei den Sportschützen Muhen grossgeschrieben. Unser zweitägiger Vereinsausflug im Herbst 2016 führte eine gut gelaunte Delegation ins sonnige Tessin. Neben einer gemütlichen Wanderung durch die Weinberge und einer Besichtigung der Burgen von Bellinzona stand natürlich das gesellige Beisammensein bei traditioneller Polenta und Tessiner Merlot im Vordergrund. Ein unvergessliches Wochenende für Jung und Alt.",
-    "imageUrl": "assets/galerie/tessin_2016.jpg",
-    "detectedPersons": [],
-    "tags": []
-  },
-  {
-    "id": "flims_2018",
-    "title": "Bündner Kantonalschützenfest in Flims",
-    "category": "events",
-    "date": "Juli 2018",
-    "description": "Mit einer starken Truppe reisten die Sportschützen Muhen im Sommer 2018 ans Bündner Kantonalschützenfest nach Flims. Auf der wunderschönen Anlage im Bergkanton konnten unsere Schützinnen und Schützen hervorragende Resultate erzielen und zahlreiche Kranzauszeichnungen mit nach Hause nehmen. Das Foto zeigt das Team stolz nach dem erfolgreichen Wettkampftag vor dem Panorama der Bündner Alpen.",
-    "imageUrl": "assets/galerie/flims_2018.jpg",
-    "detectedPersons": [],
-    "tags": []
-  },
-  {
-    "id": "2015schiessvereinmuhen_54352818184_o",
-    "title": "Stolze Vereinsdelegation im sonnigen Muhen",
-    "category": "events",
-    "date": "Herbst 2015",
-    "description": "Unsere Vereinsmitglieder präsentieren sich gut gelaunt und in einheitlicher Clubkleidung für ein starkes Gruppenfoto. Mit der stolz getragenen Vereinsfahne im Vordergrund wird der gelebte Zusammenhalt und die Freude am Schiesssport perfekt zum Ausdruck gebracht. Solche Momente stärken die unverzichtbare Kameradschaft innerhalb der Sportschützen Muhen.",
-    "imageUrl": "assets/galerie/2015schiessvereinmuhen_54352818184_o.jpg",
-    "detectedPersons": [
-      "Simon Hediger",
-      "Daniel Hunziker",
-      "Christiane Keller",
-      "Gerhard Künzli"
-    ],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/26518719-2695-46ce-aabf-6d480cfa2fb3/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/26518719-2695-46ce-aabf-6d480cfa2fb3/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsfoto",
-      "Kameradschaft",
-      "Vereinsjacke",
-      "Gruppenbild",
-      "Fahnenträger",
-      "Aussenaufnahme"
-    ]
-  },
-  {
-    "id": "20161008_095811_54353028070_o",
-    "title": "Grosser Arbeitseinsatz beim Schützenhaus Muhen",
-    "category": "events",
-    "date": "Herbst 2019",
-    "description": "Gemeinsam packen die Vereinsmitglieder beim herbstlichen Arbeitseinsatz rund um das Schützenhaus an. Mit Anhänger und Mulde wird fleissig aufgeräumt, um die Infrastruktur für die kommenden Saisons instand zu halten. Solche Einsätze zeigen die starke Kameradschaft und den grossen Zusammenhalt innerhalb der Sportschützen Muhen.",
-    "imageUrl": "assets/galerie/20161008_095811_54353028070_o.jpg",
-    "detectedPersons": [
-      "Gerhard Künzli"
-    ],
-    "tags": [
-      "Arbeitseinsatz",
       "Schützenhaus",
-      "Unterhalt",
-      "Kameradschaft",
-      "Eigenleistung"
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "e074f30a-c8f4-452b-a487-7cdee064e30f",
+    "title": "Spatenstich",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/e074f30a-c8f4-452b-a487-7cdee064e30f/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/e074f30a-c8f4-452b-a487-7cdee064e30f/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "6e107b3b-0800-4749-8edf-174013dd68f5",
+    "title": "Bauarbeiten Schützenhaus Rüteli (3)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/6e107b3b-0800-4749-8edf-174013dd68f5/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/6e107b3b-0800-4749-8edf-174013dd68f5/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "8998529f-768e-4cd0-89f1-fc7e1055d9dc",
+    "title": "Spatenstich",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/8998529f-768e-4cd0-89f1-fc7e1055d9dc/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/8998529f-768e-4cd0-89f1-fc7e1055d9dc/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "d28bc15a-bfed-4f56-83eb-ffac1184a6c7",
+    "title": "Spatenstich",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/d28bc15a-bfed-4f56-83eb-ffac1184a6c7/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/d28bc15a-bfed-4f56-83eb-ffac1184a6c7/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "d410195c-ccf7-404d-a19a-b61aed2f4e4c",
+    "title": "Hansjürg Schmid & Thomas Hochuli",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Hansjürg Schmid & Thomas Hochuli beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/d410195c-ccf7-404d-a19a-b61aed2f4e4c/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/d410195c-ccf7-404d-a19a-b61aed2f4e4c/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Schmid",
+      "Hochuli"
+    ],
+    "detectedPersons": [
+      "Hansjürg Schmid",
+      "Thomas Hochuli"
     ]
   },
   {
-    "id": "2015schtzenmuhen_54351729337_o",
-    "title": "Vereinsfoto der Sportschützen Muhen",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Die Mitglieder der Sportschützen Muhen präsentieren sich in ihrer einheitlichen Vereinskleidung vor der Kulisse des Schützenhauses. Dieses Gruppenbild unterstreicht die gelebte Kameradschaft und den starken Zusammenhalt unseres Vereins. Die Freude an der gemeinsamen sportlichen Leidenschaft ist in jedem Gesicht spürbar.",
-    "imageUrl": "assets/galerie/2015schtzenmuhen_54351729337_o.jpg",
-    "detectedPersons": [
-      "Daniel Hunziker",
-      "Gerhard Künzli"
-    ],
+    "id": "428ec947-411c-4837-a28e-6b5df0edbe3b",
+    "title": "Patrick Schotzko",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Patrick Schotzko beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/428ec947-411c-4837-a28e-6b5df0edbe3b/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/428ec947-411c-4837-a28e-6b5df0edbe3b/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Gruppenbild",
-      "Vereinsleben",
-      "Sportschützen Muhen",
-      "Kameradschaft",
-      "Vereinsmitglieder"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Schotzko"
+    ],
+    "detectedPersons": [
+      "Patrick Schotzko"
     ]
   },
   {
-    "id": "2015sportschtzenmuhen_54352840143_o",
-    "title": "Gemeinsamer Auftritt der Sportschützen Muhen",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Die Sportschützen Muhen präsentieren sich in ihren charakteristischen Vereinsfarben bei einem gemeinsamen Anlass. Dieses Bild spiegelt den starken Zusammenhalt und den grossen Erfahrungsaustausch zwischen den verschiedenen Generationen unseres Vereins wider.",
-    "imageUrl": "assets/galerie/2015sportschtzenmuhen_54352840143_o.jpg",
-    "detectedPersons": [
-      "Simon Hediger",
-      "Daniel Hunziker",
-      "Marco Fischer",
-      "Gerhard Künzli"
-    ],
+    "id": "1a49576c-0bc7-40a2-aed1-014d27b4e70a",
+    "title": "Ruth Künzli",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Ruth Künzli beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/1a49576c-0bc7-40a2-aed1-014d27b4e70a/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/1a49576c-0bc7-40a2-aed1-014d27b4e70a/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsleben",
-      "Kameradschaft",
-      "Gruppenbild",
-      "Muhen",
-      "Sportschützen"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Künzli"
+    ],
+    "detectedPersons": [
+      "Ruth Künzli"
     ]
   },
   {
-    "id": "20160703_112231_54352618531_o",
-    "title": "Starke Kameradschaft unter Vereinskollegen",
-    "category": "events",
-    "date": "2023",
-    "description": "Zwei unserer engagierten Vereinsmitglieder geniessen die gesellige Atmosphäre bei einem Anlass der Sportschützen Muhen. Das strahlende Lächeln unterstreicht den starken Zusammenhalt und die Freude am gemeinsamen Vereinsleben.",
-    "imageUrl": "assets/galerie/20160703_112231_54352618531_o.jpg",
-    "detectedPersons": [
-      "Daniel Berchtold",
-      "Simon Hediger"
-    ],
+    "id": "2f89caa4-c644-4e58-8613-0ee9dc24d82e",
+    "title": "Romano Schotzko",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Romano Schotzko beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/2f89caa4-c644-4e58-8613-0ee9dc24d82e/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/2f89caa4-c644-4e58-8613-0ee9dc24d82e/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsleben",
-      "Kameradschaft",
-      "Sportschützen Muhen",
-      "Gemeinschaft"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Schotzko"
     ],
-    "isAiReference": true
-  },
-  {
-    "id": "20160703_112920_54352618916_o",
-    "title": "Gesellige Runde beim Sportschützen Muhen",
-    "category": "events",
-    "date": "2023",
-    "description": "Nach einem erfolgreichen Wettkampf geniessen die Vereinsmitglieder die gemeinsame Zeit bei einem Glas Wein. Dieses Bild fängt die herzliche Kameradschaft und den starken Zusammenhalt innerhalb der Sportschützen Muhen perfekt ein. Momente wie dieser stärken den Teamgeist jenseits des Schiessstandes.",
-    "imageUrl": "assets/galerie/20160703_112920_54352618916_o.jpg",
     "detectedPersons": [
-      "Simon Hediger",
-      "Olivia Rossi",
-      "Daniel Hunziker"
-    ],
-    "tags": [
-      "Kameradschaft",
-      "Vereinsleben",
-      "Geselligkeit",
-      "Sportschützen Muhen"
+      "Romano Schotzko"
     ]
   },
   {
-    "id": "20160703_113112_54351734192_o",
-    "title": "Kameradschaftliche Momente nach dem Wettkampf",
-    "category": "events",
-    "date": "2023",
-    "description": "Nach einem intensiven Schiesstag lassen unsere Vereinsmitglieder den Erfolg gemeinsam ausklingen. Dieses Bild zeigt die gelebte Kameradschaft und die entspannte Atmosphäre, die unsere Gemeinschaft auszeichnet.",
-    "imageUrl": "assets/galerie/20160703_113112_54351734192_o.jpg",
-    "detectedPersons": [
-      "Daniel Berchtold",
-      "Simon Hediger"
-    ],
+    "id": "8bfdac10-1895-48d5-ae4a-69251565c708",
+    "title": "Spatenstich",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/8bfdac10-1895-48d5-ae4a-69251565c708/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/8bfdac10-1895-48d5-ae4a-69251565c708/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsleben",
-      "Kameradschaft",
-      "Sportschützen Muhen",
-      "Geselligkeit"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
-    "isAiReference": true
+    "detectedPersons": []
   },
   {
-    "id": "20160703_125006_54353023570_o",
-    "title": "Beste Stimmung auf dem Weg",
-    "category": "events",
-    "date": "2022",
-    "description": "Die Sportschützen Muhen auf dem Weg zu einem spannenden Wettkampf. Gemeinsam im Vereinsbus zeigt sich die grosse Kameradschaft, die über den Schiessstand hinausgeht. Ein herzliches Lachen verbindet alle Generationen unseres Vereins.",
-    "imageUrl": "assets/galerie/20160703_125006_54353023570_o.jpg",
+    "id": "6f40491e-4822-4abc-b330-af69ad3041e1",
+    "title": "Bauarbeiten Schützenhaus Rüteli (11)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/6f40491e-4822-4abc-b330-af69ad3041e1/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/6f40491e-4822-4abc-b330-af69ad3041e1/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "16412c78-ee45-4010-98b5-04f10f5407c3",
+    "title": "Baugelände Rüteli",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/16412c78-ee45-4010-98b5-04f10f5407c3/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/16412c78-ee45-4010-98b5-04f10f5407c3/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "fca7a40f-41a3-4e0c-a6ba-f3d7f462728c",
+    "title": "Spatenstich",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/fca7a40f-41a3-4e0c-a6ba-f3d7f462728c/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/fca7a40f-41a3-4e0c-a6ba-f3d7f462728c/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "088af20f-635e-4299-97bf-352e6b703d4b",
+    "title": "Bauarbeiten Schützenhaus Rüteli (14)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/088af20f-635e-4299-97bf-352e6b703d4b/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/088af20f-635e-4299-97bf-352e6b703d4b/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "cc574809-c930-4dbd-a0ce-38a0dfa019cd",
+    "title": "Bauarbeiten Schützenhaus Rüteli (15)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/cc574809-c930-4dbd-a0ce-38a0dfa019cd/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/cc574809-c930-4dbd-a0ce-38a0dfa019cd/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "75ea669b-96d8-4f81-a504-68627a0ae5a6",
+    "title": "Bauarbeiten Schützenhaus Rüteli (16)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/75ea669b-96d8-4f81-a504-68627a0ae5a6/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/75ea669b-96d8-4f81-a504-68627a0ae5a6/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "0729e7c6-dec1-43be-85a0-8630daba7c65",
+    "title": "Bauarbeiten Schützenhaus Rüteli (17)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/0729e7c6-dec1-43be-85a0-8630daba7c65/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/0729e7c6-dec1-43be-85a0-8630daba7c65/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "fad787fd-a927-4fc6-987e-20767cc9e175",
+    "title": "Bauarbeiten Schützenhaus Rüteli (18)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/fad787fd-a927-4fc6-987e-20767cc9e175/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/fad787fd-a927-4fc6-987e-20767cc9e175/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "a318c864-b3f9-41bc-8a32-b366229dcc83",
+    "title": "Bauarbeiten Schützenhaus Rüteli (19)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/a318c864-b3f9-41bc-8a32-b366229dcc83/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/a318c864-b3f9-41bc-8a32-b366229dcc83/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "daa3f43d-bb73-40dc-8fe2-7e4c0c4f1017",
+    "title": "Gerhard Künzli & Hans Bäni",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Gerhard Künzli & Hans Bäni beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/daa3f43d-bb73-40dc-8fe2-7e4c0c4f1017/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/daa3f43d-bb73-40dc-8fe2-7e4c0c4f1017/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Künzli",
+      "Bäni"
+    ],
     "detectedPersons": [
       "Gerhard Künzli",
-      "Simon Hediger"
-    ],
-    "tags": [
-      "Kameradschaft",
-      "Vereinsausflug",
-      "Muhen",
-      "Sportschützen",
-      "Teamgeist"
-    ],
-    "isAiReference": true
+      "Hans Bäni"
+    ]
   },
   {
-    "id": "20160703_125059_54352618926_o",
-    "title": "Gemeinsame Anreise zum Wettkampf",
-    "category": "events",
-    "date": "2023",
-    "description": "Die gute Stimmung ist auf dem Weg zum Schiessstand deutlich spürbar. Solche Momente stärken den Zusammenhalt innerhalb der Sportschützen Muhen und bilden die Basis für unsere gemeinsamen sportlichen Erfolge. Eine fröhliche Truppe in Vereinsfarben freut sich auf einen spannenden Wettkampf.",
-    "imageUrl": "assets/galerie/20160703_125059_54352618926_o.jpg",
+    "id": "352ec729-3853-4d3d-931b-74871de27518",
+    "title": "Spatenstich",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/352ec729-3853-4d3d-931b-74871de27518/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/352ec729-3853-4d3d-931b-74871de27518/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "ff751220-9ad1-46d6-8bac-e5431c9c68dc",
+    "title": "Zufahrtsstrasse / Schnellstrasse",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/ff751220-9ad1-46d6-8bac-e5431c9c68dc/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/ff751220-9ad1-46d6-8bac-e5431c9c68dc/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "d00a2287-3bf7-4215-b6fb-3f52afd6c059",
+    "title": "Bauarbeiten Schützenhaus Rüteli (23)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/d00a2287-3bf7-4215-b6fb-3f52afd6c059/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/d00a2287-3bf7-4215-b6fb-3f52afd6c059/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "2a3a8b70-6035-48e8-9f76-e2859788e701",
+    "title": "Bauarbeiten Schützenhaus Rüteli (24)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/2a3a8b70-6035-48e8-9f76-e2859788e701/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/2a3a8b70-6035-48e8-9f76-e2859788e701/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "932b123b-8f8f-48e3-9a55-7edb2ebc110a",
+    "title": "Romano Schotzko & Ernst Kunz",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Romano Schotzko & Ernst Kunz beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/932b123b-8f8f-48e3-9a55-7edb2ebc110a/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/932b123b-8f8f-48e3-9a55-7edb2ebc110a/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Schotzko",
+      "Kunz"
+    ],
+    "detectedPersons": [
+      "Romano Schotzko",
+      "Ernst Kunz"
+    ]
+  },
+  {
+    "id": "314d3808-933a-4a3c-8cd2-61f697d5479d",
+    "title": "Gerhard Künzli & Hans Bäni",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Gerhard Künzli & Hans Bäni beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/314d3808-933a-4a3c-8cd2-61f697d5479d/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/314d3808-933a-4a3c-8cd2-61f697d5479d/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Künzli",
+      "Bäni"
+    ],
     "detectedPersons": [
       "Gerhard Künzli",
-      "Simon Hediger"
-    ],
-    "tags": [
-      "Vereinsleben",
-      "Kameradschaft",
-      "Sportschützen Muhen",
-      "Anreise"
-    ],
-    "isAiReference": false
-  },
-  {
-    "id": "20160929_191631_54352622651_o",
-    "title": "Unterhalt für unsere Schiessanlage",
-    "category": "events",
-    "date": "2023",
-    "description": "Engagierte Mitglieder setzen sich für den Werterhalt unserer Infrastruktur ein. Durch tatkräftige Mithilfe bei den Unterhaltsarbeiten sorgen wir für ein optimales Umfeld für den Schiesssport. Kameradschaft und Einsatzbereitschaft bilden das Fundament unseres Vereinslebens.",
-    "imageUrl": "assets/galerie/20160929_191631_54352622651_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Unterhalt",
-      "Vereinsleben",
-      "Schiessstand"
+      "Hans Bäni"
     ]
   },
   {
-    "id": "20161008_095808_54352849223_o",
-    "title": "Vereinsareal: Einsatz für Ordnung",
-    "category": "events",
-    "date": "2023",
-    "description": "Auch bei den Sportschützen Muhen gehört ein gepflegtes Vereinsgelände dazu. Im Rahmen einer Aufräumaktion wurde Material fachgerecht entsorgt, um die Umgebung für den Schiessbetrieb vorzubereiten. Ein gelungener Arbeitseinsatz zeigt den starken Zusammenhalt und das Engagement unserer Mitglieder.",
-    "imageUrl": "assets/galerie/20161008_095808_54352849223_o.jpg",
-    "detectedPersons": [],
+    "id": "e8522d4a-5522-4b87-b730-9cdcb8d5b05d",
+    "title": "Bauarbeiten Schützenhaus Rüteli (27)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/e8522d4a-5522-4b87-b730-9cdcb8d5b05d/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/e8522d4a-5522-4b87-b730-9cdcb8d5b05d/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Arbeitseinsatz",
-      "Vereinsgelände",
-      "Ordnung",
-      "Sportschützen Muhen"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "20161008_095814_54351738617_o",
-    "title": "Gemeinsam die Anlage in Schuss halten",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein engagierter Einsatz bei den Sportschützen Muhen zeigt einmal mehr den starken Zusammenhalt im Verein. Auch bei Unterhaltsarbeiten rund um unser Schützenhaus packen alle tatkräftig mit an. Unsere langjährige Erfahrung bildet das Fundament für eine gepflegte Sportstätte.",
-    "imageUrl": "assets/galerie/20161008_095814_54351738617_o.jpg",
+    "id": "9d8b437f-b3da-4a8b-a9f5-d23f06cd3033",
+    "title": "Bauarbeiten Schützenhaus Rüteli (28)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/9d8b437f-b3da-4a8b-a9f5-d23f06cd3033/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/9d8b437f-b3da-4a8b-a9f5-d23f06cd3033/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "86429530-9732-4208-a939-a6575b2ef44b",
+    "title": "Bauarbeiten Schützenhaus Rüteli (29)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/86429530-9732-4208-a939-a6575b2ef44b/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/86429530-9732-4208-a939-a6575b2ef44b/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "b6a7ed36-d371-4304-a5a4-3519862cc929",
+    "title": "Daniel Berchtold, Gerhard Künzli, Fritz Suter & Bruno Berchtold",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Daniel Berchtold, Gerhard Künzli, Fritz Suter & Bruno Berchtold beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/b6a7ed36-d371-4304-a5a4-3519862cc929/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/b6a7ed36-d371-4304-a5a4-3519862cc929/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Berchtold",
+      "Künzli",
+      "Suter"
+    ],
     "detectedPersons": [
-      "Gerhard Künzli"
+      "Daniel Berchtold",
+      "Gerhard Künzli",
+      "Fritz Suter",
+      "Bruno Berchtold"
+    ]
+  },
+  {
+    "id": "92e2cb5b-44fc-4b77-ab16-d66b790e5d46",
+    "title": "Spatenstich",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/92e2cb5b-44fc-4b77-ab16-d66b790e5d46/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/92e2cb5b-44fc-4b77-ab16-d66b790e5d46/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
-    "tags": [
-      "Unterhalt",
-      "Vereinsleben",
-      "Kameradschaft",
-      "Schützenhaus"
-    ]
+    "detectedPersons": []
   },
   {
-    "id": "20161008_101917_54352827339_o",
-    "title": "Abschied von alter Schiesstechnik",
+    "id": "8fd71043-d88c-45a8-ac81-2b4152ce8b07",
+    "title": "Spatenstich",
     "category": "geschichte",
-    "date": "2024",
-    "description": "Ein Blick hinter die Kulissen zeigt den fachgerechten Rückbau unserer alten Schiessanlage. Während wir Platz für Modernisierungen schaffen, bewahren wir die Erinnerungen an viele sportliche Erfolge. Die Erneuerung der Infrastruktur ist ein wichtiger Schritt in die Zukunft unseres Vereins.",
-    "imageUrl": "assets/galerie/20161008_101917_54352827339_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/8fd71043-d88c-45a8-ac81-2b4152ce8b07/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/8fd71043-d88c-45a8-ac81-2b4152ce8b07/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Infrastruktur",
-      "Erneuerung",
-      "Schiessanlage",
-      "Rückbau"
-    ]
-  },
-  {
-    "id": "20161021_111715_54351738142_o",
-    "title": "Moderne Schiessanlage in Muhen",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Blick auf die neue Infrastruktur unserer Schiessanlage. Diese moderne Anlage bildet das Fundament für unsere sportliche Präzision und den Trainingsbetrieb der Sportschützen Muhen.",
-    "imageUrl": "assets/galerie/20161021_111715_54351738142_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessanlage",
-      "Infrastruktur",
-      "Muhen",
-      "Schiesssport"
-    ]
-  },
-  {
-    "id": "20161021_112335_54352827329_o",
-    "title": "Blick auf die 50m Schiessanlage",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Blick über das Gelände auf unsere moderne 50m Schiessanlage. Diese Infrastruktur bildet das Herzstück unseres sportlichen Trainings und fördert die Präzision unserer Schützen. Die Anlage ist bestens für kommende Herausforderungen vorbereitet.",
-    "imageUrl": "assets/galerie/20161021_112335_54352827329_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessanlage",
-      "50m",
-      "Infrastruktur",
-      "Training",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20161022_135709_54352622721_o",
-    "title": "Blick auf die Schiessanlage Muhen",
-    "category": "events",
-    "date": "2023",
-    "description": "Der Blick durch die Schiessanlage offenbart die technische Präzision, die unseren Sport auszeichnet. Hier wird die Konzentration auf die Scheiben im Hintergrund zur Routine für unsere Vereinsmitglieder. Eine gepflegte Anlage bildet die Basis für erfolgreiche Trainingsstunden und kameradschaftliche Treffen.",
-    "imageUrl": "assets/galerie/20161022_135709_54352622721_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessanlage",
-      "Technik",
-      "Sportschützen Muhen",
-      "Präzision",
-      "Infrastruktur"
-    ]
-  },
-  {
-    "id": "20161022_140628_54353028030_o",
-    "title": "Blick auf den Muhener Schiessstand",
-    "category": "events",
-    "date": "2024",
-    "description": "Ein Blick aus dem gedeckten Schiessstand auf das grüne Gelände, der die typische Atmosphäre unserer Trainingsanlage einfängt. Die Sponsorentafeln unterstreichen die wichtige Verbundenheit zwischen lokalen Betrieben und unserem Verein. Hier wird durch kontinuierliches Training die Basis für sportliche Präzision gelegt.",
-    "imageUrl": "assets/galerie/20161022_140628_54353028030_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessstand",
-      "Sponsoring",
-      "Infrastruktur",
-      "Muhen",
-      "Sportschützen"
-    ]
-  },
-  {
-    "id": "20161022_140634_54353027565_o",
-    "title": "Bereit für das nächste Training",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Blick auf unsere gepflegten Schiessstände in Muhen, die bereit für konzentrierte Trainingseinheiten stehen. Hier vereinen sich technische Präzision und sportlicher Fokus in einer professionellen Umgebung. Ein Ort, an dem sich unsere Mitglieder auf ihre Wettkämpfe vorbereiten.",
-    "imageUrl": "assets/galerie/20161022_140634_54353027565_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessstand",
-      "Muhen",
-      "Vereinsleben",
-      "Training",
-      "Gewehr 50m"
-    ]
-  },
-  {
-    "id": "20161024_133410_54351738602_o",
-    "title": "Vorbereitungen für den Schiessbetrieb",
-    "category": "events",
-    "date": "2023",
-    "description": "In unserem Schützenstand laufen die Vorbereitungen für die kommende Saison auf Hochtouren. Die sorgfältige Wartung und Vorbereitung der elektronischen Trefferanzeigen ist essenziell für einen präzisen und reibungslosen Schiessbetrieb. Unser Team arbeitet gemeinsam daran, die Infrastruktur für unsere Mitglieder optimal in Schuss zu halten.",
-    "imageUrl": "assets/galerie/20161024_133410_54351738602_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Wartung",
-      "Schiessstand",
-      "Vorbereitung",
-      "Technik"
-    ]
-  },
-  {
-    "id": "20161024_133420_54352827294_o",
-    "title": "Moderne Ausrüstung für den Schiessstand",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Blick hinter die Kulissen zeigt die Vorbereitungen zur Modernisierung unserer Anlage. Neue technische Komponenten von Sius warten darauf, installiert zu werden, um den Schützen eine noch präzisere Trefferanzeige zu ermöglichen. Dies ist ein wichtiger Schritt für die Zukunft und den Trainingsbetrieb der Sportschützen Muhen.",
-    "imageUrl": "assets/galerie/20161024_133420_54352827294_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Technik",
-      "Modernisierung",
-      "Schiessstand",
-      "Sius",
-      "Infrastruktur"
-    ]
-  },
-  {
-    "id": "20161024_133432_54352849158_o",
-    "title": "Moderne SIUS-Anzeigesysteme im Einsatz",
-    "category": "events",
-    "date": "2024",
-    "description": "Präzision beginnt bei der Technik. Hier sind die modernen SIUS-Anzeigemonitore zu sehen, die unseren Schützen in Muhen eine exakte Trefferauswertung ermöglichen. Diese Installation unterstreicht unseren Anspruch an eine professionelle Infrastruktur für den Schiesssport.",
-    "imageUrl": "assets/galerie/20161024_133432_54352849158_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Technik",
-      "Infrastruktur",
-      "Schiessstand",
-      "SIUS",
-      "Präzision"
-    ]
-  },
-  {
-    "id": "20161025_104007_54352849143_o",
-    "title": "Präzisionstechnik am Schiessstand",
-    "category": "events",
-    "date": "2023",
-    "description": "Technik ist ein wesentlicher Bestandteil unseres modernen Schiessbetriebs. Ein Mitglied wartet gewissenhaft die Sius-Anzeigegeräte, um jederzeit präzise Ergebnisse für unsere Schützen zu gewährleisten. Diese Sorgfalt unterstreicht den hohen Standard und die Professionalität, die im Sportschützen Muhen gelebt wird.",
-    "imageUrl": "assets/galerie/20161025_104007_54352849143_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessstand",
-      "Technik",
-      "Sius",
-      "Wartung",
-      "Präzision"
-    ]
-  },
-  {
-    "id": "20161025_104042_54352849138_o",
-    "title": "Präzisionstechnik für den Schiessstand",
-    "category": "events",
-    "date": "2023",
-    "description": "Die Installation moderner Sius-Anzeigegeräte erfordert höchste Konzentration und handwerkliches Geschick. Mit dieser technischen Aufrüstung sichert der Verein die sportliche Präzision für kommende Wettkämpfe und das Training. Gerhard Künzli sorgt hier mit viel Erfahrung dafür, dass unsere Infrastruktur auf dem neuesten Stand bleibt.",
-    "imageUrl": "assets/galerie/20161025_104042_54352849138_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Technik",
-      "Sius",
-      "Infrastruktur",
-      "Vereinsarbeit",
-      "Schiessstand"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
-    "isAiReference": false
+    "detectedPersons": []
   },
   {
-    "id": "20161025_104526_54352623166_o",
-    "title": "Technischer Einsatz an der Anlage",
-    "category": "events",
-    "date": "2023",
-    "description": "Hinter den Kulissen wird an der elektronischen Trefferanzeige gearbeitet, um einen reibungslosen Schiessbetrieb zu gewährleisten. Präzision endet bei uns nicht beim Abzug, sondern beginnt bereits bei der sorgfältigen Wartung der technischen Infrastruktur. Solche Einsätze zeigen das grosse Engagement unserer Mitglieder für den Verein.",
-    "imageUrl": "assets/galerie/20161025_104526_54352623166_o.jpg",
-    "detectedPersons": [],
+    "id": "0aac896b-2786-4eb7-8549-4bec642b62f2",
+    "title": "Spatenstich",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/0aac896b-2786-4eb7-8549-4bec642b62f2/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/0aac896b-2786-4eb7-8549-4bec642b62f2/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Technik",
-      "Wartung",
-      "Infrastruktur",
-      "Schiessanlage",
-      "Hinter den Kulissen"
-    ]
-  },
-  {
-    "id": "20161025_110006_54352623156_o",
-    "title": "Präzision bei der Installation",
-    "category": "events",
-    "date": "2024",
-    "description": "Auch hinter den Kulissen ist bei den Sportschützen Muhen höchste Sorgfalt gefragt. Ein Vereinsmitglied sorgt mit gezielten Handgriffen für eine ordentliche Verkabelung unserer elektronischen Anlage. Nur mit einer intakten Infrastruktur gelingen uns am Stand sportliche Höchstleistungen.",
-    "imageUrl": "assets/galerie/20161025_110006_54352623156_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Technik",
-      "Instandhaltung",
-      "Vereinsleben",
-      "Präzision"
-    ]
-  },
-  {
-    "id": "20161026_150826_54352827254_o",
-    "title": "Modernisierung unserer Schiessanlage",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Blick auf die Installation modernster elektronischer Trefferanzeigen an unserem Schiessstand. Diese technische Aufrüstung unterstreicht unser Engagement für Präzision und den Fortschritt im Schiesssport. Sie sorgt für faire Wettkampfbedingungen und optimale Trainingsmöglichkeiten für unsere Vereinsmitglieder.",
-    "imageUrl": "assets/galerie/20161026_150826_54352827254_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Modernisierung",
-      "Schiessstand",
-      "Technik",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20161026_150834_54351738507_o",
-    "title": "Moderne SIUS-Trefferanzeige im Unterhalt",
-    "category": "events",
-    "date": "2023",
-    "description": "Präzision beginnt bei der Technik. Hier wird eine SIUS Hybrid Score Anlage gewartet, um auch in Zukunft für faire und exakte Wettkampfbedingungen auf unserem Schiessstand zu sorgen. Ein Blick hinter die Kulissen unserer technischen Infrastruktur.",
-    "imageUrl": "assets/galerie/20161026_150834_54351738507_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "SIUS",
-      "Technik",
-      "Wartung",
-      "Schiessstand",
-      "Infrastruktur"
-    ]
-  },
-  {
-    "id": "20161026_150906_54352623121_o",
-    "title": "Wartungsarbeiten an der Schiessanlage",
-    "category": "events",
-    "date": "Herbst 2023",
-    "description": "Ein engagiertes Mitglied führt bei herbstlichem Wetter wichtige Unterhaltsarbeiten an den Scheibenanlagen durch. Diese handwerkliche Präzision stellt sicher, dass unsere Sportler auch in der kommenden Saison unter besten Bedingungen trainieren können. Ein wichtiger Beitrag zum reibungslosen Vereinsbetrieb.",
-    "imageUrl": "assets/galerie/20161026_150906_54352623121_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Wartung",
-      "Infrastruktur",
-      "Vereinsleben",
-      "Sportschützen Muhen",
-      "Engagement"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
-    "isAiReference": false
+    "detectedPersons": []
   },
   {
-    "id": "20161026_151720_54352849078_o",
-    "title": "Moderne SIUS-Trefferanzeige im Einsatz",
-    "category": "events",
-    "date": "2020er Jahre",
-    "description": "Präzisionstechnik trifft auf Schiesssport: Die installierte SIUS-Anlage garantiert bei unseren Schiessen eine exakte Auswertung. Diese hochmoderne Infrastruktur bildet das Rückgrat unseres Vereinsbetriebs und sichert sportliche Höchstleistungen auf dem Schiessstand.",
-    "imageUrl": "assets/galerie/20161026_151720_54352849078_o.jpg",
-    "detectedPersons": [],
+    "id": "77089e92-8c79-4b75-9a9f-d1808dc38874",
+    "title": "Bauarbeiten Schützenhaus Rüteli (34)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/77089e92-8c79-4b75-9a9f-d1808dc38874/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/77089e92-8c79-4b75-9a9f-d1808dc38874/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Infrastruktur",
-      "Schiesssport",
-      "SIUS",
-      "Technik",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20161028_081337_54353027910_o",
-    "title": "Blick auf die Schiessanlage",
-    "category": "events",
-    "date": "2023",
-    "description": "Der Blick über den Schiessplatz hin zu den Scheibenanlagen unterstreicht die sportliche Atmosphäre in Muhen. Hier findet die nötige Konzentration statt, um bei jedem Training höchste Präzision zu erreichen. Es ist ein Ort der Vorbereitung und des kameradschaftlichen Wettbewerbs.",
-    "imageUrl": "assets/galerie/20161028_081337_54353027910_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessanlage",
-      "Muhen",
-      "Sportplatz",
-      "Training",
-      "50m Gewehr"
-    ]
-  },
-  {
-    "id": "20161028_093242_54352827169_o",
-    "title": "Präzision auf dem elektronischen Monitor",
-    "category": "events",
-    "date": "28.10.2016",
-    "description": "Ein Blick auf den Sius-Monitor zeigt die hohe Konzentration und Präzision unserer Schützen im Vereinsalltag. Die elektronische Trefferanzeige dokumentiert eine starke Serie und unterstreicht die moderne Infrastruktur der Sportschützen Muhen.",
-    "imageUrl": "assets/galerie/20161028_093242_54352827169_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Sius",
-      "Trefferanzeige",
-      "Präzision",
-      "Gewehr 50m",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20161028_093609_54352623086_o",
-    "title": "Vorbereitungen für den nächsten Wettkampf",
-    "category": "events",
-    "date": "2016",
-    "description": "Konzentrierte Arbeit hinter den Kulissen: Unser Präsident bereitet am Laptop die Auswertung für den nächsten Schiesswettbewerb vor. Die digitale Erfassung ist ein unverzichtbarer Teil unserer modernen Schiesssport-Infrastruktur.",
-    "imageUrl": "assets/galerie/20161028_093609_54352623086_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Wettkampf",
-      "Auswertung",
-      "Technik",
-      "Vereinsleben",
-      "Sportschützen Muhen"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
-    "isAiReference": false
+    "detectedPersons": []
   },
   {
-    "id": "20161028_103948_54352849058_o",
-    "title": "Vorbereitung für den nächsten Wettkampf",
-    "category": "events",
-    "date": "2023",
-    "description": "Die technische Vorbereitung ist das A und O für einen erfolgreichen Schiesswettbewerb. Unsere Schützenmeister stellen sicher, dass das Sius Ascor System einsatzbereit ist, um höchste Präzision bei der Auswertung zu garantieren. Technik und Sport gehen bei uns Hand in Hand.",
-    "imageUrl": "assets/galerie/20161028_103948_54352849058_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Technik",
-      "Sius Ascor",
-      "Wettkampf",
-      "Infrastruktur",
-      "Schützenmeister"
-    ]
-  },
-  {
-    "id": "20161028_130653_54352849043_o",
-    "title": "Präzise Technik für den Schiesssport",
-    "category": "events",
-    "date": "2023",
-    "description": "Hinter den Kulissen sorgen unsere Experten für die einwandfreie Funktion der SIUS-Anlagen. Mit technischem Sachverstand wird hier die Grundlage für faire und präzise Wettkämpfe gelegt.",
-    "imageUrl": "assets/galerie/20161028_130653_54352849043_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Technik",
-      "SIUS",
-      "Wettkampfvorbereitung",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20161028_134236_54352849053_o",
-    "title": "Renovationsarbeiten an unserer Schiessanlage",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein engagiertes Vereinsmitglied legt beim Streichen der Schutzwand Hand an, um unsere Schiessanlage in Schuss zu halten. Solche Einsätze zeigen den starken Zusammenhalt und den persönlichen Einsatz, den unsere Mitglieder für den Sportschützen Muhen leisten.",
-    "imageUrl": "assets/galerie/20161028_134236_54352849053_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Renovierung",
-      "Vereinsarbeit",
-      "Schiessanlage",
-      "Kameradschaft",
-      "Engagement"
-    ]
-  },
-  {
-    "id": "20161028_195710_54352827089_o",
-    "title": "Geselliger Ausklang nach dem Wettkampf",
-    "category": "events",
-    "date": "2023",
-    "description": "Nach einem anstrengenden Tag am 30. Aargauer Kantonalschützenfest lassen unsere Schützen den Abend in gemütlicher Runde ausklingen. Ein Glas Wein im Schützenhaus steht symbolisch für die gelebte Kameradschaft und den Austausch über die sportlichen Erfolge. Solche Momente stärken den Zusammenhalt in unserem Verein.",
-    "imageUrl": "assets/galerie/20161028_195710_54352827089_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Kameradschaft",
-      "Aargauer Kantonalschützenfest",
-      "Vereinsleben",
-      "Geselligkeit",
-      "Schützenfest"
-    ]
-  },
-  {
-    "id": "20161028_201107_54353027805_o",
-    "title": "Präzision am nächtlichen Schiessstand",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein ruhiger Blick auf den Schiessstand bei Nacht, bereit für die nächste Trainingseinheit. Die moderne Ausrüstung zeugt von der hohen sportlichen Präzision, die unsere Mitglieder bei den Sportschützen Muhen täglich anstreben. Solche Momente der Konzentration bilden das Fundament für unsere gemeinsamen Erfolge im Verein.",
-    "imageUrl": "assets/galerie/20161028_201107_54353027805_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Training",
-      "Schiessstand",
-      "Präzision",
-      "Sportschützen Muhen",
-      "Nachtschießen"
-    ]
-  },
-  {
-    "id": "20161031_200018_54353027795_o",
-    "title": "Nächtliche Ruhe auf dem Schiessstand",
-    "category": "events",
-    "date": "2023",
-    "description": "Die Schiessanlage in Muhen präsentiert sich bei nächtlicher Beleuchtung von ihrer stillen Seite. Diese Aufnahme unterstreicht die nächtliche Atmosphäre und die Bereitschaft der Anlage für den nächsten Einsatz unserer Sportschützen. Ein stimmungsvoller Blick auf die technische Infrastruktur unseres Vereins.",
-    "imageUrl": "assets/galerie/20161031_200018_54353027795_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessanlage",
-      "Muhen",
-      "Nachtaufnahme",
-      "Infrastruktur",
-      "Sportschützen"
-    ]
-  },
-  {
-    "id": "20161106_150750_54352848983_o",
-    "title": "Blick auf den Schiessstand",
-    "category": "events",
-    "date": "2023",
-    "description": "Der Blick aus dem Schützenstand bietet eine klare Sicht auf die Zielanlage. Diese moderne Ausrüstung ermöglicht sportliche Präzision bei jedem Training. Ein Ort der Konzentration und der gemeinschaftlichen Leidenschaft für den Schiesssport.",
-    "imageUrl": "assets/galerie/20161106_150750_54352848983_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessstand",
-      "Sius",
-      "Technik",
-      "Training",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20161109_114158_54352827039_o",
-    "title": "Moderne elektronische Trefferanzeige auf dem Stand",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Blick auf die moderne Infrastruktur unserer Schiessanlage. Die elektronischen Anlagen garantieren höchste Präzision und faire Wettkampfbedingungen bei jedem Training. Sie bilden das technische Herzstück unseres Vereinslebens.",
-    "imageUrl": "assets/galerie/20161109_114158_54352827039_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Schiessanlage",
-      "Elektronik",
-      "Technik"
-    ]
-  },
-  {
-    "id": "20161109_114302_54352622686_o",
-    "title": "Moderne Schiessanlage in Muhen",
+    "id": "d6ecb94d-29df-4e07-a0fd-f40fb6564720",
+    "title": "Bauarbeiten Schützenhaus Rüteli (35)",
     "category": "geschichte",
-    "date": "2023",
-    "description": "Ein Blick auf die moderne technische Infrastruktur unserer Schiessanlage. Diese robusten Metallkonstruktionen bilden das Rückgrat unseres präzisen Trainingsbetriebs und unterstreichen den hohen Standard bei den Sportschützen Muhen.",
-    "imageUrl": "assets/galerie/20161109_114302_54352622686_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/d6ecb94d-29df-4e07-a0fd-f40fb6564720/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/d6ecb94d-29df-4e07-a0fd-f40fb6564720/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Infrastruktur",
-      "Schiessstand",
-      "Technik",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20161109_114333_54352623006_o",
-    "title": "Infrastruktur beim Schiessstand",
-    "category": "geschichte",
-    "date": "2024",
-    "description": "Ein Blick auf die technische Infrastruktur des Schiessstandes der Sportschützen Muhen. Solche Anlagen bilden das funktionale Fundament für unsere sportlichen Aktivitäten und den Schiessbetrieb.",
-    "imageUrl": "assets/galerie/20161109_114333_54352623006_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Schiessstand",
-      "Technik",
-      "Unterhalt"
-    ]
-  },
-  {
-    "id": "20161112_154226_54352848933_o",
-    "title": "Modernisierte Schiessanlage in Muhen",
-    "category": "geschichte",
-    "date": "2020er Jahre",
-    "description": "Ein Blick auf die neu installierte Schiessanlage der Sportschützen Muhen. Diese Investition in die Infrastruktur unterstreicht unser Engagement für den Schiesssport und optimale Trainingsbedingungen für alle Vereinsmitglieder.",
-    "imageUrl": "assets/galerie/20161112_154226_54352848933_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Schiessstand",
-      "Modernisierung",
-      "Muhen",
-      "Vereinsleben"
-    ]
-  },
-  {
-    "id": "20161112_164412_54351738097_o",
-    "title": "Gemeinsam für unsere Schiessanlage aktiv",
-    "category": "events",
-    "date": "2023",
-    "description": "Engagierte Vereinsmitglieder packen gemeinsam an, um die Infrastruktur der Sportschützen Muhen für die kommende Saison in Schuss zu halten. Solche Arbeitseinsätze stärken nicht nur die Anlage, sondern fördern auch den Zusammenhalt und die kameradschaftliche Atmosphäre im Verein.",
-    "imageUrl": "assets/galerie/20161112_164412_54351738097_o.jpg",
-    "detectedPersons": [
-      "Simon Hediger"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
-    "tags": [
-      "Arbeitseinsatz",
-      "Vereinsleben",
-      "Instandhaltung",
-      "Kameradschaft"
-    ]
+    "detectedPersons": []
   },
   {
-    "id": "20161112_164416_54353027765_o",
-    "title": "Gemeinsame Anlagepflege in Muhen",
-    "category": "events",
-    "date": "2023",
-    "description": "Engagierte Mitglieder der Sportschützen Muhen packen gemeinsam an, um die Anlage in Schuss zu halten. Die Pflege des Geländes unterstreicht den starken Zusammenhalt und das kameradschaftliche Engagement im Verein. Durch diesen Einsatz bleibt unsere Schiessstätte auch für kommende sportliche Herausforderungen bestens gerüstet.",
-    "imageUrl": "assets/galerie/20161112_164416_54353027765_o.jpg",
-    "detectedPersons": [
-      "Simon Hediger"
+    "id": "9a695f5e-9851-4923-af96-bea96b7af8a9",
+    "title": "Thomas Gebert",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Thomas Gebert beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/9a695f5e-9851-4923-af96-bea96b7af8a9/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/9a695f5e-9851-4923-af96-bea96b7af8a9/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Gebert"
     ],
-    "tags": [
-      "Vereinsarbeit",
-      "Kameradschaft",
-      "Anlagepflege",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20161112_164430_54352826654_o",
-    "title": "Vorbereitungen für den Schiessstand-Unterhalt",
-    "category": "events",
-    "date": "2024",
-    "description": "Auch hinter den Kulissen packen die Sportschützen Muhen gemeinsam an. Mit schwerem Gerät und viel Einsatz werden Baumaterialien für den Unterhalt der Anlage transportiert. Teamwork ist das Fundament für einen erfolgreichen Schiessbetrieb.",
-    "imageUrl": "assets/galerie/20161112_164430_54352826654_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Unterhalt",
-      "Anlage",
-      "Frondienst",
-      "Vereinsleben"
-    ]
-  },
-  {
-    "id": "20161113_103503_54351738317_o",
-    "title": "Konzentration am 50m Stand",
-    "category": "events",
-    "date": "2020er Jahre",
-    "description": "Ein konzentrierter Blick in die Trainingshalle der Sportschützen Muhen beim 50m Kleinkaliberschießen. Unsere Schützen zeigen volle Konzentration und sportliche Präzision in ihrer Ausrüstung, während sie gemeinsam an ihrer Treffsicherheit arbeiten. Ein wunderbares Beispiel für den Zusammenhalt und die Leidenschaft in unserem Verein.",
-    "imageUrl": "assets/galerie/20161113_103503_54351738317_o.jpg",
-    "detectedPersons": [
-      "Erich Hunziker"
-    ],
-    "tags": [
-      "50m",
-      "Gewehr",
-      "Sportschützen Muhen",
-      "Training",
-      "Konzentration",
-      "Vereinsleben"
-    ],
-    "isAiReference": true
-  },
-  {
-    "id": "20161113_103513_54352848878_o",
-    "title": "Präzision auf der 50m Anlage",
-    "category": "nachwuchs",
-    "date": "2023",
-    "description": "Ein konzentrierter Moment am Schiessstand, an dem volle Konzentration und eine ruhige Hand gefragt sind. Die moderne SIUS-Anlage liefert sofortiges Feedback und unterstützt unsere Schützen dabei, ihre Treffsicherheit stetig zu verbessern. Es ist die perfekte Darstellung unseres sportlichen Ehrgeizes und der Leidenschaft für den Schiesssport.",
-    "imageUrl": "assets/galerie/20161113_103513_54352848878_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Gewehr 50m",
-      "Schiessstand",
-      "Konzentration",
-      "Präzision",
-      "Sportschützen Muhen",
-      "Training"
-    ]
-  },
-  {
-    "id": "20161113_103534_54352848848_o",
-    "title": "Volle Konzentration im Schiessstand",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Schütze bei der intensiven Ausübung des Sportgewehrs in kniender Position. Diese Aufnahme verdeutlicht die hohe Präzision und den vollen Fokus, die unsere Vereinsmitglieder bei jedem Training an den Tag legen.",
-    "imageUrl": "assets/galerie/20161113_103534_54352848848_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Training",
-      "Gewehr",
-      "Präzision",
-      "Sportschützen Muhen",
-      "Schiessstand"
-    ]
-  },
-  {
-    "id": "20161113_103622_54352826954_o",
-    "title": "Volle Konzentration am Schiessstand",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Schütze in liegender Position zeigt absolute Hingabe und Präzision beim Zielen auf die 50-Meter-Scheibe. Die digitale Trefferanzeige dokumentiert den sportlichen Fortschritt und unterstreicht die moderne Infrastruktur unseres Vereins. Momente wie diese spiegeln die hohe Disziplin und den Fokus wider, die den Schiesssport in Muhen auszeichnen.",
-    "imageUrl": "assets/galerie/20161113_103622_54352826954_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessstand",
-      "50m",
-      "Konzentration",
-      "Präzision",
-      "Sportschützen Muhen",
-      "Training"
-    ]
-  },
-  {
-    "id": "20161201_215343_54352826804_o",
-    "title": "Nächtliche Ruhe am Schiessstand",
-    "category": "events",
-    "date": "2023",
-    "description": "Die beleuchtete Scheibenanlage des Schiessstandes in Muhen hebt sich in der Dunkelheit eindrucksvoll ab. Diese nächtliche Aufnahme unterstreicht die Faszination für den Schiesssport und die Ruhe, die den Platz ausserhalb der Trainingszeiten umgibt.",
-    "imageUrl": "assets/galerie/20161201_215343_54352826804_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessstand",
-      "Muhen",
-      "Nachtaufnahme",
-      "Schiesssport",
-      "Infrastruktur"
-    ]
-  },
-  {
-    "id": "20161201_215356_54352848793_o",
-    "title": "Präzision in der nächtlichen Stille",
-    "category": "events",
-    "date": "2023",
-    "description": "Unsere Schiessanlage in Muhen zeigt sich bei Nacht von ihrer eindrucksvollsten Seite. Die beleuchteten Scheibenanlagen symbolisieren die stetige Konzentration und sportliche Präzision, die unseren Verein auszeichnet. Auch nach Einbruch der Dunkelheit bleibt unsere Leidenschaft für den Schiesssport ungebrochen.",
-    "imageUrl": "assets/galerie/20161201_215356_54352848793_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Nachtaufnahme",
-      "Schiessstand",
-      "Muhen",
-      "Präzision",
-      "Infrastruktur"
-    ]
-  },
-  {
-    "id": "20161227_102829_54352622811_o",
-    "title": "Modernes Ambiente im Vereinsheim",
-    "category": "events",
-    "date": "2018",
-    "description": "Ein Blick in unsere Räumlichkeiten, in denen wir gemeinsam Erfolge feiern und wichtige Informationen austauschen. Diese moderne Ausstattung unterstützt uns dabei, den Schiesssport in Muhen zeitgemäss zu präsentieren.",
-    "imageUrl": "assets/galerie/20161227_102829_54352622811_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsheim",
-      "Infrastruktur",
-      "Muhen",
-      "Vereinsleben"
-    ]
-  },
-  {
-    "id": "20161227_122647_54352826809_o",
-    "title": "Blick in unser gemütliches Vereinslokal",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Blick in den einladenden Aufenthaltsraum der Sportschützen Muhen, in dem sich nach dem Training die Kameradschaft pflegen lässt. Dieser Ort bildet das Herzstück unseres Vereinslebens und bietet den idealen Raum für gesellige Stunden. Hier treffen Präzision und Entspannung aufeinander.",
-    "imageUrl": "assets/galerie/20161227_122647_54352826809_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinslokal",
-      "Sportschützen Muhen",
-      "Kameradschaft",
-      "Innenansicht"
-    ]
-  },
-  {
-    "id": "20161227_122653_54353027660_o",
-    "title": "Modernisierung unserer Vereinsräumlichkeiten",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Blick hinter die Kulissen der Modernisierung unseres Schützenhauses. Die technische Aufwertung mit einem neuen Bildschirm unterstreicht unser Engagement für eine zeitgemäße Infrastruktur im Verein. So schaffen wir den perfekten Rahmen für gesellige Stunden nach dem Training.",
-    "imageUrl": "assets/galerie/20161227_122653_54353027660_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Renovation",
-      "Vereinsleben",
-      "Technik"
-    ]
-  },
-  {
-    "id": "20161227_183853_54353027685_o",
-    "title": "Ruhepause im Schützenhaus",
-    "category": "events",
-    "date": "2024",
-    "description": "Ein stiller Moment im Vereinslokal der Sportschützen Muhen. Auch wenn die Technik kurzzeitig pausiert, bietet unser Treffpunkt immer eine gemütliche Atmosphäre für die Kameradschaft nach dem Training.",
-    "imageUrl": "assets/galerie/20161227_183853_54353027685_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinslokal",
-      "Sportschützen Muhen",
-      "Kameradschaft",
-      "Impression"
-    ]
-  },
-  {
-    "id": "20161227_183908_54353027625_o",
-    "title": "Moderne Infrastruktur im Schiessstand",
-    "category": "events",
-    "date": "2024",
-    "description": "Ein Blick in die gut ausgebaute Anlage der Sportschützen Muhen. Die moderne Bildschirm-Technik sorgt für präzise Trefferauswertung und trägt massgeblich zum hohen sportlichen Standard bei. Die gut gepflegten Schiessplätze bieten den perfekten Rahmen für ein konzentriertes Training.",
-    "imageUrl": "assets/galerie/20161227_183908_54353027625_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Schiessanlage",
-      "Technik",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20161227_183915_54352826734_o",
-    "title": "Vorbereitung für den nächsten Wettkampf",
-    "category": "events",
-    "date": "2023",
-    "description": "Die Schiessanlage in Muhen zeigt sich bereit für die kommenden sportlichen Herausforderungen. Die ordentliche Vorbereitung der Tische unterstreicht die Sorgfalt und Präzision, die unseren Verein auszeichnet.",
-    "imageUrl": "assets/galerie/20161227_183915_54352826734_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessstand",
-      "Sportschützen Muhen",
-      "Infrastruktur",
-      "Vorbereitung"
-    ]
-  },
-  {
-    "id": "20161227_183931_54352848733_o",
-    "title": "Bereit für den nächsten Wettkampf",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein Blick in unseren Schiessstand kurz vor dem Training. Die akkurat ausgerichteten Schiesstische zeugen von der Vorfreude und der nötigen Disziplin für einen erfolgreichen Trainingsabend. Hier wird die Basis für sportliche Höchstleistungen und kameradschaftliches Beisammensein gelegt.",
-    "imageUrl": "assets/galerie/20161227_183931_54352848733_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessstand",
-      "Vorbereitung",
-      "Infrastruktur",
-      "Sportschützen Muhen",
-      "Gewehr 50m"
-    ]
-  },
-  {
-    "id": "20161227_183942_54352622746_o",
-    "title": "Das Herzstück unserer Schiessanlage",
-    "category": "geschichte",
-    "date": "2016",
-    "description": "Ein Blick hinter die Kulissen der Schiessanlage der Sportschützen Muhen. Hier wird mit technischer Präzision die Auswertung der Schiessergebnisse sichergestellt, welche für unseren sportlichen Erfolg unerlässlich ist. Dieser Arbeitsplatz bildet das unsichtbare Zentrum unserer Vereinsaktivitäten.",
-    "imageUrl": "assets/galerie/20161227_183942_54352622746_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Technik",
-      "Schiessanlage",
-      "Infrastruktur",
-      "Muhen",
-      "Vereinsleben"
-    ]
-  },
-  {
-    "id": "2016tessin_54352618946_o",
-    "title": "Gesellige Runde unter Sportschützen",
-    "category": "events",
-    "date": "2023",
-    "description": "In entspannter Atmosphäre geniessen die Sportschützen Muhen das Beisammensein nach einem erfolgreichen Wettkampftag. Die fröhliche Stimmung unterstreicht den starken Zusammenhalt und die gelebte Kameradschaft im Verein, abseits der konzentrierten Schiessstände.",
-    "imageUrl": "assets/galerie/2016tessin_54352618946_o.jpg",
-    "detectedPersons": [
-      "Simon Hediger",
-      "Olivia Rossi",
-      "Gerhard Künzli"
-    ],
-    "tags": [
-      "Sportschützen Muhen",
-      "Kameradschaft",
-      "Vereinsleben",
-      "Geselligkeit",
-      "Gemeinschaft"
-    ]
-  },
-  {
-    "id": "20250427_114631308_ios_54574669738_o",
-    "title": "Gemeinsam an der Schiessanlage gebaut",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein wertvoller Blick in die Vergangenheit, als tatkräftige Vereinsmitglieder gemeinsam am Ausbau unserer Anlage arbeiteten. Dieser Einsatz unterstreicht den hohen Stellenwert der Kameradschaft und den gemeinsamen Willen, die Zukunft der Sportschützen Muhen aktiv mitzugestalten.",
-    "imageUrl": "assets/galerie/20250427_114631308_ios_54574669738_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsgeschichte",
-      "Umbau",
-      "Kameradschaft",
-      "Freiwilligenarbeit"
-    ]
-  },
-  {
-    "id": "20250427_114710496_ios_54574438411_o",
-    "title": "Geselliges Beisammensein im Grünen",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein entspannter Moment auf der Wiese, der die Verbundenheit und Kameradschaft unserer Vereinsmitglieder wunderbar einfängt. Generationen kommen zusammen, um die gemeinsame Zeit abseits des Schiessstandes in der Natur zu geniessen.",
-    "imageUrl": "assets/galerie/20250427_114710496_ios_54574438411_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsleben",
-      "Kameradschaft",
-      "Freizeit",
-      "Natur",
-      "Historisch"
-    ]
-  },
-  {
-    "id": "20250427_114733539_ios_54574669703_o",
-    "title": "Erster Spatenstich in Muhen",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein bedeutender Moment in der Vereinsgeschichte: Die Mitglieder versammeln sich auf der grünen Wiese zum feierlichen Spatenstich. Dieses Bild dokumentiert den Pioniergeist und den starken Zusammenhalt unserer Schützenfamilie beim Aufbau unserer heutigen Anlage.",
-    "imageUrl": "assets/galerie/20250427_114733539_ios_54574669703_o.jpg",
-    "detectedPersons": [
-      "Gerhard Künzli"
-    ],
-    "tags": [
-      "Spatenstich",
-      "Vereinsgeschichte",
-      "Tradition",
-      "Kameradschaft"
-    ]
-  },
-  {
-    "id": "20250427_114801109_ios_54574774230_o",
-    "title": "Gesellige Runde im Schützenhaus",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein Einblick in die gemütliche Atmosphäre nach einem erfolgreichen Schiesstag. Unsere Mitglieder geniessen bei einer gemeinsamen Stärkung die wertvolle Kameradschaft, die den Sportschützen Muhen seit jeher auszeichnet.",
-    "imageUrl": "assets/galerie/20250427_114801109_ios_54574774230_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Kameradschaft",
-      "Vereinsleben",
-      "Rückblick",
-      "Schützenstube"
-    ]
-  },
-  {
-    "id": "20250427_114911219_ios_54573572637_o",
-    "title": "Vereinsmitglieder beim Bau der Schiessanlage",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein eindrücklicher Blick in die Vergangenheit der Sportschützen Muhen während der Bauarbeiten an der Anlage. Hand in Hand zeigten die Mitglieder vollen Einsatz, um die Grundlage für unseren heutigen Sport zu schaffen. Dieser Zusammenhalt prägt unser Vereinsleben noch bis heute.",
-    "imageUrl": "assets/galerie/20250427_114911219_ios_54573572637_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Bauarbeiten",
-      "Vereinsgeschichte",
-      "Kameradschaft",
-      "Eigenleistung",
-      "Infrastruktur"
-    ]
-  },
-  {
-    "id": "20250427_114929094_ios_54573572652_o",
-    "title": "Unbeschwerte Momente vor dem Training",
-    "category": "nachwuchs",
-    "date": "1990er Jahre",
-    "description": "Ein seltener Blick hinter die Kulissen, der die Freude und Freiheit unserer jüngsten Vereinsmitglieder vor den Schiessübungen zeigt. Solche Momente fernab vom Stand unterstreichen die familiäre Atmosphäre bei den Sportschützen Muhen. Der Nachwuchs geniesst sichtlich die Zeit auf der Wiese, bevor es mit dem sportlichen Training losgeht.",
-    "imageUrl": "assets/galerie/20250427_114929094_ios_54573572652_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Nachwuchs",
-      "Kindheit",
-      "Freizeit",
-      "Vereinsleben",
-      "Nostalgie"
-    ]
-  },
-  {
-    "id": "20250427_114948012_ios_54574669673_o",
-    "title": "Grundsteinlegung für unser Vereinsgelände",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein bedeutender Moment in der Historie der Sportschützen Muhen, als die Bagger für die Erweiterung unserer Schiessanlage anrollten. Dieses Bild zeigt den Baubeginn und zeugt vom grossen Engagement unserer Mitglieder für eine moderne Infrastruktur. Es markiert den Grundstein für viele sportliche Erfolge und gemeinschaftliche Erlebnisse.",
-    "imageUrl": "assets/galerie/20250427_114948012_ios_54574669673_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Bauarbeiten",
-      "Vereinsgeschichte",
-      "Infrastruktur",
-      "Meilenstein"
-    ]
-  },
-  {
-    "id": "20250427_115022595_ios_54574774185_o",
-    "title": "Vorbereitungen auf dem Schiessgelände",
-    "category": "events",
-    "date": "2024",
-    "description": "Die Morgenruhe auf dem Vereinsgelände in Muhen wird für anstehende Arbeiten genutzt. Solche Momente zeigen die stetige Sorgfalt unserer Mitglieder, um die Infrastruktur für unsere sportlichen Aktivitäten in Schuss zu halten.",
-    "imageUrl": "assets/galerie/20250427_115022595_ios_54574774185_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Muhen",
-      "Vereinsgelände",
-      "Infrastruktur",
-      "Morgenstimmung"
-    ]
-  },
-  {
-    "id": "20250427_115105592_ios_54574669648_o",
-    "title": "Baggerarbeiten auf dem Schiessplatz",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein spannender Rückblick auf die Bautätigkeiten rund um unseren Schiessstand. Diese Arbeiten legten das Fundament für die moderne Infrastruktur, die wir heute für unseren Vereinssport geniessen dürfen.",
-    "imageUrl": "assets/galerie/20250427_115105592_ios_54574669648_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Bauarbeiten",
-      "Vereinsgeschichte",
-      "Infrastruktur",
-      "Muhen"
-    ]
-  },
-  {
-    "id": "20250427_115121803_ios_54574626604_o",
-    "title": "Aufbauarbeiten am Schützenhaus",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein eindrücklicher Blick auf die handwerkliche Eigenleistung unserer Mitglieder während der Bauphase des Schützenhauses. Diese Aufnahmen dokumentieren das grosse Engagement und den Teamgeist, der den Verein bis heute auszeichnet.",
-    "imageUrl": "assets/galerie/20250427_115121803_ios_54574626604_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Umbau",
-      "Vereinsgeschichte",
-      "Eigenleistung",
-      "Schützenhaus"
-    ]
-  },
-  {
-    "id": "20250427_115144422_ios_54574669638_o",
-    "title": "Anpacken für unseren Verein",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Hier zeigt sich der wahre Geist unseres Vereins: Tatkräftiges Anpacken ausserhalb des Schiessstandes. Simon Hediger beweist beim Erdaushub nicht nur Präzision, sondern auch vollen Einsatz für die Infrastruktur der Sportschützen Muhen.",
-    "imageUrl": "assets/galerie/20250427_115144422_ios_54574669638_o.jpg",
     "detectedPersons": [
       "Thomas Gebert"
-    ],
-    "tags": [
-      "Infrastruktur",
-      "Anpacken",
-      "Vereinsleben",
-      "Baggerarbeiten"
-    ],
-    "isAiReference": true
+    ]
   },
   {
-    "id": "20250427_115223938_ios_54574774120_o",
-    "title": "Gesellige Runde im Schützenhaus",
+    "id": "8592f621-91ae-40f2-a2b1-4442e5d9ff23",
+    "title": "Bauarbeiten Schützenhaus Rüteli (37)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein entspannter Moment abseits der Schiessbahn im gemütlichen Vereinslokal der Sportschützen Muhen. Solche Augenblicke unterstreichen den hohen Stellenwert der Kameradschaft und des sozialen Miteinanders in unserem Verein.",
-    "imageUrl": "assets/galerie/20250427_115223938_ios_54574774120_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/8592f621-91ae-40f2-a2b1-4442e5d9ff23/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/8592f621-91ae-40f2-a2b1-4442e5d9ff23/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsleben",
-      "Kameradschaft",
       "Schützenhaus",
-      "Tradition"
-    ]
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "20250427_115240196_ios_54574626549_o",
-    "title": "Baubeginn für die Schiessanlage Muhen",
+    "id": "e89235b3-3222-4a65-88b9-425b08596715",
+    "title": "Bauarbeiten Schützenhaus Rüteli (38)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein Bagger bereitet das Gelände für den Ausbau unserer Schiessanlage vor. Solche Momente zeigen den Einsatz der Vereinsmitglieder für unsere sportliche Heimat. Gemeinsam wurde hier das Fundament für zukünftige Erfolge gelegt.",
-    "imageUrl": "assets/galerie/20250427_115240196_ios_54574626549_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/e89235b3-3222-4a65-88b9-425b08596715/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/e89235b3-3222-4a65-88b9-425b08596715/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Baustelle",
-      "Vereinsgeschichte",
-      "Infrastruktur",
-      "Muhen"
-    ]
-  },
-  {
-    "id": "20250427_115256005_ios_54574438306_o",
-    "title": "Baggerarbeiten auf dem Schiessplatz Muhen",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein spannender Blick zurück in die Zeit der baulichen Erweiterungen unseres Schiessstandes. Diese Aufnahme dokumentiert den grossen Einsatz bei den Erdarbeiten, die das Fundament für unsere heutige Sportstätte legten. Solche Momente zeigen den unermüdlichen Einsatz unserer Mitglieder für eine moderne Infrastruktur.",
-    "imageUrl": "assets/galerie/20250427_115256005_ios_54574438306_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Geschichte",
-      "Bauarbeiten",
-      "Vereinsgelände",
-      "Erinnerungen"
-    ]
-  },
-  {
-    "id": "20250427_115317894_ios_54574669563_o",
-    "title": "Fundament für unsere Vereinszukunft",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein eindrücklicher Blick zurück auf die Bauphase unserer Anlage. Mit vollem Einsatz und handwerklichem Geschick legten unsere Vereinsmitglieder damals das Fundament für den heutigen Schiessbetrieb. Solche Momente zeigen den grossen Zusammenhalt und das leidenschaftliche Engagement, das unseren Verein seit jeher auszeichnet.",
-    "imageUrl": "assets/galerie/20250427_115317894_ios_54574669563_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Bauarbeiten",
-      "Vereinsgeschichte",
-      "Kameradschaft",
-      "Engagement",
-      "Schiessstand"
-    ]
-  },
-  {
-    "id": "20250427_115337520_ios_54574438296_o",
-    "title": "Fundamentarbeiten für den neuen Schiessstand",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein Blick in die Vergangenheit zeigt den unermüdlichen Einsatz unserer Vereinsmitglieder beim Bau der Schiessanlage. Mit gemeinsamer Tatkraft und körperlichem Einsatz wurde das Fundament gelegt, was den Grundstein für viele sportliche Erfolge legte. Diese Aufnahme verdeutlicht den gelebten Teamgeist, der den Verein bis heute prägt.",
-    "imageUrl": "assets/galerie/20250427_115337520_ios_54574438296_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsgeschichte",
-      "Bauarbeiten",
-      "Kameradschaft",
-      "Schiessstand"
-    ]
-  },
-  {
-    "id": "20250427_115354868_ios_54574774095_o",
-    "title": "Aufbauarbeit am Schiessstand Muhen",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein Blick zurück auf die tatkräftige Eigenleistung unserer Mitglieder bei Bauarbeiten auf dem Vereinsgelände. Diese Aufnahme zeigt den grossen Einsatz und die Kameradschaft, die das Fundament für unseren heutigen Sport bildet. Auch abseits der Schiessbahn packen die Sportschützen Muhen gemeinsam an.",
-    "imageUrl": "assets/galerie/20250427_115354868_ios_54574774095_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Bauarbeiten",
-      "Vereinsgeschichte",
-      "Eigenleistung",
-      "Kameradschaft",
-      "Historisch"
-    ]
-  },
-  {
-    "id": "20250427_115416784_ios_54574626554_o",
-    "title": "Gemeinsam im Schützenhaus vereint",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein wertvoller Blick zurück in die Geschichte unserer Schützenanlage. Das Bild zeugt von der tiefen Verbundenheit und Kameradschaft, die das Fundament unseres Vereinslebens in Muhen über Generationen hinweg prägt.",
-    "imageUrl": "assets/galerie/20250427_115416784_ios_54574626554_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Geschichte",
-      "Vereinsleben",
-      "Muhen",
-      "Kameradschaft"
-    ]
-  },
-  {
-    "id": "20250427_115435136_ios_54573572462_o",
-    "title": "Blick in unser Vereinslokal",
-    "category": "geschichte",
-    "date": "2020er Jahre",
-    "description": "Das Foto zeigt den leeren Innenraum unseres Vereinslokals mit seinem charakteristischen Fachwerkausbau. Dieser Raum dient als Ort der Ruhe und Vorbereitung vor den Wettkämpfen und ist ein zentraler Bestandteil unserer Vereinsgeschichte. Die schlichte Architektur unterstreicht die Konzentration auf unseren Sport.",
-    "imageUrl": "assets/galerie/20250427_115435136_ios_54573572462_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinslokal",
-      "Muhen",
-      "Infrastruktur",
-      "Schützenhaus"
-    ]
-  },
-  {
-    "id": "20250427_115451604_ios_54574438246_o",
-    "title": "Aufbau der Schützenhaus-Konstruktion",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein eindrücklicher Blick auf die Entstehungsgeschichte unserer Schiessanlage. Mit vereinten Kräften und schwerem Gerät wurde das Holzgerüst für unser heutiges Vereinsheim errichtet. Dieses Bild zeugt vom grossen Engagement und dem starken Zusammenhalt unserer Mitglieder während der Bauphase.",
-    "imageUrl": "assets/galerie/20250427_115451604_ios_54574438246_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Bauarbeiten",
-      "Vereinsgeschichte",
-      "Zusammenhalt",
       "Schützenhaus",
-      "Holzbau"
-    ]
-  },
-  {
-    "id": "20250427_115511074_ios_54574438251_o",
-    "title": "Der erste Spatenstich für Muhen",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein historischer Moment für die Sportschützen Muhen beim gemeinsamen Spatenstich auf der grünen Wiese. Dieses Bild dokumentiert den Grundstein für unsere Schiessanlage und unterstreicht den starken Zusammenhalt unserer Vereinsmitglieder. Die Vorfreude auf das neue Zuhause ist den Anwesenden deutlich ins Gesicht geschrieben.",
-    "imageUrl": "assets/galerie/20250427_115511074_ios_54574438251_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Spatenstich",
-      "Vereinsgeschichte",
-      "Meilenstein",
-      "Tradition",
-      "Kameradschaft"
-    ]
-  },
-  {
-    "id": "20250427_115527501_ios_54574669513_o",
-    "title": "Gemeinsam anpacken am Schützenhaus",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Dieses Bild zeigt den unverzichtbaren Teamgeist im Verein bei Bauarbeiten am Schützenhaus. Mit viel handwerklichem Geschick und Herzblut sorgen die Mitglieder für den Erhalt unserer Infrastruktur. Solche Momente der Zusammenarbeit sind das Fundament unserer langjährigen Kameradschaft.",
-    "imageUrl": "assets/galerie/20250427_115527501_ios_54574669513_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsgeschichte",
-      "Kameradschaft",
-      "Handwerk",
-      "Mitarbeit"
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
-    "isAiReference": false
+    "detectedPersons": []
   },
   {
-    "id": "20250427_115544319_ios_54574438226_o",
-    "title": "Gemeinsam am Bau: Vereinszukunft gestalten",
+    "id": "4bc8d6b8-acfa-4ced-9679-08ceeecaaa5c",
+    "title": "Hansjürg Schmid & Thomas Hochuli",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Zwei Vereinsmitglieder arbeiten Hand in Hand am Bau unseres Schützenhauses. Dieses Bild zeugt von der grossen Einsatzbereitschaft und der gelebten Kameradschaft unserer Mitglieder, die über den sportlichen Erfolg hinausging. Solche Momente des gemeinsamen Schaffens haben das Fundament für unsere heutige Vereinsanlage gelegt.",
-    "imageUrl": "assets/galerie/20250427_115544319_ios_54574438226_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Hansjürg Schmid & Thomas Hochuli beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/4bc8d6b8-acfa-4ced-9679-08ceeecaaa5c/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/4bc8d6b8-acfa-4ced-9679-08ceeecaaa5c/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Bauarbeiten",
-      "Vereinsgeschichte",
-      "Kameradschaft",
-      "Engagement",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20250427_115600640_ios_54574774050_o",
-    "title": "Einsatz bei der baulichen Instandhaltung",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein engagierter Moment aus der Vergangenheit, der den unermüdlichen Einsatz unserer Vereinsmitglieder für die Infrastruktur zeigt. Solche handwerklichen Arbeiten sind ein wesentlicher Teil unserer Vereinskultur und stärken das Gemeinschaftsgefühl über Generationen hinweg. Die gezeigte Hingabe spiegelt dieselbe Sorgfalt wider, die wir auch im Schiesssport pflegen.",
-    "imageUrl": "assets/galerie/20250427_115600640_ios_54574774050_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsleben",
-      "Handwerk",
-      "Engagement",
-      "Instandhaltung"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Schmid",
+      "Hochuli"
     ],
-    "isAiReference": false
-  },
-  {
-    "id": "20250427_115615359_ios_54574438221_o",
-    "title": "Gemeinsam zum neuen Vereinsheim",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein eindrückliches Zeugnis der Tatkraft unserer Mitglieder beim Bau des Schützenhauses. Dank unzähliger freiwilliger Arbeitsstunden und kameradschaftlichem Zusammenhalt konnten wir unsere Infrastruktur nachhaltig stärken. Diese Aufnahme fängt den Stolz und den unermüdlichen Einsatz für unseren geliebten Sportverein in Muhen ein.",
-    "imageUrl": "assets/galerie/20250427_115615359_ios_54574438221_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsgeschichte",
-      "Bauarbeiten",
-      "Kameradschaft",
-      "Eigenleistung",
-      "Muhen"
-    ]
-  },
-  {
-    "id": "20250427_115637060_ios_54573572397_o",
-    "title": "Gemeinsamer Ausbau unserer Schiessanlage",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Dieses Bild zeigt tatkräftige Vereinsmitglieder bei einem baulichen Einsatz am Vereinsgebäude. Solche Momente unterstreichen die Verbundenheit und den Einsatz unserer Schützen für ihre Infrastruktur weit über den sportlichen Wettkampf hinaus.",
-    "imageUrl": "assets/galerie/20250427_115637060_ios_54573572397_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsleben",
-      "Bauarbeiten",
-      "Kameradschaft",
-      "Geschichte",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20250427_115652733_ios_54574438166_o",
-    "title": "Anpacken beim Vereinsbau",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein eindrücklicher Moment aus der Vereinsgeschichte, als unsere Mitglieder gemeinsam beim Bau Hand anlegten. Dieser Arbeitseinsatz zeigt den starken Zusammenhalt und das Engagement, das unseren Schützenverein seit jeher auszeichnet.",
-    "imageUrl": "assets/galerie/20250427_115652733_ios_54574438166_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsleben",
-      "Arbeitseinsatz",
-      "Geschichte",
-      "Kameradschaft"
-    ]
-  },
-  {
-    "id": "20250427_115714672_ios_54574438176_o",
-    "title": "Anpacken für die Vereinszukunft",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein seltener Blick hinter die Kulissen, als bei den Sportschützen Muhen noch selbst Hand angelegt wurde. Auch abseits des Schiessstandes bewiesen unsere Mitglieder vollen Einsatz und Kameradschaft bei den baulichen Arbeiten für unsere Anlage.",
-    "imageUrl": "assets/galerie/20250427_115714672_ios_54574438176_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsgeschichte",
-      "Baueinsatz",
-      "Kameradschaft",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "20250427_115729022_ios_54574438191_o",
-    "title": "Anpacker am Werk für den Verein",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Auch abseits des Schiessstandes zeigt sich der Einsatz unserer Mitglieder für den Verein. Hier sieht man tatkräftige Unterstützung bei den Umgebungsarbeiten, die den Zusammenhalt und das Engagement unserer Schützen unterstreichen.",
-    "imageUrl": "assets/galerie/20250427_115729022_ios_54574438191_o.jpg",
     "detectedPersons": [
-      "Daniel Hunziker"
-    ],
-    "tags": [
-      "Vereinsarbeit",
-      "Geschichte",
-      "Zusammenhalt",
-      "Muhen",
-      "Einsatz"
-    ]
-  },
-  {
-    "id": "20250427_115746832_ios_54574669453_o",
-    "title": "Vereinsanpacker bei der Arbeit",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Auch abseits des Schiessstandes beweisen die Vereinsmitglieder Tatkraft und Geschick. Hier wird bei Erdarbeiten für den Verein kräftig angepackt, was den ausserordentlichen Einsatz für die Infrastruktur unterstreicht.",
-    "imageUrl": "assets/galerie/20250427_115746832_ios_54574669453_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Vereinsarbeit",
-      "Ehrenamt",
-      "Geschichte"
-    ]
-  },
-  {
-    "id": "20250427_115825417_ios_54574774005_o",
-    "title": "Präzisionsarbeit an der Anlage",
-    "category": "geschichte",
-    "date": "2000er Jahre",
-    "description": "Konzentriert und mit dem nötigen Fachwissen wartet unser Schützenkamerad die Schiessanlage. Ein unverzichtbarer Einsatz für den reibungslosen Betrieb und die Sicherheit auf unserem Schiessstand. Kameradschaft bedeutet auch, gemeinsam Verantwortung für unsere Infrastruktur zu übernehmen.",
-    "imageUrl": "assets/galerie/20250427_115825417_ios_54574774005_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Wartung",
-      "Infrastruktur",
-      "Schiessbetrieb",
-      "Engagement"
-    ]
-  },
-  {
-    "id": "20250427_115841243_ios_54574626409_o",
-    "title": "Vereinsarbeit am Schiessstand",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein spannender Blick in die Vergangenheit der Sportschützen Muhen, als bei Unterhaltsarbeiten noch schweres Gerät im Einsatz war. Solche Arbeitseinsätze zeugen von der langjährigen Verbundenheit und dem tatkräftigen Einsatz unserer Mitglieder für die Vereinsinfrastruktur.",
-    "imageUrl": "assets/galerie/20250427_115841243_ios_54574626409_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Unterhalt",
-      "Geschichte",
-      "Vereinsleben",
-      "Baustelle",
-      "Arbeitseinsatz"
-    ]
-  },
-  {
-    "id": "20250427_121041031_ios_54574773730_o",
-    "title": "Grundsteinlegung für neue Schiessanlage",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein bedeutender Meilenstein in der Geschichte unseres Vereins: die Vorbereitungen für das Fundament unserer heutigen Schiessanlage. Dieses Bild zeugt vom grossen Engagement unserer Mitglieder, die mit viel Schweiss und Kameradschaft die Basis für unseren modernen Schiesssport legten.",
-    "imageUrl": "assets/galerie/20250427_121041031_ios_54574773730_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Bauphase",
-      "Vereinsgeschichte",
-      "Fundament",
-      "Muhen",
-      "Tradition"
-    ]
-  },
-  {
-    "id": "2_54352614206_o",
-    "title": "Gemeinsame Stärke der Muhener Schützen",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Die Sportschützen Muhen präsentieren sich stolz in ihren Vereinsjacken bei strahlendem Herbstwetter. Dieses Bild fängt den starken Zusammenhalt und die Freude am gemeinsamen Vereinssport perfekt ein.",
-    "imageUrl": "assets/galerie/2_54352614206_o.jpg",
-    "detectedPersons": [
-      "Gerhard Künzli"
-    ],
-    "tags": [
-      "Vereinsleben",
-      "Kameradschaft",
-      "Sportschützen Muhen",
-      "Gruppenbild"
-    ]
-  },
-  {
-    "id": "54352612436_b293cdfc98_o",
-    "title": "Präzises Training auf der Schiessanlage",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Konzentriert und mit ruhiger Hand verfolgen unsere Mitglieder das sportliche Ziel. In der Schiessanlage Muhen wird die präzise Schiesstechnik unter Beweis gestellt. Dies unterstreicht unseren Anspruch an Disziplin und sportlichen Fokus.",
-    "imageUrl": "assets/galerie/54352612436_b293cdfc98_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiesssport",
-      "Training",
-      "Gewehr 50m",
-      "Sportschützen Muhen",
-      "Konzentration"
-    ]
-  },
-  {
-    "id": "54352816404_daa0a488bf_o",
-    "title": "Konzentration im 50m Schiessstand",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Ein konzentrierter Schütze bei der Arbeit im 50m Schiessstand der Sportschützen Muhen. Die Szene verdeutlicht die notwendige Ruhe und Präzision, die den Schiesssport auszeichnen. Solche Trainingseinheiten sind das Herzstück unserer sportlichen Entwicklung und Kameradschaft.",
-    "imageUrl": "assets/galerie/54352816404_daa0a488bf_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Training",
-      "Gewehr 50m",
-      "Schiessstand",
-      "Präzision"
-    ]
-  },
-  {
-    "id": "54352816424_71330a4d3c_o",
-    "title": "Unser Vereinsheim in Muhen",
-    "category": "geschichte",
-    "date": "2000er Jahre",
-    "description": "Ein Blick auf das Vereinsdomizil der Sportschützen Muhen an einem ruhigen Tag. Das Gebäude dient als zentraler Treffpunkt für Training und Kameradschaft. Es bildet das Herzstück unseres Vereinslebens und sportlichen Wirkens.",
-    "imageUrl": "assets/galerie/54352816424_71330a4d3c_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinshaus",
-      "Muhen",
-      "Sportschützen",
-      "Infrastruktur",
-      "Schützenhaus"
-    ]
-  },
-  {
-    "id": "54352816444_874a38716e_o",
-    "title": "Unser Vereinsheim in Muhen",
-    "category": "geschichte",
-    "date": "2010er Jahre",
-    "description": "Das Vereinsheim der Sportschützen Muhen präsentiert sich in einer ruhigen Umgebung. Dieses Gebäude bildet das Herzstück unseres Vereinslebens, in dem Präzision auf freundschaftliche Verbundenheit trifft.",
-    "imageUrl": "assets/galerie/54352816444_874a38716e_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsheim",
-      "Muhen",
-      "Sportschützen",
-      "Infrastruktur"
-    ]
-  },
-  {
-    "id": "54352828404_7322451a24_o",
-    "title": "Konzentration im 50m Schiessstand",
-    "category": "nachwuchs",
-    "date": "2023",
-    "description": "Ein spannender Blick in den Trainingsbetrieb, bei dem Schützen ihre Konzentration und Präzision unter Beweis stellen. Die gemeinsame Unterstützung am Stand unterstreicht die starke Kameradschaft innerhalb unseres Vereins. Hier wird konzentriert an der perfekten Schussleistung gearbeitet.",
-    "imageUrl": "assets/galerie/54352828404_7322451a24_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Sportschützen Muhen",
-      "Gewehr 50m",
-      "Training",
-      "Präzision",
-      "Schießstand"
-    ]
-  },
-  {
-    "id": "54574773975_9e5ff974da_o",
-    "title": "Gesellige Runde nach dem Schiesstraining",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein entspannter Moment der Kameradschaft in unserem Vereinslokal nach einem erfolgreichen Trainingstag. Das gemeinsame Beisammensein stärkt den Zusammenhalt und die Freude am Schiesssport. Es sind solche Augenblicke, die das Vereinsleben bei den Sportschützen Muhen so wertvoll machen.",
-    "imageUrl": "assets/galerie/54574773975_9e5ff974da_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Kameradschaft",
-      "Vereinsleben",
-      "Gemütlichkeit",
-      "Historisch"
-    ]
-  },
-  {
-    "id": "aksvgm50m2002_54352816104_o",
-    "title": "Vereinsmitglieder beim Sportschützen-Training",
-    "category": "geschichte",
-    "date": "2000er Jahre",
-    "description": "Eine Gruppe engagierter Sportschützen präsentiert stolz ihre Ausrüstung vor dem Schiessstand. Das Bild unterstreicht die Verbundenheit und den Sportsgeist innerhalb der Sportschützen Muhen. Gemeinsam wird hier die Präzision am Gewehr gepflegt und der Austausch zwischen den Generationen gefördert.",
-    "imageUrl": "assets/galerie/aksvgm50m2002_54352816104_o.jpg",
-    "detectedPersons": [
-      "Erich Hunziker",
-      "Gerhard Künzli",
-      "Roger Haller"
-    ],
-    "tags": [
-      "Sportschützen Muhen",
-      "Gewehr",
-      "Kameradschaft",
-      "Schützen",
-      "Vereinsleben"
-    ],
-    "isAiReference": false
-  },
-  {
-    "id": "betonbodenplatte_54574438416_o",
-    "title": "Fundament für neue Schiessanlage",
-    "category": "events",
-    "date": "2020er Jahre",
-    "description": "Die Bauarbeiten für unsere neue Infrastruktur schreiten zügig voran. Mit diesem soliden Fundament legen wir den Grundstein für viele zukünftige sportliche Erfolge und ein aktives Vereinsleben in Muhen.",
-    "imageUrl": "assets/galerie/betonbodenplatte_54574438416_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Bauprojekt",
-      "Infrastruktur",
-      "Sportschützen Muhen",
-      "Zukunft",
-      "Vereinsgelände"
-    ]
-  },
-  {
-    "id": "danielbechtoldgerhardknzlifritzsuterbrunoberchtold_54574669633_o",
-    "title": "Nachwuchsförderung im Feld",
-    "category": "nachwuchs",
-    "date": "1990er Jahre",
-    "description": "Ein wertvoller Einblick in die langjährige Tradition der Nachwuchsförderung bei den Sportschützen Muhen. Erfahrene Vereinsmitglieder begleiten junge Schützen auf dem Feld und geben ihr Wissen geduldig weiter. Diese Szene unterstreicht die starke Kameradschaft und das generationenübergreifende Engagement in unserem Verein.",
-    "imageUrl": "assets/galerie/danielbechtoldgerhardknzlifritzsuterbrunoberchtold_54574669633_o.jpg",
-    "detectedPersons": [
-      "Daniel Berchtold",
-      "Gerhard Künzli"
-    ],
-    "tags": [
-      "Nachwuchs",
-      "Tradition",
-      "Vereinsleben",
-      "Freilufttraining"
-    ],
-    "isAiReference": false
-  },
-  {
-    "id": "dsc02526_54352841303_o",
-    "title": "Hochzeitliche Glückwünsche der Sportschützen Muhen",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Ein freudiger Moment, in dem die Mitglieder der Sportschützen Muhen einem Brautpaar ihre Ehre erweisen. Das Bild unterstreicht die tiefe Verbundenheit und Kameradschaft innerhalb unseres Vereins, die weit über den Schiessstand hinausgeht.",
-    "imageUrl": "assets/galerie/dsc02526_54352841303_o.jpg",
-    "detectedPersons": [
-      "Daniel Hunziker",
-      "Marco Fischer",
-      "Gerhard Künzli",
-      "Simon Hediger"
-    ],
-    "tags": [
-      "Hochzeit",
-      "Kameradschaft",
-      "Vereinsleben",
-      "Muhen"
-    ]
-  },
-  {
-    "id": "ernstkunzromanoschotzko_54574669653_o",
-    "title": "Grundsteinlegung für neue Schiessanlage",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Dieses historische Foto zeigt den Beginn eines wegweisenden Bauprojekts der Sportschützen Muhen. Durch den engagierten Einsatz unserer Mitglieder konnte die sportliche Infrastruktur in gemeinschaftlicher Arbeit erfolgreich erweitert werden.",
-    "imageUrl": "assets/galerie/ernstkunzromanoschotzko_54574669653_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Bauarbeiten",
-      "Vereinsgeschichte",
-      "Pioniere",
-      "Muhen",
-      "Vereinsgelände"
-    ],
-    "isAiReference": false
-  },
-  {
-    "id": "gerhardknzliernstkunz_54574626239_o",
-    "title": "Fundamentarbeiten für unser Schützenhaus",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein eindrücklicher Blick zurück auf den Bau unseres Schützenstandes, wo tatkräftiger Einsatz gefragt war. Vereinsmitglieder arbeiten hier gemeinsam an den Fundamenten, um die Basis für unsere heutige sportliche Heimat zu schaffen. Dieses Bild zeugt vom grossen Zusammenhalt und dem unermüdlichen Engagement unserer Mitglieder.",
-    "imageUrl": "assets/galerie/gerhardknzliernstkunz_54574626239_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsgeschichte",
-      "Bauarbeiten",
-      "Kameradschaft",
-      "Sportschützen Muhen",
-      "Fundament"
-    ]
-  },
-  {
-    "id": "gerhardknzlihansbni_54574437956_o",
-    "title": "Aufbau der Schiessanlage in Muhen",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein wertvoller Blick in die Vergangenheit der Sportschützen Muhen während einer Bauphase auf unserem Gelände. Solche Momente zeigen das handwerkliche Engagement und die Verbundenheit unserer Mitglieder zur Infrastruktur des Vereins. Die Aufnahme unterstreicht den langfristigen Einsatz für den Schiesssport in unserer Gemeinschaft.",
-    "imageUrl": "assets/galerie/gerhardknzlihansbni_54574437956_o.jpg",
-    "detectedPersons": [
-      "Gerhard Künzli"
-    ],
-    "tags": [
-      "Geschichte",
-      "Vereinsgelände",
-      "Aufbau",
-      "Engagement",
-      "Muhen"
-    ]
-  },
-  {
-    "id": "gerhardknzlihansbni_54574669273_o",
-    "title": "Arbeitseinsatz in Muhen",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein entspannter Moment abseits des Schiessstandes während eines Arbeitseinsatzes. Das Bild zeugt von der starken Kameradschaft, die das Vereinsleben bei den Sportschützen Muhen seit jeher prägt.",
-    "imageUrl": "assets/galerie/gerhardknzlihansbni_54574669273_o.jpg",
-    "detectedPersons": [
-      "Gerhard Künzli"
-    ],
-    "tags": [
-      "Vereinsleben",
-      "Arbeitseinsatz",
-      "Kameradschaft",
-      "Geschichte"
-    ]
-  },
-  {
-    "id": "gerhardknzlirogerhallerernstkunz_54574669333_o",
-    "title": "Grundsteinlegung für neue Schiessanlage",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Engagierte Mitglieder der Sportschützen Muhen packen gemeinsam bei der Geländeaufbereitung an. Dieser Moment unterstreicht den hohen Stellenwert der Eigenleistung und den starken Zusammenhalt innerhalb unseres Vereins. Es ist der Grundstein für die Infrastruktur, die unseren Schützinnen und Schützen noch heute präzises Training ermöglicht.",
-    "imageUrl": "assets/galerie/gerhardknzlirogerhallerernstkunz_54574669333_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsgeschichte",
-      "Infrastruktur",
-      "Kameradschaft",
-      "Bauarbeiten",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "nachwuchs_54352816109_o",
-    "title": "Erfolgreiches Nachwuchstraining bei den Sportschützen",
-    "category": "nachwuchs",
-    "date": "2010er Jahre",
-    "description": "Ein eindrucksvolles Gruppenbild unserer jungen Schützentalente nach einer intensiven Trainingseinheit. Das Foto unterstreicht den starken Teamgeist und die konzentrierte Ausbildung in unserem Verein. Unsere erfahrenen Betreuer vermitteln dabei mit grosser Leidenschaft die Kunst der sportlichen Präzision.",
-    "imageUrl": "assets/galerie/nachwuchs_54352816109_o.jpg",
-    "detectedPersons": [
-      "Daniel Hunziker",
-      "Marco Fischer"
-    ],
-    "tags": [
-      "Nachwuchsförderung",
-      "Teamgeist",
-      "Sportschützen Muhen",
-      "Training",
-      "Gewehr 50m"
-    ]
-  },
-  {
-    "id": "thomashochulihansjrgschmid_54574669448_o",
-    "title": "Kameradschaft im Sportschützen-Vereinslokal",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein nostalgischer Blick in das Vereinslokal der Sportschützen Muhen aus vergangenen Tagen. Zwei Mitglieder geniessen die entspannte Atmosphäre nach dem Training und pflegen die langjährige Kameradschaft im Verein.",
-    "imageUrl": "assets/galerie/thomashochulihansjrgschmid_54574669448_o.jpg",
-    "detectedPersons": [
+      "Hansjürg Schmid",
       "Thomas Hochuli"
+    ]
+  },
+  {
+    "id": "b832c4ae-2c29-4349-b9a5-3b2cf7b9ba6d",
+    "title": "Bauarbeiten Schützenhaus Rüteli (40)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/b832c4ae-2c29-4349-b9a5-3b2cf7b9ba6d/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/b832c4ae-2c29-4349-b9a5-3b2cf7b9ba6d/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
+    "detectedPersons": []
+  },
+  {
+    "id": "ca1ea55d-e2e1-45b6-aabd-436b9a93f4b2",
+    "title": "Spatenstich",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/ca1ea55d-e2e1-45b6-aabd-436b9a93f4b2/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/ca1ea55d-e2e1-45b6-aabd-436b9a93f4b2/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Geschichte",
-      "Vereinslokal",
-      "Kameradschaft",
-      "Muhen",
-      "Tradition"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
-    "isAiReference": true
+    "detectedPersons": []
   },
   {
-    "id": "wiese_54573572222_o",
-    "title": "Vorbereitungen auf dem Vereinsgelände",
+    "id": "b9bb422e-62f1-455d-8936-8e7e9ff3ebaf",
+    "title": "Gerhard Künzli, Thomas Hochuli & Urs Spinnler",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein Blick auf das Vereinsgelände während einer Bauphase oder Instandsetzung. Die Szene zeigt die ruhige Umgebung des Schiessstandes und unterstreicht den stetigen Einsatz der Mitglieder für die Infrastruktur des Sportschützen Muhen.",
-    "imageUrl": "assets/galerie/wiese_54573572222_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Gerhard Künzli, Thomas Hochuli & Urs Spinnler beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/b9bb422e-62f1-455d-8936-8e7e9ff3ebaf/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/b9bb422e-62f1-455d-8936-8e7e9ff3ebaf/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Infrastruktur",
-      "Vereinsgeschichte",
-      "Gelände",
-      "Schiessstand"
-    ]
-  },
-  {
-    "id": "gerhardknzliursspinnlerthomashochuli_54574773850_o",
-    "title": "Gemeinsam am Bau: Vereinsgeschichte",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein wertvoller Blick zurück in die Geschichte der Sportschützen Muhen, der den tatkräftigen Einsatz unserer Mitglieder bei Bauarbeiten festhält. Solche Momente zeigen den grossen Zusammenhalt und das Engagement, welches das Fundament unseres Vereinslebens bildet.",
-    "imageUrl": "assets/galerie/gerhardknzliursspinnlerthomashochuli_54574773850_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Vereinsleben",
-      "Bauarbeiten",
-      "Erinnerungen",
-      "Teamwork"
-    ]
-  },
-  {
-    "id": "hansbnifritzsuterromanoschotzko_54574773795_o",
-    "title": "Grundsteinlegung für die Zukunft",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein wertvoller Blick zurück in die Gründungsgeschichte, als gemeinsam das Fundament für unseren Schiessstand gelegt wurde. Dieses Bild dokumentiert den unermüdlichen Einsatz und die Kameradschaft unserer Mitglieder bei der Errichtung unserer sportlichen Heimat.",
-    "imageUrl": "assets/galerie/hansbnifritzsuterromanoschotzko_54574773795_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Geschichte",
-      "Bauarbeiten",
-      "Kameradschaft",
-      "Vereinsleben"
-    ]
-  },
-  {
-    "id": "hansjrgschmidthomashochuli_54574437966_o",
-    "title": "Gemeinsam das Schützenhaus renovieren",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Historische Aufnahme aus der aktiven Vereinsarbeit, bei der tatkräftig Hand angelegt wurde. Ein wichtiges Zeugnis des Gemeinschaftssinns, der unsere Schützenfamilie über Generationen hinweg prägt.",
-    "imageUrl": "assets/galerie/hansjrgschmidthomashochuli_54574437966_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Renovierung",
-      "Vereinsleben",
-      "Rückblick",
-      "Kameradschaft"
-    ]
-  },
-  {
-    "id": "img_6133_54352848703_o",
-    "title": "Unterhalt am Schiesstand",
-    "category": "events",
-    "date": "2020er Jahre",
-    "description": "Ein engagiertes Vereinsmitglied führt Wartungsarbeiten an den Zielanlagen unseres Schiessstands durch. Dank solchem tatkräftigen Einsatz bleibt unsere Infrastruktur stets auf dem neuesten Stand für präzise Schiessergebnisse.",
-    "imageUrl": "assets/galerie/img_6133_54352848703_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Wartung",
-      "Vereinsleben",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "img_6134_54352826594_o",
-    "title": "Anpacken bei den Schiessanlagen",
-    "category": "events",
-    "date": "2020er Jahre",
-    "description": "Gemeinsam wird auf dem Gelände angepackt, um unsere Infrastruktur für die kommende Saison in Stand zu halten. Der Einsatz zeigt den starken Zusammenhalt und den unermüdlichen Tatendrang unserer Vereinsmitglieder bei der Instandhaltung der Schiessstände.",
-    "imageUrl": "assets/galerie/img_6134_54352826594_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Infrastruktur",
-      "Vereinsleben",
-      "Arbeitseinsatz",
-      "Schiessplatz"
-    ]
-  },
-  {
-    "id": "img_6437_54353021985_o",
-    "title": "Vorbereitungen für unser Schützenfest",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Ein Festzelt steht bereit für die kommenden sportlichen Herausforderungen der Sportschützen Muhen. Die Sponsorentafeln hängen bereits und zeugen von der starken Unterstützung unseres Vereins. Alles ist angerichtet für spannende Wettkämpfe und gesellige Stunden unter Schützenkollegen.",
-    "imageUrl": "assets/galerie/img_6437_54353021985_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Festzelt",
-      "Sponsoren",
-      "Vereinsanlass",
-      "Muhen",
-      "Vorbereitung"
-    ]
-  },
-  {
-    "id": "img_6450_54352821469_o",
-    "title": "Vereinsleben bei sommerlichem Anlass",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Die Mitglieder der Sportschützen Muhen beim gemeinsamen Aufbau und der Vorbereitung an einem sonnigen Sommertag. Dieses Bild unterstreicht die starke Kameradschaft und den tatkräftigen Zusammenhalt innerhalb unseres Vereins über alle Altersgruppen hinweg.",
-    "imageUrl": "assets/galerie/img_6450_54352821469_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Sportschützen Muhen",
-      "Kameradschaft",
-      "Vereinsleben",
-      "Zusammenhalt"
-    ]
-  },
-  {
-    "id": "img_6451_54352617391_o",
-    "title": "Erfrischende Pause beim Schützenfest",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Ein improvisiertes Wasserbecken sorgt bei sommerlichen Temperaturen für willkommene Abkühlung auf dem Vereinsgelände. Solche Momente stärken den Zusammenhalt und zeigen die entspannte Seite unseres Vereinslebens nach dem sportlichen Einsatz.",
-    "imageUrl": "assets/galerie/img_6451_54352617391_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Sommer",
-      "Abkühlung",
-      "Vereinsleben",
-      "Camping",
-      "Spass"
-    ]
-  },
-  {
-    "id": "img_6456_54353021980_o",
-    "title": "30. Aargauer Kantonalschützenfest in Muhen",
-    "category": "events",
-    "date": "2017",
-    "description": "Ein sonniger Tag auf dem Gelände des 30. Aargauer Kantonalschützenfestes. Die feierliche Beflaggung und das bereitstehende Festzelt zeugen von der grossen Vorfreude auf diesen sportlichen Grossanlass in unserer Gemeinde.",
-    "imageUrl": "assets/galerie/img_6456_54353021980_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Kantonalschützenfest",
-      "Festzelt",
-      "Sportschützen Muhen",
-      "Aargau",
-      "Wettkampf",
-      "Event"
-    ]
-  },
-  {
-    "id": "img_6920_54352848578_o",
-    "title": "Bereit für den Schiessbetrieb",
-    "category": "events",
-    "date": "2023",
-    "description": "Ein sonniger Tag auf unserer Schiessanlage in Muhen. Das frisch gemähte Gras und die bereitstehenden Scheibenanlagen zeugen von der sorgfältigen Vorbereitung für einen erfolgreichen Trainingstag.",
-    "imageUrl": "assets/galerie/img_6920_54352848578_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Schiessstand",
-      "Muhen",
-      "Vereinsanlage",
-      "Training",
-      "Gewehr 50m"
-    ]
-  },
-  {
-    "id": "img_7035_54352850043_o",
-    "title": "Konzentriertes Training im Schiessstand",
-    "category": "nachwuchs",
-    "date": "2022",
-    "description": "In der gemütlichen Atmosphäre des Schiessstandes bereiten sich die Sportschützen Muhen auf ihre Wettkämpfe vor. Während die Junioren fokussiert am Gewehr trainieren, begleiten erfahrene Vereinsmitglieder die Schützen mit wertvollen Tipps. Diese Aufnahme unterstreicht die wertvolle Nachwuchsförderung und das Engagement in unserem Verein.",
-    "imageUrl": "assets/galerie/img_7035_54352850043_o.jpg",
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Künzli",
+      "Hochuli",
+      "Spinnler"
+    ],
     "detectedPersons": [
-      "Olivia Rossi"
-    ],
-    "tags": [
-      "Training",
-      "Gewehr 50m",
-      "Sportschützen Muhen",
-      "Nachwuchsförderung",
-      "Kameradschaft"
+      "Gerhard Künzli",
+      "Thomas Hochuli",
+      "Urs Spinnler"
     ]
   },
   {
-    "id": "img_7036_54353028870_o",
-    "title": "Geselliges Beisammensein am Schützenfest",
-    "category": "events",
-    "date": "2018",
-    "description": "Die Sportschützen Muhen geniessen eine wohlverdiente Pause in geselliger Runde. Das Foto unterstreicht die starke Kameradschaft und den gemeinsamen Teamgeist, die unser Vereinsleben abseits der Schiessstände prägen.",
-    "imageUrl": "assets/galerie/img_7036_54353028870_o.jpg",
+    "id": "40a430fd-3479-4a80-a718-bc8e375236e5",
+    "title": "Gerhard Künzli, Ernst Kunz & Roger Haller",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Gerhard Künzli, Ernst Kunz & Roger Haller beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/40a430fd-3479-4a80-a718-bc8e375236e5/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/40a430fd-3479-4a80-a718-bc8e375236e5/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Künzli",
+      "Kunz",
+      "Haller"
+    ],
     "detectedPersons": [
-      "Daniel Berchtold",
-      "Lukas Burkhalter",
-      "Marco Fischer",
-      "Simon Hediger"
-    ],
-    "tags": [
-      "Kameradschaft",
-      "Vereinsleben",
-      "Schützenfest",
-      "Muhen",
-      "Geselligkeit"
-    ],
-    "isAiReference": true
-  },
-  {
-    "id": "img_7037_54352828379_o",
-    "title": "Wegweiser zum Kantonalen Schützenfest 2018",
-    "category": "events",
-    "date": "2018",
-    "description": "Ein Wegweiser in der Region Flims Laax Falera führt die Sportschützen direkt zum Ziel. Das Schild erinnert an die Teilnahme unseres Vereins am Kantonalen Schützenfest Graubünden 2018. Solche Momente stärken den Zusammenhalt und die Freude am gemeinsamen sportlichen Wettkampf.",
-    "imageUrl": "assets/galerie/img_7037_54352828379_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "KSF 2018",
-      "Graubünden",
-      "Wegweiser",
-      "Sportschützen Muhen",
-      "Ausflug"
+      "Gerhard Künzli",
+      "Ernst Kunz",
+      "Roger Haller"
     ]
   },
   {
-    "id": "img_7038_54352623951_o",
-    "title": "Vereinskameraden geniessen entspannte Pause",
-    "category": "events",
-    "date": "2010er Jahre",
-    "description": "Ein entspannter Moment abseits des Schiessstandes unterstreicht den starken Zusammenhalt unserer Sportschützen. Die Vereinsmitglieder nutzen die Gelegenheit für einen gemeinsamen Austausch im Freien.",
-    "imageUrl": "assets/galerie/img_7038_54352623951_o.jpg",
+    "id": "355e934c-57e0-4d2e-9241-08cc44a1b831",
+    "title": "Leitungen Ins Erdreich Verlegen",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/355e934c-57e0-4d2e-9241-08cc44a1b831/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/355e934c-57e0-4d2e-9241-08cc44a1b831/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "aa73cf88-a66a-4a66-a246-bf4f2327890d",
+    "title": "Gerhard Künzli & Ernst Kunz",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Gerhard Künzli & Ernst Kunz beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/aa73cf88-a66a-4a66-a246-bf4f2327890d/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/aa73cf88-a66a-4a66-a246-bf4f2327890d/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Künzli",
+      "Kunz"
+    ],
     "detectedPersons": [
-      "Simon Hediger"
+      "Gerhard Künzli",
+      "Ernst Kunz"
+    ]
+  },
+  {
+    "id": "a9c57eb8-9706-4e30-9f0f-8b2f8c2cff98",
+    "title": "Bauarbeiten Schützenhaus Rüteli (46)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/a9c57eb8-9706-4e30-9f0f-8b2f8c2cff98/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/a9c57eb8-9706-4e30-9f0f-8b2f8c2cff98/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
     ],
-    "tags": [
-      "Kameradschaft",
-      "Vereinsleben",
-      "Muhen",
-      "Pause"
-    ]
+    "detectedPersons": []
   },
   {
-    "id": "leitungeninserdreichverlegen_54574773765_o",
-    "title": "Gemeinsame Arbeiten am Vereinsgelände",
+    "id": "2f492979-cfad-448d-a593-fb3c0af4f449",
+    "title": "Bauarbeiten Schützenhaus Rüteli (47)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein nostalgischer Blick zurück auf das Vereinsleben, bei dem Kameradschaft und tatkräftiger Einsatz im Vordergrund standen. Die Mitglieder packten gemeinsam an, um die Umgebung des Schiessstandes in Schuss zu halten. Solche Arbeitseinsätze bilden seit jeher das Fundament für unsere Vereinsinfrastruktur.",
-    "imageUrl": "assets/galerie/leitungeninserdreichverlegen_54574773765_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/2f492979-cfad-448d-a593-fb3c0af4f449/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/2f492979-cfad-448d-a593-fb3c0af4f449/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsleben",
-      "Rückblick",
-      "Arbeitseinsatz",
-      "Kameradschaft"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "nachwuchs_54352612076_o",
-    "title": "Nachwuchsgruppe bei der Ausbildung",
-    "category": "nachwuchs",
-    "date": "2000er Jahre",
-    "description": "Ein Gruppenbild unserer damaligen Nachwuchsschützen bei einer Ausbildungseinheit im Schützenhaus. Diese Aufnahme unterstreicht die langjährige Tradition der Jugendarbeit und die Kameradschaft bei den Sportschützen Muhen.",
-    "imageUrl": "assets/galerie/nachwuchs_54352612076_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Nachwuchs",
-      "Ausbildung",
-      "Vereinsgeschichte",
-      "Jugendarbeit"
-    ]
-  },
-  {
-    "id": "nachwuchs_54352612086_o",
-    "title": "Historisches Gruppenfoto unserer Schützenjugend",
-    "category": "nachwuchs",
-    "date": "2000er Jahre",
-    "description": "Ein wertvolles Zeitdokument, das die damalige Nachwuchsgruppe unserer Sportschützen zeigt. Das Bild unterstreicht die langjährige Tradition der Jugendarbeit und den starken Zusammenhalt innerhalb unseres Vereins.",
-    "imageUrl": "assets/galerie/nachwuchs_54352612086_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Nachwuchs",
-      "Vereinsgeschichte",
-      "Gruppenbild",
-      "Sportschützen Muhen"
-    ]
-  },
-  {
-    "id": "patrickschotzko_54574437976_o",
-    "title": "Frühe Hilfe auf dem Schiessplatz",
+    "id": "4fc2b65e-2eb8-40bd-a372-8b495a155285",
+    "title": "Bauarbeiten Schützenhaus Rüteli (48)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein nostalgischer Rückblick auf die Anfänge unseres Vereinsgeländes, bei dem auch schon die Kleinsten tatkräftig anpackten. Dieses Bild zeigt den Stolz der nächsten Generation und unterstreicht die tiefe Verbundenheit, die schon früh zwischen unseren Mitgliedern und der Anlage entstand.",
-    "imageUrl": "assets/galerie/patrickschotzko_54574437976_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/4fc2b65e-2eb8-40bd-a372-8b495a155285/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/4fc2b65e-2eb8-40bd-a372-8b495a155285/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Geschichte",
-      "Nachwuchs",
-      "Vereinsgelände",
-      "Nostalgie"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "0d6dface-b6f4-4c4a-ae9a-7c5b216b09d7",
+    "title": "Bauarbeiten Schützenhaus Rüteli (49)",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/0d6dface-b6f4-4c4a-ae9a-7c5b216b09d7/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/0d6dface-b6f4-4c4a-ae9a-7c5b216b09d7/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
+  },
+  {
+    "id": "3d7e3e45-9e24-4d08-83ec-af81cc40cfd7",
+    "title": "Hans Bäni, Fritz Suter & Romano Schotzko",
+    "category": "geschichte",
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Hans Bäni, Fritz Suter & Romano Schotzko beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/3d7e3e45-9e24-4d08-83ec-af81cc40cfd7/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/3d7e3e45-9e24-4d08-83ec-af81cc40cfd7/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "tags": [
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Bäni",
+      "Suter",
+      "Schotzko"
+    ],
+    "detectedPersons": [
+      "Hans Bäni",
+      "Fritz Suter",
+      "Romano Schotzko"
     ]
   },
   {
-    "id": "romanoschotzkoernstkunz_54574669263_o",
-    "title": "Erste Schritte auf dem Baugelände",
+    "id": "fcf3e2dd-197c-493b-abf1-d1f0f96bcb68",
+    "title": "Romano Schotzko & Ernst Kunz",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein bedeutender Moment der Vereinsgeschichte, als das Fundament für unsere heutige Anlage gelegt wurde. Mit vereinten Kräften und schwerem Gerät wurde der Grundstein für die Zukunft der Sportschützen Muhen gelegt. Solch leidenschaftlicher Einsatz für den Verein ist das Fundament unserer heutigen Kameradschaft.",
-    "imageUrl": "assets/galerie/romanoschotzkoernstkunz_54574669263_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Historische Aufnahme: Romano Schotzko & Ernst Kunz beim Bau des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/fcf3e2dd-197c-493b-abf1-d1f0f96bcb68/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/fcf3e2dd-197c-493b-abf1-d1f0f96bcb68/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsgeschichte",
-      "Bauarbeiten",
-      "Pioniere",
-      "Infrastruktur",
-      "Ehrenamt"
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996",
+      "Schotzko",
+      "Kunz"
+    ],
+    "detectedPersons": [
+      "Romano Schotzko",
+      "Ernst Kunz"
     ]
   },
   {
-    "id": "romanoschotzko_54574437986_o",
-    "title": "Vereinsgeschichte: Aufbauarbeiten im Einsatz",
+    "id": "417e6457-c180-41b4-9972-e007928cc361",
+    "title": "Bauarbeiten Schützenhaus Rüteli (52)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein wertvoller Blick zurück in die Geschichte unserer Sportschützen Muhen während der Aufbauphase. Zwei Vereinsmitglieder sind tatkräftig bei Holzarbeiten zu sehen, was den grossen Einsatz und die Kameradschaft unterstreicht, die unseren Verein seit jeher prägen.",
-    "imageUrl": "assets/galerie/romanoschotzko_54574437986_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/417e6457-c180-41b4-9972-e007928cc361/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/417e6457-c180-41b4-9972-e007928cc361/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Geschichte",
-      "Aufbau",
-      "Kameradschaft",
-      "Vereinsleben"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "ruthknzli_54573572192_o",
-    "title": "Gemütlicher Ausklang im Schützenhaus",
+    "id": "e2414f71-5efa-4547-a7ee-b8493f49e787",
+    "title": "Betonbodenplatte Giessen",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein ruhiger Moment im Vereinsleben nach dem sportlichen Geschehen. Diese Aufnahme fängt die entspannte Atmosphäre und den kameradschaftlichen Geist ein, der das Schützenhaus seit Jahrzehnten prägt.",
-    "imageUrl": "assets/galerie/ruthknzli_54573572192_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/e2414f71-5efa-4547-a7ee-b8493f49e787/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/e2414f71-5efa-4547-a7ee-b8493f49e787/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsleben",
-      "Tradition",
-      "Kameradschaft",
-      "Historisch"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "schnellstrasse_54574626254_o",
-    "title": "Idyllischer Schiessplatz bei Abendstimmung",
+    "id": "172e0ca3-58a2-469b-816f-ae30a7263705",
+    "title": "Bauarbeiten Schützenhaus Rüteli (54)",
     "category": "geschichte",
-    "date": "2020er Jahre",
-    "description": "Ein ruhiger Blick auf das Gelände der Sportschützen Muhen zur Dämmerungszeit. Die Szenerie unterstreicht die landschaftliche Einbettung unseres Schiessstandes und die friedliche Atmosphäre abseits des Wettkampftrubels.",
-    "imageUrl": "assets/galerie/schnellstrasse_54574626254_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/172e0ca3-58a2-469b-816f-ae30a7263705/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/172e0ca3-58a2-469b-816f-ae30a7263705/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Muhen",
-      "Schiessstand",
-      "Landschaft",
-      "Abendstimmung"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54573572292_o",
-    "title": "Erster Spatenstich für die Vereinsgeschichte",
+    "id": "7010e550-e5d8-4d18-ae1a-a879b7038f8d",
+    "title": "Bauarbeiten Schützenhaus Rüteli (55)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein bedeutender Moment in der Vereinsgeschichte der Sportschützen Muhen beim gemeinsamen Spatenstich. Dieses historische Bild zeugt vom starken Zusammenhalt und dem Engagement unserer Mitglieder für eine gemeinsame sportliche Zukunft. Solche Meilensteine bilden das Fundament unserer heutigen Kameradschaft.",
-    "imageUrl": "assets/galerie/spatenstich_54573572292_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/7010e550-e5d8-4d18-ae1a-a879b7038f8d/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/7010e550-e5d8-4d18-ae1a-a879b7038f8d/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Geschichte",
-      "Spatenstich",
-      "Vereinsleben",
-      "Tradition",
-      "Muhen"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54573572342_o",
-    "title": "Erster Spatenstich für unser Vereinsheim",
+    "id": "49b75aed-4d02-4e17-b86a-2baf65d0e00a",
+    "title": "Bauarbeiten Schützenhaus Rüteli (56)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein bedeutender Moment in der Vereinsgeschichte: Gemeinsam setzen unsere Mitglieder den ersten Spatenstich für unser heutiges Vereinsdomizil. Dieses Bild zeugt von der Leidenschaft und dem grossen Engagement, mit dem unser Verein aufgebaut wurde.",
-    "imageUrl": "assets/galerie/spatenstich_54573572342_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/49b75aed-4d02-4e17-b86a-2baf65d0e00a/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/49b75aed-4d02-4e17-b86a-2baf65d0e00a/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsgeschichte",
-      "Spatenstich",
-      "Kameradschaft",
-      "Tradition"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54573572352_o",
-    "title": "Gemeinsamer Spatenstich im Grünen",
+    "id": "846940b9-1e2a-49c9-b645-4377ea864015",
+    "title": "Bauarbeiten Schützenhaus Rüteli (57)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein historischer Moment für die Sportschützen Muhen: Mitglieder versammeln sich auf der grünen Wiese für einen feierlichen Spatenstich. Diese Aufnahme unterstreicht den starken Zusammenhalt und das langjährige Engagement unserer Vereinsmitglieder für die sportliche Zukunft.",
-    "imageUrl": "assets/galerie/spatenstich_54573572352_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/846940b9-1e2a-49c9-b645-4377ea864015/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/846940b9-1e2a-49c9-b645-4377ea864015/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsgeschichte",
-      "Spatenstich",
-      "Kameradschaft",
-      "Sportschützen Muhen"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54574438036_o",
-    "title": "Gemeinsamer Spatenstich auf dem Vereinsgelände",
+    "id": "924dcef1-b14b-471c-93a7-9c6229fd3207",
+    "title": "Bauarbeiten Schützenhaus Rüteli (58)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein historischer Moment für die Sportschützen Muhen beim gemeinsamen Spatenstich. Diese Aufnahme unterstreicht den starken Zusammenhalt und das Engagement unserer Mitglieder für die Zukunft des Vereins.",
-    "imageUrl": "assets/galerie/spatenstich_54574438036_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/924dcef1-b14b-471c-93a7-9c6229fd3207/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/924dcef1-b14b-471c-93a7-9c6229fd3207/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Geschichte",
-      "Spatenstich",
-      "Vereinsleben",
-      "Tradition",
-      "Sportschützen Muhen"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54574438051_o",
-    "title": "Gemeinsamer Arbeitseinsatz im Muhener Feld",
+    "id": "64729a61-18b3-46fa-98b8-86ca40addba0",
+    "title": "Bauarbeiten Schützenhaus Rüteli (59)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein nostalgischer Blick auf einen gemeinsamen Arbeitseinsatz der Sportschützen Muhen auf dem offenen Feld. Die Szene unterstreicht den starken Zusammenhalt und das kameradschaftliche Engagement der Vereinsmitglieder, die gemeinsam anpacken.",
-    "imageUrl": "assets/galerie/spatenstich_54574438051_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/64729a61-18b3-46fa-98b8-86ca40addba0/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/64729a61-18b3-46fa-98b8-86ca40addba0/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Geschichte",
-      "Vereinsleben",
-      "Kameradschaft",
-      "Arbeitseinsatz"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54574438061_o",
-    "title": "Tradition trifft auf Vereinsgeschichte",
+    "id": "ebcb59f8-4367-4657-a7fa-cabd4abcb29d",
+    "title": "Bauarbeiten Schützenhaus Rüteli (60)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Eine historische Aufnahme von Mitgliedern der Sportschützen Muhen bei einem Anlass im Freien. Das Bild unterstreicht die langjährige Kameradschaft im Verein, während die nächste Generation bereits spielerisch in die Tradition hineinwächst.",
-    "imageUrl": "assets/galerie/spatenstich_54574438061_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/ebcb59f8-4367-4657-a7fa-cabd4abcb29d/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/ebcb59f8-4367-4657-a7fa-cabd4abcb29d/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsleben",
-      "Tradition",
-      "Muhen",
-      "Archiv",
-      "Rückblick"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54574626324_o",
-    "title": "Traditionelles Beisammensein im Grünen",
+    "id": "a574aa92-7c33-4035-b3d4-17903ab170ad",
+    "title": "Bauarbeiten Schützenhaus Rüteli (61)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein stimmungsvoller Blick auf unsere Vereinsmitglieder bei einem gemeinsamen Anlass im Freien. Solche historischen Momente unterstreichen die langjährige Verbundenheit und Kameradschaft innerhalb unserer Schützenfamilie.",
-    "imageUrl": "assets/galerie/spatenstich_54574626324_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/a574aa92-7c33-4035-b3d4-17903ab170ad/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/a574aa92-7c33-4035-b3d4-17903ab170ad/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Geschichte",
-      "Vereinsleben",
-      "Kameradschaft",
-      "Sportschützen Muhen"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54574626329_o",
-    "title": "Der erste Spatenstich in Muhen",
+    "id": "7c96ae2b-c846-4c10-b3de-e59830423a53",
+    "title": "Bauarbeiten Schützenhaus Rüteli (62)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein bedeutender Moment für den Verein: Mitglieder versammeln sich auf der grünen Wiese für den ersten Spatenstich. Dieses historische Bild zeugt von der frühen Vereinsgeschichte und der gemeinsamen Vision für unseren Schiesssport. Es unterstreicht die Verbundenheit und den Tatendrang der damaligen Mitglieder.",
-    "imageUrl": "assets/galerie/spatenstich_54574626329_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/7c96ae2b-c846-4c10-b3de-e59830423a53/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/7c96ae2b-c846-4c10-b3de-e59830423a53/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Geschichte",
-      "Spatenstich",
-      "Vereinsleben",
-      "Tradition"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54574669398_o",
-    "title": "Historischer Spatenstich auf der Wiese",
+    "id": "ae305e0f-562e-4204-a6cf-ab0e7c810e4a",
+    "title": "Bauarbeiten Schützenhaus Rüteli (63)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Eine historische Aufnahme, die Mitglieder der Sportschützen Muhen bei einem gemeinsamen Arbeitseinsatz oder einem Spatenstich auf der Wiese zeigt. Das Bild unterstreicht den starken Zusammenhalt und das langjährige Engagement unserer Vereinsmitglieder für den Schiesssport. Es ist ein wertvolles Zeugnis unserer Vereinstradition.",
-    "imageUrl": "assets/galerie/spatenstich_54574669398_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/ae305e0f-562e-4204-a6cf-ab0e7c810e4a/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/ae305e0f-562e-4204-a6cf-ab0e7c810e4a/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Vereinsgeschichte",
-      "Spatenstich",
-      "Kameradschaft",
-      "Muhen",
-      "Tradition"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   },
   {
-    "id": "spatenstich_54574773930_o",
-    "title": "Erster Spatenstich auf dem Vereinsgelände",
+    "id": "c772546c-e779-4090-8b8a-cbfd60be8156",
+    "title": "Bauarbeiten Schützenhaus Rüteli (64)",
     "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein bedeutender Moment in der Historie der Sportschützen Muhen beim ersten Spatenstich für unsere Schiessanlage. Dieses historische Bild zeugt vom grossen Engagement und dem Gemeinschaftsgeist unserer Vereinsmitglieder für eine gemeinsame Zukunft. Ein wertvoller Blick zurück auf die Anfänge unseres Vereinslebens.",
-    "imageUrl": "assets/galerie/spatenstich_54574773930_o.jpg",
-    "detectedPersons": [],
+    "date": "01.07.1995",
+    "description": "Dokumentation aus der Entstehungsphase des Schützenhauses Rüteli (1996/1997).",
+    "thumbnailUrl": "https://immich-muhen.danfamily.uk/api/assets/c772546c-e779-4090-8b8a-cbfd60be8156/thumbnail?key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
+    "imageUrl": "https://immich-muhen.danfamily.uk/api/assets/c772546c-e779-4090-8b8a-cbfd60be8156/thumbnail?size=preview&key=Npe_4JOlVmhdNBf62UtPT79P49n5LYg5mNyw_Tl_zu7TJeA-NGjel9Kwp266rtn3PA0",
     "tags": [
-      "Geschichte",
-      "Spatenstich",
-      "Vereinsleben",
-      "Tradition"
-    ]
-  },
-  {
-    "id": "spatenstich_54574773955_o",
-    "title": "Erster Spatenstich für die Anlage",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein bedeutender Moment in der Vereinsgeschichte, als die Mitglieder gemeinsam den ersten Spatenstich für eine neue Anlage setzten. Dieses historische Bild zeugt von der tiefen Kameradschaft und dem gemeinsamen Ziel, das Vereinsleben in Muhen zu fördern. Man spürt den Stolz und die Vorfreude der Schützen auf die kommende Infrastruktur.",
-    "imageUrl": "assets/galerie/spatenstich_54574773955_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Geschichte",
-      "Spatenstich",
-      "Tradition",
-      "Vereinsleben"
-    ]
-  },
-  {
-    "id": "thomasgebert_54574669663_o",
-    "title": "Grundsteinlegung für unser Schützenhaus",
-    "category": "geschichte",
-    "date": "1990er Jahre",
-    "description": "Ein historischer Moment beim Bau unseres Vereinsgeländes, der den Grundstein für unsere sportliche Heimat legte. Dieses Bild zeugt von der harten Arbeit und dem unermüdlichen Engagement unserer Mitglieder, die den Verein über Jahrzehnte hinweg aufgebaut haben.",
-    "imageUrl": "assets/galerie/thomasgebert_54574669663_o.jpg",
-    "detectedPersons": [],
-    "tags": [
-      "Geschichte",
-      "Bauarbeiten",
-      "Vereinsgelände",
-      "Tradition"
-    ]
+      "Schützenhaus",
+      "Bau",
+      "Rüteli",
+      "1996"
+    ],
+    "detectedPersons": []
   }
 ]
