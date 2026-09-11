@@ -192,9 +192,11 @@ window.filterByTag = function(value) {
 
 function formatPhotoUrl(url) {
     if (!url) return "";
-    // If running on local dev server, use the local proxy to bypass CORP same-origin restriction
-    if (window.location.hostname === "localhost" && url.includes("immich-muhen.danfamily.uk")) {
-        return "/api/immich-proxy?url=" + encodeURIComponent(url);
+    // If running on local dev server (localhost or 127.0.0.1), proxy via backend on port 3000
+    const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+    if (isLocal && url.includes("immich-muhen.danfamily.uk")) {
+        // Proxy-Backend läuft auf localhost:3000
+        return "http://localhost:3000/api/immich-proxy?url=" + encodeURIComponent(url);
     }
     return url;
 }
