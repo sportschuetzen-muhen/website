@@ -1,17 +1,12 @@
-// === IMMICH BILDER-INTEGRATION (VARIANTE A) & LOKALER FALLBACK ===
+// === IMMICH BILDER-INTEGRATION & LOKALER FALLBACK ===
 const IMMICH_CONFIG = {
-    // Auf true gesetzt, damit Immich-Alben direkt geladen werden
+    // Auf true gesetzt, damit Immich-Alben geladen werden
     enabled: true,
 
-    // Cloudflare Worker Proxy URL für Edge-Caching, CORS-Handling und Heim-IP-Schutz
+    // Cloudflare Worker Proxy URL (wird bei Bedarf verwendet)
     workerUrl: "https://v1-vorstand-api.dan-hunziker73.workers.dev",
 
-    // Basis-URL deiner Immich-Instanz (z.B. "https://fotos.sportschuetzen-muhen.ch" oder Cloudflare Tunnel)
-    // Kann auch dynamisch per URL-Parameter übergeben werden: ?immichHost=https://...
     immichHost: "",
-
-    // Der Freigabe-Schlüssel (Shared Link Key) deines Albums in Immich (z.B. aus https://.../share/XYZ -> "XYZ")
-    // Kann auch dynamisch per URL-Parameter übergeben werden: ?album=XYZ
     sharedLinkKey: ""
 };
 
@@ -24,6 +19,7 @@ let currentFilteredData = [];
 let currentItemIndex = -1;
 let itemsToShow = 12; // load 12 images initially
 let activeCategory = "all";
+let activeAlbum = "all";
 let listenersInitialized = false;
 
 async function initGallery() {
@@ -45,35 +41,29 @@ async function initGallery() {
     const activeHost = urlParams.get("immichHost") || IMMICH_CONFIG.immichHost;
     const activeKey = urlParams.get("album") || IMMICH_CONFIG.sharedLinkKey;
 
-    // 1. Immich API Abfrage via Cloudflare Worker Proxy
+    // 1. Immich API Abfrage via Cloudflare Worker Proxy falls explizit in URL übergeben
     if (IMMICH_CONFIG.enabled && activeHost && activeKey) {
         try {
             const proxyUrl = `${IMMICH_CONFIG.workerUrl}?module=immich&action=album&host=${encodeURIComponent(activeHost)}&key=${encodeURIComponent(activeKey)}`;
-            console.log("Frage Immich-Album via Worker ab:", proxyUrl);
-            
             const response = await fetch(proxyUrl);
             if (response.ok) {
                 const data = await response.json();
                 if (data.success && data.photos && data.photos.length > 0) {
                     galleryData = data.photos;
                     loaded = true;
-                    console.log(`✅ ${data.photos.length} Fotos erfolgreich aus Immich geladen ("${data.albumTitle}")`);
                     
-                    // Album-Titel in Überschrift dynamisch anzeigen
                     const titleEl = document.querySelector("#galerie .section-header h2");
                     if (titleEl && data.albumTitle) {
                         titleEl.innerHTML = `${data.albumTitle} <span class="text-red">Fotogalerie</span>`;
                     }
                 }
-            } else {
-                console.warn("Worker meldete Status:", response.status);
             }
         } catch (immichErr) {
-            console.warn("Immich-Verbindung nicht erfolgreich, lade lokales Archiv:", immichErr);
+            console.warn("Immich-Worker nicht erreichbar, lade lokales Archiv:", immichErr);
         }
     }
 
-    // 2. Lokales Fallback auf galerie.json
+    // 2. Lokales Laden der galerie.json
     if (!loaded) {
         try {
             const response = await fetch("data/galerie.json?v=" + new Date().getTime());
@@ -87,20 +77,99 @@ async function initGallery() {
         }
     }
 
+    // Automatische Bereinigung: Falls noch fehlerhafte Worker-Proxy-URLs geladen wurden,
+    // ersetzen wir sie sofort durch die direkten Immich-URLs
+    galleryData = galleryData.map(item => {
+        let thumb = item.thumbnailUrl || '';
+        let img = item.imageUrl || '';
+        if (thumb.includes('workers.dev') && item._directThumbnailUrl) {
+            thumb = item._directThumbnailUrl;
+        }
+        if (img.includes('workers.dev') && item._directImageUrl) {
+            img = item._directImageUrl;
+        }
+        return {
+            ...item,
+            thumbnailUrl: thumb,
+            imageUrl: img
+        };
+    });
+
     // 3. Komponenten rendern
+    generateAlbumFilters();
     generateTagCloud();
     renderGallery("all");
     setupGalleryListeners();
+    renderMitgliederAlbums();
 }
+
+// Erstellt dynamische Filter-Buttons für die vorhandenen Alben
+function generateAlbumFilters() {
+    const container = document.getElementById("gallery-album-filters");
+    if (!container) return;
+
+    const albumCounts = {};
+    galleryData.forEach(item => {
+        const a = item.album || "Vereinsarchiv";
+        albumCounts[a] = (albumCounts[a] || 0) + 1;
+    });
+
+    const albumNames = Object.keys(albumCounts);
+    if (albumNames.length <= 1) {
+        container.style.display = "none";
+        return;
+    }
+
+    container.style.display = "flex";
+    container.style.gap = "0.5rem";
+    container.style.flexWrap = "wrap";
+    container.style.justifyContent = "center";
+
+    let html = `
+        <button class="gallery-filter-btn ${activeAlbum === 'all' ? 'active' : ''}" data-album="all" onclick="window.filterByAlbum('all')">
+            📁 Alle Alben (${galleryData.length})
+        </button>
+    `;
+
+    albumNames.forEach(name => {
+        const count = albumCounts[name];
+        const isActive = activeAlbum === name;
+        html += `
+            <button class="gallery-filter-btn ${isActive ? 'active' : ''}" data-album="${encodeURIComponent(name)}" onclick="window.filterByAlbum('${encodeURIComponent(name)}')">
+                📁 ${name} (${count})
+            </button>
+        `;
+    });
+
+    container.innerHTML = html;
+}
+
+window.filterByAlbum = function(albumNameEncoded) {
+    activeAlbum = albumNameEncoded === 'all' ? 'all' : decodeURIComponent(albumNameEncoded);
+
+    const container = document.getElementById("gallery-album-filters");
+    if (container) {
+        container.querySelectorAll(".gallery-filter-btn").forEach(btn => {
+            const bAlbum = btn.getAttribute("data-album");
+            if (bAlbum === albumNameEncoded) {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+        });
+    }
+
+    renderGallery(activeCategory);
+};
 
 function setupGalleryListeners() {
     if (listenersInitialized) return;
     listenersInitialized = true;
 
     // Category filter listeners
-    document.querySelectorAll(".gallery-filter-btn").forEach(btn => {
+    document.querySelectorAll(".gallery-filters:not(#gallery-album-filters) .gallery-filter-btn").forEach(btn => {
         btn.addEventListener("click", () => {
-            document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
+            document.querySelectorAll(".gallery-filters:not(#gallery-album-filters) .gallery-filter-btn").forEach(b => b.classList.remove("active"));
             btn.classList.add("active");
             activeCategory = btn.getAttribute("data-category");
             const searchInput = document.getElementById("gallery-search");
@@ -113,8 +182,8 @@ function setupGalleryListeners() {
     const searchInput = document.getElementById("gallery-search");
     if (searchInput) {
         searchInput.addEventListener("input", () => {
-            document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
-            const allBtn = document.querySelector('.gallery-filter-btn[data-category="all"]');
+            document.querySelectorAll(".gallery-filters:not(#gallery-album-filters) .gallery-filter-btn").forEach(b => b.classList.remove("active"));
+            const allBtn = document.querySelector('.gallery-filters:not(#gallery-album-filters) .gallery-filter-btn[data-category="all"]');
             if (allBtn) allBtn.classList.add("active");
             activeCategory = "all";
             renderGallery("all");
@@ -178,26 +247,17 @@ window.filterByTag = function(value) {
         searchInput.value = value.substring(7);
     }
 
-    // Reset categories for a global search
-    document.querySelectorAll(".gallery-filter-btn").forEach(b => b.classList.remove("active"));
-    const allBtn = document.querySelector('.gallery-filter-btn[data-category="all"]');
+    document.querySelectorAll(".gallery-filters:not(#gallery-album-filters) .gallery-filter-btn").forEach(b => b.classList.remove("active"));
+    const allBtn = document.querySelector('.gallery-filters:not(#gallery-album-filters) .gallery-filter-btn[data-category="all"]');
     if (allBtn) allBtn.classList.add("active");
     activeCategory = "all";
 
     renderGallery("all");
-    
-    // Close lightbox if it was open
     window.closeLightbox();
 };
 
 function formatPhotoUrl(url) {
     if (!url) return "";
-    // If running on local dev server (localhost or 127.0.0.1), proxy via backend on port 3000
-    const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-    if (isLocal && url.includes("immich-muhen.danfamily.uk")) {
-        // Proxy-Backend läuft auf localhost:3000
-        return "http://localhost:3000/api/immich-proxy?url=" + encodeURIComponent(url);
-    }
     return url;
 }
 
@@ -209,19 +269,29 @@ function renderGallery(filter, append = false) {
         itemsToShow = 12; // Reset pagination counter
     }
 
-    let filtered = filter === "all" 
-        ? galleryData 
-        : galleryData.filter(item => item.category === filter);
+    let filtered = galleryData;
 
+    // Album Filter
+    if (activeAlbum !== "all") {
+        filtered = filtered.filter(item => (item.album || "Vereinsarchiv") === activeAlbum);
+    }
+
+    // Category Filter
+    if (filter !== "all") {
+        filtered = filtered.filter(item => item.category === filter);
+    }
+
+    // Search input filter
     const searchInput = document.getElementById("gallery-search");
     if (searchInput && searchInput.value) {
         const searchVal = searchInput.value.toLowerCase();
         filtered = filtered.filter(item => {
             const title = (item.title || "").toLowerCase();
             const desc = (item.description || "").toLowerCase();
+            const album = (item.album || "").toLowerCase();
             const tags = (item.tags || []).join(" ").toLowerCase();
             const persons = (item.detectedPersons || []).join(" ").toLowerCase();
-            return title.includes(searchVal) || desc.includes(searchVal) || tags.includes(searchVal) || persons.includes(searchVal);
+            return title.includes(searchVal) || desc.includes(searchVal) || album.includes(searchVal) || tags.includes(searchVal) || persons.includes(searchVal);
         });
     }
 
@@ -230,7 +300,7 @@ function renderGallery(filter, append = false) {
     const itemsToDisplay = filtered.slice(0, itemsToShow);
 
     if (itemsToDisplay.length === 0) {
-        grid.innerHTML = '<p class="text-center text-muted" style="grid-column: 1 / -1; padding: 3rem;">Keine Fotos gefunden, die zu deiner Suche passen.</p>';
+        grid.innerHTML = '<p class="text-center text-muted" style="grid-column: 1 / -1; padding: 3rem;">Keine Fotos gefunden, die zu deinen Filtern passen.</p>';
         updateLoadMoreButton(0, 0);
         return;
     }
@@ -247,10 +317,9 @@ function renderGallery(filter, append = false) {
         const card = document.createElement("div");
         card.className = "masonry-item fade-in-up";
         card.style.cursor = "pointer";
-        card.style.animationDelay = `${index * 0.05}s`;
+        card.style.animationDelay = `${index * 0.04}s`;
         card.addEventListener("click", () => openLightbox(globalIndex));
 
-        // Gradients for broken physical images
         const fallbacks = [
             "linear-gradient(135deg, #0f3c5c 0%, #1e40af 100%)",
             "linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)",
@@ -262,20 +331,33 @@ function renderGallery(filter, append = false) {
         const gradient = fallbacks[globalIndex % fallbacks.length];
         const imgPlaceholderId = `img-gallery-${item.id}`;
         const displayThumbUrl = formatPhotoUrl(item.thumbnailUrl || item.imageUrl);
+        const isVideo = item.mediaType === 'video' || !!item.videoUrl;
+
+        const videoBadge = isVideo 
+            ? `<span style="position: absolute; top: 10px; right: 10px; background: rgba(0, 0, 0, 0.75); color: #fff; padding: 4px 9px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; display: inline-flex; align-items: center; gap: 5px; backdrop-filter: blur(4px); z-index: 2;">▶ Video</span>`
+            : '';
+
+        const albumBadge = item.album 
+            ? `<span style="font-size: 0.72rem; background: rgba(15, 60, 92, 0.08); color: var(--primary-color); border-radius: 4px; padding: 2px 7px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;" title="${item.album}">📁 ${item.album}</span>`
+            : '';
 
         card.innerHTML = `
-            <div class="gallery-img-container">
-                <img id="${imgPlaceholderId}" src="${displayThumbUrl}" alt="${item.title}" class="masonry-img" loading="lazy" onerror="window.handleImageError(this, '${gradient}')">
+            <div class="gallery-img-container" style="position: relative;">
+                ${videoBadge}
+                <img id="${imgPlaceholderId}" src="${displayThumbUrl}" alt="${item.title}" class="masonry-img" loading="lazy" onerror="window.handleImageError(this, '${gradient}', '${item.id}')">
                 <div class="gallery-img-overlay">
-                    <span class="gallery-zoom-icon">🔍</span>
+                    <span class="gallery-zoom-icon">${isVideo ? '▶' : '🔍'}</span>
                 </div>
             </div>
             <div class="masonry-caption">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.25rem;">
-                    <span class="badge-sm badge-${item.category}">${getCategoryLabel(item.category)}</span>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.35rem; flex-wrap: wrap; gap: 4px;">
+                    <div style="display: flex; gap: 4px; align-items: center;">
+                        <span class="badge-sm badge-${item.category}">${getCategoryLabel(item.category)}</span>
+                        ${albumBadge}
+                    </div>
                     <span style="font-size:0.75rem; color:var(--text-muted); font-weight:600;">${item.date}</span>
                 </div>
-                <h4 style="margin: 5px 0 0 0; font-size:1.05rem; font-weight:700; color:var(--primary-color);">${item.title}</h4>
+                <h4 style="margin: 5px 0 0 0; font-size:1.05rem; font-weight:700; color:var(--primary-color); text-align: left;">${item.title}</h4>
             </div>
         `;
         grid.appendChild(card);
@@ -300,8 +382,16 @@ function updateLoadMoreButton(visibleCount, totalCount) {
     }
 }
 
-// Gracefully replace missing image files with an elegant text gradient card
-window.handleImageError = (imgEl, gradient) => {
+// Gracefully replace missing image files with an elegant text gradient card or fallback url
+window.handleImageError = (imgEl, gradient, itemId) => {
+    if (itemId) {
+        const item = galleryData.find(p => p.id === itemId);
+        if (item && item._directThumbnailUrl && imgEl.src !== item._directThumbnailUrl) {
+            imgEl.src = item._directThumbnailUrl;
+            return;
+        }
+    }
+
     const parent = imgEl.parentElement;
     if (!parent) return;
 
@@ -330,44 +420,79 @@ function getCategoryLabel(cat) {
 function openLightbox(index) {
     const lightbox = document.getElementById("galerie-lightbox");
     const img = document.getElementById("lightbox-img");
+    const video = document.getElementById("lightbox-video");
     const fallback = document.getElementById("lightbox-fallback");
     const title = document.getElementById("lightbox-title");
     const desc = document.getElementById("lightbox-desc");
     const category = document.getElementById("lightbox-category");
+    const albumEl = document.getElementById("lightbox-album");
     const date = document.getElementById("lightbox-date");
 
-    if (!lightbox || !img) return;
+    if (!lightbox) return;
 
     currentItemIndex = index;
     const item = currentFilteredData[index];
     if (!item) return;
 
-    // Reset visibility
-    img.style.display = "block";
-    if (fallback) fallback.style.display = "none";
+    const isVideo = item.mediaType === 'video' || !!item.videoUrl;
 
-    img.src = formatPhotoUrl(item.imageUrl || item.thumbnailUrl);
-    img.alt = item.title;
-
-    // Handle lightbox image error (e.g. file missing)
-    img.onerror = () => {
-        img.style.display = "none";
-        if (fallback) {
-            fallback.style.display = "flex";
-            fallback.style.background = "linear-gradient(135deg, #0f3c5c 0%, #ef4444 100%)";
-            fallback.innerHTML = `
-                <span style="font-size:3rem; margin-bottom:1rem;">📷</span>
-                <span style="font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem; opacity:0.8;">Keine Bilddatei vorhanden</span>
-            `;
+    if (isVideo) {
+        if (img) img.style.display = "none";
+        if (fallback) fallback.style.display = "none";
+        if (video) {
+            video.style.display = "block";
+            video.src = item.videoUrl;
+            video.poster = formatPhotoUrl(item.imageUrl || item.thumbnailUrl);
+            video.load();
         }
-    };
+    } else {
+        if (video) {
+            video.style.display = "none";
+            video.pause();
+            video.src = "";
+        }
+        if (img) {
+            img.style.display = "block";
+            if (fallback) fallback.style.display = "none";
+            img.src = formatPhotoUrl(item.imageUrl || item.thumbnailUrl);
+            img.alt = item.title;
 
-    title.textContent = item.title;
-    desc.innerHTML = item.description || "";
+            img.onerror = () => {
+                if (item._directImageUrl && img.src !== item._directImageUrl) {
+                    img.src = item._directImageUrl;
+                    return;
+                }
+                img.style.display = "none";
+                if (fallback) {
+                    fallback.style.display = "flex";
+                    fallback.style.background = "linear-gradient(135deg, #0f3c5c 0%, #ef4444 100%)";
+                    fallback.innerHTML = `
+                        <span style="font-size:3rem; margin-bottom:1rem;">📷</span>
+                        <span style="font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem; opacity:0.8;">Bild wird geladen...</span>
+                    `;
+                }
+            };
+        }
+    }
+
+    if (title) title.textContent = item.title;
+    if (desc) desc.innerHTML = item.description || "";
     
-    category.textContent = getCategoryLabel(item.category);
-    category.className = `category-badge badge-${item.category}`;
-    date.textContent = item.date;
+    if (category) {
+        category.textContent = getCategoryLabel(item.category);
+        category.className = `category-badge badge-${item.category}`;
+    }
+
+    if (albumEl) {
+        if (item.album) {
+            albumEl.textContent = `📁 ${item.album}`;
+            albumEl.style.display = "inline-block";
+        } else {
+            albumEl.style.display = "none";
+        }
+    }
+
+    if (date) date.textContent = item.date;
 
     // Render detected persons
     const personsContainer = document.getElementById("lightbox-persons");
@@ -401,14 +526,21 @@ function openLightbox(index) {
     }
 
     lightbox.style.display = "flex";
-    document.body.classList.add("no-scroll"); // disable background scrolling
+    document.body.classList.add("no-scroll");
 }
 
 window.closeLightbox = () => {
     const lightbox = document.getElementById("galerie-lightbox");
     if (!lightbox) return;
+
+    const video = document.getElementById("lightbox-video");
+    if (video) {
+        video.pause();
+        video.src = "";
+    }
+
     lightbox.style.display = "none";
-    document.body.classList.remove("no-scroll"); // restore scrolling
+    document.body.classList.remove("no-scroll");
 };
 
 window.nextLightbox = function(e) {
@@ -417,7 +549,7 @@ window.nextLightbox = function(e) {
     
     let nextIndex = currentItemIndex + 1;
     if (nextIndex >= currentFilteredData.length) {
-        nextIndex = 0; // wrap around
+        nextIndex = 0;
     }
     openLightbox(nextIndex);
 };
@@ -428,7 +560,7 @@ window.prevLightbox = function(e) {
     
     let prevIndex = currentItemIndex - 1;
     if (prevIndex < 0) {
-        prevIndex = currentFilteredData.length - 1; // wrap around
+        prevIndex = currentFilteredData.length - 1;
     }
     openLightbox(prevIndex);
 };
@@ -458,3 +590,51 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Rendert die tatsächlichen Alben im geschützten Mitgliederbereich
+function renderMitgliederAlbums() {
+    const grid = document.getElementById("immich-albums-grid");
+    if (!grid) return;
+
+    // Gruppiere Alben
+    const albumsMap = {};
+    galleryData.forEach(item => {
+        const a = item.album || "Vereinsarchiv";
+        if (!albumsMap[a]) {
+            albumsMap[a] = {
+                title: a,
+                coverUrl: item.thumbnailUrl || item.imageUrl,
+                count: 0,
+                year: item.date || ''
+            };
+        }
+        albumsMap[a].count++;
+    });
+
+    const albumNames = Object.keys(albumsMap);
+    if (albumNames.length === 0) return;
+
+    let html = "";
+    albumNames.forEach(name => {
+        const alb = albumsMap[name];
+        html += `
+            <div class="glass-card" style="padding: 1.5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div style="position: relative; width: 100%; height: 160px; border-radius: 10px; overflow: hidden; margin-bottom: 1rem; background: rgba(15,60,92,0.05);">
+                        <img src="${alb.coverUrl}" alt="${alb.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;">
+                            ${alb.count} Medien
+                        </span>
+                    </div>
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);">${alb.title}</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">Fotos und Videos direkt aus unserem Immich-Vereinsarchiv.</p>
+                </div>
+                <button onclick="window.filterByAlbum('${encodeURIComponent(name)}'); document.getElementById('galerie').scrollIntoView({behavior: 'smooth'});" class="btn btn-outline" style="font-size: 0.85rem; width: 100%;">
+                    In Galerie öffnen
+                </button>
+            </div>
+        `;
+    });
+
+    grid.innerHTML = html;
+}
