@@ -4,7 +4,7 @@ const IMMICH_CONFIG = {
     enabled: true,
 
     // Cloudflare Worker Proxy URL (wird bei Bedarf verwendet)
-    workerUrl: "https://v1-vorstand-api.dan-hunziker73.workers.dev",
+    workerUrl: "https://sportschuetzen-website-worker.dan-hunziker73.workers.dev",
 
     immichHost: "",
     sharedLinkKey: ""
@@ -147,6 +147,10 @@ function generateAlbumFilters() {
 window.filterByAlbum = function(albumNameEncoded) {
     activeAlbum = albumNameEncoded === 'all' ? 'all' : decodeURIComponent(albumNameEncoded);
 
+    // Suchfeld leeren, damit das neue Album nicht durch alte Suche blockiert wird
+    const searchInput = document.getElementById("gallery-search");
+    if (searchInput) searchInput.value = "";
+
     const container = document.getElementById("gallery-album-filters");
     if (container) {
         container.querySelectorAll(".gallery-filter-btn").forEach(btn => {
@@ -245,6 +249,16 @@ window.filterByTag = function(value) {
         searchInput.value = value.substring(4);
     } else if (value.startsWith("person:")) {
         searchInput.value = value.substring(7);
+    }
+
+    // Bei Tagsuche auf "Alle Alben" & "Alle Kategorien" zurücksetzen
+    activeAlbum = "all";
+    const albumContainer = document.getElementById("gallery-album-filters");
+    if (albumContainer) {
+        albumContainer.querySelectorAll(".gallery-filter-btn").forEach(btn => {
+            if (btn.getAttribute("data-album") === "all") btn.classList.add("active");
+            else btn.classList.remove("active");
+        });
     }
 
     document.querySelectorAll(".gallery-filters:not(#gallery-album-filters) .gallery-filter-btn").forEach(b => b.classList.remove("active"));
