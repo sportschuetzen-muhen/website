@@ -432,6 +432,124 @@ footer {
     color: #94a3b8;
 }
 
+/* Footer Social Media */
+.footer-social h4 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.footer-social p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    color: #f1f5f9;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.social-btn .social-icon {
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+.social-btn:hover .social-icon {
+    transform: scale(1.12);
+}
+
+.social-btn-instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+}
+
+.social-btn-facebook:hover {
+    background: #1877f2;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
+}
+
+/* Social Connect Cards (für Inhaltsbereiche) */
+.social-connect-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.85rem 1.35rem;
+    background: #ffffff;
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(15, 58, 93, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.social-connect-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(15, 58, 93, 0.12);
+}
+
+.social-connect-card .sc-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    color: white;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.social-connect-card:hover .sc-icon {
+    transform: scale(1.1);
+}
+
+.social-connect-card.sc-instagram .sc-icon {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-connect-card.sc-facebook .sc-icon {
+    background: #1877f2;
+}
+
+.social-connect-card .sc-platform {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.social-connect-card .sc-handle {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
@@ -735,6 +853,10 @@ textarea.form-control {
 
     .footer-content {
         text-align: center;
+    }
+
+    .footer-social-links {
+        align-items: center;
     }
 }
 

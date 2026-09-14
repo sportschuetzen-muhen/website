@@ -50,12 +50,15 @@ class SiteHeader extends HTMLElement {
                         <a href="schuetzenhaus_vermietung.html" class="${active === 'vermietung' ? 'active' : ''}">Vermietung</a>
                         <a href="index.html#reports" class="${active === 'reports' ? 'active' : ''}">Berichte</a>
                         <a href="resultate.html" class="${active === 'resultate' ? 'active' : ''}">Resultate</a>
+                        <a href="verein.html#mitglieder" class="${active === 'mitglieder' ? 'active' : ''}" style="color: var(--accent-color); font-weight: 700;">🔐 Mitglieder</a>
+                        <div id="nav-member-badge" class="nav-member-badge" style="display: inline-flex; align-items: center; margin-left: 0.5rem;"></div>
                     </nav>
                 </div>
             </header>
         `;
 
         this.initMobileNav();
+        this.initMemberBadge();
     }
 
     initMobileNav() {
@@ -114,6 +117,58 @@ class SiteHeader extends HTMLElement {
             }
         });
     }
+
+    initMemberBadge() {
+        const badge = this.querySelector('#nav-member-badge');
+        if (!badge) return;
+
+        const updateUI = () => {
+            if (!window.AuthSession) return;
+            const user = window.AuthSession.getUser();
+            if (user) {
+                const displayName = user.vorname || (user.name ? user.name.split(' ')[0] : 'Mitglied');
+                const isVorstand = window.AuthSession.isVorstand();
+                const roleText = isVorstand ? 'Vorstand' : 'Mitglied';
+                badge.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 0.4rem; background: rgba(15, 60, 92, 0.08); padding: 0.25rem 0.65rem; border-radius: 20px; font-size: 0.82rem; font-weight: 600;">
+                        <span>👤 ${displayName}</span>
+                        <span style="background: ${isVorstand ? 'var(--accent-color)' : 'var(--primary-color)'}; color: white; font-size: 0.65rem; padding: 2px 6px; border-radius: 6px; text-transform: uppercase;">${roleText}</span>
+                        <button id="nav-logout-btn" title="Abmelden" style="background: none; border: none; cursor: pointer; color: var(--text-muted); font-size: 0.85rem; padding: 0 2px; margin-left: 2px;">✕</button>
+                    </div>
+                `;
+                const logoutBtn = badge.querySelector('#nav-logout-btn');
+                if (logoutBtn) {
+                    logoutBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        if (confirm('Möchtest du dich abmelden?')) {
+                            window.AuthSession.logout();
+                        }
+                    });
+                }
+            } else {
+                badge.innerHTML = `
+                    <button id="nav-login-btn" class="btn btn-outline" style="padding: 0.3rem 0.75rem; font-size: 0.82rem; border-radius: 20px; font-weight: 600; display: inline-flex; align-items: center; gap: 0.35rem;">
+                        <span>🔐</span> <span>Login</span>
+                    </button>
+                `;
+                const loginBtn = badge.querySelector('#nav-login-btn');
+                if (loginBtn) {
+                    loginBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        window.AuthSession.login('verein.html#mitglieder');
+                    });
+                }
+            }
+        };
+
+        if (window.AuthSession) {
+            window.AuthSession.onChange(updateUI);
+        } else {
+            window.addEventListener('DOMContentLoaded', () => {
+                if (window.AuthSession) window.AuthSession.onChange(updateUI);
+            });
+        }
+    }
 }
 
 class SiteFooter extends HTMLElement {
@@ -141,6 +196,26 @@ class SiteFooter extends HTMLElement {
                         <h4>Standort & Kontakt</h4>
                         <p><a href="https://maps.google.com/?q=Sportschützen+Muhen+Rütelistrasse+Muhen" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); font-weight: 600;">📍 Schützenhaus Muhen<br>Rütelistrasse, 5037 Muhen</a></p>
                         <p style="margin-top: 0.5rem;"><a href="mailto:sportschuetzen.muhen@gmail.com" style="color: var(--text-muted); font-size: 0.9rem;">sportschuetzen.muhen@gmail.com</a></p>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Social Media</h4>
+                        <p style="margin-bottom: 0.75rem;">Folgen Sie uns für Impressionen, Resultate und Vereinsleben:</p>
+                        <div class="footer-social-links">
+                            <a href="https://www.instagram.com/sportschuetzen.muhen/" target="_blank" rel="noopener noreferrer" class="social-btn social-btn-instagram" title="Sportschützen Muhen auf Instagram">
+                                <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                                <span>@sportschuetzen.muhen</span>
+                            </a>
+                            <a href="https://www.facebook.com/search/top?q=sportsch%C3%BCtzen%20muhen" target="_blank" rel="noopener noreferrer" class="social-btn social-btn-facebook" title="Sportschützen Muhen auf Facebook">
+                                <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                                <span>Sportschützen Muhen</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-bottom">
