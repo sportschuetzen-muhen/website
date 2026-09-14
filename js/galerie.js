@@ -77,21 +77,35 @@ async function initGallery() {
         }
     }
 
-    // Automatische Bereinigung: Falls noch fehlerhafte Worker-Proxy-URLs geladen wurden,
-    // ersetzen wir sie sofort durch die direkten Immich-URLs
+    // Immich Proxy-Sicherheit: Alle Medien MÜSSEN über den Cloudflare-Worker-Proxy laufen,
+    // da Immich "Cross-Origin-Resource-Policy: same-origin" sendet und Browser direkte Anfragen blockieren.
     galleryData = galleryData.map(item => {
         let thumb = item.thumbnailUrl || '';
         let img = item.imageUrl || '';
-        if (thumb.includes('workers.dev') && item._directThumbnailUrl) {
-            thumb = item._directThumbnailUrl;
+        let video = item.videoUrl || '';
+
+        // Falls noch direkte Immich-URLs vorhanden sind, in Worker-Proxy-URLs umwandeln
+        const assetId = item.id;
+        const key = item.albumKey || (item.thumbnailUrl && item.thumbnailUrl.match(/[?&]key=([^&]+)/)?.[1]) || (item._directThumbnailUrl && item._directThumbnailUrl.match(/[?&]key=([^&]+)/)?.[1]);
+        const host = 'https://immich-muhen.danfamily.uk';
+
+        if (assetId && key) {
+            if (!thumb.includes('workers.dev')) {
+                thumb = `${IMMICH_CONFIG.workerUrl}?module=immich&action=image&host=${encodeURIComponent(host)}&key=${encodeURIComponent(key)}&id=${encodeURIComponent(assetId)}&size=thumbnail`;
+            }
+            if (!img.includes('workers.dev')) {
+                img = `${IMMICH_CONFIG.workerUrl}?module=immich&action=image&host=${encodeURIComponent(host)}&key=${encodeURIComponent(key)}&id=${encodeURIComponent(assetId)}&size=preview`;
+            }
+            if ((item.mediaType === 'video' || video) && !video.includes('workers.dev')) {
+                video = `${IMMICH_CONFIG.workerUrl}?module=immich&action=video&host=${encodeURIComponent(host)}&key=${encodeURIComponent(key)}&id=${encodeURIComponent(assetId)}`;
+            }
         }
-        if (img.includes('workers.dev') && item._directImageUrl) {
-            img = item._directImageUrl;
-        }
+
         return {
             ...item,
             thumbnailUrl: thumb,
-            imageUrl: img
+            imageUrl: img,
+            videoUrl: video
         };
     });
 
@@ -396,14 +410,14 @@ function updateLoadMoreButton(visibleCount, totalCount) {
     }
 }
 
-// Gracefully replace missing image files with an elegant text gradient card or fallback url
+// Gracefully replace missing image files with an elegant text gradient card
 window.handleImageError = (imgEl, gradient, itemId) => {
-    if (itemId) {
-        const item = galleryData.find(p => p.id === itemId);
-        if (item && item._directThumbnailUrl && imgEl.src !== item._directThumbnailUrl) {
-            imgEl.src = item._directThumbnailUrl;
-            return;
-        }
+    // Falls noch nicht versucht: Einmaliger Retry mit Cache-Buster
+    if (!imgEl.dataset.retried) {
+        imgEl.dataset.retried = "true";
+        const sep = imgEl.src.includes('?') ? '&' : '?';
+        imgEl.src = imgEl.src + sep + '_retry=' + Date.now();
+        return;
     }
 
     const parent = imgEl.parentElement;
@@ -472,8 +486,10 @@ function openLightbox(index) {
             img.alt = item.title;
 
             img.onerror = () => {
-                if (item._directImageUrl && img.src !== item._directImageUrl) {
-                    img.src = item._directImageUrl;
+                if (!img.dataset.retried) {
+                    img.dataset.retried = "true";
+                    const sep = img.src.includes('?') ? '&' : '?';
+                    img.src = img.src + sep + '_retry=' + Date.now();
                     return;
                 }
                 img.style.display = "none";
@@ -482,7 +498,7 @@ function openLightbox(index) {
                     fallback.style.background = "linear-gradient(135deg, #0f3c5c 0%, #ef4444 100%)";
                     fallback.innerHTML = `
                         <span style="font-size:3rem; margin-bottom:1rem;">📷</span>
-                        <span style="font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem; opacity:0.8;">Bild wird geladen...</span>
+                        <span style="font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem; opacity:0.8;">Bild konnte nicht geladen werden</span>
                     `;
                 }
             };
