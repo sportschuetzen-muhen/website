@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sportschuetzen-cache-v1';
+const CACHE_NAME = 'sportschuetzen-cache-v2';
 
 const STATIC_ASSETS = [
     './',
@@ -48,6 +48,9 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     const req = event.request;
     const url = new URL(req.url);
+
+    // Externe Domains (Cloudflare Worker, Immich, APIs etc.) NIEMALS abfangen
+    if (url.origin !== self.location.origin) return;
 
     // Nur GET-Requests cachen
     if (req.method !== 'GET') return;
